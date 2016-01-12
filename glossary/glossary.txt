@@ -1,0 +1,6 @@
+data provider	数据供给器
+fixture	基境
+annotation	标注
+const	常量
+command-line test runner	命令行测试执行器
+Trait	特质
