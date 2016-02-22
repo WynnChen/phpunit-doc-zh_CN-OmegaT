@@ -37988,6 +37988,40 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
         <seg>&lt;u0&gt;phpunit ExceptionTest&lt;/u0&gt;
 PHPUnit 5.3.0 by Sebastian Bergmann and contributors.
 
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) ExceptionTest::testException
+Expected exception InvalidArgumentException
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160222T033054Z" creationid="Wynn" creationdate="20160222T033054Z">
+        <seg>&lt;u0&gt;phpunit ExceptionTest&lt;/u0&gt;
+PHPUnit 5.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) ExceptionTest::testException
+Expected exception InvalidArgumentException
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ExceptionTest&lt;/u0&gt;
+PHPUnit 5.3.0 by Sebastian Bergmann and contributors.
+
 FFF
 
 Time: 0 seconds, Memory: 3.00Mb
@@ -61627,6 +61661,14 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In addition to the &lt;l0&gt;expectException()&lt;/l0&gt; method the &lt;l1&gt;expectExceptionCode()&lt;/l1&gt;, &lt;l2&gt;expectExceptionMessage()&lt;/l2&gt;, and &lt;l3&gt;expectExceptionMessageRegExp()&lt;/l3&gt; methods exist to set up expectations for exceptions raised by the code under test.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160222T033315Z" creationid="Wynn" creationdate="20160222T033315Z">
+        <seg>除了 &lt;l0&gt;expectException()&lt;/l0&gt; 方法外，还有 &lt;l1&gt;expectExceptionCode()&lt;/l1&gt;、&lt;l2&gt;expectExceptionMessage()&lt;/l2&gt; 和 &lt;l3&gt;expectExceptionMessageRegExp()&lt;/l3&gt; 方法可以用于为被测代码所抛出的异常建立预期。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In addition to the above methods it is also possible to use the &lt;l0&gt;@requires&lt;/l0&gt; annotation to express common preconditions for a test case.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150319T092417Z" creationid="Wynn" creationdate="20150319T092417Z">
@@ -72639,6 +72681,30 @@ class MyClass
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20160222T013857Z" creationid="Wynn" creationdate="20160222T013857Z">
         <seg>expectException()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>expectExceptionCode()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160222T033055Z" creationid="Wynn" creationdate="20160222T033055Z">
+        <seg>expectExceptionCode()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>expectExceptionMessage()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160222T033056Z" creationid="Wynn" creationdate="20160222T033056Z">
+        <seg>expectExceptionMessage()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>expectExceptionMessageRegExp()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160222T033057Z" creationid="Wynn" creationdate="20160222T033057Z">
+        <seg>expectExceptionMessageRegExp()</seg>
       </tuv>
     </tu>
     <tu>
