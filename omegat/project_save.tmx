@@ -4432,6 +4432,30 @@ class ExceptionTest extends PHPUnit_Framework_TestCase
 {
     public function testException()
     {
+        $this-&gt;expectException(InvalidArgumentException::class);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160222T013947Z" creationid="Wynn" creationdate="20160222T013947Z">
+        <seg>&lt;?php
+class ExceptionTest extends PHPUnit_Framework_TestCase
+{
+    public function testException()
+    {
+        $this-&gt;expectException(InvalidArgumentException::class);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ExceptionTest extends PHPUnit_Framework_TestCase
+{
+    public function testException()
+    {
         $this-&gt;setExpectedException('InvalidArgumentException');
     }
 
@@ -69025,6 +69049,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Using the expectException() method</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160222T013943Z" creationid="Wynn" creationdate="20160222T013943Z">
+        <seg>使用 expectException() 方法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Usually when using PHPUnit your testcases would extend the &lt;l0&gt;PHPUnit_Framework_TestCase&lt;/l0&gt; class in the following way:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150316T094512Z" creationid="Wynn" creationdate="20150316T094512Z">
@@ -72603,6 +72635,14 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>expectException()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160222T013857Z" creationid="Wynn" creationdate="20160222T013857Z">
+        <seg>expectException()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>expects()</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150330T043929Z" creationid="Wynn" creationdate="20150330T043929Z">
@@ -73859,6 +73899,14 @@ ok</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150302T071519Z" creationid="Wynn" creationdate="20150302T071519Z">
         <seg>展示了如何用 &lt;l0&gt;@expectedException&lt;/l0&gt;  标注来测试被测代码中是否抛出了异常。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>shows how to use the &lt;l0&gt;expectException()&lt;/l0&gt; method to test whether an exception is thrown by the code under test.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160222T013924Z" creationid="Wynn" creationdate="20160222T013924Z">
+        <seg>展示了如何用 &lt;l0&gt;@expectException&lt;/l0&gt;  标注来测试被测代码中是否抛出了异常。</seg>
       </tuv>
     </tu>
     <tu>
