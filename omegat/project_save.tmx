@@ -69519,6 +69519,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Tests need to be explicitly annotated by either &lt;l0&gt;@small&lt;/l0&gt;, &lt;l1&gt;@medium&lt;/l1&gt;, or &lt;l2&gt;@large&lt;/l2&gt; to enable run time limits.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160223T045330Z" creationid="Wynn" creationdate="20160223T045330Z">
+        <seg>需要启用运行时间限制的测试必须显式地标注为 &lt;l0&gt;@small&lt;/l0&gt;、&lt;l1&gt;@medium&lt;/l1&gt; 或 &lt;l2&gt;@large&lt;/l2&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Tests should run fast so they can be run hundreds or thousands of times a day.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150330T041056Z" creationid="Wynn" creationdate="20150330T041056Z">
