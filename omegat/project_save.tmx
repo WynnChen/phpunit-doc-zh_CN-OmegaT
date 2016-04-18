@@ -2056,6 +2056,62 @@ class AbstractClassTest extends PHPUnit_Framework_TestCase
     <tu>
       <tuv lang="EN-US">
         <seg>&lt;?php
+abstract class AbstractClass
+{
+    public function concreteMethod()
+    {
+        return $this-&gt;abstractMethod();
+    }
+
+    public abstract function abstractMethod();
+}
+
+class AbstractClassTest extends PHPUnit_Framework_TestCase
+{
+    public function testConcreteMethod()
+    {
+        $stub = $this-&gt;getMockForAbstractClass(AbstractClass::class);
+
+        $stub-&gt;expects($this-&gt;any())
+             -&gt;method('abstractMethod')
+             -&gt;will($this-&gt;returnValue(true));
+
+        $this-&gt;assertTrue($stub-&gt;concreteMethod());
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091055Z" creationid="Wynn" creationdate="20160418T091055Z">
+        <seg>&lt;?php
+abstract class AbstractClass
+{
+    public function concreteMethod()
+    {
+        return $this-&gt;abstractMethod();
+    }
+
+    public abstract function abstractMethod();
+}
+
+class AbstractClassTest extends PHPUnit_Framework_TestCase
+{
+    public function testConcreteMethod()
+    {
+        $stub = $this-&gt;getMockForAbstractClass(AbstractClass::class);
+
+        $stub-&gt;expects($this-&gt;any())
+             -&gt;method('abstractMethod')
+             -&gt;will($this-&gt;returnValue(true));
+
+        $this-&gt;assertTrue($stub-&gt;concreteMethod());
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
 abstract class Generic_Tests_DatabaseTestCase extends PHPUnit_Extensions_Database_TestCase
 {
     // only instantiate pdo once for test clean-up/fixture load
@@ -4450,6 +4506,44 @@ class DependencyFailureTest extends PHPUnit_Framework_TestCase
     <tu>
       <tuv lang="EN-US">
         <seg>&lt;?php
+class DependencyFailureTest extends PHPUnit_Framework_TestCase
+{
+    public function testOne()
+    {
+        $this-&gt;assertTrue(false);
+    }
+
+    /**
+     * @depends testOne
+     */
+    public function testTwo()
+    {
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091202Z" creationid="Wynn" creationdate="20160418T091202Z">
+        <seg>&lt;?php
+class DependencyFailureTest extends PHPUnit_Framework_TestCase
+{
+    public function testOne()
+    {
+        $this-&gt;assertTrue(false);
+    }
+
+    /**
+     * @depends testOne
+     */
+    public function testTwo()
+    {
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
 class EmptyTest extends PHPUnit_Framework_TestCase
 {
     public function testFailure()
@@ -5057,6 +5151,156 @@ class Example
         }
     }
 }?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class Example
+{
+    protected $id;
+    protected $directory;
+
+    public function __construct($id)
+    {
+        $this-&gt;id = $id;
+    }
+
+    public function setDirectory($directory)
+    {
+        $this-&gt;directory = $directory . DIRECTORY_SEPARATOR . $this-&gt;id;
+
+        if (!file_exists($this-&gt;directory)) {
+            mkdir($this-&gt;directory, 0700, true);
+        }
+    }
+}?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091122Z" creationid="Wynn" creationdate="20160418T091122Z">
+        <seg>&lt;?php
+class Example
+{
+    protected $id;
+    protected $directory;
+
+    public function __construct($id)
+    {
+        $this-&gt;id = $id;
+    }
+
+    public function setDirectory($directory)
+    {
+        $this-&gt;directory = $directory . DIRECTORY_SEPARATOR . $this-&gt;id;
+
+        if (!file_exists($this-&gt;directory)) {
+            mkdir($this-&gt;directory, 0700, true);
+        }
+    }
+}?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ExampleTest extends PHPUnit_Framework_TestCase
+{
+    protected function setUp()
+    {
+        if (file_exists(dirname(__FILE__) . '/id')) {
+            rmdir(dirname(__FILE__) . '/id');
+        }
+    }
+
+    public function testDirectoryIsCreated()
+    {
+        $example = new Example('id');
+        $this-&gt;assertFalse(file_exists(dirname(__FILE__) . '/id'));
+
+        $example-&gt;setDirectory(dirname(__FILE__));
+        $this-&gt;assertTrue(file_exists(dirname(__FILE__) . '/id'));
+    }
+
+    protected function tearDown()
+    {
+        if (file_exists(dirname(__FILE__) . '/id')) {
+            rmdir(dirname(__FILE__) . '/id');
+        }
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091131Z" creationid="Wynn" creationdate="20160418T091131Z">
+        <seg>&lt;?php
+class ExampleTest extends PHPUnit_Framework_TestCase
+{
+    protected function setUp()
+    {
+        if (file_exists(dirname(__FILE__) . '/id')) {
+            rmdir(dirname(__FILE__) . '/id');
+        }
+    }
+
+    public function testDirectoryIsCreated()
+    {
+        $example = new Example('id');
+        $this-&gt;assertFalse(file_exists(dirname(__FILE__) . '/id'));
+
+        $example-&gt;setDirectory(dirname(__FILE__));
+        $this-&gt;assertTrue(file_exists(dirname(__FILE__) . '/id'));
+    }
+
+    protected function tearDown()
+    {
+        if (file_exists(dirname(__FILE__) . '/id')) {
+            rmdir(dirname(__FILE__) . '/id');
+        }
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ExampleTest extends PHPUnit_Framework_TestCase
+{
+    public function setUp()
+    {
+        vfsStreamWrapper::register();
+        vfsStreamWrapper::setRoot(new vfsStreamDirectory('exampleDir'));
+    }
+
+    public function testDirectoryIsCreated()
+    {
+        $example = new Example('id');
+        $this-&gt;assertFalse(vfsStreamWrapper::getRoot()-&gt;hasChild('id'));
+
+        $example-&gt;setDirectory(vfsStream::url('exampleDir'));
+        $this-&gt;assertTrue(vfsStreamWrapper::getRoot()-&gt;hasChild('id'));
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091138Z" creationid="Wynn" creationdate="20160418T091138Z">
+        <seg>&lt;?php
+class ExampleTest extends PHPUnit_Framework_TestCase
+{
+    public function setUp()
+    {
+        vfsStreamWrapper::register();
+        vfsStreamWrapper::setRoot(new vfsStreamDirectory('exampleDir'));
+    }
+
+    public function testDirectoryIsCreated()
+    {
+        $example = new Example('id');
+        $this-&gt;assertFalse(vfsStreamWrapper::getRoot()-&gt;hasChild('id'));
+
+        $example-&gt;setDirectory(vfsStream::url('exampleDir'));
+        $this-&gt;assertTrue(vfsStreamWrapper::getRoot()-&gt;hasChild('id'));
+    }
+}
+?&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -6371,6 +6615,138 @@ class GoogleTest extends PHPUnit_Framework_TestCase
     <tu>
       <tuv lang="EN-US">
         <seg>&lt;?php
+class GoogleTest extends PHPUnit_Framework_TestCase
+{
+    public function testSearch()
+    {
+        $googleSearch = $this-&gt;getMockFromWsdl(
+          'GoogleSearch.wsdl', 'GoogleSearch'
+        );
+
+        $directoryCategory = new stdClass;
+        $directoryCategory-&gt;fullViewableName = '';
+        $directoryCategory-&gt;specialEncoding = '';
+
+        $element = new stdClass;
+        $element-&gt;summary = '';
+        $element-&gt;URL = 'https://phpunit.de/';
+        $element-&gt;snippet = '...';
+        $element-&gt;title = '&lt;b&gt;PHPUnit&lt;/b&gt;';
+        $element-&gt;cachedSize = '11k';
+        $element-&gt;relatedInformationPresent = true;
+        $element-&gt;hostName = 'phpunit.de';
+        $element-&gt;directoryCategory = $directoryCategory;
+        $element-&gt;directoryTitle = '';
+
+        $result = new stdClass;
+        $result-&gt;documentFiltering = false;
+        $result-&gt;searchComments = '';
+        $result-&gt;estimatedTotalResultsCount = 3.9000;
+        $result-&gt;estimateIsExact = false;
+        $result-&gt;resultElements = [$element];
+        $result-&gt;searchQuery = 'PHPUnit';
+        $result-&gt;startIndex = 1;
+        $result-&gt;endIndex = 1;
+        $result-&gt;searchTips = '';
+        $result-&gt;directoryCategories = [];
+        $result-&gt;searchTime = 0.248822;
+
+        $googleSearch-&gt;expects($this-&gt;any())
+                     -&gt;method('doGoogleSearch')
+                     -&gt;will($this-&gt;returnValue($result));
+
+        /**
+         * $googleSearch-&gt;doGoogleSearch() will now return a stubbed result and
+         * the web service's doGoogleSearch() method will not be invoked.
+         */
+        $this-&gt;assertEquals(
+          $result,
+          $googleSearch-&gt;doGoogleSearch(
+            '00000000000000000000000000000000',
+            'PHPUnit',
+            0,
+            1,
+            false,
+            '',
+            false,
+            '',
+            '',
+            ''
+          )
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091116Z" creationid="Wynn" creationdate="20160418T091116Z">
+        <seg>&lt;?php
+class GoogleTest extends PHPUnit_Framework_TestCase
+{
+    public function testSearch()
+    {
+        $googleSearch = $this-&gt;getMockFromWsdl(
+          'GoogleSearch.wsdl', 'GoogleSearch'
+        );
+
+        $directoryCategory = new stdClass;
+        $directoryCategory-&gt;fullViewableName = '';
+        $directoryCategory-&gt;specialEncoding = '';
+
+        $element = new stdClass;
+        $element-&gt;summary = '';
+        $element-&gt;URL = 'https://phpunit.de/';
+        $element-&gt;snippet = '...';
+        $element-&gt;title = '&lt;b&gt;PHPUnit&lt;/b&gt;';
+        $element-&gt;cachedSize = '11k';
+        $element-&gt;relatedInformationPresent = true;
+        $element-&gt;hostName = 'phpunit.de';
+        $element-&gt;directoryCategory = $directoryCategory;
+        $element-&gt;directoryTitle = '';
+
+        $result = new stdClass;
+        $result-&gt;documentFiltering = false;
+        $result-&gt;searchComments = '';
+        $result-&gt;estimatedTotalResultsCount = 3.9000;
+        $result-&gt;estimateIsExact = false;
+        $result-&gt;resultElements = [$element];
+        $result-&gt;searchQuery = 'PHPUnit';
+        $result-&gt;startIndex = 1;
+        $result-&gt;endIndex = 1;
+        $result-&gt;searchTips = '';
+        $result-&gt;directoryCategories = [];
+        $result-&gt;searchTime = 0.248822;
+
+        $googleSearch-&gt;expects($this-&gt;any())
+                     -&gt;method('doGoogleSearch')
+                     -&gt;will($this-&gt;returnValue($result));
+
+        /**
+         * $googleSearch-&gt;doGoogleSearch() 将会返回上桩的结果，
+         * web 服务的 doGoogleSearch() 方法不会被调用。
+         */
+        $this-&gt;assertEquals(
+          $result,
+          $googleSearch-&gt;doGoogleSearch(
+            '00000000000000000000000000000000',
+            'PHPUnit',
+            0,
+            1,
+            false,
+            '',
+            false,
+            '',
+            '',
+            ''
+          )
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
 class GreatThanOrEqualTest extends PHPUnit_Framework_TestCase
 {
     public function testFailure()
@@ -6892,6 +7268,68 @@ class LongArrayDiffTest extends PHPUnit_Framework_TestCase
         $this-&gt;assertEquals(
             array(0,0,0,0,0,0,0,0,0,0,0,0,1,2,3 ,4,5,6),
             array(0,0,0,0,0,0,0,0,0,0,0,0,1,2,33,4,5,6)
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class MultipleDependenciesTest extends PHPUnit_Framework_TestCase
+{
+    public function testProducerFirst()
+    {
+        $this-&gt;assertTrue(true);
+        return 'first';
+    }
+
+    public function testProducerSecond()
+    {
+        $this-&gt;assertTrue(true);
+        return 'second';
+    }
+
+    /**
+     * @depends testProducerFirst
+     * @depends testProducerSecond
+     */
+    public function testConsumer()
+    {
+        $this-&gt;assertEquals(
+            ['first', 'second'],
+            func_get_args()
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091209Z" creationid="Wynn" creationdate="20160418T091209Z">
+        <seg>&lt;?php
+class MultipleDependenciesTest extends PHPUnit_Framework_TestCase
+{
+    public function testProducerFirst()
+    {
+        $this-&gt;assertTrue(true);
+        return 'first';
+    }
+
+    public function testProducerSecond()
+    {
+        $this-&gt;assertTrue(true);
+        return 'second';
+    }
+
+    /**
+     * @depends testProducerFirst
+     * @depends testProducerSecond
+     */
+    public function testConsumer()
+    {
+        $this-&gt;assertEquals(
+            ['first', 'second'],
+            func_get_args()
         );
     }
 }
@@ -8399,6 +8837,78 @@ class StackTest extends PHPUnit_Framework_TestCase
 {
     public function testEmpty()
     {
+        $stack = [];
+        $this-&gt;assertEmpty($stack);
+
+        return $stack;
+    }
+
+    /**
+     * @depends testEmpty
+     */
+    public function testPush(array $stack)
+    {
+        array_push($stack, 'foo');
+        $this-&gt;assertEquals('foo', $stack[count($stack)-1]);
+        $this-&gt;assertNotEmpty($stack);
+
+        return $stack;
+    }
+
+    /**
+     * @depends testPush
+     */
+    public function testPop(array $stack)
+    {
+        $this-&gt;assertEquals('foo', array_pop($stack));
+        $this-&gt;assertEmpty($stack);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091152Z" creationid="Wynn" creationdate="20160418T091152Z">
+        <seg>&lt;?php
+class StackTest extends PHPUnit_Framework_TestCase
+{
+    public function testEmpty()
+    {
+        $stack = [];
+        $this-&gt;assertEmpty($stack);
+
+        return $stack;
+    }
+
+    /**
+     * @depends testEmpty
+     */
+    public function testPush(array $stack)
+    {
+        array_push($stack, 'foo');
+        $this-&gt;assertEquals('foo', $stack[count($stack)-1]);
+        $this-&gt;assertNotEmpty($stack);
+
+        return $stack;
+    }
+
+    /**
+     * @depends testPush
+     */
+    public function testPop(array $stack)
+    {
+        $this-&gt;assertEquals('foo', array_pop($stack));
+        $this-&gt;assertEmpty($stack);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class StackTest extends PHPUnit_Framework_TestCase
+{
+    public function testEmpty()
+    {
         $stack = array();
         $this-&gt;assertEmpty($stack);
 
@@ -8459,6 +8969,46 @@ class StackTest extends PHPUnit_Framework_TestCase
     {
         $this-&gt;assertEquals('foo', array_pop($stack));
         $this-&gt;assertEmpty($stack);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class StackTest extends PHPUnit_Framework_TestCase
+{
+    public function testPushAndPop()
+    {
+        $stack = [];
+        $this-&gt;assertEquals(0, count($stack));
+
+        array_push($stack, 'foo');
+        $this-&gt;assertEquals('foo', $stack[count($stack)-1]);
+        $this-&gt;assertEquals(1, count($stack));
+
+        $this-&gt;assertEquals('foo', array_pop($stack));
+        $this-&gt;assertEquals(0, count($stack));
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091148Z" creationid="Wynn" creationdate="20160418T091148Z">
+        <seg>&lt;?php
+class StackTest extends PHPUnit_Framework_TestCase
+{
+    public function testPushAndPop()
+    {
+        $stack = [];
+        $this-&gt;assertEquals(0, count($stack));
+
+        array_push($stack, 'foo');
+        $this-&gt;assertEquals('foo', $stack[count($stack)-1]);
+        $this-&gt;assertEquals(1, count($stack));
+
+        $this-&gt;assertEquals('foo', array_pop($stack));
+        $this-&gt;assertEquals(0, count($stack));
     }
 }
 ?&gt;</seg>
@@ -9613,6 +10163,62 @@ class SubjectTest extends PHPUnit_Framework_TestCase
 {
     public function testObserversAreUpdated()
     {
+        $subject = new Subject('My subject');
+
+        // Create a prophecy for the Observer class.
+        $observer = $this-&gt;prophesize(Observer::class);
+
+        // Set up the expectation for the update() method
+        // to be called only once and with the string 'something'
+        // as its parameter.
+        $observer-&gt;update('something')-&gt;shouldBeCalled();
+
+        // Reveal the prophecy and attach the mock object
+        // to the Subject.
+        $subject-&gt;attach($observer-&gt;reveal());
+
+        // Call the doSomething() method on the $subject object
+        // which we expect to call the mocked Observer object's
+        // update() method with the string 'something'.
+        $subject-&gt;doSomething();
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091039Z" creationid="Wynn" creationdate="20160418T091039Z">
+        <seg>&lt;?php
+class SubjectTest extends PHPUnit_Framework_TestCase
+{
+    public function testObserversAreUpdated()
+    {
+        $subject = new Subject('My subject');
+
+        // 为 Observer 类建立预言(prophecy)。
+        $observer = $this-&gt;prophesize(Observer::class);
+
+        // 建立预期状况：update() 方法将会被调用一次，
+        // 并且将以字符串 'something' 为参数。
+        $observer-&gt;update('something')-&gt;shouldBeCalled();
+
+        // 揭示预言，并将仿件对象链接到主体上。
+        $subject-&gt;attach($observer-&gt;reveal());
+
+        // 在 $subject 对象上调用 doSomething() 方法，
+        // 预期将以字符串 'something' 为参数调用 
+        // Observer 仿件对象的 update() 方法。
+        $subject-&gt;doSomething();
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class SubjectTest extends PHPUnit_Framework_TestCase
+{
+    public function testObserversAreUpdated()
+    {
         // Create a mock for the Observer class,
         // only mock the update() method.
         $observer = $this-&gt;getMock('Observer', array('update'));
@@ -10321,6 +10927,56 @@ interface PHPUnit_Extensions_Database_DataSet_ITable
     public function getValue($row, $column);
     public function getRow($row);
     public function assertEquals(PHPUnit_Extensions_Database_DataSet_ITable $other);
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+namespace TestNamespace;
+
+class TestCaseClass extends \PHPUnit_Framework_TestCase
+{
+    /**
+     * @dataProvider provider
+     */
+    public function testMethod($data)
+    {
+        $this-&gt;assertTrue($data);
+    }
+
+    public function provider()
+    {
+        return [
+            'my named data' =&gt; [true],
+            'my data'       =&gt; [true]
+        ];
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091143Z" creationid="Wynn" creationdate="20160418T091143Z">
+        <seg>&lt;?php
+namespace TestNamespace;
+
+class TestCaseClass extends \PHPUnit_Framework_TestCase
+{
+    /**
+     * @dataProvider provider
+     */
+    public function testMethod($data)
+    {
+        $this-&gt;assertTrue($data);
+    }
+
+    public function provider()
+    {
+        return [
+            'my named data' =&gt; [true],
+            'my data'       =&gt; [true]
+        ];
+    }
 }
 ?&gt;</seg>
       </tuv>
@@ -12756,6 +13412,62 @@ class TraitClassTest extends PHPUnit_Framework_TestCase
         $mock-&gt;expects($this-&gt;any())
              -&gt;method('abstractMethod')
              -&gt;will($this-&gt;returnValue(TRUE));
+
+        $this-&gt;assertTrue($mock-&gt;concreteMethod());
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+trait AbstractTrait
+{
+    public function concreteMethod()
+    {
+        return $this-&gt;abstractMethod();
+    }
+
+    public abstract function abstractMethod();
+}
+
+class TraitClassTest extends PHPUnit_Framework_TestCase
+{
+    public function testConcreteMethod()
+    {
+        $mock = $this-&gt;getMockForTrait(AbstractTrait::class);
+
+        $mock-&gt;expects($this-&gt;any())
+             -&gt;method('abstractMethod')
+             -&gt;will($this-&gt;returnValue(true));
+
+        $this-&gt;assertTrue($mock-&gt;concreteMethod());
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091050Z" creationid="Wynn" creationdate="20160418T091050Z">
+        <seg>&lt;?php
+trait AbstractTrait
+{
+    public function concreteMethod()
+    {
+        return $this-&gt;abstractMethod();
+    }
+
+    public abstract function abstractMethod();
+}
+
+class TraitClassTest extends PHPUnit_Framework_TestCase
+{
+    public function testConcreteMethod()
+    {
+        $mock = $this-&gt;getMockForTrait(AbstractTrait::class);
+
+        $mock-&gt;expects($this-&gt;any())
+             -&gt;method('abstractMethod')
+             -&gt;will($this-&gt;returnValue(true));
 
         $this-&gt;assertTrue($mock-&gt;concreteMethod());
     }
@@ -64237,6 +64949,14 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As mentioned in the beginning, when the defaults used by the &lt;l0&gt;createMock()&lt;/l0&gt; method to generate the test double do not match your needs then you can use the &lt;l1&gt;getMockBuilder($type)&lt;/l1&gt; method to customize the test double generation using a fluent interface. Here is a list of methods provided by the Mock Builder:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T090908Z" creationid="Wynn" creationdate="20160418T090908Z">
+        <seg>如一开始提到的，如果 &lt;l0&gt;createMock()&lt;/l0&gt; 方法在生成测试替身时所使用的默认值不符合你的要求，则可以通过 &lt;l1&gt;getMockBuilder($type)&lt;/l1&gt; 方法来用流畅式接口定制测试替身的生成过程。以下是仿件生成器所提供的方法列表：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As with any external resource, there might be intermittent problems with the filesystem. This makes tests interacting with it flaky.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T092052Z" creationid="Wynn" creationdate="20150327T092024Z">
@@ -68863,6 +69583,14 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T090924Z" creationid="Wynn" creationdate="20150327T090924Z">
         <seg>从版本 4.5 开始，PHPUnit 为用 Prophecy 建立测试替身提供了内建支持。&lt;x0/&gt;展示了&lt;x1/&gt;中展示的测试应该如何用 Prophecy 的的预言式理念方式来达到同样的效果：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHPUnit has built-in support for using Prophecy to create test doubles. &lt;x0/&gt; shows how the same test shown in &lt;x1/&gt; can be expressed using Prophecy's philosophy of prophecies and revelations:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T090959Z" creationid="Wynn" creationdate="20160418T090959Z">
+        <seg>PHPUnit 对用 Prophecy 建立测试替身提供了内建支持。&lt;x0/&gt;展示了&lt;x1/&gt;中展示的测试应该如何用 Prophecy 的的预言式理念方式来达到同样的效果：</seg>
       </tuv>
     </tu>
     <tu>
