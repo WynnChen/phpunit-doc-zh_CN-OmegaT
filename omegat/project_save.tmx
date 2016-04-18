@@ -71453,6 +71453,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;l0&gt;createMock($type)&lt;/l0&gt; and &lt;l1&gt;getMockBuilder($type)&lt;/l1&gt; methods provided by PHPUnit can be used in a test to automatically generate an object that can act as a test double for the specified original type (interface or class name). This test double object can be used in every context where an object of the original type is expected or required.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083501Z" creationid="Wynn" creationdate="20160418T083501Z">
+        <seg>PHPUnit 提供的 &lt;l0&gt;createMock($type)&lt;/l0&gt; 和 &lt;l1&gt;getMockBuilder($type)&lt;/l1&gt; 方法可以在测试中用来自动生成对象，此对象可以充当任意指定原版类型（接口或类名）的测试替身。在任何预期或要求使用原版类的实例对象的上下文中都可以使用这个测试替身对象来代替。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;l0&gt;createQueryTable()&lt;/l0&gt; method can be used to create instances of a QueryTable, give them a result name and SQL query. This is a handy method when it comes to result/table assertions as will be shown in the next section on the Database Assertions API.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150318T090348Z" creationid="Wynn" creationdate="20150318T090348Z">
