@@ -6,6 +6,14 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>"Behind the scenes", PHPUnit automatically generates a new PHP class that implements the desired behavior when the &lt;l0&gt;createMock()&lt;/l0&gt; method is used.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084848Z" creationid="Wynn" creationdate="20160418T084848Z">
+        <seg>“在幕后”，当使用了 &lt;l0&gt;createMock()&lt;/l0&gt; 方法时， PHPUnit 自动生成了一个新的 PHP 类来实现想要的行为。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>"Behind the scenes", PHPUnit automatically generates a new PHP class that implements the desired behavior when the &lt;l0&gt;getMock()&lt;/l0&gt; method is used.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T075150Z" creationid="Wynn" creationdate="20150327T075150Z">
@@ -8482,6 +8490,229 @@ class StringStartsWithTest extends PHPUnit_Framework_TestCase
     public function testFailure()
     {
         $this-&gt;assertStringStartsWith('prefix', 'foo');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testReturnArgumentStub()
+    {
+        // Create a stub for the SomeClass class.
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // Configure the stub.
+        $stub-&gt;method('doSomething')
+             -&gt;will($this-&gt;returnArgument(0));
+
+        // $stub-&gt;doSomething('foo') returns 'foo'
+        $this-&gt;assertEquals('foo', $stub-&gt;doSomething('foo'));
+
+        // $stub-&gt;doSomething('bar') returns 'bar'
+        $this-&gt;assertEquals('bar', $stub-&gt;doSomething('bar'));
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084850Z" creationid="Wynn" creationdate="20160418T084850Z">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testReturnArgumentStub()
+    {
+        // Create a stub for the SomeClass class.
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // Configure the stub.
+        $stub-&gt;method('doSomething')
+             -&gt;will($this-&gt;returnArgument(0));
+
+        // $stub-&gt;doSomething('foo') returns 'foo'
+        $this-&gt;assertEquals('foo', $stub-&gt;doSomething('foo'));
+
+        // $stub-&gt;doSomething('bar') returns 'bar'
+        $this-&gt;assertEquals('bar', $stub-&gt;doSomething('bar'));
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testReturnCallbackStub()
+    {
+        // Create a stub for the SomeClass class.
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // Configure the stub.
+        $stub-&gt;method('doSomething')
+             -&gt;will($this-&gt;returnCallback('str_rot13'));
+
+        // $stub-&gt;doSomething($argument) returns str_rot13($argument)
+        $this-&gt;assertEquals('fbzrguvat', $stub-&gt;doSomething('something'));
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084905Z" creationid="Wynn" creationdate="20160418T084905Z">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testReturnCallbackStub()
+    {
+        // Create a stub for the SomeClass class.
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // Configure the stub.
+        $stub-&gt;method('doSomething')
+             -&gt;will($this-&gt;returnCallback('str_rot13'));
+
+        // $stub-&gt;doSomething($argument) returns str_rot13($argument)
+        $this-&gt;assertEquals('fbzrguvat', $stub-&gt;doSomething('something'));
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testReturnSelf()
+    {
+        // Create a stub for the SomeClass class.
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // Configure the stub.
+        $stub-&gt;method('doSomething')
+             -&gt;will($this-&gt;returnSelf());
+
+        // $stub-&gt;doSomething() returns $stub
+        $this-&gt;assertSame($stub, $stub-&gt;doSomething());
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084853Z" creationid="Wynn" creationdate="20160418T084853Z">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testReturnSelf()
+    {
+        // Create a stub for the SomeClass class.
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // Configure the stub.
+        $stub-&gt;method('doSomething')
+             -&gt;will($this-&gt;returnSelf());
+
+        // $stub-&gt;doSomething() returns $stub
+        $this-&gt;assertSame($stub, $stub-&gt;doSomething());
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testReturnValueMapStub()
+    {
+        // Create a stub for the SomeClass class.
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // Create a map of arguments to return values.
+        $map = [
+            ['a', 'b', 'c', 'd'],
+            ['e', 'f', 'g', 'h']
+        );
+
+        // Configure the stub.
+        $stub-&gt;method('doSomething')
+             -&gt;will($this-&gt;returnValueMap($map));
+
+        // $stub-&gt;doSomething() returns different values depending on
+        // the provided arguments.
+        $this-&gt;assertEquals('d', $stub-&gt;doSomething('a', 'b', 'c'));
+        $this-&gt;assertEquals('h', $stub-&gt;doSomething('e', 'f', 'g'));
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084856Z" creationid="Wynn" creationdate="20160418T084856Z">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testReturnValueMapStub()
+    {
+        // Create a stub for the SomeClass class.
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // Create a map of arguments to return values.
+        $map = [
+            ['a', 'b', 'c', 'd'],
+            ['e', 'f', 'g', 'h']
+        );
+
+        // Configure the stub.
+        $stub-&gt;method('doSomething')
+             -&gt;will($this-&gt;returnValueMap($map));
+
+        // $stub-&gt;doSomething() returns different values depending on
+        // the provided arguments.
+        $this-&gt;assertEquals('d', $stub-&gt;doSomething('a', 'b', 'c'));
+        $this-&gt;assertEquals('h', $stub-&gt;doSomething('e', 'f', 'g'));
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testStub()
+    {
+        // Create a stub for the SomeClass class.
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // Configure the stub.
+        $stub-&gt;method('doSomething')
+             -&gt;willReturn('foo');
+
+        // Calling $stub-&gt;doSomething() will now return
+        // 'foo'.
+        $this-&gt;assertEquals('foo', $stub-&gt;doSomething());
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084956Z" creationid="Wynn" creationdate="20160418T084830Z">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testStub()
+    {
+        // 为 SomeClass 类创建桩件。
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // 配置桩件。
+        $stub-&gt;method('doSomething')
+             -&gt;willReturn('foo');
+
+        // 现在调用 $stub-&gt;doSomething() 将返回 'foo'。
+        $this-&gt;assertEquals('foo', $stub-&gt;doSomething());
     }
 }
 ?&gt;</seg>
@@ -71461,6 +71692,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;l0&gt;createMock($type)&lt;/l0&gt; method immediately returns a test double object for the specified type (interface or class). The creation of this test double is performed using best practice defaults (the &lt;l1&gt;__construct()&lt;/l1&gt; and &lt;l2&gt;__clone()&lt;/l2&gt; methods of the original class are not executed and the arguments passed to a method of the test double will not be cloned. If these defaults are not what you need then you can use the &lt;l3&gt;getMockBuilder($type)&lt;/l3&gt; method to customize the test double generation using a fluent interface.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084725Z" creationid="Wynn" creationdate="20160418T084725Z">
+        <seg>&lt;l0&gt;createMock($type)&lt;/l0&gt; 方法直接返回指定类型（接口或类）的测试替身对象实例。此测试替身的创建使用了最佳实践的默认值（不执行原始类的 &lt;l1&gt;__construct()&lt;/l1&gt; 和 &lt;l2&gt;__clone()&lt;/l2&gt; 方法，且不对传递给测试替身的方法的参数进行克隆）。如果这些默认值非你所需，可以用 &lt;l3&gt;getMockBuilder($type)&lt;/l3&gt; 方法并使用流畅式接口来定制测试替身的生成过程。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;l0&gt;createQueryTable()&lt;/l0&gt; method can be used to create instances of a QueryTable, give them a result name and SQL query. This is a handy method when it comes to result/table assertions as will be shown in the next section on the Database Assertions API.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150318T090348Z" creationid="Wynn" creationdate="20150318T090348Z">
@@ -77257,6 +77496,14 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>createMock()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084828Z" creationid="Wynn" creationdate="20160418T084828Z">
+        <seg>createMock()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>en</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T093344Z" creationid="Wynn" creationdate="20150309T093344Z">
@@ -78505,6 +78752,14 @@ ok</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150330T031526Z" creationid="Wynn" creationdate="20150330T031526Z">
         <seg>展示了如何用 &lt;l0&gt;PHPUnit_Extensions_Story_TestCase&lt;/l0&gt; 把上述规则写成规格脚本。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>shows how to stub method calls and set up return values. We first use the &lt;l0&gt;createMock()&lt;/l0&gt; method that is provided by the &lt;l1&gt;PHPUnit_Framework_TestCase&lt;/l1&gt; class to set up a stub object that looks like an object of &lt;l2&gt;SomeClass&lt;/l2&gt; (&lt;x3/&gt;). We then use the &lt;u4&gt;Fluent Interface&lt;/u4&gt; that PHPUnit provides to specify the behavior for the stub. In essence, this means that you do not need to create several temporary objects and wire them together afterwards. Instead, you chain method calls as shown in the example. This leads to more readable and "fluent" code.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084826Z" creationid="Wynn" creationdate="20160418T084826Z">
+        <seg>展示了如何对方法的调用上桩以及如何设定返回值。首先用 &lt;l1&gt;PHPUnit_Framework_TestCase&lt;/l1&gt; 类提供的 &lt;l0&gt;createMock()&lt;/l0&gt; 方法来建立一个桩件对象，它表面看起来像是 &lt;l2&gt;SomeClass&lt;/l2&gt;类（&lt;x3/&gt;）的实例。随后用 PHPUnit 提供的 &lt;u4&gt;流畅式接口&lt;/u4&gt;来指定桩件的行为。本质上，这意味着不需要建立多个临时对象然后再把它们捆到一起。取而代之的是范例中所示的链式方法调用。这使得代码更加易读并更加“流畅”。</seg>
       </tuv>
     </tu>
     <tu>
