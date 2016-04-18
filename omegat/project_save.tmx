@@ -8500,6 +8500,50 @@ class StringStartsWithTest extends PHPUnit_Framework_TestCase
         <seg>&lt;?php
 class StubTest extends PHPUnit_Framework_TestCase
 {
+    public function testOnConsecutiveCallsStub()
+    {
+        // Create a stub for the SomeClass class.
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // Configure the stub.
+        $stub-&gt;method('doSomething')
+             -&gt;will($this-&gt;onConsecutiveCalls(2, 3, 5, 7));
+
+        // $stub-&gt;doSomething() returns a different value each time
+        $this-&gt;assertEquals(2, $stub-&gt;doSomething());
+        $this-&gt;assertEquals(3, $stub-&gt;doSomething());
+        $this-&gt;assertEquals(5, $stub-&gt;doSomething());
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T085224Z" creationid="Wynn" creationdate="20160418T085224Z">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testOnConsecutiveCallsStub()
+    {
+        //为 SomeClass 类创建桩件。
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // 配置桩件。
+        $stub-&gt;method('doSomething')
+             -&gt;will($this-&gt;onConsecutiveCalls(2, 3, 5, 7));
+
+        // $stub-&gt;doSomething() 每次返回值都不同
+        $this-&gt;assertEquals(2, $stub-&gt;doSomething());
+        $this-&gt;assertEquals(3, $stub-&gt;doSomething());
+        $this-&gt;assertEquals(5, $stub-&gt;doSomething());
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
     public function testReturnArgumentStub()
     {
         // Create a stub for the SomeClass class.
@@ -8518,23 +8562,23 @@ class StubTest extends PHPUnit_Framework_TestCase
 }
 ?&gt;</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084850Z" creationid="Wynn" creationdate="20160418T084850Z">
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T085037Z" creationid="Wynn" creationdate="20160418T084850Z">
         <seg>&lt;?php
 class StubTest extends PHPUnit_Framework_TestCase
 {
     public function testReturnArgumentStub()
     {
-        // Create a stub for the SomeClass class.
+        // 为 SomeClass 类创建桩件。
         $stub = $this-&gt;createMock(SomeClass::class);
 
-        // Configure the stub.
+        // 配置桩件。
         $stub-&gt;method('doSomething')
              -&gt;will($this-&gt;returnArgument(0));
 
-        // $stub-&gt;doSomething('foo') returns 'foo'
+        // $stub-&gt;doSomething('foo') 返回 'foo'
         $this-&gt;assertEquals('foo', $stub-&gt;doSomething('foo'));
 
-        // $stub-&gt;doSomething('bar') returns 'bar'
+        // $stub-&gt;doSomething('bar') 返回 'bar'
         $this-&gt;assertEquals('bar', $stub-&gt;doSomething('bar'));
     }
 }
@@ -8561,20 +8605,20 @@ class StubTest extends PHPUnit_Framework_TestCase
 }
 ?&gt;</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084905Z" creationid="Wynn" creationdate="20160418T084905Z">
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T085203Z" creationid="Wynn" creationdate="20160418T084905Z">
         <seg>&lt;?php
 class StubTest extends PHPUnit_Framework_TestCase
 {
     public function testReturnCallbackStub()
     {
-        // Create a stub for the SomeClass class.
+        // 为 SomeClass 类创建桩件。
         $stub = $this-&gt;createMock(SomeClass::class);
 
-        // Configure the stub.
+        // 配置桩件。
         $stub-&gt;method('doSomething')
              -&gt;will($this-&gt;returnCallback('str_rot13'));
 
-        // $stub-&gt;doSomething($argument) returns str_rot13($argument)
+        // $stub-&gt;doSomething($argument) 返回 str_rot13($argument)
         $this-&gt;assertEquals('fbzrguvat', $stub-&gt;doSomething('something'));
     }
 }
@@ -8601,20 +8645,20 @@ class StubTest extends PHPUnit_Framework_TestCase
 }
 ?&gt;</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084853Z" creationid="Wynn" creationdate="20160418T084853Z">
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T085056Z" creationid="Wynn" creationdate="20160418T084853Z">
         <seg>&lt;?php
 class StubTest extends PHPUnit_Framework_TestCase
 {
     public function testReturnSelf()
     {
-        // Create a stub for the SomeClass class.
+        // 为 SomeClass 类创建桩件。
         $stub = $this-&gt;createMock(SomeClass::class);
 
-        // Configure the stub.
+        //配置桩件。
         $stub-&gt;method('doSomething')
              -&gt;will($this-&gt;returnSelf());
 
-        // $stub-&gt;doSomething() returns $stub
+        // $stub-&gt;doSomething() 返回 $stub
         $this-&gt;assertSame($stub, $stub-&gt;doSomething());
     }
 }
@@ -8649,27 +8693,26 @@ class StubTest extends PHPUnit_Framework_TestCase
 }
 ?&gt;</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T084856Z" creationid="Wynn" creationdate="20160418T084856Z">
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T085138Z" creationid="Wynn" creationdate="20160418T084856Z">
         <seg>&lt;?php
 class StubTest extends PHPUnit_Framework_TestCase
 {
     public function testReturnValueMapStub()
     {
-        // Create a stub for the SomeClass class.
+        // 为 SomeClass 类创建桩件。
         $stub = $this-&gt;createMock(SomeClass::class);
 
-        // Create a map of arguments to return values.
+        // 创建从参数到返回值的映射。
         $map = [
             ['a', 'b', 'c', 'd'],
             ['e', 'f', 'g', 'h']
         );
 
-        // Configure the stub.
+        // 配置桩件。
         $stub-&gt;method('doSomething')
              -&gt;will($this-&gt;returnValueMap($map));
 
-        // $stub-&gt;doSomething() returns different values depending on
-        // the provided arguments.
+        // $stub-&gt;doSomething() 根据提供的参数返回不同的值。
         $this-&gt;assertEquals('d', $stub-&gt;doSomething('a', 'b', 'c'));
         $this-&gt;assertEquals('h', $stub-&gt;doSomething('e', 'f', 'g'));
     }
@@ -8713,6 +8756,46 @@ class StubTest extends PHPUnit_Framework_TestCase
 
         // 现在调用 $stub-&gt;doSomething() 将返回 'foo'。
         $this-&gt;assertEquals('foo', $stub-&gt;doSomething());
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testThrowExceptionStub()
+    {
+        // Create a stub for the SomeClass class.
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // Configure the stub.
+        $stub-&gt;method('doSomething')
+             -&gt;will($this-&gt;throwException(new Exception));
+
+        // $stub-&gt;doSomething() throws Exception
+        $stub-&gt;doSomething();
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T085241Z" creationid="Wynn" creationdate="20160418T085241Z">
+        <seg>&lt;?php
+class StubTest extends PHPUnit_Framework_TestCase
+{
+    public function testThrowExceptionStub()
+    {
+        // 为 SomeClass 类创建桩件。
+        $stub = $this-&gt;createMock(SomeClass::class);
+
+        // 配置桩件。
+        $stub-&gt;method('doSomething')
+             -&gt;will($this-&gt;throwException(new Exception));
+
+        // $stub-&gt;doSomething() 抛出异常
+        $stub-&gt;doSomething();
     }
 }
 ?&gt;</seg>
