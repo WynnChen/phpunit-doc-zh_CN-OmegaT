@@ -2286,6 +2286,34 @@ class ArrayDiffTest extends PHPUnit_Framework_TestCase
 {
     public function testEquality() {
         $this-&gt;assertEquals(
+            [1, 2,  3, 4, 5, 6],
+            [1, 2, 33, 4, 5, 6]
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091222Z" creationid="Wynn" creationdate="20160418T091222Z">
+        <seg>&lt;?php
+class ArrayDiffTest extends PHPUnit_Framework_TestCase
+{
+    public function testEquality() {
+        $this-&gt;assertEquals(
+            [1, 2,  3, 4, 5, 6],
+            [1, 2, 33, 4, 5, 6]
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ArrayDiffTest extends PHPUnit_Framework_TestCase
+{
+    public function testEquality() {
+        $this-&gt;assertEquals(
             array(1,2,3 ,4,5,6),
             array(1,2,33,4,5,6)
         );
@@ -2500,6 +2528,34 @@ class ArraySubsetTest extends PHPUnit_Framework_TestCase
     public function testFailure()
     {
         $this-&gt;assertArraySubset(['config' =&gt; ['key-a', 'key-b']], ['config' =&gt; ['key-a']]);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ArrayWeakComparisonTest extends PHPUnit_Framework_TestCase
+{
+    public function testEquality() {
+        $this-&gt;assertEquals(
+            [1, 2, 3, 4, 5, 6],
+            ['1', 2, 33, 4, 5, 6]
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091230Z" creationid="Wynn" creationdate="20160418T091230Z">
+        <seg>&lt;?php
+class ArrayWeakComparisonTest extends PHPUnit_Framework_TestCase
+{
+    public function testEquality() {
+        $this-&gt;assertEquals(
+            [1, 2, 3, 4, 5, 6],
+            ['1', 2, 33, 4, 5, 6]
+        );
     }
 }
 ?&gt;</seg>
@@ -4138,6 +4194,106 @@ class DataTest extends PHPUnit_Framework_TestCase
 
     public function additionProvider()
     {
+        return [
+            'adding zeros'  =&gt; [0, 0, 0],
+            'zero plus one' =&gt; [0, 1, 1],
+            'one plus zero' =&gt; [1, 0, 1],
+            'one plus one'  =&gt; [1, 1, 3]
+        ];
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091215Z" creationid="Wynn" creationdate="20160418T091215Z">
+        <seg>&lt;?php
+class DataTest extends PHPUnit_Framework_TestCase
+{
+    /**
+     * @dataProvider additionProvider
+     */
+    public function testAdd($a, $b, $expected)
+    {
+        $this-&gt;assertEquals($expected, $a + $b);
+    }
+
+    public function additionProvider()
+    {
+        return [
+            'adding zeros'  =&gt; [0, 0, 0],
+            'zero plus one' =&gt; [0, 1, 1],
+            'one plus zero' =&gt; [1, 0, 1],
+            'one plus one'  =&gt; [1, 1, 3]
+        ];
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class DataTest extends PHPUnit_Framework_TestCase
+{
+    /**
+     * @dataProvider additionProvider
+     */
+    public function testAdd($a, $b, $expected)
+    {
+        $this-&gt;assertEquals($expected, $a + $b);
+    }
+
+    public function additionProvider()
+    {
+        return [
+            [0, 0, 0],
+            [0, 1, 1],
+            [1, 0, 1],
+            [1, 1, 3]
+        ];
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091212Z" creationid="Wynn" creationdate="20160418T091212Z">
+        <seg>&lt;?php
+class DataTest extends PHPUnit_Framework_TestCase
+{
+    /**
+     * @dataProvider additionProvider
+     */
+    public function testAdd($a, $b, $expected)
+    {
+        $this-&gt;assertEquals($expected, $a + $b);
+    }
+
+    public function additionProvider()
+    {
+        return [
+            [0, 0, 0],
+            [0, 1, 1],
+            [1, 0, 1],
+            [1, 1, 3]
+        ];
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class DataTest extends PHPUnit_Framework_TestCase
+{
+    /**
+     * @dataProvider additionProvider
+     */
+    public function testAdd($a, $b, $expected)
+    {
+        $this-&gt;assertEquals($expected, $a + $b);
+    }
+
+    public function additionProvider()
+    {
         return array(
           'adding zeros' =&gt; array(0, 0, 0),
           'zero plus one' =&gt; array(0, 1, 1),
@@ -4386,6 +4542,80 @@ class DatabaseTest extends PHPUnit_Framework_TestCase
     public static function tearDownAfterClass()
     {
         self::$dbh = null;
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class DependencyAndDataProviderComboTest extends PHPUnit_Framework_TestCase
+{
+    public function provider()
+    {
+        return [['provider1'], ['provider2']];
+    }
+
+    public function testProducerFirst()
+    {
+        $this-&gt;assertTrue(true);
+        return 'first';
+    }
+
+    public function testProducerSecond()
+    {
+        $this-&gt;assertTrue(true);
+        return 'second';
+    }
+
+    /**
+     * @depends testProducerFirst
+     * @depends testProducerSecond
+     * @dataProvider provider
+     */
+    public function testConsumer()
+    {
+        $this-&gt;assertEquals(
+            ['provider1', 'first', 'second'],
+            func_get_args()
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091219Z" creationid="Wynn" creationdate="20160418T091219Z">
+        <seg>&lt;?php
+class DependencyAndDataProviderComboTest extends PHPUnit_Framework_TestCase
+{
+    public function provider()
+    {
+        return [['provider1'], ['provider2']];
+    }
+
+    public function testProducerFirst()
+    {
+        $this-&gt;assertTrue(true);
+        return 'first';
+    }
+
+    public function testProducerSecond()
+    {
+        $this-&gt;assertTrue(true);
+        return 'second';
+    }
+
+    /**
+     * @depends testProducerFirst
+     * @depends testProducerSecond
+     * @dataProvider provider
+     */
+    public function testConsumer()
+    {
+        $this-&gt;assertEquals(
+            ['provider1', 'first', 'second'],
+            func_get_args()
+        );
     }
 }
 ?&gt;</seg>
@@ -7241,6 +7471,34 @@ class LessThanTest extends PHPUnit_Framework_TestCase
     public function testFailure()
     {
         $this-&gt;assertLessThan(1, 2);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class LongArrayDiffTest extends PHPUnit_Framework_TestCase
+{
+    public function testEquality() {
+        $this-&gt;assertEquals(
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2,  3, 4, 5, 6],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 33, 4, 5, 6]
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T091226Z" creationid="Wynn" creationdate="20160418T091226Z">
+        <seg>&lt;?php
+class LongArrayDiffTest extends PHPUnit_Framework_TestCase
+{
+    public function testEquality() {
+        $this-&gt;assertEquals(
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2,  3, 4, 5, 6],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 33, 4, 5, 6]
+        );
     }
 }
 ?&gt;</seg>
