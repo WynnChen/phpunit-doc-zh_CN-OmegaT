@@ -177,6 +177,28 @@ fi</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>$listener = new MyListener(
+    ['Sebastian'],
+    22,
+    'April',
+    19.78,
+    null,
+    new stdClass
+);</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083254Z" creationid="Wynn" creationdate="20160418T083254Z">
+        <seg>$listener = new MyListener(
+    ['Sebastian'],
+    22,
+    'April',
+    19.78,
+    null,
+    new stdClass
+);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$listener = new MyListener(
   array('Sebastian'),
   22,
   'April',
@@ -1394,6 +1416,70 @@ if (FALSE) {
       <tuv lang="EN-US">
         <seg>&lt;?php
 /**
+ * @codeCoverageIgnore
+ */
+class Foo
+{
+    public function bar()
+    {
+    }
+}
+
+class Bar
+{
+    /**
+     * @codeCoverageIgnore
+     */
+    public function foo()
+    {
+    }
+}
+
+if (false) {
+    // @codeCoverageIgnoreStart
+    print '*';
+    // @codeCoverageIgnoreEnd
+}
+
+exit; // @codeCoverageIgnore
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083253Z" creationid="Wynn" creationdate="20160418T083253Z">
+        <seg>&lt;?php
+/**
+ * @codeCoverageIgnore
+ */
+class Foo
+{
+    public function bar()
+    {
+    }
+}
+
+class Bar
+{
+    /**
+     * @codeCoverageIgnore
+     */
+    public function foo()
+    {
+    }
+}
+
+if (false) {
+    // @codeCoverageIgnoreStart
+    print '*';
+    // @codeCoverageIgnoreEnd
+}
+
+exit; // @codeCoverageIgnore
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+/**
  * @coversDefaultClass \Foo\CoveredClass
  */
 class CoversDefaultClassTest extends PHPUnit_Framework_TestCase
@@ -2198,6 +2284,64 @@ class ArrayGuestbookTest extends PHPUnit_Extensions_Database_TestCase
 {
     protected function getDataSet()
     {
+        return new MyApp_DbUnit_ArrayDataSet(
+            [
+                'guestbook' =&gt; [
+                    [
+                        'id' =&gt; 1,
+                        'content' =&gt; 'Hello buddy!',
+                        'user' =&gt; 'joe',
+                        'created' =&gt; '2010-04-24 17:15:23'
+                    ],
+                    [
+                        'id' =&gt; 2,
+                        'content' =&gt; 'I like it!',
+                        'user' =&gt; null,
+                        'created' =&gt; '2010-04-26 12:14:20'
+                    ],
+                ],
+            ]
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083301Z" creationid="Wynn" creationdate="20160418T083301Z">
+        <seg>&lt;?php
+class ArrayGuestbookTest extends PHPUnit_Extensions_Database_TestCase
+{
+    protected function getDataSet()
+    {
+        return new MyApp_DbUnit_ArrayDataSet(
+            [
+                'guestbook' =&gt; [
+                    [
+                        'id' =&gt; 1,
+                        'content' =&gt; 'Hello buddy!',
+                        'user' =&gt; 'joe',
+                        'created' =&gt; '2010-04-24 17:15:23'
+                    ],
+                    [
+                        'id' =&gt; 2,
+                        'content' =&gt; 'I like it!',
+                        'user' =&gt; null,
+                        'created' =&gt; '2010-04-26 12:14:20'
+                    ],
+                ],
+            ]
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ArrayGuestbookTest extends PHPUnit_Extensions_Database_TestCase
+{
+    protected function getDataSet()
+    {
         return new MyApp_DbUnit_ArrayDataSet(array(
             'guestbook' =&gt; array(
                 array('id' =&gt; 1, 'content' =&gt; 'Hello buddy!', 'user' =&gt; 'joe', 'created' =&gt; '2010-04-24 17:15:23'),
@@ -2220,6 +2364,30 @@ class ArrayGuestbookTest extends PHPUnit_Extensions_Database_TestCase
                 array('id' =&gt; 2, 'content' =&gt; 'I like it!',   'user' =&gt; null,  'created' =&gt; '2010-04-26 12:14:20'),
             ),
         ));
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ArrayHasKeyTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertArrayHasKey('foo', ['bar' =&gt; 'baz']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083031Z" creationid="Wynn" creationdate="20160418T083031Z">
+        <seg>&lt;?php
+class ArrayHasKeyTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertArrayHasKey('foo', ['bar' =&gt; 'baz']);
     }
 }
 ?&gt;</seg>
@@ -2808,6 +2976,30 @@ class ClassHasAttributeTest extends PHPUnit_Framework_TestCase
     <tu>
       <tuv lang="EN-US">
         <seg>&lt;?php
+class ClassHasAttributeTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertClassHasAttribute('foo', stdClass::class);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083035Z" creationid="Wynn" creationdate="20160418T083035Z">
+        <seg>&lt;?php
+class ClassHasAttributeTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertClassHasAttribute('foo', stdClass::class);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
 class ClassHasStaticAttributeTest extends PHPUnit_Framework_TestCase
 {
     public function testFailure()
@@ -2824,6 +3016,30 @@ class ClassHasStaticAttributeTest extends PHPUnit_Framework_TestCase
     public function testFailure()
     {
         $this-&gt;assertClassHasStaticAttribute('foo', 'stdClass');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ClassHasStaticAttributeTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertClassHasStaticAttribute('foo', stdClass::class);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083037Z" creationid="Wynn" creationdate="20160418T083037Z">
+        <seg>&lt;?php
+class ClassHasStaticAttributeTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertClassHasStaticAttribute('foo', stdClass::class);
     }
 }
 ?&gt;</seg>
@@ -2908,6 +3124,32 @@ class ConnectionTest extends PHPUnit_Extensions_Database_TestCase
 {
     public function testCreateDataSet()
     {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083307Z" creationid="Wynn" creationdate="20160418T083307Z">
+        <seg>&lt;?php
+class ConnectionTest extends PHPUnit_Extensions_Database_TestCase
+{
+    public function testCreateDataSet()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ConnectionTest extends PHPUnit_Extensions_Database_TestCase
+{
+    public function testCreateDataSet()
+    {
         $tableNames = array('guestbook');
         $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
     }
@@ -2922,6 +3164,32 @@ class ConnectionTest extends PHPUnit_Extensions_Database_TestCase
     {
         $tableNames = array('guestbook');
         $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ConnectionTest extends PHPUnit_Extensions_Database_TestCase
+{
+    public function testCreateQueryTable()
+    {
+        $tableNames = ['guestbook'];
+        $queryTable = $this-&gt;getConnection()-&gt;createQueryTable('guestbook', 'SELECT * FROM guestbook');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083308Z" creationid="Wynn" creationdate="20160418T083308Z">
+        <seg>&lt;?php
+class ConnectionTest extends PHPUnit_Extensions_Database_TestCase
+{
+    public function testCreateQueryTable()
+    {
+        $tableNames = ['guestbook'];
+        $queryTable = $this-&gt;getConnection()-&gt;createQueryTable('guestbook', 'SELECT * FROM guestbook');
     }
 }
 ?&gt;</seg>
@@ -2984,6 +3252,36 @@ class ContainsOnlyInstancesOfTest extends PHPUnit_Framework_TestCase
 {
     public function testFailure()
     {
+        $this-&gt;assertContainsOnlyInstancesOf(
+            Foo::class,
+            [new Foo, new Bar, new Foo]
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083132Z" creationid="Wynn" creationdate="20160418T083132Z">
+        <seg>&lt;?php
+class ContainsOnlyInstancesOfTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContainsOnlyInstancesOf(
+            Foo::class,
+            [new Foo, new Bar, new Foo]
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ContainsOnlyInstancesOfTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
         $this-&gt;assertContainsOnlyInstancesOf('Foo', array(new Foo(), new Bar(), new Foo()));
     }
 }
@@ -2996,6 +3294,30 @@ class ContainsOnlyInstancesOfTest extends PHPUnit_Framework_TestCase
     public function testFailure()
     {
         $this-&gt;assertContainsOnlyInstancesOf('Foo', array(new Foo(), new Bar(), new Foo()));
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ContainsOnlyTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContainsOnly('string', ['1', '2', 3]);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083120Z" creationid="Wynn" creationdate="20160418T083120Z">
+        <seg>&lt;?php
+class ContainsOnlyTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContainsOnly('string', ['1', '2', 3]);
     }
 }
 ?&gt;</seg>
@@ -3090,6 +3412,30 @@ class ContainsTest extends PHPUnit_Framework_TestCase
 {
     public function testFailure()
     {
+        $this-&gt;assertContains(4, [1, 2, 3]);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083040Z" creationid="Wynn" creationdate="20160418T083040Z">
+        <seg>&lt;?php
+class ContainsTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContains(4, [1, 2, 3]);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class ContainsTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
         $this-&gt;assertContains(4, array(1, 2, 3));
     }
 }
@@ -3102,6 +3448,30 @@ class ContainsTest extends PHPUnit_Framework_TestCase
     public function testFailure()
     {
         $this-&gt;assertContains(4, array(1, 2, 3));
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class CountTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertCount(0, ['foo']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083135Z" creationid="Wynn" creationdate="20160418T083135Z">
+        <seg>&lt;?php
+class CountTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertCount(0, ['foo']);
     }
 }
 ?&gt;</seg>
@@ -3366,6 +3736,156 @@ $result = PHPUnit_TextUI_TestRunner::run($test);
     <tu>
       <tuv lang="EN-US">
         <seg>&lt;?php
+class DataDrivenTest implements PHPUnit_Framework_Test
+{
+    private $lines;
+
+    public function __construct($dataFile)
+    {
+        $this-&gt;lines = file($dataFile);
+    }
+
+    public function count()
+    {
+        return 1;
+    }
+
+    public function run(PHPUnit_Framework_TestResult $result = null)
+    {
+        if ($result === null) {
+            $result = new PHPUnit_Framework_TestResult;
+        }
+
+        foreach ($this-&gt;lines as $line) {
+            $result-&gt;startTest($this);
+            PHP_Timer::start();
+            $stopTime = null;
+
+            list($expected, $actual) = explode(';', $line);
+
+            try {
+                PHPUnit_Framework_Assert::assertEquals(
+                  trim($expected), trim($actual)
+                );
+            }
+
+            catch (PHPUnit_Framework_AssertionFailedError $e) {
+                $stopTime = PHP_Timer::stop();
+                $result-&gt;addFailure($this, $e, $stopTime);
+            }
+
+            catch (Exception $e) {
+                $stopTime = PHP_Timer::stop();
+                $result-&gt;addError($this, $e, $stopTime);
+            }
+
+            if ($stopTime === null) {
+                $stopTime = PHP_Timer::stop();
+            }
+
+            $result-&gt;endTest($this, $stopTime);
+        }
+
+        return $result;
+    }
+}
+
+$test = new DataDrivenTest('data_file.csv');
+$result = PHPUnit_TextUI_TestRunner::run($test);
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083311Z" creationid="Wynn" creationdate="20160418T083311Z">
+        <seg>&lt;?php
+class DataDrivenTest implements PHPUnit_Framework_Test
+{
+    private $lines;
+
+    public function __construct($dataFile)
+    {
+        $this-&gt;lines = file($dataFile);
+    }
+
+    public function count()
+    {
+        return 1;
+    }
+
+    public function run(PHPUnit_Framework_TestResult $result = null)
+    {
+        if ($result === null) {
+            $result = new PHPUnit_Framework_TestResult;
+        }
+
+        foreach ($this-&gt;lines as $line) {
+            $result-&gt;startTest($this);
+            PHP_Timer::start();
+            $stopTime = null;
+
+            list($expected, $actual) = explode(';', $line);
+
+            try {
+                PHPUnit_Framework_Assert::assertEquals(
+                  trim($expected), trim($actual)
+                );
+            }
+
+            catch (PHPUnit_Framework_AssertionFailedError $e) {
+                $stopTime = PHP_Timer::stop();
+                $result-&gt;addFailure($this, $e, $stopTime);
+            }
+
+            catch (Exception $e) {
+                $stopTime = PHP_Timer::stop();
+                $result-&gt;addError($this, $e, $stopTime);
+            }
+
+            if ($stopTime === null) {
+                $stopTime = PHP_Timer::stop();
+            }
+
+            $result-&gt;endTest($this, $stopTime);
+        }
+
+        return $result;
+    }
+}
+
+$test = new DataDrivenTest('data_file.csv');
+$result = PHPUnit_TextUI_TestRunner::run($test);
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class DataSetAssertionsTest extends PHPUnit_Extensions_Database_TestCase
+{
+    public function testCreateDataSetAssertion()
+    {
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet(['guestbook']);
+        $expectedDataSet = $this-&gt;createFlatXmlDataSet('guestbook.xml');
+        $this-&gt;assertDataSetsEqual($expectedDataSet, $dataSet);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083309Z" creationid="Wynn" creationdate="20160418T083309Z">
+        <seg>&lt;?php
+class DataSetAssertionsTest extends PHPUnit_Extensions_Database_TestCase
+{
+    public function testCreateDataSetAssertion()
+    {
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet(['guestbook']);
+        $expectedDataSet = $this-&gt;createFlatXmlDataSet('guestbook.xml');
+        $this-&gt;assertDataSetsEqual($expectedDataSet, $dataSet);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
 class DataSetAssertionsTest extends PHPUnit_Extensions_Database_TestCase
 {
     public function testCreateDataSetAssertion()
@@ -3418,6 +3938,64 @@ class DataSetAssertionsTest extends PHPUnit_Extensions_Database_TestCase
         $expectedDataSet = $this-&gt;createFlatXmlDataSet('guestbook.xml');
 
         $this-&gt;assertDataSetsEqual($expectedDataSet, $dataSet);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class DataSetFilterTest extends PHPUnit_Extensions_Database_TestCase
+{
+    public function testIncludeFilteredGuestbook()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+
+        $filterDataSet = new PHPUnit_Extensions_Database_DataSet_DataSetFilter($dataSet);
+        $filterDataSet-&gt;addIncludeTables(['guestbook']);
+        $filterDataSet-&gt;setIncludeColumnsForTable('guestbook', ['id', 'content']);
+        // ..
+    }
+
+    public function testExcludeFilteredGuestbook()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+
+        $filterDataSet = new PHPUnit_Extensions_Database_DataSet_DataSetFilter($dataSet);
+        $filterDataSet-&gt;addExcludeTables(['foo', 'bar', 'baz']); // only keep the guestbook table!
+        $filterDataSet-&gt;setExcludeColumnsForTable('guestbook', ['user', 'created']);
+        // ..
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083305Z" creationid="Wynn" creationdate="20160418T083305Z">
+        <seg>&lt;?php
+class DataSetFilterTest extends PHPUnit_Extensions_Database_TestCase
+{
+    public function testIncludeFilteredGuestbook()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+
+        $filterDataSet = new PHPUnit_Extensions_Database_DataSet_DataSetFilter($dataSet);
+        $filterDataSet-&gt;addIncludeTables(['guestbook']);
+        $filterDataSet-&gt;setIncludeColumnsForTable('guestbook', ['id', 'content']);
+        // ..
+    }
+
+    public function testExcludeFilteredGuestbook()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+
+        $filterDataSet = new PHPUnit_Extensions_Database_DataSet_DataSetFilter($dataSet);
+        $filterDataSet-&gt;addExcludeTables(['foo', 'bar', 'baz']); // only keep the guestbook table!
+        $filterDataSet-&gt;setExcludeColumnsForTable('guestbook', ['user', 'created']);
+        // ..
     }
 }
 ?&gt;</seg>
@@ -3714,6 +4292,44 @@ class DatabaseTest extends PHPUnit_Framework_TestCase
     <tu>
       <tuv lang="EN-US">
         <seg>&lt;?php
+class DatabaseTest extends PHPUnit_Framework_TestCase
+{
+    protected static $dbh;
+
+    public static function setUpBeforeClass()
+    {
+        self::$dbh = new PDO('sqlite::memory:');
+    }
+
+    public static function tearDownAfterClass()
+    {
+        self::$dbh = null;
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083314Z" creationid="Wynn" creationdate="20160418T083314Z">
+        <seg>&lt;?php
+class DatabaseTest extends PHPUnit_Framework_TestCase
+{
+    protected static $dbh;
+
+    public static function setUpBeforeClass()
+    {
+        self::$dbh = new PDO('sqlite::memory:');
+    }
+
+    public static function tearDownAfterClass()
+    {
+        self::$dbh = null;
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
 class DependencyAndDataProviderComboTest extends PHPUnit_Framework_TestCase
 {
     public function provider()
@@ -3830,6 +4446,30 @@ class EmptyTest extends PHPUnit_Framework_TestCase
 {
     public function testFailure()
     {
+        $this-&gt;assertEmpty(['foo']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083135Z" creationid="Wynn" creationdate="20160418T083135Z">
+        <seg>&lt;?php
+class EmptyTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertEmpty(['foo']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class EmptyTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
         $this-&gt;assertEmpty(array('foo'));
     }
 }
@@ -3923,6 +4563,114 @@ class EqualXMLStructureTest extends PHPUnit_Framework_TestCase
 
         $this-&gt;assertEqualXMLStructure(
           $expected-&gt;firstChild, $actual-&gt;firstChild, TRUE
+        );
+    }
+
+    public function testFailureWithDifferentChildrenCount()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $this-&gt;assertEqualXMLStructure(
+          $expected-&gt;firstChild, $actual-&gt;firstChild
+        );
+    }
+
+    public function testFailureWithDifferentChildren()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;foo&gt;&lt;baz/&gt;&lt;baz/&gt;&lt;baz/&gt;&lt;/foo&gt;');
+
+        $this-&gt;assertEqualXMLStructure(
+          $expected-&gt;firstChild, $actual-&gt;firstChild
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class EqualXMLStructureTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailureWithDifferentNodeNames()
+    {
+        $expected = new DOMElement('foo');
+        $actual = new DOMElement('bar');
+
+        $this-&gt;assertEqualXMLStructure($expected, $actual);
+    }
+
+    public function testFailureWithDifferentNodeAttributes()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo bar="true" /&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;foo/&gt;');
+
+        $this-&gt;assertEqualXMLStructure(
+          $expected-&gt;firstChild, $actual-&gt;firstChild, true
+        );
+    }
+
+    public function testFailureWithDifferentChildrenCount()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $this-&gt;assertEqualXMLStructure(
+          $expected-&gt;firstChild, $actual-&gt;firstChild
+        );
+    }
+
+    public function testFailureWithDifferentChildren()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;foo&gt;&lt;baz/&gt;&lt;baz/&gt;&lt;baz/&gt;&lt;/foo&gt;');
+
+        $this-&gt;assertEqualXMLStructure(
+          $expected-&gt;firstChild, $actual-&gt;firstChild
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083141Z" creationid="Wynn" creationdate="20160418T083141Z">
+        <seg>&lt;?php
+class EqualXMLStructureTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailureWithDifferentNodeNames()
+    {
+        $expected = new DOMElement('foo');
+        $actual = new DOMElement('bar');
+
+        $this-&gt;assertEqualXMLStructure($expected, $actual);
+    }
+
+    public function testFailureWithDifferentNodeAttributes()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo bar="true" /&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;foo/&gt;');
+
+        $this-&gt;assertEqualXMLStructure(
+          $expected-&gt;firstChild, $actual-&gt;firstChild, true
         );
     }
 
@@ -4124,6 +4872,30 @@ class EqualsTest extends PHPUnit_Framework_TestCase
     public function testFailure3()
     {
         $this-&gt;assertEquals("foo\nbar\nbaz\n", "foo\nbah\nbaz\n");
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class EqualsTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertEquals(['a', 'b', 'c'], ['a', 'c', 'd']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083143Z" creationid="Wynn" creationdate="20160418T083143Z">
+        <seg>&lt;?php
+class EqualsTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertEquals(['a', 'b', 'c'], ['a', 'c', 'd']);
     }
 }
 ?&gt;</seg>
@@ -4660,6 +5432,30 @@ class FalseTest extends PHPUnit_Framework_TestCase
     public function testFailure()
     {
         $this-&gt;assertFalse(TRUE);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class FalseTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertFalse(true);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083154Z" creationid="Wynn" creationdate="20160418T083154Z">
+        <seg>&lt;?php
+class FalseTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertFalse(true);
     }
 }
 ?&gt;</seg>
@@ -5704,6 +6500,30 @@ class InstanceOfTest extends PHPUnit_Framework_TestCase
     <tu>
       <tuv lang="EN-US">
         <seg>&lt;?php
+class InstanceOfTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertInstanceOf(RuntimeException::class, new Exception);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083156Z" creationid="Wynn" creationdate="20160418T083156Z">
+        <seg>&lt;?php
+class InstanceOfTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertInstanceOf(RuntimeException::class, new Exception);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
 class InternalTypeTest extends PHPUnit_Framework_TestCase
 {
     public function testFailure()
@@ -5759,6 +6579,34 @@ class JsonStringEqualsJsonFileTest extends PHPUnit_Framework_TestCase
     public function testFailure()
     {
         $this-&gt;assertJsonStringEqualsJsonFile(
+            'path/to/fixture/file', json_encode(['Mascott' =&gt; 'ux'])
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083200Z" creationid="Wynn" creationdate="20160418T083200Z">
+        <seg>&lt;?php
+class JsonStringEqualsJsonFileTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonFile(
+            'path/to/fixture/file', json_encode(['Mascott' =&gt; 'ux'])
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class JsonStringEqualsJsonFileTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonFile(
           'path/to/fixture/file', json_encode(array("Mascott" =&gt; "ux"))
         );
     }
@@ -5773,6 +6621,36 @@ class JsonStringEqualsJsonFileTest extends PHPUnit_Framework_TestCase
     {
         $this-&gt;assertJsonStringEqualsJsonFile(
           'path/to/fixture/file', json_encode(array("Mascott" =&gt; "ux"))
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class JsonStringEqualsJsonStringTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonString(
+            json_encode(['Mascott' =&gt; 'Tux']),
+            json_encode(['Mascott' =&gt; 'ux'])
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083202Z" creationid="Wynn" creationdate="20160418T083202Z">
+        <seg>&lt;?php
+class JsonStringEqualsJsonStringTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonString(
+            json_encode(['Mascott' =&gt; 'Tux']),
+            json_encode(['Mascott' =&gt; 'ux'])
         );
     }
 }
@@ -5953,6 +6831,100 @@ class MyApp_DbUnit_ArrayDataSet extends PHPUnit_Extensions_Database_DataSet_Abst
     /**
      * @var array
      */
+    protected $tables = [];
+
+    /**
+     * @param array $data
+     */
+    public function __construct(array $data)
+    {
+        foreach ($data AS $tableName =&gt; $rows) {
+            $columns = [];
+            if (isset($rows[0])) {
+                $columns = array_keys($rows[0]);
+            }
+
+            $metaData = new PHPUnit_Extensions_Database_DataSet_DefaultTableMetaData($tableName, $columns);
+            $table = new PHPUnit_Extensions_Database_DataSet_DefaultTable($metaData);
+
+            foreach ($rows AS $row) {
+                $table-&gt;addRow($row);
+            }
+            $this-&gt;tables[$tableName] = $table;
+        }
+    }
+
+    protected function createIterator($reverse = false)
+    {
+        return new PHPUnit_Extensions_Database_DataSet_DefaultTableIterator($this-&gt;tables, $reverse);
+    }
+
+    public function getTable($tableName)
+    {
+        if (!isset($this-&gt;tables[$tableName])) {
+            throw new InvalidArgumentException("$tableName is not a table in the current database.");
+        }
+
+        return $this-&gt;tables[$tableName];
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083302Z" creationid="Wynn" creationdate="20160418T083302Z">
+        <seg>&lt;?php
+class MyApp_DbUnit_ArrayDataSet extends PHPUnit_Extensions_Database_DataSet_AbstractDataSet
+{
+    /**
+     * @var array
+     */
+    protected $tables = [];
+
+    /**
+     * @param array $data
+     */
+    public function __construct(array $data)
+    {
+        foreach ($data AS $tableName =&gt; $rows) {
+            $columns = [];
+            if (isset($rows[0])) {
+                $columns = array_keys($rows[0]);
+            }
+
+            $metaData = new PHPUnit_Extensions_Database_DataSet_DefaultTableMetaData($tableName, $columns);
+            $table = new PHPUnit_Extensions_Database_DataSet_DefaultTable($metaData);
+
+            foreach ($rows AS $row) {
+                $table-&gt;addRow($row);
+            }
+            $this-&gt;tables[$tableName] = $table;
+        }
+    }
+
+    protected function createIterator($reverse = false)
+    {
+        return new PHPUnit_Extensions_Database_DataSet_DefaultTableIterator($this-&gt;tables, $reverse);
+    }
+
+    public function getTable($tableName)
+    {
+        if (!isset($this-&gt;tables[$tableName])) {
+            throw new InvalidArgumentException("$tableName is not a table in the current database.");
+        }
+
+        return $this-&gt;tables[$tableName];
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class MyApp_DbUnit_ArrayDataSet extends PHPUnit_Extensions_Database_DataSet_AbstractDataSet
+{
+    /**
+     * @var array
+     */
     protected $tables = array();
 
     /**
@@ -6082,6 +7054,70 @@ class MyGuestbookTest extends PHPUnit_Extensions_Database_TestCase
     public function getDataSet()
     {
         return $this-&gt;createFlatXMLDataSet(dirname(__FILE__).'/_files/guestbook-seed.xml');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class MySqlGuestbookTest extends PHPUnit_Extensions_Database_TestCase
+{
+    /**
+     * @return PHPUnit_Extensions_Database_DB_IDatabaseConnection
+     */
+    public function getConnection()
+    {
+        $database = 'my_database';
+        $user = 'my_user';
+        $password = 'my_password';
+        $pdo = new PDO('mysql:...', $user, $password);
+        return $this-&gt;createDefaultDBConnection($pdo, $database);
+    }
+
+    public function testGuestbook()
+    {
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+        // ...
+    }
+
+    public function testFilteredGuestbook()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet($tableNames);
+        // ...
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083303Z" creationid="Wynn" creationdate="20160418T083303Z">
+        <seg>&lt;?php
+class MySqlGuestbookTest extends PHPUnit_Extensions_Database_TestCase
+{
+    /**
+     * @return PHPUnit_Extensions_Database_DB_IDatabaseConnection
+     */
+    public function getConnection()
+    {
+        $database = 'my_database';
+        $user = 'my_user';
+        $password = 'my_password';
+        $pdo = new PDO('mysql:...', $user, $password);
+        return $this-&gt;createDefaultDBConnection($pdo, $database);
+    }
+
+    public function testGuestbook()
+    {
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+        // ...
+    }
+
+    public function testFilteredGuestbook()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet($tableNames);
+        // ...
     }
 }
 ?&gt;</seg>
@@ -6416,6 +7452,62 @@ class PHPUnit_Framework_Constraint_IsTrue extends PHPUnit_Framework_Constraint
     <tu>
       <tuv lang="EN-US">
         <seg>&lt;?php
+class PHPUnit_Framework_Constraint_IsTrue extends PHPUnit_Framework_Constraint
+{
+    /**
+     * Evaluates the constraint for parameter $other. Returns true if the
+     * constraint is met, false otherwise.
+     *
+     * @param mixed $other Value or object to evaluate.
+     * @return bool
+     */
+    public function matches($other)
+    {
+        return $other === true;
+    }
+
+    /**
+     * Returns a string representation of the constraint.
+     *
+     * @return string
+     */
+    public function toString()
+    {
+        return 'is true';
+    }
+}?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083310Z" creationid="Wynn" creationdate="20160418T083310Z">
+        <seg>&lt;?php
+class PHPUnit_Framework_Constraint_IsTrue extends PHPUnit_Framework_Constraint
+{
+    /**
+     * Evaluates the constraint for parameter $other. Returns true if the
+     * constraint is met, false otherwise.
+     *
+     * @param mixed $other Value or object to evaluate.
+     * @return bool
+     */
+    public function matches($other)
+    {
+        return $other === true;
+    }
+
+    /**
+     * Returns a string representation of the constraint.
+     *
+     * @return string
+     */
+    public function toString()
+    {
+        return 'is true';
+    }
+}?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
 class RegExpTest extends PHPUnit_Framework_TestCase
 {
     public function testFailure()
@@ -6545,6 +7637,42 @@ class SampleTest extends PHPUnit_Framework_TestCase
         // 在这里停止，并将此测试标记为未完成。
         $this-&gt;markTestIncomplete(
           '此测试目前尚未实现。'
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class SampleTest extends PHPUnit_Framework_TestCase
+{
+    public function testSomething()
+    {
+        // Optional: Test anything here, if you want.
+        $this-&gt;assertTrue(true, 'This should already work.');
+
+        // Stop here and mark this test as incomplete.
+        $this-&gt;markTestIncomplete(
+          'This test has not been implemented yet.'
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083317Z" creationid="Wynn" creationdate="20160418T083317Z">
+        <seg>&lt;?php
+class SampleTest extends PHPUnit_Framework_TestCase
+{
+    public function testSomething()
+    {
+        // Optional: Test anything here, if you want.
+        $this-&gt;assertTrue(true, 'This should already work.');
+
+        // Stop here and mark this test as incomplete.
+        $this-&gt;markTestIncomplete(
+          'This test has not been implemented yet.'
         );
     }
 }
@@ -6990,6 +8118,72 @@ class SomeClass
     public function doSomething()
     {
         // 随便做点什么。
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class StackTest extends PHPUnit_Framework_TestCase
+{
+    protected $stack;
+
+    protected function setUp()
+    {
+        $this-&gt;stack = [];
+    }
+
+    public function testEmpty()
+    {
+        $this-&gt;assertTrue(empty($this-&gt;stack));
+    }
+
+    public function testPush()
+    {
+        array_push($this-&gt;stack, 'foo');
+        $this-&gt;assertEquals('foo', $this-&gt;stack[count($this-&gt;stack)-1]);
+        $this-&gt;assertFalse(empty($this-&gt;stack));
+    }
+
+    public function testPop()
+    {
+        array_push($this-&gt;stack, 'foo');
+        $this-&gt;assertEquals('foo', array_pop($this-&gt;stack));
+        $this-&gt;assertTrue(empty($this-&gt;stack));
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083312Z" creationid="Wynn" creationdate="20160418T083312Z">
+        <seg>&lt;?php
+class StackTest extends PHPUnit_Framework_TestCase
+{
+    protected $stack;
+
+    protected function setUp()
+    {
+        $this-&gt;stack = [];
+    }
+
+    public function testEmpty()
+    {
+        $this-&gt;assertTrue(empty($this-&gt;stack));
+    }
+
+    public function testPush()
+    {
+        array_push($this-&gt;stack, 'foo');
+        $this-&gt;assertEquals('foo', $this-&gt;stack[count($this-&gt;stack)-1]);
+        $this-&gt;assertFalse(empty($this-&gt;stack));
+    }
+
+    public function testPop()
+    {
+        array_push($this-&gt;stack, 'foo');
+        $this-&gt;assertEquals('foo', array_pop($this-&gt;stack));
+        $this-&gt;assertTrue(empty($this-&gt;stack));
     }
 }
 ?&gt;</seg>
@@ -7950,6 +9144,116 @@ class TemplateMethodsTest extends PHPUnit_Framework_TestCase
     <tu>
       <tuv lang="EN-US">
         <seg>&lt;?php
+class TemplateMethodsTest extends PHPUnit_Framework_TestCase
+{
+    public static function setUpBeforeClass()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function setUp()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function assertPreConditions()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    public function testOne()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+        $this-&gt;assertTrue(true);
+    }
+
+    public function testTwo()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+        $this-&gt;assertTrue(false);
+    }
+
+    protected function assertPostConditions()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function tearDown()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    public static function tearDownAfterClass()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function onNotSuccessfulTest(Exception $e)
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+        throw $e;
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083313Z" creationid="Wynn" creationdate="20160418T083313Z">
+        <seg>&lt;?php
+class TemplateMethodsTest extends PHPUnit_Framework_TestCase
+{
+    public static function setUpBeforeClass()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function setUp()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function assertPreConditions()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    public function testOne()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+        $this-&gt;assertTrue(true);
+    }
+
+    public function testTwo()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+        $this-&gt;assertTrue(false);
+    }
+
+    protected function assertPostConditions()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function tearDown()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    public static function tearDownAfterClass()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function onNotSuccessfulTest(Exception $e)
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+        throw $e;
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
 class TrueTest extends PHPUnit_Framework_TestCase
 {
     public function testFailure()
@@ -7966,6 +9270,30 @@ class TrueTest extends PHPUnit_Framework_TestCase
     public function testFailure()
     {
         $this-&gt;assertTrue(FALSE);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class TrueTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertTrue(false);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083251Z" creationid="Wynn" creationdate="20160418T083251Z">
+        <seg>&lt;?php
+class TrueTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertTrue(false);
     }
 }
 ?&gt;</seg>
@@ -9294,6 +10622,84 @@ class PHPUnit_Extensions_RepeatedTest extends PHPUnit_Extensions_TestDecorator
     public function run(PHPUnit_Framework_TestResult $result = NULL)
     {
         if ($result === NULL) {
+            $result = $this-&gt;createResult();
+        }
+
+        for ($i = 0; $i &lt; $this-&gt;timesRepeat &amp;&amp; !$result-&gt;shouldStop(); $i++) {
+            $this-&gt;test-&gt;run($result);
+        }
+
+        return $result;
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+require_once 'PHPUnit/Extensions/TestDecorator.php';
+
+class PHPUnit_Extensions_RepeatedTest extends PHPUnit_Extensions_TestDecorator
+{
+    private $timesRepeat = 1;
+
+    public function __construct(PHPUnit_Framework_Test $test, $timesRepeat = 1)
+    {
+        parent::__construct($test);
+
+        if (is_integer($timesRepeat) &amp;&amp;
+            $timesRepeat &gt;= 0) {
+            $this-&gt;timesRepeat = $timesRepeat;
+        }
+    }
+
+    public function count()
+    {
+        return $this-&gt;timesRepeat * $this-&gt;test-&gt;count();
+    }
+
+    public function run(PHPUnit_Framework_TestResult $result = null)
+    {
+        if ($result === null) {
+            $result = $this-&gt;createResult();
+        }
+
+        for ($i = 0; $i &lt; $this-&gt;timesRepeat &amp;&amp; !$result-&gt;shouldStop(); $i++) {
+            $this-&gt;test-&gt;run($result);
+        }
+
+        return $result;
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083311Z" creationid="Wynn" creationdate="20160418T083311Z">
+        <seg>&lt;?php
+require_once 'PHPUnit/Extensions/TestDecorator.php';
+
+class PHPUnit_Extensions_RepeatedTest extends PHPUnit_Extensions_TestDecorator
+{
+    private $timesRepeat = 1;
+
+    public function __construct(PHPUnit_Framework_Test $test, $timesRepeat = 1)
+    {
+        parent::__construct($test);
+
+        if (is_integer($timesRepeat) &amp;&amp;
+            $timesRepeat &gt;= 0) {
+            $this-&gt;timesRepeat = $timesRepeat;
+        }
+    }
+
+    public function count()
+    {
+        return $this-&gt;timesRepeat * $this-&gt;test-&gt;count();
+    }
+
+    public function run(PHPUnit_Framework_TestResult $result = null)
+    {
+        if ($result === null) {
             $result = $this-&gt;createResult();
         }
 
@@ -62895,6 +64301,30 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Constraint that asserts that the value it is evaluated is &lt;l0&gt;false&lt;/l0&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083220Z" creationid="Wynn" creationdate="20160418T083220Z">
+        <seg>此约束断言所评定的值为 &lt;l0&gt;false&lt;/l0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Constraint that asserts that the value it is evaluated is &lt;l0&gt;null&lt;/l0&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083228Z" creationid="Wynn" creationdate="20160418T083228Z">
+        <seg>此约束断言所评定的值为 &lt;l0&gt;null&lt;/l0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Constraint that asserts that the value it is evaluated is &lt;l0&gt;true&lt;/l0&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083236Z" creationid="Wynn" creationdate="20160418T083236Z">
+        <seg>此约束断言所评定的值为 &lt;l0&gt;true&lt;/l0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Constraint that checks if a value is equal to an attribute of a class or of an object.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150306T083424Z" creationid="Wynn" creationdate="20150306T083424Z">
@@ -64259,6 +65689,14 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150303T064140Z" creationid="Wynn" creationdate="20150303T064140Z">
         <seg>如果 &lt;l0&gt;$ignoreCase&lt;/l0&gt; 为 &lt;l1&gt;TRUE&lt;/l1&gt;，测试将按大小写不敏感的方式进行。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;l0&gt;$ignoreCase&lt;/l0&gt; is &lt;l1&gt;true&lt;/l1&gt;, the test will be case insensitive.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083109Z" creationid="Wynn" creationdate="20160418T083109Z">
+        <seg>如果 &lt;l0&gt;$ignoreCase&lt;/l0&gt; 为 &lt;l1&gt;true&lt;/l1&gt;，测试将按大小写不敏感的方式进行。</seg>
       </tuv>
     </tu>
     <tu>
@@ -67621,6 +69059,22 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if &lt;l1&gt;$condition&lt;/l1&gt; is &lt;l2&gt;false&lt;/l2&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083244Z" creationid="Wynn" creationdate="20160418T083244Z">
+        <seg>当 &lt;l1&gt;$condition&lt;/l1&gt; 为 &lt;l2&gt;false&lt;/l2&gt; 时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if &lt;l1&gt;$condition&lt;/l1&gt; is &lt;l2&gt;true&lt;/l2&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083153Z" creationid="Wynn" creationdate="20160418T083153Z">
+        <seg>当 &lt;l1&gt;$condition&lt;/l1&gt; 为 &lt;l2&gt;true&lt;/l2&gt; 时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if &lt;l1&gt;$haystack&lt;/l1&gt; does not contain only instances of class &lt;l2&gt;$classname&lt;/l2&gt;.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150303T083055Z" creationid="Wynn" creationdate="20150303T083055Z">
@@ -67689,6 +69143,14 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150305T065603Z" creationid="Wynn" creationdate="20150305T065603Z">
         <seg>当 &lt;l1&gt;$actual&lt;/l1&gt; 不是  &lt;l2&gt;NULL&lt;/l2&gt; 时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if &lt;l1&gt;$variable&lt;/l1&gt; is not &lt;l2&gt;null&lt;/l2&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083212Z" creationid="Wynn" creationdate="20160418T083212Z">
+        <seg>当 &lt;l1&gt;$actual&lt;/l1&gt; 不是  &lt;l2&gt;null&lt;/l2&gt; 时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
       </tuv>
     </tu>
     <tu>
@@ -68561,6 +70023,22 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20151222T041426Z" creationid="Wynn" creationdate="20151222T041426Z">
         <seg>如果用 &lt;u2&gt;Composer&lt;/u2&gt; 来管理项目的依赖关系，只要在项目的 &lt;l1&gt;composer.json&lt;/l1&gt; 文件中简单地加上对 &lt;l0&gt;phpunit/phpunit&lt;/l0&gt; 的依赖关系即可。下面是一个最小化的 &lt;l3&gt;composer.json&lt;/l3&gt; 文件的例子，只定义了一个对 PHPUnit 5.1 的开发时(development-time)依赖：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Simply add a dependency on &lt;l0&gt;phpunit/phpunit&lt;/l0&gt; to your project's &lt;l1&gt;composer.json&lt;/l1&gt; file if you use &lt;u2&gt;Composer&lt;/u2&gt; to manage the dependencies of your project. Here is a minimal example of a &lt;l3&gt;composer.json&lt;/l3&gt; file that just defines a development-time dependency on PHPUnit 5.3:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083022Z" creationid="Wynn" creationdate="20160418T083022Z">
+        <seg>如果用 &lt;u2&gt;Composer&lt;/u2&gt; 来管理项目的依赖关系，只要在项目的 &lt;l1&gt;composer.json&lt;/l1&gt; 文件中简单地加上对 &lt;l0&gt;phpunit/phpunit&lt;/l0&gt; 的依赖关系即可。下面是一个最小化的 &lt;l3&gt;composer.json&lt;/l3&gt; 文件的例子，只定义了一个对 PHPUnit 5.3 的开发时(development-time)依赖：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Simply add a dependency on &lt;l0&gt;phpunit/phpunit&lt;/l0&gt; to your project's &lt;l1&gt;composer.json&lt;/l1&gt; file if you use &lt;u2&gt;Composer&lt;/u2&gt; to manage the dependencies of your project. Here is a minimal example of a &lt;l3&gt;composer.json&lt;/l3&gt; file that just defines a development-time dependency on PHPUnit 5.4:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083325Z" creationid="Wynn" creationdate="20160418T083325Z">
+        <seg>如果用 &lt;u2&gt;Composer&lt;/u2&gt; 来管理项目的依赖关系，只要在项目的 &lt;l1&gt;composer.json&lt;/l1&gt; 文件中简单地加上对 &lt;l0&gt;phpunit/phpunit&lt;/l0&gt; 的依赖关系即可。下面是一个最小化的 &lt;l3&gt;composer.json&lt;/l3&gt; 文件的例子，只定义了一个对 PHPUnit 5.4 的开发时(development-time)依赖：</seg>
       </tuv>
     </tu>
     <tu>
@@ -73503,6 +74981,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>assertContains(string $needle, string $haystack[, string $message = '', boolean $ignoreCase = false])</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083044Z" creationid="Wynn" creationdate="20160418T083044Z">
+        <seg>assertContains(string $needle, string $haystack[, string $message = '', boolean $ignoreCase = false])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>assertContainsOnly($type, $haystack, $isNativeType = NULL, $message = '')</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150330T025521Z" creationid="Wynn" creationdate="20150330T025521Z">
@@ -73523,6 +75009,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T092911Z" creationid="Wynn" creationdate="20150309T092911Z">
         <seg>assertContainsOnly(string $type, Iterator|array $haystack[, boolean $isNativeType = NULL, string $message = ''])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertContainsOnly(string $type, Iterator|array $haystack[, boolean $isNativeType = null, string $message = ''])</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083111Z" creationid="Wynn" creationdate="20160418T083111Z">
+        <seg>assertContainsOnly(string $type, Iterator|array $haystack[, boolean $isNativeType = null, string $message = ''])</seg>
       </tuv>
     </tu>
     <tu>
@@ -73619,6 +75113,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T092947Z" creationid="Wynn" creationdate="20150309T092947Z">
         <seg>assertEqualXMLStructure(DOMElement $expectedElement, DOMElement $actualElement[, boolean $checkAttributes = FALSE, string $message = ''])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertEqualXMLStructure(DOMElement $expectedElement, DOMElement $actualElement[, boolean $checkAttributes = false, string $message = ''])</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083139Z" creationid="Wynn" creationdate="20160418T083139Z">
+        <seg>assertEqualXMLStructure(DOMElement $expectedElement, DOMElement $actualElement[, boolean $checkAttributes = false, string $message = ''])</seg>
       </tuv>
     </tu>
     <tu>
@@ -75425,6 +76927,24 @@ class MyClass
       <tuv lang="EN-US">
         <seg>class MyTest extends PHPUnit_Framework_TestCase
 {
+    protected $backupGlobalsBlacklist = ['globalVariable'];
+
+    // ...
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083315Z" creationid="Wynn" creationdate="20160418T083315Z">
+        <seg>class MyTest extends PHPUnit_Framework_TestCase
+{
+    protected $backupGlobalsBlacklist = ['globalVariable'];
+
+    // ...
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>class MyTest extends PHPUnit_Framework_TestCase
+{
     protected $backupGlobalsBlacklist = array('globalVariable');
 
     // ...
@@ -75434,6 +76954,28 @@ class MyClass
         <seg>class MyTest extends PHPUnit_Framework_TestCase
 {
     protected $backupGlobalsBlacklist = array('globalVariable');
+
+    // ...
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>class MyTest extends PHPUnit_Framework_TestCase
+{
+    protected $backupStaticAttributesBlacklist = [
+        'className' =&gt; ['attributeName']
+    ];
+
+    // ...
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083316Z" creationid="Wynn" creationdate="20160418T083316Z">
+        <seg>class MyTest extends PHPUnit_Framework_TestCase
+{
+    protected $backupStaticAttributesBlacklist = [
+        'className' =&gt; ['attributeName']
+    ];
 
     // ...
 }</seg>
@@ -75456,6 +76998,40 @@ class MyClass
     protected $backupStaticAttributesBlacklist = array(
       'className' =&gt; array('attributeName')
     );
+
+    // ...
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>class WebTest extends PHPUnit_Extensions_SeleniumTestCase
+{
+    public static $browsers = [
+        [
+            'name'    =&gt; 'Firefox on Linux',
+            'browser' =&gt; '*firefox /usr/lib/firefox/firefox-bin',
+            'host'    =&gt; 'my.linux.box',
+            'port'    =&gt; 4444,
+            'timeout' =&gt; 30000
+        ]
+    ];
+
+    // ...
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083259Z" creationid="Wynn" creationdate="20160418T083259Z">
+        <seg>class WebTest extends PHPUnit_Extensions_SeleniumTestCase
+{
+    public static $browsers = [
+        [
+            'name'    =&gt; 'Firefox on Linux',
+            'browser' =&gt; '*firefox /usr/lib/firefox/firefox-bin',
+            'host'    =&gt; 'my.linux.box',
+            'port'    =&gt; 4444,
+            'timeout' =&gt; 30000
+        ]
+    ];
 
     // ...
 }</seg>
@@ -75605,6 +77181,22 @@ class MyClass
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20151222T041434Z" creationid="Wynn" creationdate="20151222T041434Z">
         <seg>composer global require "phpunit/phpunit=5.1.*"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>composer global require "phpunit/phpunit=5.3.*"</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083029Z" creationid="Wynn" creationdate="20160418T083029Z">
+        <seg>composer global require "phpunit/phpunit=5.3.*"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>composer global require "phpunit/phpunit=5.4.*"</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083331Z" creationid="Wynn" creationdate="20160418T083331Z">
+        <seg>composer global require "phpunit/phpunit=5.4.*"</seg>
       </tuv>
     </tu>
     <tu>
@@ -77719,6 +79311,38 @@ ok</seg>
         <seg>{
     "require-dev": {
         "phpunit/phpunit": "5.1.*"
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{
+    "require-dev": {
+        "phpunit/phpunit": "5.3.*"
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083024Z" creationid="Wynn" creationdate="20160418T083024Z">
+        <seg>{
+    "require-dev": {
+        "phpunit/phpunit": "5.3.*"
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{
+    "require-dev": {
+        "phpunit/phpunit": "5.4.*"
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083329Z" creationid="Wynn" creationdate="20160418T083329Z">
+        <seg>{
+    "require-dev": {
+        "phpunit/phpunit": "5.4.*"
     }
 }</seg>
       </tuv>
