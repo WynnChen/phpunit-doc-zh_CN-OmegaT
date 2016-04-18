@@ -5612,6 +5612,54 @@ class FooTest extends PHPUnit_Framework_TestCase
         <seg>&lt;?php
 class FooTest extends PHPUnit_Framework_TestCase
 {
+    public function testFunctionCalledTwoTimesWithSpecificArguments()
+    {
+        $mock = $this-&gt;getMockBuilder(stdClass::class)
+                     -&gt;setMethods(['set'])
+                     -&gt;getMock();
+
+        $mock-&gt;expects($this-&gt;exactly(2))
+             -&gt;method('set')
+             -&gt;withConsecutive(
+                 [$this-&gt;equalTo('foo'), $this-&gt;greaterThan(0)],
+                 [$this-&gt;equalTo('bar'), $this-&gt;greaterThan(0)]
+             );
+
+        $mock-&gt;set('foo', 21);
+        $mock-&gt;set('bar', 48);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T090430Z" creationid="Wynn" creationdate="20160418T090430Z">
+        <seg>&lt;?php
+class FooTest extends PHPUnit_Framework_TestCase
+{
+    public function testFunctionCalledTwoTimesWithSpecificArguments()
+    {
+        $mock = $this-&gt;getMockBuilder(stdClass::class)
+                     -&gt;setMethods(['set'])
+                     -&gt;getMock();
+
+        $mock-&gt;expects($this-&gt;exactly(2))
+             -&gt;method('set')
+             -&gt;withConsecutive(
+                 [$this-&gt;equalTo('foo'), $this-&gt;greaterThan(0)],
+                 [$this-&gt;equalTo('bar'), $this-&gt;greaterThan(0)]
+             );
+
+        $mock-&gt;set('foo', 21);
+        $mock-&gt;set('bar', 48);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class FooTest extends PHPUnit_Framework_TestCase
+{
     public function testIdenticalObjectPassed()
     {
         $cloneArguments = true;
@@ -5768,6 +5816,43 @@ class FooTest extends PHPUnit_Framework_TestCase
 {
     public function testIdenticalObjectPassed()
     {
+        $cloneArguments = true;
+
+        $mock = $this-&gt;getMockBuilder(stdClass::class)
+                     -&gt;enableArgumentCloning()
+                     -&gt;getMock();
+
+        // now your mock clones parameters so the identicalTo constraint
+        // will fail.
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T090523Z" creationid="Wynn" creationdate="20160418T090523Z">
+        <seg>&lt;?php
+class FooTest extends PHPUnit_Framework_TestCase
+{
+    public function testIdenticalObjectPassed()
+    {
+        $cloneArguments = true;
+
+        $mock = $this-&gt;getMockBuilder(stdClass::class)
+                     -&gt;enableArgumentCloning()
+                     -&gt;getMock();
+
+        // 现在仿件将对参数进行克隆，因此 identicalTo 约束将会失败。
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class FooTest extends PHPUnit_Framework_TestCase
+{
+    public function testIdenticalObjectPassed()
+    {
         $expectedObject = new stdClass;
 
         $mock = $this-&gt;getMock('stdClass', array('foo'));
@@ -5831,6 +5916,50 @@ class FooTest extends PHPUnit_Framework_TestCase
 
         $mock = $this-&gt;getMockBuilder('stdClass')
                      -&gt;setMethods(array('foo'))
+                     -&gt;getMock();
+
+        $mock-&gt;expects($this-&gt;once())
+             -&gt;method('foo')
+             -&gt;with($this-&gt;identicalTo($expectedObject));
+
+        $mock-&gt;foo($expectedObject);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class FooTest extends PHPUnit_Framework_TestCase
+{
+    public function testIdenticalObjectPassed()
+    {
+        $expectedObject = new stdClass;
+
+        $mock = $this-&gt;getMockBuilder(stdClass::class)
+                     -&gt;setMethods(['foo'])
+                     -&gt;getMock();
+
+        $mock-&gt;expects($this-&gt;once())
+             -&gt;method('foo')
+             -&gt;with($this-&gt;identicalTo($expectedObject));
+
+        $mock-&gt;foo($expectedObject);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T090510Z" creationid="Wynn" creationdate="20160418T090510Z">
+        <seg>&lt;?php
+class FooTest extends PHPUnit_Framework_TestCase
+{
+    public function testIdenticalObjectPassed()
+    {
+        $expectedObject = new stdClass;
+
+        $mock = $this-&gt;getMockBuilder(stdClass::class)
+                     -&gt;setMethods(['foo'])
                      -&gt;getMock();
 
         $mock-&gt;expects($this-&gt;once())
@@ -9302,6 +9431,130 @@ class SubjectTest extends PHPUnit_Framework_TestCase
         <seg>&lt;?php
 class SubjectTest extends PHPUnit_Framework_TestCase
 {
+    public function testErrorReported()
+    {
+        // Create a mock for the Observer class, mocking the
+        // reportError() method
+        $observer = $this-&gt;getMockBuilder(Observer::class)
+                         -&gt;setMethods(['reportError'])
+                         -&gt;getMock();
+
+        $observer-&gt;expects($this-&gt;once())
+                 -&gt;method('reportError')
+                 -&gt;with(
+                       $this-&gt;greaterThan(0),
+                       $this-&gt;stringContains('Something'),
+                       $this-&gt;anything()
+                   );
+
+        $subject = new Subject('My subject');
+        $subject-&gt;attach($observer);
+
+        // The doSomethingBad() method should report an error to the observer
+        // via the reportError() method
+        $subject-&gt;doSomethingBad();
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T090423Z" creationid="Wynn" creationdate="20160418T090423Z">
+        <seg>&lt;?php
+class SubjectTest extends PHPUnit_Framework_TestCase
+{
+    public function testErrorReported()
+    {
+        // 为 Observer 类建立仿件，对 reportError() 方法进行模仿
+        $observer = $this-&gt;getMockBuilder(Observer::class)
+                         -&gt;setMethods(['reportError'])
+                         -&gt;getMock();
+
+        $observer-&gt;expects($this-&gt;once())
+                 -&gt;method('reportError')
+                 -&gt;with(
+                       $this-&gt;greaterThan(0),
+                       $this-&gt;stringContains('Something'),
+                       $this-&gt;anything()
+                   );
+
+        $subject = new Subject('My subject');
+        $subject-&gt;attach($observer);
+
+        // doSomethingBad() 方法应当会通过（observer的）reportError()方法
+        //向 observer 报告错误。
+        $subject-&gt;doSomethingBad();
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class SubjectTest extends PHPUnit_Framework_TestCase
+{
+    public function testErrorReported()
+    {
+        // Create a mock for the Observer class, mocking the
+        // reportError() method
+        $observer = $this-&gt;getMockBuilder(Observer::class)
+                         -&gt;setMethods(['reportError'])
+                         -&gt;getMock();
+
+        $observer-&gt;expects($this-&gt;once())
+                 -&gt;method('reportError')
+                 -&gt;with($this-&gt;greaterThan(0),
+                        $this-&gt;stringContains('Something'),
+                        $this-&gt;callback(function($subject){
+                          return is_callable([$subject, 'getName')] &amp;&amp;
+                                 $subject-&gt;getName() == 'My subject';
+                        }));
+
+        $subject = new Subject('My subject');
+        $subject-&gt;attach($observer);
+
+        // The doSomethingBad() method should report an error to the observer
+        // via the reportError() method
+        $subject-&gt;doSomethingBad();
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T090503Z" creationid="Wynn" creationdate="20160418T090503Z">
+        <seg>&lt;?php
+class SubjectTest extends PHPUnit_Framework_TestCase
+{
+    public function testErrorReported()
+    {
+        // 为 Observer 类建立仿件，模仿 reportError() 方法
+        $observer = $this-&gt;getMockBuilder(Observer::class)
+                         -&gt;setMethods(['reportError'])
+                         -&gt;getMock();
+
+        $observer-&gt;expects($this-&gt;once())
+                 -&gt;method('reportError')
+                 -&gt;with($this-&gt;greaterThan(0),
+                        $this-&gt;stringContains('Something'),
+                        $this-&gt;callback(function($subject){
+                          return is_callable([$subject, 'getName')] &amp;&amp;
+                                 $subject-&gt;getName() == 'My subject';
+                        }));
+
+        $subject = new Subject('My subject');
+        $subject-&gt;attach($observer);
+
+        // doSomethingBad() 方法应当会通过（observer的）reportError()方法
+        //向 observer 报告错误。
+        $subject-&gt;doSomethingBad();
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class SubjectTest extends PHPUnit_Framework_TestCase
+{
     public function testObserversAreUpdated()
     {
         $subject = new Subject('My subject');
@@ -9463,6 +9716,69 @@ class SubjectTest extends PHPUnit_Framework_TestCase
                  -&gt;with($this-&gt;equalTo('something'));
 
         // 创建 Subject 对象，并将模仿的 Observer 对象连接其上。
+        $subject = new Subject('My subject');
+        $subject-&gt;attach($observer);
+
+        // 在 $subject 对象上调用 doSomething() 方法，
+        // 预期将以字符串 'something' 为参数调用 
+        // Observer 仿件对象的 update() 方法。
+        $subject-&gt;doSomething();
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class SubjectTest extends PHPUnit_Framework_TestCase
+{
+    public function testObserversAreUpdated()
+    {
+        // Create a mock for the Observer class,
+        // only mock the update() method.
+        $observer = $this-&gt;getMockBuilder(Observer::class)
+                         -&gt;setMethods(['update'])
+                         -&gt;getMock();
+
+        // Set up the expectation for the update() method
+        // to be called only once and with the string 'something'
+        // as its parameter.
+        $observer-&gt;expects($this-&gt;once())
+                 -&gt;method('update')
+                 -&gt;with($this-&gt;equalTo('something'));
+
+        // Create a Subject object and attach the mocked
+        // Observer object to it.
+        $subject = new Subject('My subject');
+        $subject-&gt;attach($observer);
+
+        // Call the doSomething() method on the $subject object
+        // which we expect to call the mocked Observer object's
+        // update() method with the string 'something'.
+        $subject-&gt;doSomething();
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T090406Z" creationid="Wynn" creationdate="20160418T090406Z">
+        <seg>&lt;?php
+class SubjectTest extends PHPUnit_Framework_TestCase
+{
+    public function testObserversAreUpdated()
+    {
+        // 为 Observer 类建立仿件对象，只模仿 update() 方法。
+        $observer = $this-&gt;getMockBuilder(Observer::class)
+                         -&gt;setMethods(['update'])
+                         -&gt;getMock();
+
+        // 建立预期状况：update() 方法将会被调用一次，
+        // 并且将以字符串 'something' 为参数。
+        $observer-&gt;expects($this-&gt;once())
+                 -&gt;method('update')
+                 -&gt;with($this-&gt;equalTo('something'));
+
+       // 创建 Subject 对象，并将模仿的 Observer 对象连接其上。
         $subject = new Subject('My subject');
         $subject-&gt;attach($observer);
 
@@ -71881,6 +72197,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;l0&gt;callback()&lt;/l0&gt; constraint can be used for more complex argument verification. This constraint takes a PHP callback as its only argument. The PHP callback will receive the argument to be verified as its only argument and should return &lt;l1&gt;true&lt;/l1&gt; if the argument passes verification and &lt;l2&gt;false&lt;/l2&gt; otherwise.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T090443Z" creationid="Wynn" creationdate="20160418T090443Z">
+        <seg>&lt;l0&gt;callback()&lt;/l0&gt; 约束用来进行更加复杂的参数校验。此约束的唯一参数是一个 PHP 回调项(callback)。此 PHP 回调项接受需要校验的参数作为其唯一参数，并应当在参数通过校验时返回 &lt;l1&gt;true&lt;/l1&gt;，否则返回 &lt;l2&gt;false&lt;/l2&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;l0&gt;charset&lt;/l0&gt;, &lt;l1&gt;highlight&lt;/l1&gt;, &lt;l2&gt;lowUpperBound&lt;/l2&gt;, &lt;l3&gt;highLowerBound&lt;/l3&gt;, &lt;l4&gt;logIncompleteSkipped&lt;/l4&gt; and &lt;l5&gt;showUncoveredFiles&lt;/l5&gt; attributes have no equivalent TextUI test runner option.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150330T040232Z" creationid="Wynn" creationdate="20150330T040232Z">
@@ -74125,6 +74449,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T085059Z" creationid="Wynn" creationdate="20150327T085059Z">
         <seg>首先用 &lt;l1&gt;PHPUnit_Framework_TestCase&lt;/l1&gt; 类提供的 &lt;l0&gt;getMock()&lt;/l0&gt; 方法建立 &lt;l2&gt;Observer&lt;/l2&gt; 的仿件对象。由于给出了一个数组做为 &lt;l3&gt;getMock()&lt;/l3&gt; 方法的第二（可选）参数，&lt;l5&gt;Observer&lt;/l5&gt; 类只有 &lt;l4&gt;update()&lt;/l4&gt; 方法会被替换为仿实现。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We first use the &lt;l0&gt;getMockBuilder()&lt;/l0&gt; method that is provided by the &lt;l1&gt;PHPUnit_Framework_TestCase&lt;/l1&gt; class to set up a mock object for the &lt;l2&gt;Observer&lt;/l2&gt;. Since we give an array as the second (optional) parameter for the &lt;l3&gt;getMock()&lt;/l3&gt; method, only the &lt;l4&gt;update()&lt;/l4&gt; method of the &lt;l5&gt;Observer&lt;/l5&gt; class is replaced by a mock implementation.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T090304Z" creationid="Wynn" creationdate="20160418T090304Z">
+        <seg>首先用 &lt;l1&gt;PHPUnit_Framework_TestCase&lt;/l1&gt; 类提供的 &lt;l0&gt;getMockBuilder()&lt;/l0&gt; 方法建立 &lt;l2&gt;Observer&lt;/l2&gt; 的仿件对象。由于给出了一个数组做为 &lt;l3&gt;getMock()&lt;/l3&gt; 方法的第二（可选）参数，&lt;l5&gt;Observer&lt;/l5&gt; 类只有 &lt;l4&gt;update()&lt;/l4&gt; 方法会被替换为仿实现。</seg>
       </tuv>
     </tu>
     <tu>
