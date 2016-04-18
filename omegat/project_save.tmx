@@ -8806,6 +8806,136 @@ class StubTest extends PHPUnit_Framework_TestCase
         <seg>&lt;?php
 class Subject
 {
+    protected $observers = [];
+    protected $name;
+
+    public function __construct($name)
+    {
+        $this-&gt;name = $name;
+    }
+
+    public function getName()
+    {
+        return $this-&gt;name;
+    }
+
+    public function attach(Observer $observer)
+    {
+        $this-&gt;observers[] = $observer;
+    }
+
+    public function doSomething()
+    {
+        // Do something.
+        // ...
+
+        // Notify observers that we did something.
+        $this-&gt;notify('something');
+    }
+
+    public function doSomethingBad()
+    {
+        foreach ($this-&gt;observers as $observer) {
+            $observer-&gt;reportError(42, 'Something bad happened', $this);
+        }
+    }
+
+    protected function notify($argument)
+    {
+        foreach ($this-&gt;observers as $observer) {
+            $observer-&gt;update($argument);
+        }
+    }
+
+    // Other methods.
+}
+
+class Observer
+{
+    public function update($argument)
+    {
+        // Do something.
+    }
+
+    public function reportError($errorCode, $errorMessage, Subject $subject)
+    {
+        // Do something
+    }
+
+    // Other methods.
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T085354Z" creationid="Wynn" creationdate="20160418T085354Z">
+        <seg>&lt;?php
+class Subject
+{
+    protected $observers = [];
+    protected $name;
+
+    public function __construct($name)
+    {
+        $this-&gt;name = $name;
+    }
+
+    public function getName()
+    {
+        return $this-&gt;name;
+    }
+
+    public function attach(Observer $observer)
+    {
+        $this-&gt;observers[] = $observer;
+    }
+
+    public function doSomething()
+    {
+        // 做点什么
+        // ...
+
+        // 通知观察者发生了些什么
+        $this-&gt;notify('something');
+    }
+
+    public function doSomethingBad()
+    {
+        foreach ($this-&gt;observers as $observer) {
+            $observer-&gt;reportError(42, 'Something bad happened', $this);
+        }
+    }
+
+    protected function notify($argument)
+    {
+        foreach ($this-&gt;observers as $observer) {
+            $observer-&gt;update($argument);
+        }
+    }
+
+    // 其他方法。
+}
+
+class Observer
+{
+    public function update($argument)
+    {
+        // 做点什么。
+    }
+
+    public function reportError($errorCode, $errorMessage, Subject $subject)
+    {
+        // 做点什么。
+    }
+
+    // 其他方法。
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class Subject
+{
     protected $observers = array();
     protected $name;
 
