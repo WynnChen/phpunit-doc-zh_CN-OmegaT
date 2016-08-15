@@ -13735,6 +13735,1142 @@ class TraitClassTest extends PHPUnit_Framework_TestCase
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+/**
+ * @coversDefaultClass \Foo\CoveredClass
+ */
+class CoversDefaultClassTest extends TestCase
+{
+    /**
+     * @covers ::publicMethod
+     */
+    public function testSomething()
+    {
+        $o = new Foo\CoveredClass;
+        $o-&gt;publicMethod();
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091922Z" creationid="Wynn" creationdate="20160815T091922Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+/**
+ * @coversDefaultClass \Foo\CoveredClass
+ */
+class CoversDefaultClassTest extends TestCase
+{
+    /**
+     * @covers ::publicMethod
+     */
+    public function testSomething()
+    {
+        $o = new Foo\CoveredClass;
+        $o-&gt;publicMethod();
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ArrayHasKeyTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertArrayHasKey('foo', ['bar' =&gt; 'baz']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091957Z" creationid="Wynn" creationdate="20160815T091957Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ArrayHasKeyTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertArrayHasKey('foo', ['bar' =&gt; 'baz']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ArraySubsetTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertArraySubset(['config' =&gt; ['key-a', 'key-b']], ['config' =&gt; ['key-a']]);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092000Z" creationid="Wynn" creationdate="20160815T092000Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ArraySubsetTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertArraySubset(['config' =&gt; ['key-a', 'key-b']], ['config' =&gt; ['key-a']]);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ClassHasAttributeTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertClassHasAttribute('foo', stdClass::class);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091958Z" creationid="Wynn" creationdate="20160815T091958Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ClassHasAttributeTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertClassHasAttribute('foo', stdClass::class);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ClassHasStaticAttributeTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertClassHasStaticAttribute('foo', stdClass::class);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092002Z" creationid="Wynn" creationdate="20160815T092002Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ClassHasStaticAttributeTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertClassHasStaticAttribute('foo', stdClass::class);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ContainsOnlyInstancesOfTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContainsOnlyInstancesOf(
+            Foo::class,
+            [new Foo, new Bar, new Foo]
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092047Z" creationid="Wynn" creationdate="20160815T092047Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ContainsOnlyInstancesOfTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContainsOnlyInstancesOf(
+            Foo::class,
+            [new Foo, new Bar, new Foo]
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ContainsOnlyTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContainsOnly('string', ['1', '2', 3]);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092044Z" creationid="Wynn" creationdate="20160815T092044Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ContainsOnlyTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContainsOnly('string', ['1', '2', 3]);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ContainsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContains('baz', 'foobar');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092006Z" creationid="Wynn" creationdate="20160815T092006Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ContainsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContains('baz', 'foobar');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ContainsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContains('foo', 'FooBar');
+    }
+
+    public function testOK()
+    {
+        $this-&gt;assertContains('foo', 'FooBar', '', true);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092021Z" creationid="Wynn" creationdate="20160815T092021Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ContainsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContains('foo', 'FooBar');
+    }
+
+    public function testOK()
+    {
+        $this-&gt;assertContains('foo', 'FooBar', '', true);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ContainsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContains(4, [1, 2, 3]);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092004Z" creationid="Wynn" creationdate="20160815T092004Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ContainsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertContains(4, [1, 2, 3]);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class CountTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertCount(0, ['foo']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092049Z" creationid="Wynn" creationdate="20160815T092049Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class CountTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertCount(0, ['foo']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EmptyTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertEmpty(['foo']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092051Z" creationid="Wynn" creationdate="20160815T092051Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EmptyTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertEmpty(['foo']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EqualXMLStructureTest extends TestCase
+{
+    public function testFailureWithDifferentNodeNames()
+    {
+        $expected = new DOMElement('foo');
+        $actual = new DOMElement('bar');
+
+        $this-&gt;assertEqualXMLStructure($expected, $actual);
+    }
+
+    public function testFailureWithDifferentNodeAttributes()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo bar="true" /&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;foo/&gt;');
+
+        $this-&gt;assertEqualXMLStructure(
+          $expected-&gt;firstChild, $actual-&gt;firstChild, true
+        );
+    }
+
+    public function testFailureWithDifferentChildrenCount()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $this-&gt;assertEqualXMLStructure(
+          $expected-&gt;firstChild, $actual-&gt;firstChild
+        );
+    }
+
+    public function testFailureWithDifferentChildren()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;foo&gt;&lt;baz/&gt;&lt;baz/&gt;&lt;baz/&gt;&lt;/foo&gt;');
+
+        $this-&gt;assertEqualXMLStructure(
+          $expected-&gt;firstChild, $actual-&gt;firstChild
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092055Z" creationid="Wynn" creationdate="20160815T092055Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EqualXMLStructureTest extends TestCase
+{
+    public function testFailureWithDifferentNodeNames()
+    {
+        $expected = new DOMElement('foo');
+        $actual = new DOMElement('bar');
+
+        $this-&gt;assertEqualXMLStructure($expected, $actual);
+    }
+
+    public function testFailureWithDifferentNodeAttributes()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo bar="true" /&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;foo/&gt;');
+
+        $this-&gt;assertEqualXMLStructure(
+          $expected-&gt;firstChild, $actual-&gt;firstChild, true
+        );
+    }
+
+    public function testFailureWithDifferentChildrenCount()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $this-&gt;assertEqualXMLStructure(
+          $expected-&gt;firstChild, $actual-&gt;firstChild
+        );
+    }
+
+    public function testFailureWithDifferentChildren()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;foo&gt;&lt;baz/&gt;&lt;baz/&gt;&lt;baz/&gt;&lt;/foo&gt;');
+
+        $this-&gt;assertEqualXMLStructure(
+          $expected-&gt;firstChild, $actual-&gt;firstChild
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EqualsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;bar&gt;&lt;foo/&gt;&lt;/bar&gt;');
+
+        $this-&gt;assertEquals($expected, $actual);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092105Z" creationid="Wynn" creationdate="20160815T092105Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EqualsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $expected = new DOMDocument;
+        $expected-&gt;loadXML('&lt;foo&gt;&lt;bar/&gt;&lt;/foo&gt;');
+
+        $actual = new DOMDocument;
+        $actual-&gt;loadXML('&lt;bar&gt;&lt;foo/&gt;&lt;/bar&gt;');
+
+        $this-&gt;assertEquals($expected, $actual);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EqualsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $expected = new stdClass;
+        $expected-&gt;foo = 'foo';
+        $expected-&gt;bar = 'bar';
+
+        $actual = new stdClass;
+        $actual-&gt;foo = 'bar';
+        $actual-&gt;baz = 'bar';
+
+        $this-&gt;assertEquals($expected, $actual);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092107Z" creationid="Wynn" creationdate="20160815T092107Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EqualsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $expected = new stdClass;
+        $expected-&gt;foo = 'foo';
+        $expected-&gt;bar = 'bar';
+
+        $actual = new stdClass;
+        $actual-&gt;foo = 'bar';
+        $actual-&gt;baz = 'bar';
+
+        $this-&gt;assertEquals($expected, $actual);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EqualsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertEquals(1, 0);
+    }
+
+    public function testFailure2()
+    {
+        $this-&gt;assertEquals('bar', 'baz');
+    }
+
+    public function testFailure3()
+    {
+        $this-&gt;assertEquals("foo\nbar\nbaz\n", "foo\nbah\nbaz\n");
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092057Z" creationid="Wynn" creationdate="20160815T092057Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EqualsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertEquals(1, 0);
+    }
+
+    public function testFailure2()
+    {
+        $this-&gt;assertEquals('bar', 'baz');
+    }
+
+    public function testFailure3()
+    {
+        $this-&gt;assertEquals("foo\nbar\nbaz\n", "foo\nbah\nbaz\n");
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EqualsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertEquals(['a', 'b', 'c'], ['a', 'c', 'd']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092109Z" creationid="Wynn" creationdate="20160815T092109Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EqualsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertEquals(['a', 'b', 'c'], ['a', 'c', 'd']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EqualsTest extends TestCase
+{
+    public function testSuccess()
+    {
+        $this-&gt;assertEquals(1.0, 1.1, '', 0.2);
+    }
+
+    public function testFailure()
+    {
+        $this-&gt;assertEquals(1.0, 1.1);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092100Z" creationid="Wynn" creationdate="20160815T092100Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class EqualsTest extends TestCase
+{
+    public function testSuccess()
+    {
+        $this-&gt;assertEquals(1.0, 1.1, '', 0.2);
+    }
+
+    public function testFailure()
+    {
+        $this-&gt;assertEquals(1.0, 1.1);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class FalseTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertFalse(true);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092110Z" creationid="Wynn" creationdate="20160815T092110Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class FalseTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertFalse(true);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class FileEqualsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertFileEquals('/home/sb/expected', '/home/sb/actual');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092111Z" creationid="Wynn" creationdate="20160815T092111Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class FileEqualsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertFileEquals('/home/sb/expected', '/home/sb/actual');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class FileExistsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertFileExists('/path/to/file');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092112Z" creationid="Wynn" creationdate="20160815T092112Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class FileExistsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertFileExists('/path/to/file');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class GreatThanOrEqualTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertGreaterThanOrEqual(2, 1);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092114Z" creationid="Wynn" creationdate="20160815T092114Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class GreatThanOrEqualTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertGreaterThanOrEqual(2, 1);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class GreaterThanTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertGreaterThan(2, 1);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092113Z" creationid="Wynn" creationdate="20160815T092113Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class GreaterThanTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertGreaterThan(2, 1);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class InfiniteTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertInfinite(1);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092115Z" creationid="Wynn" creationdate="20160815T092115Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class InfiniteTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertInfinite(1);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class InstanceOfTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertInstanceOf(RuntimeException::class, new Exception);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092116Z" creationid="Wynn" creationdate="20160815T092116Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class InstanceOfTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertInstanceOf(RuntimeException::class, new Exception);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class InternalTypeTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertInternalType('string', 42);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092117Z" creationid="Wynn" creationdate="20160815T092117Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class InternalTypeTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertInternalType('string', 42);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class JsonFileEqualsJsonFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonFileEqualsJsonFile(
+          'path/to/fixture/file', 'path/to/actual/file');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092118Z" creationid="Wynn" creationdate="20160815T092118Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class JsonFileEqualsJsonFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonFileEqualsJsonFile(
+          'path/to/fixture/file', 'path/to/actual/file');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class JsonStringEqualsJsonFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonFile(
+            'path/to/fixture/file', json_encode(['Mascott' =&gt; 'ux'])
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092119Z" creationid="Wynn" creationdate="20160815T092119Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class JsonStringEqualsJsonFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonFile(
+            'path/to/fixture/file', json_encode(['Mascott' =&gt; 'ux'])
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class JsonStringEqualsJsonStringTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonString(
+            json_encode(['Mascott' =&gt; 'Tux']),
+            json_encode(['Mascott' =&gt; 'ux'])
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092121Z" creationid="Wynn" creationdate="20160815T092121Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class JsonStringEqualsJsonStringTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonString(
+            json_encode(['Mascott' =&gt; 'Tux']),
+            json_encode(['Mascott' =&gt; 'ux'])
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class LessThanOrEqualTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertLessThanOrEqual(1, 2);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092123Z" creationid="Wynn" creationdate="20160815T092123Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class LessThanOrEqualTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertLessThanOrEqual(1, 2);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class LessThanTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertLessThan(1, 2);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092122Z" creationid="Wynn" creationdate="20160815T092122Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class LessThanTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertLessThan(1, 2);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class NanTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertNan(1);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092124Z" creationid="Wynn" creationdate="20160815T092124Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class NanTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertNan(1);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class NullTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertNull('foo');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092125Z" creationid="Wynn" creationdate="20160815T092125Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class NullTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertNull('foo');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ObjectHasAttributeTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertObjectHasAttribute('foo', new stdClass);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092126Z" creationid="Wynn" creationdate="20160815T092126Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ObjectHasAttributeTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertObjectHasAttribute('foo', new stdClass);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;?xml version="1.0" ?&gt;
 &lt;dataset&gt;
     &lt;guestbook /&gt;
@@ -80659,6 +81795,232 @@ ok</seg>
       <tuv lang="EN-US">
         <seg>use PHPUnit\Framework\TestCase;
 
+/**
+ * @backupGlobals disabled
+ */
+class MyTest extends TestCase
+{
+    /**
+     * @backupGlobals enabled
+     */
+    public function testThatInteractsWithGlobalVariables()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091901Z" creationid="Wynn" creationdate="20160815T091901Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+/**
+ * @backupGlobals disabled
+ */
+class MyTest extends TestCase
+{
+    /**
+     * @backupGlobals enabled
+     */
+    public function testThatInteractsWithGlobalVariables()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+/**
+ * @backupGlobals disabled
+ */
+class MyTest extends TestCase
+{
+    // ...
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091853Z" creationid="Wynn" creationdate="20160815T091853Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+/**
+ * @backupGlobals disabled
+ */
+class MyTest extends TestCase
+{
+    // ...
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+/**
+ * @backupStaticAttributes enabled
+ */
+class MyTest extends TestCase
+{
+    /**
+     * @backupStaticAttributes disabled
+     */
+    public function testThatInteractsWithStaticAttributes()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091910Z" creationid="Wynn" creationdate="20160815T091910Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+/**
+ * @backupStaticAttributes enabled
+ */
+class MyTest extends TestCase
+{
+    /**
+     * @backupStaticAttributes disabled
+     */
+    public function testThatInteractsWithStaticAttributes()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+/**
+ * @runTestsInSeparateProcesses
+ */
+class MyTest extends TestCase
+{
+    // ...
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091952Z" creationid="Wynn" creationdate="20160815T091952Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+/**
+ * @runTestsInSeparateProcesses
+ */
+class MyTest extends TestCase
+{
+    // ...
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+     /**
+      * @expectedException              MyException
+      * @expectedExceptionMessageRegExp /Argument \d+ can not be an? \w+/
+      */
+     public function testExceptionHasRightMessage()
+     {
+         throw new MyException('Argument 2 can not be an integer');
+     }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091944Z" creationid="Wynn" creationdate="20160815T091944Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+     /**
+      * @expectedException              MyException
+      * @expectedExceptionMessageRegExp /Argument \d+ can not be an? \w+/
+      */
+     public function testExceptionHasRightMessage()
+     {
+         throw new MyException('Argument 2 can not be an integer');
+     }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+     /**
+      * @expectedException        MyException
+      * @expectedExceptionMessage broken
+      */
+     public function testExceptionHasRightMessage()
+     {
+         $param = "broken";
+         throw new MyException('Invalid parameter "'.$param.'".', 20);
+     }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091941Z" creationid="Wynn" creationdate="20160815T091941Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+     /**
+      * @expectedException        MyException
+      * @expectedExceptionMessage broken
+      */
+     public function testExceptionHasRightMessage()
+     {
+         $param = "broken";
+         throw new MyException('Invalid parameter "'.$param.'".', 20);
+     }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+      * @expectedException     MyException
+      * @expectedExceptionCode MyClass::ERRORCODE
+      */
+    public function testExceptionHasErrorcode20()
+    {
+      throw new MyException('Some Message', 20);
+    }
+}
+class MyClass
+{
+    const ERRORCODE = 20;
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091929Z" creationid="Wynn" creationdate="20160815T091929Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+      * @expectedException     MyException
+      * @expectedExceptionCode MyClass::ERRORCODE
+      */
+    public function testExceptionHasErrorcode20()
+    {
+      throw new MyException('Some Message', 20);
+    }
+}
+class MyClass
+{
+    const ERRORCODE = 20;
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
 class MyTest extends TestCase
 {
     /**
@@ -80695,6 +82057,314 @@ class MyTest extends TestCase
      * @after
      */
     public function tearDownSomeOtherFixtures()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @afterClass
+     */
+    public static function tearDownSomeSharedFixtures()
+    {
+        // ...
+    }
+
+    /**
+     * @afterClass
+     */
+    public static function tearDownSomeOtherSharedFixtures()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091848Z" creationid="Wynn" creationdate="20160815T091848Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @afterClass
+     */
+    public static function tearDownSomeSharedFixtures()
+    {
+        // ...
+    }
+
+    /**
+     * @afterClass
+     */
+    public static function tearDownSomeOtherSharedFixtures()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @before
+     */
+    public function setupSomeFixtures()
+    {
+        // ...
+    }
+
+    /**
+     * @before
+     */
+    public function setupSomeOtherFixtures()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091916Z" creationid="Wynn" creationdate="20160815T091916Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @before
+     */
+    public function setupSomeFixtures()
+    {
+        // ...
+    }
+
+    /**
+     * @before
+     */
+    public function setupSomeOtherFixtures()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @beforeClass
+     */
+    public static function setUpSomeSharedFixtures()
+    {
+        // ...
+    }
+
+    /**
+     * @beforeClass
+     */
+    public static function setUpSomeOtherSharedFixtures()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091919Z" creationid="Wynn" creationdate="20160815T091919Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @beforeClass
+     */
+    public static function setUpSomeSharedFixtures()
+    {
+        // ...
+    }
+
+    /**
+     * @beforeClass
+     */
+    public static function setUpSomeOtherSharedFixtures()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @expectedException        MyException
+     * @expectedExceptionMessage Some Message
+     */
+    public function testExceptionHasRightMessage()
+    {
+        throw new MyException('Some Message', 20);
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091937Z" creationid="Wynn" creationdate="20160815T091937Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @expectedException        MyException
+     * @expectedExceptionMessage Some Message
+     */
+    public function testExceptionHasRightMessage()
+    {
+        throw new MyException('Some Message', 20);
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @expectedException     MyException
+     * @expectedExceptionCode 20
+     */
+    public function testExceptionHasErrorcode20()
+    {
+        throw new MyException('Some Message', 20);
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091927Z" creationid="Wynn" creationdate="20160815T091927Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @expectedException     MyException
+     * @expectedExceptionCode 20
+     */
+    public function testExceptionHasErrorcode20()
+    {
+        throw new MyException('Some Message', 20);
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @group specification
+     */
+    public function testSomething()
+    {
+    }
+
+    /**
+     * @group regresssion
+     * @group bug2204
+     */
+    public function testSomethingElse()
+    {
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091947Z" creationid="Wynn" creationdate="20160815T091947Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @group specification
+     */
+    public function testSomething()
+    {
+    }
+
+    /**
+     * @group regresssion
+     * @group bug2204
+     */
+    public function testSomethingElse()
+    {
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @runInSeparateProcess
+     * @preserveGlobalState disabled
+     */
+    public function testInSeparateProcess()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091951Z" creationid="Wynn" creationdate="20160815T091951Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @runInSeparateProcess
+     * @preserveGlobalState disabled
+     */
+    public function testInSeparateProcess()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @runInSeparateProcess
+     */
+    public function testInSeparateProcess()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091954Z" creationid="Wynn" creationdate="20160815T091954Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @runInSeparateProcess
+     */
+    public function testInSeparateProcess()
     {
         // ...
     }
