@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.1.9_2" segtype="paragraph" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.5.4" segtype="paragraph" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -27581,6 +27581,72 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20160222T060902Z" creationid="Wynn" creationdate="20160222T060902Z">
         <seg>&lt;u0&gt;phpunit ArrayWeakComparisonTest&lt;/u0&gt;
 PHPUnit 5.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) ArrayWeakComparisonTest::testEquality
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+-    0 =&gt; 1
++    0 =&gt; '1'
+     1 =&gt; 2
+-    2 =&gt; 3
++    2 =&gt; 33
+     3 =&gt; 4
+     4 =&gt; 5
+     5 =&gt; 6
+ )
+
+
+/home/sb/ArrayWeakComparisonTest.php:7
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ArrayWeakComparisonTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) ArrayWeakComparisonTest::testEquality
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+-    0 =&gt; 1
++    0 =&gt; '1'
+     1 =&gt; 2
+-    2 =&gt; 3
++    2 =&gt; 33
+     3 =&gt; 4
+     4 =&gt; 5
+     5 =&gt; 6
+ )
+
+
+/home/sb/ArrayWeakComparisonTest.php:7
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091653Z" creationid="Wynn" creationdate="20160815T091653Z">
+        <seg>&lt;u0&gt;phpunit ArrayWeakComparisonTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
 
 F
 
@@ -80587,6 +80653,52 @@ ok</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150319T090954Z" creationid="Wynn" creationdate="20150319T090954Z">
         <seg>以此来跟踪需要编写的测试。空测试的问题是 PHPUnit 框架会将它们解读为成功。这种错误解读导致错误报告变得毫无用处——无法分辨出测试是真的成功了还是根本就未编写实现。在未实现的测试中调用 &lt;l0&gt;$this-&gt;fail()&lt;/l0&gt; 同样没啥帮助，因为测试将被解读为失败。这和将未实现的测试解读为成功是一样的错误。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @after
+     */
+    public function tearDownSomeFixtures()
+    {
+        // ...
+    }
+
+    /**
+     * @after
+     */
+    public function tearDownSomeOtherFixtures()
+    {
+        // ...
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T091707Z" creationid="Wynn" creationdate="20160815T091707Z">
+        <seg>use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    /**
+     * @after
+     */
+    public function tearDownSomeFixtures()
+    {
+        // ...
+    }
+
+    /**
+     * @after
+     */
+    public function tearDownSomeOtherFixtures()
+    {
+        // ...
+    }
+}</seg>
       </tuv>
     </tu>
     <tu>
