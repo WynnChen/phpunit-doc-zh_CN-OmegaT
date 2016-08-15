@@ -13924,7 +13924,7 @@ abstract class PHPUnit_Framework_Assert
     // ...
 }?&gt;</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092346Z" creationid="Wynn" creationdate="20160815T092346Z">
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092407Z" creationid="Wynn" creationdate="20160815T092346Z">
         <seg>&lt;?php
 use PHPUnit\Framework\TestCase;
 
@@ -13933,7 +13933,7 @@ abstract class PHPUnit_Framework_Assert
     // ...
 
     /**
-     * Asserts that a condition is true.
+     * 断言某个条件为真。
      *
      * @param  boolean $condition
      * @param  string  $message
@@ -13947,7 +13947,7 @@ abstract class PHPUnit_Framework_Assert
     // ...
 
     /**
-     * Returns a PHPUnit_Framework_Constraint_IsTrue matcher object.
+     * 返回一个 PHPUnit_Framework_Constraint_IsTrue 匹配器对象
      *
      * @return PHPUnit_Framework_Constraint_IsTrue
      * @since  Method available since Release 3.3.0
@@ -14444,6 +14444,220 @@ class CountTest extends TestCase
     public function testFailure()
     {
         $this-&gt;assertCount(0, ['foo']);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class DataDrivenTest implements PHPUnit_Framework_Test
+{
+    private $lines;
+
+    public function __construct($dataFile)
+    {
+        $this-&gt;lines = file($dataFile);
+    }
+
+    public function count()
+    {
+        return 1;
+    }
+
+    public function run(PHPUnit_Framework_TestResult $result = null)
+    {
+        if ($result === null) {
+            $result = new PHPUnit_Framework_TestResult;
+        }
+
+        foreach ($this-&gt;lines as $line) {
+            $result-&gt;startTest($this);
+            PHP_Timer::start();
+            $stopTime = null;
+
+            list($expected, $actual) = explode(';', $line);
+
+            try {
+                PHPUnit_Framework_Assert::assertEquals(
+                  trim($expected), trim($actual)
+                );
+            }
+
+            catch (PHPUnit_Framework_AssertionFailedError $e) {
+                $stopTime = PHP_Timer::stop();
+                $result-&gt;addFailure($this, $e, $stopTime);
+            }
+
+            catch (Exception $e) {
+                $stopTime = PHP_Timer::stop();
+                $result-&gt;addError($this, $e, $stopTime);
+            }
+
+            if ($stopTime === null) {
+                $stopTime = PHP_Timer::stop();
+            }
+
+            $result-&gt;endTest($this, $stopTime);
+        }
+
+        return $result;
+    }
+}
+
+$test = new DataDrivenTest('data_file.csv');
+$result = PHPUnit_TextUI_TestRunner::run($test);
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092503Z" creationid="Wynn" creationdate="20160815T092503Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class DataDrivenTest implements PHPUnit_Framework_Test
+{
+    private $lines;
+
+    public function __construct($dataFile)
+    {
+        $this-&gt;lines = file($dataFile);
+    }
+
+    public function count()
+    {
+        return 1;
+    }
+
+    public function run(PHPUnit_Framework_TestResult $result = null)
+    {
+        if ($result === null) {
+            $result = new PHPUnit_Framework_TestResult;
+        }
+
+        foreach ($this-&gt;lines as $line) {
+            $result-&gt;startTest($this);
+            PHP_Timer::start();
+            $stopTime = null;
+
+            list($expected, $actual) = explode(';', $line);
+
+            try {
+                PHPUnit_Framework_Assert::assertEquals(
+                  trim($expected), trim($actual)
+                );
+            }
+
+            catch (PHPUnit_Framework_AssertionFailedError $e) {
+                $stopTime = PHP_Timer::stop();
+                $result-&gt;addFailure($this, $e, $stopTime);
+            }
+
+            catch (Exception $e) {
+                $stopTime = PHP_Timer::stop();
+                $result-&gt;addError($this, $e, $stopTime);
+            }
+
+            if ($stopTime === null) {
+                $stopTime = PHP_Timer::stop();
+            }
+
+            $result-&gt;endTest($this, $stopTime);
+        }
+
+        return $result;
+    }
+}
+
+$test = new DataDrivenTest('data_file.csv');
+$result = PHPUnit_TextUI_TestRunner::run($test);
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class DatabaseTest extends TestCase
+{
+    protected function setUp()
+    {
+        if (!extension_loaded('mysqli')) {
+            $this-&gt;markTestSkipped(
+              'The MySQLi extension is not available.'
+            );
+        }
+    }
+
+    public function testConnection()
+    {
+        // ...
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092622Z" creationid="Wynn" creationdate="20160815T092622Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class DatabaseTest extends TestCase
+{
+    protected function setUp()
+    {
+        if (!extension_loaded('mysqli')) {
+            $this-&gt;markTestSkipped(
+              'MySQLi 扩展不可用。'
+            );
+        }
+    }
+
+    public function testConnection()
+    {
+        // ...
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class DatabaseTest extends TestCase
+{
+    protected static $dbh;
+
+    public static function setUpBeforeClass()
+    {
+        self::$dbh = new PDO('sqlite::memory:');
+    }
+
+    public static function tearDownAfterClass()
+    {
+        self::$dbh = null;
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092510Z" creationid="Wynn" creationdate="20160815T092510Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class DatabaseTest extends TestCase
+{
+    protected static $dbh;
+
+    public static function setUpBeforeClass()
+    {
+        self::$dbh = new PDO('sqlite::memory:');
+    }
+
+    public static function tearDownAfterClass()
+    {
+        self::$dbh = null;
     }
 }
 ?&gt;</seg>
@@ -15334,6 +15548,66 @@ class ObjectHasAttributeTest extends TestCase
         <seg>&lt;?php
 use PHPUnit\Framework\TestCase;
 
+class PHPUnit_Framework_Constraint_IsTrue extends PHPUnit_Framework_Constraint
+{
+    /**
+     * Evaluates the constraint for parameter $other. Returns true if the
+     * constraint is met, false otherwise.
+     *
+     * @param mixed $other Value or object to evaluate.
+     * @return bool
+     */
+    public function matches($other)
+    {
+        return $other === true;
+    }
+
+    /**
+     * Returns a string representation of the constraint.
+     *
+     * @return string
+     */
+    public function toString()
+    {
+        return 'is true';
+    }
+}?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092433Z" creationid="Wynn" creationdate="20160815T092433Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class PHPUnit_Framework_Constraint_IsTrue extends PHPUnit_Framework_Constraint
+{
+    /**
+     * 对参数 $other 进行约束评定。如果符合约束，
+     * 返回 TRUE，否则返回 FALSE。
+     *
+     * @param mixed $other Value or object to evaluate.
+     * @return bool
+     */
+    public function matches($other)
+    {
+        return $other === true;
+    }
+
+    /**
+     * 返回代表此约束的字符串。
+     *
+     * @return string
+     */
+    public function toString()
+    {
+        return 'is true';
+    }
+}?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
 class RegExpTest extends TestCase
 {
     public function testFailure()
@@ -15408,6 +15682,252 @@ class SameTest extends TestCase
     public function testFailure()
     {
         $this-&gt;assertSame(new stdClass, new stdClass);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class SampleTest extends TestCase
+{
+    public function testSomething()
+    {
+        // Optional: Test anything here, if you want.
+        $this-&gt;assertTrue(true, 'This should already work.');
+
+        // Stop here and mark this test as incomplete.
+        $this-&gt;markTestIncomplete(
+          'This test has not been implemented yet.'
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092606Z" creationid="Wynn" creationdate="20160815T092606Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class SampleTest extends TestCase
+{
+    public function testSomething()
+    {
+        // 可选：如果愿意，在这里随便测试点什么。
+        $this-&gt;assertTrue(true, '这应该已经是能正常工作的。');
+
+        // 在这里停止，并将此测试标记为未完成。
+        $this-&gt;markTestIncomplete(
+          '此测试目前尚未实现。'
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ShortTestListener extends PHPUnit_Framework_BaseTestListener
+{
+    public function endTest(PHPUnit_Framework_Test $test, $time)
+    {
+        printf("Test '%s' ended.\n", $test-&gt;getName());
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092440Z" creationid="Wynn" creationdate="20160815T092440Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ShortTestListener extends PHPUnit_Framework_BaseTestListener
+{
+    public function endTest(PHPUnit_Framework_Test $test, $time)
+    {
+        printf("Test '%s' ended.\n", $test-&gt;getName());
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class SimpleTestListener implements PHPUnit_Framework_TestListener
+{
+    public function addError(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Error while running test '%s'.\n", $test-&gt;getName());
+    }
+
+    public function addFailure(PHPUnit_Framework_Test $test, PHPUnit_Framework_AssertionFailedError $e, $time)
+    {
+        printf("Test '%s' failed.\n", $test-&gt;getName());
+    }
+
+    public function addIncompleteTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Test '%s' is incomplete.\n", $test-&gt;getName());
+    }
+
+    public function addRiskyTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Test '%s' is deemed risky.\n", $test-&gt;getName());
+    }
+
+    public function addSkippedTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Test '%s' has been skipped.\n", $test-&gt;getName());
+    }
+
+    public function startTest(PHPUnit_Framework_Test $test)
+    {
+        printf("Test '%s' started.\n", $test-&gt;getName());
+    }
+
+    public function endTest(PHPUnit_Framework_Test $test, $time)
+    {
+        printf("Test '%s' ended.\n", $test-&gt;getName());
+    }
+
+    public function startTestSuite(PHPUnit_Framework_TestSuite $suite)
+    {
+        printf("TestSuite '%s' started.\n", $suite-&gt;getName());
+    }
+
+    public function endTestSuite(PHPUnit_Framework_TestSuite $suite)
+    {
+        printf("TestSuite '%s' ended.\n", $suite-&gt;getName());
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092437Z" creationid="Wynn" creationdate="20160815T092437Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class SimpleTestListener implements PHPUnit_Framework_TestListener
+{
+    public function addError(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Error while running test '%s'.\n", $test-&gt;getName());
+    }
+
+    public function addFailure(PHPUnit_Framework_Test $test, PHPUnit_Framework_AssertionFailedError $e, $time)
+    {
+        printf("Test '%s' failed.\n", $test-&gt;getName());
+    }
+
+    public function addIncompleteTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Test '%s' is incomplete.\n", $test-&gt;getName());
+    }
+
+    public function addRiskyTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Test '%s' is deemed risky.\n", $test-&gt;getName());
+    }
+
+    public function addSkippedTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Test '%s' has been skipped.\n", $test-&gt;getName());
+    }
+
+    public function startTest(PHPUnit_Framework_Test $test)
+    {
+        printf("Test '%s' started.\n", $test-&gt;getName());
+    }
+
+    public function endTest(PHPUnit_Framework_Test $test, $time)
+    {
+        printf("Test '%s' ended.\n", $test-&gt;getName());
+    }
+
+    public function startTestSuite(PHPUnit_Framework_TestSuite $suite)
+    {
+        printf("TestSuite '%s' started.\n", $suite-&gt;getName());
+    }
+
+    public function endTestSuite(PHPUnit_Framework_TestSuite $suite)
+    {
+        printf("TestSuite '%s' ended.\n", $suite-&gt;getName());
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StackTest extends TestCase
+{
+    protected $stack;
+
+    protected function setUp()
+    {
+        $this-&gt;stack = [];
+    }
+
+    public function testEmpty()
+    {
+        $this-&gt;assertTrue(empty($this-&gt;stack));
+    }
+
+    public function testPush()
+    {
+        array_push($this-&gt;stack, 'foo');
+        $this-&gt;assertEquals('foo', $this-&gt;stack[count($this-&gt;stack)-1]);
+        $this-&gt;assertFalse(empty($this-&gt;stack));
+    }
+
+    public function testPop()
+    {
+        array_push($this-&gt;stack, 'foo');
+        $this-&gt;assertEquals('foo', array_pop($this-&gt;stack));
+        $this-&gt;assertTrue(empty($this-&gt;stack));
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092507Z" creationid="Wynn" creationdate="20160815T092507Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StackTest extends TestCase
+{
+    protected $stack;
+
+    protected function setUp()
+    {
+        $this-&gt;stack = [];
+    }
+
+    public function testEmpty()
+    {
+        $this-&gt;assertTrue(empty($this-&gt;stack));
+    }
+
+    public function testPush()
+    {
+        array_push($this-&gt;stack, 'foo');
+        $this-&gt;assertEquals('foo', $this-&gt;stack[count($this-&gt;stack)-1]);
+        $this-&gt;assertFalse(empty($this-&gt;stack));
+    }
+
+    public function testPop()
+    {
+        array_push($this-&gt;stack, 'foo');
+        $this-&gt;assertEquals('foo', array_pop($this-&gt;stack));
+        $this-&gt;assertTrue(empty($this-&gt;stack));
     }
 }
 ?&gt;</seg>
@@ -15558,6 +16078,120 @@ class StringStartsWithTest extends TestCase
         <seg>&lt;?php
 use PHPUnit\Framework\TestCase;
 
+class TemplateMethodsTest extends TestCase
+{
+    public static function setUpBeforeClass()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function setUp()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function assertPreConditions()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    public function testOne()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+        $this-&gt;assertTrue(true);
+    }
+
+    public function testTwo()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+        $this-&gt;assertTrue(false);
+    }
+
+    protected function assertPostConditions()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function tearDown()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    public static function tearDownAfterClass()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function onNotSuccessfulTest(Exception $e)
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+        throw $e;
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092508Z" creationid="Wynn" creationdate="20160815T092508Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class TemplateMethodsTest extends TestCase
+{
+    public static function setUpBeforeClass()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function setUp()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function assertPreConditions()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    public function testOne()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+        $this-&gt;assertTrue(true);
+    }
+
+    public function testTwo()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+        $this-&gt;assertTrue(false);
+    }
+
+    protected function assertPostConditions()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function tearDown()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    public static function tearDownAfterClass()
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+    }
+
+    protected function onNotSuccessfulTest(Exception $e)
+    {
+        fwrite(STDOUT, __METHOD__ . "\n");
+        throw $e;
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
 class TrueTest extends TestCase
 {
     public function testFailure()
@@ -15666,6 +16300,88 @@ class XmlStringEqualsXmlStringTest extends TestCase
     {
         $this-&gt;assertXmlStringEqualsXmlString(
           '&lt;foo&gt;&lt;bar/&gt;&lt;/foo&gt;', '&lt;foo&gt;&lt;baz/&gt;&lt;/foo&gt;');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+require_once 'PHPUnit/Extensions/TestDecorator.php';
+
+class PHPUnit_Extensions_RepeatedTest extends PHPUnit_Extensions_TestDecorator
+{
+    private $timesRepeat = 1;
+
+    public function __construct(PHPUnit_Framework_Test $test, $timesRepeat = 1)
+    {
+        parent::__construct($test);
+
+        if (is_integer($timesRepeat) &amp;&amp;
+            $timesRepeat &gt;= 0) {
+            $this-&gt;timesRepeat = $timesRepeat;
+        }
+    }
+
+    public function count()
+    {
+        return $this-&gt;timesRepeat * $this-&gt;test-&gt;count();
+    }
+
+    public function run(PHPUnit_Framework_TestResult $result = null)
+    {
+        if ($result === null) {
+            $result = $this-&gt;createResult();
+        }
+
+        for ($i = 0; $i &lt; $this-&gt;timesRepeat &amp;&amp; !$result-&gt;shouldStop(); $i++) {
+            $this-&gt;test-&gt;run($result);
+        }
+
+        return $result;
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092444Z" creationid="Wynn" creationdate="20160815T092444Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+require_once 'PHPUnit/Extensions/TestDecorator.php';
+
+class PHPUnit_Extensions_RepeatedTest extends PHPUnit_Extensions_TestDecorator
+{
+    private $timesRepeat = 1;
+
+    public function __construct(PHPUnit_Framework_Test $test, $timesRepeat = 1)
+    {
+        parent::__construct($test);
+
+        if (is_integer($timesRepeat) &amp;&amp;
+            $timesRepeat &gt;= 0) {
+            $this-&gt;timesRepeat = $timesRepeat;
+        }
+    }
+
+    public function count()
+    {
+        return $this-&gt;timesRepeat * $this-&gt;test-&gt;count();
+    }
+
+    public function run(PHPUnit_Framework_TestResult $result = null)
+    {
+        if ($result === null) {
+            $result = $this-&gt;createResult();
+        }
+
+        for ($i = 0; $i &lt; $this-&gt;timesRepeat &amp;&amp; !$result-&gt;shouldStop(); $i++) {
+            $this-&gt;test-&gt;run($result);
+        }
+
+        return $result;
     }
 }
 ?&gt;</seg>
@@ -75187,6 +75903,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;l0&gt;PHPUnit_Framework_Test&lt;/l0&gt; interface is narrow and easy to implement. You can write an implementation of &lt;l1&gt;PHPUnit_Framework_Test&lt;/l1&gt; that is simpler than &lt;l2&gt;PHPUnit\Framework\TestCase&lt;/l2&gt; and that runs &lt;e3&gt;data-driven tests&lt;/e3&gt;, for instance.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092458Z" creationid="Wynn" creationdate="20160815T092458Z">
+        <seg>&lt;l0&gt;PHPUnit_Framework_Test&lt;/l0&gt;  接口是比较狭义的，十分容易实现。举例来说，你可以自行为 &lt;l1&gt;PHPUnit_Framework_Test&lt;/l1&gt;  编写一个类似于 &lt;l2&gt;PHPUnit\Framework\TestCase&lt;/l2&gt; 的实现来运行&lt;e3&gt;数据驱动测试&lt;/e3&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;l0&gt;PHPUnit_Framework_Test&lt;/l0&gt; interface is narrow and easy to implement. You can write an implementation of &lt;l1&gt;PHPUnit_Framework_Test&lt;/l1&gt; that is simpler than &lt;l2&gt;PHPUnit_Framework_TestCase&lt;/l2&gt; and that runs &lt;e3&gt;data-driven tests&lt;/e3&gt;, for instance.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150319T075612Z" creationid="Wynn" creationdate="20150319T075612Z">
@@ -80812,6 +81536,46 @@ class MyClass
     protected $backupStaticAttributesBlacklist = array(
       'className' =&gt; array('attributeName')
     );
+
+    // ...
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>class MyTest extends TestCase
+{
+    protected $backupGlobalsBlacklist = ['globalVariable'];
+
+    // ...
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092511Z" creationid="Wynn" creationdate="20160815T092511Z">
+        <seg>class MyTest extends TestCase
+{
+    protected $backupGlobalsBlacklist = ['globalVariable'];
+
+    // ...
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>class MyTest extends TestCase
+{
+    protected $backupStaticAttributesBlacklist = [
+        'className' =&gt; ['attributeName']
+    ];
+
+    // ...
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092512Z" creationid="Wynn" creationdate="20160815T092512Z">
+        <seg>class MyTest extends TestCase
+{
+    protected $backupStaticAttributesBlacklist = [
+        'className' =&gt; ['attributeName']
+    ];
 
     // ...
 }</seg>
