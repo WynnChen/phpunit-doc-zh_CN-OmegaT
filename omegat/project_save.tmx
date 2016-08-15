@@ -13739,6 +13739,74 @@ class TraitClassTest extends PHPUnit_Framework_TestCase
 use PHPUnit\Framework\TestCase;
 
 /**
+ * @codeCoverageIgnore
+ */
+class Foo
+{
+    public function bar()
+    {
+    }
+}
+
+class Bar
+{
+    /**
+     * @codeCoverageIgnore
+     */
+    public function foo()
+    {
+    }
+}
+
+if (false) {
+    // @codeCoverageIgnoreStart
+    print '*';
+    // @codeCoverageIgnoreEnd
+}
+
+exit; // @codeCoverageIgnore
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092216Z" creationid="Wynn" creationdate="20160815T092216Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+/**
+ * @codeCoverageIgnore
+ */
+class Foo
+{
+    public function bar()
+    {
+    }
+}
+
+class Bar
+{
+    /**
+     * @codeCoverageIgnore
+     */
+    public function foo()
+    {
+    }
+}
+
+if (false) {
+    // @codeCoverageIgnoreStart
+    print '*';
+    // @codeCoverageIgnoreEnd
+}
+
+exit; // @codeCoverageIgnore
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+/**
  * @coversDefaultClass \Foo\CoveredClass
  */
 class CoversDefaultClassTest extends TestCase
@@ -13773,6 +13841,124 @@ class CoversDefaultClassTest extends TestCase
     }
 }
 ?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+// Because it is "line based" and not statement base coverage
+// one line will always have one coverage status
+if (false) this_function_call_shows_up_as_covered();
+
+// Due to how code coverage works internally these two lines are special.
+// This line will show up as non executable
+if (false)
+    // This line will show up as covered because it is actually the 
+    // coverage of the if statement in the line above that gets shown here!
+    will_also_show_up_as_covered();
+
+// To avoid this it is necessary that braces are used
+if (false) {
+    this_call_will_never_show_up_as_covered();
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092256Z" creationid="Wynn" creationdate="20160815T092256Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+// 因为覆盖率是“基于行”而不是基于语句的，
+// 每行只会有一种覆盖状态
+if (false) this_function_call_shows_up_as_covered();
+
+// 由于代码覆盖率的内部工作方式，这两行显得很特殊。
+// 这一行会显示为非可执行
+if (false)
+    // 这一行会显示为已覆盖，
+    // 实际上是上一行的 if 语句的覆盖信息显示在这了！
+    will_also_show_up_as_covered();
+
+// 要避免这种情况，必须使用大括号
+if (false) {
+    this_call_will_never_show_up_as_covered();
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+abstract class PHPUnit_Framework_Assert
+{
+    // ...
+
+    /**
+     * Asserts that a condition is true.
+     *
+     * @param  boolean $condition
+     * @param  string  $message
+     * @throws PHPUnit_Framework_AssertionFailedError
+     */
+    public static function assertTrue($condition, $message = '')
+    {
+        self::assertThat($condition, self::isTrue(), $message);
+    }
+
+    // ...
+
+    /**
+     * Returns a PHPUnit_Framework_Constraint_IsTrue matcher object.
+     *
+     * @return PHPUnit_Framework_Constraint_IsTrue
+     * @since  Method available since Release 3.3.0
+     */
+    public static function isTrue()
+    {
+        return new PHPUnit_Framework_Constraint_IsTrue;
+    }
+
+    // ...
+}?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092346Z" creationid="Wynn" creationdate="20160815T092346Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+abstract class PHPUnit_Framework_Assert
+{
+    // ...
+
+    /**
+     * Asserts that a condition is true.
+     *
+     * @param  boolean $condition
+     * @param  string  $message
+     * @throws PHPUnit_Framework_AssertionFailedError
+     */
+    public static function assertTrue($condition, $message = '')
+    {
+        self::assertThat($condition, self::isTrue(), $message);
+    }
+
+    // ...
+
+    /**
+     * Returns a PHPUnit_Framework_Constraint_IsTrue matcher object.
+     *
+     * @return PHPUnit_Framework_Constraint_IsTrue
+     * @since  Method available since Release 3.3.0
+     */
+    public static function isTrue()
+    {
+        return new PHPUnit_Framework_Constraint_IsTrue;
+    }
+
+    // ...
+}?&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -13826,6 +14012,198 @@ class ArraySubsetTest extends TestCase
     public function testFailure()
     {
         $this-&gt;assertArraySubset(['config' =&gt; ['key-a', 'key-b']], ['config' =&gt; ['key-a']]);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class BankAccountTest extends TestCase
+{
+    protected $ba;
+
+    protected function setUp()
+    {
+        $this-&gt;ba = new BankAccount;
+    }
+
+    /**
+     * @covers BankAccount::getBalance
+     */
+    public function testBalanceIsInitiallyZero()
+    {
+        $this-&gt;assertEquals(0, $this-&gt;ba-&gt;getBalance());
+    }
+
+    /**
+     * @covers BankAccount::withdrawMoney
+     */
+    public function testBalanceCannotBecomeNegative()
+    {
+        try {
+            $this-&gt;ba-&gt;withdrawMoney(1);
+        }
+
+        catch (BankAccountException $e) {
+            $this-&gt;assertEquals(0, $this-&gt;ba-&gt;getBalance());
+
+            return;
+        }
+
+        $this-&gt;fail();
+    }
+
+    /**
+     * @covers BankAccount::depositMoney
+     */
+    public function testBalanceCannotBecomeNegative2()
+    {
+        try {
+            $this-&gt;ba-&gt;depositMoney(-1);
+        }
+
+        catch (BankAccountException $e) {
+            $this-&gt;assertEquals(0, $this-&gt;ba-&gt;getBalance());
+
+            return;
+        }
+
+        $this-&gt;fail();
+    }
+
+    /**
+     * @covers BankAccount::getBalance
+     * @covers BankAccount::depositMoney
+     * @covers BankAccount::withdrawMoney
+     */
+    public function testDepositWithdrawMoney()
+    {
+        $this-&gt;assertEquals(0, $this-&gt;ba-&gt;getBalance());
+        $this-&gt;ba-&gt;depositMoney(1);
+        $this-&gt;assertEquals(1, $this-&gt;ba-&gt;getBalance());
+        $this-&gt;ba-&gt;withdrawMoney(1);
+        $this-&gt;assertEquals(0, $this-&gt;ba-&gt;getBalance());
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092223Z" creationid="Wynn" creationdate="20160815T092223Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class BankAccountTest extends TestCase
+{
+    protected $ba;
+
+    protected function setUp()
+    {
+        $this-&gt;ba = new BankAccount;
+    }
+
+    /**
+     * @covers BankAccount::getBalance
+     */
+    public function testBalanceIsInitiallyZero()
+    {
+        $this-&gt;assertEquals(0, $this-&gt;ba-&gt;getBalance());
+    }
+
+    /**
+     * @covers BankAccount::withdrawMoney
+     */
+    public function testBalanceCannotBecomeNegative()
+    {
+        try {
+            $this-&gt;ba-&gt;withdrawMoney(1);
+        }
+
+        catch (BankAccountException $e) {
+            $this-&gt;assertEquals(0, $this-&gt;ba-&gt;getBalance());
+
+            return;
+        }
+
+        $this-&gt;fail();
+    }
+
+    /**
+     * @covers BankAccount::depositMoney
+     */
+    public function testBalanceCannotBecomeNegative2()
+    {
+        try {
+            $this-&gt;ba-&gt;depositMoney(-1);
+        }
+
+        catch (BankAccountException $e) {
+            $this-&gt;assertEquals(0, $this-&gt;ba-&gt;getBalance());
+
+            return;
+        }
+
+        $this-&gt;fail();
+    }
+
+    /**
+     * @covers BankAccount::getBalance
+     * @covers BankAccount::depositMoney
+     * @covers BankAccount::withdrawMoney
+     */
+    public function testDepositWithdrawMoney()
+    {
+        $this-&gt;assertEquals(0, $this-&gt;ba-&gt;getBalance());
+        $this-&gt;ba-&gt;depositMoney(1);
+        $this-&gt;assertEquals(1, $this-&gt;ba-&gt;getBalance());
+        $this-&gt;ba-&gt;withdrawMoney(1);
+        $this-&gt;assertEquals(0, $this-&gt;ba-&gt;getBalance());
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class BiscuitTest extends TestCase
+{
+    public function testEquals()
+    {
+        $theBiscuit = new Biscuit('Ginger');
+        $myBiscuit  = new Biscuit('Ginger');
+
+        $this-&gt;assertThat(
+          $theBiscuit,
+          $this-&gt;logicalNot(
+            $this-&gt;equalTo($myBiscuit)
+          )
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092209Z" creationid="Wynn" creationdate="20160815T092209Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class BiscuitTest extends TestCase
+{
+    public function testEquals()
+    {
+        $theBiscuit = new Biscuit('Ginger');
+        $myBiscuit  = new Biscuit('Ginger');
+
+        $this-&gt;assertThat(
+          $theBiscuit,
+          $this-&gt;logicalNot(
+            $this-&gt;equalTo($myBiscuit)
+          )
+        );
     }
 }
 ?&gt;</seg>
@@ -14554,6 +14932,60 @@ class GreaterThanTest extends TestCase
         <seg>&lt;?php
 use PHPUnit\Framework\TestCase;
 
+class GuestbookIntegrationTest extends PHPUnit_Extensions_Database_TestCase
+{
+    /**
+     * @coversNothing
+     */
+    public function testAddEntry()
+    {
+        $guestbook = new Guestbook();
+        $guestbook-&gt;addEntry("suzy", "Hello world!");
+
+        $queryTable = $this-&gt;getConnection()-&gt;createQueryTable(
+            'guestbook', 'SELECT * FROM guestbook'
+        );
+
+        $expectedTable = $this-&gt;createFlatXmlDataSet("expectedBook.xml")
+                              -&gt;getTable("guestbook");
+
+        $this-&gt;assertTablesEqual($expectedTable, $queryTable);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092226Z" creationid="Wynn" creationdate="20160815T092226Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class GuestbookIntegrationTest extends PHPUnit_Extensions_Database_TestCase
+{
+    /**
+     * @coversNothing
+     */
+    public function testAddEntry()
+    {
+        $guestbook = new Guestbook();
+        $guestbook-&gt;addEntry("suzy", "Hello world!");
+
+        $queryTable = $this-&gt;getConnection()-&gt;createQueryTable(
+            'guestbook', 'SELECT * FROM guestbook'
+        );
+
+        $expectedTable = $this-&gt;createFlatXmlDataSet("expectedBook.xml")
+                              -&gt;getTable("guestbook");
+
+        $this-&gt;assertTablesEqual($expectedTable, $queryTable);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
 class InfiniteTest extends TestCase
 {
     public function testFailure()
@@ -14790,6 +15222,34 @@ class LessThanTest extends TestCase
         <seg>&lt;?php
 use PHPUnit\Framework\TestCase;
 
+class MyTest extends TestCase
+{
+    public function testCalculate()
+    {
+        $this-&gt;assertEquals(2, 1 + 1);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092317Z" creationid="Wynn" creationdate="20160815T092317Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class MyTest extends TestCase
+{
+    public function testCalculate()
+    {
+        $this-&gt;assertEquals(2, 1 + 1);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
 class NanTest extends TestCase
 {
     public function testFailure()
@@ -14864,6 +15324,348 @@ class ObjectHasAttributeTest extends TestCase
     public function testFailure()
     {
         $this-&gt;assertObjectHasAttribute('foo', new stdClass);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class RegExpTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertRegExp('/foo/', 'bar');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092201Z" creationid="Wynn" creationdate="20160815T092201Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class RegExpTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertRegExp('/foo/', 'bar');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class SameTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertSame('2204', 2204);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092204Z" creationid="Wynn" creationdate="20160815T092204Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class SameTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertSame('2204', 2204);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class SameTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertSame(new stdClass, new stdClass);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092205Z" creationid="Wynn" creationdate="20160815T092205Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class SameTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertSame(new stdClass, new stdClass);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StringEndsWithTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertStringEndsWith('suffix', 'foo');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092206Z" creationid="Wynn" creationdate="20160815T092206Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StringEndsWithTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertStringEndsWith('suffix', 'foo');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StringEqualsFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertStringEqualsFile('/home/sb/expected', 'actual');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092206Z" creationid="Wynn" creationdate="20160815T092206Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StringEqualsFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertStringEqualsFile('/home/sb/expected', 'actual');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StringMatchesFormatFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertStringMatchesFormatFile('/path/to/expected.txt', 'foo');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092203Z" creationid="Wynn" creationdate="20160815T092203Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StringMatchesFormatFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertStringMatchesFormatFile('/path/to/expected.txt', 'foo');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StringMatchesFormatTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertStringMatchesFormat('%i', 'foo');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092202Z" creationid="Wynn" creationdate="20160815T092202Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StringMatchesFormatTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertStringMatchesFormat('%i', 'foo');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StringStartsWithTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertStringStartsWith('prefix', 'foo');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092207Z" creationid="Wynn" creationdate="20160815T092207Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StringStartsWithTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertStringStartsWith('prefix', 'foo');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class TrueTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertTrue(false);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092210Z" creationid="Wynn" creationdate="20160815T092210Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class TrueTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertTrue(false);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class XmlFileEqualsXmlFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertXmlFileEqualsXmlFile(
+          '/home/sb/expected.xml', '/home/sb/actual.xml');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092211Z" creationid="Wynn" creationdate="20160815T092211Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class XmlFileEqualsXmlFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertXmlFileEqualsXmlFile(
+          '/home/sb/expected.xml', '/home/sb/actual.xml');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class XmlStringEqualsXmlFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertXmlStringEqualsXmlFile(
+          '/home/sb/expected.xml', '&lt;foo&gt;&lt;baz/&gt;&lt;/foo&gt;');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092212Z" creationid="Wynn" creationdate="20160815T092212Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class XmlStringEqualsXmlFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertXmlStringEqualsXmlFile(
+          '/home/sb/expected.xml', '&lt;foo&gt;&lt;baz/&gt;&lt;/foo&gt;');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class XmlStringEqualsXmlStringTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertXmlStringEqualsXmlString(
+          '&lt;foo&gt;&lt;bar/&gt;&lt;/foo&gt;', '&lt;foo&gt;&lt;baz/&gt;&lt;/foo&gt;');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092213Z" creationid="Wynn" creationdate="20160815T092213Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class XmlStringEqualsXmlStringTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertXmlStringEqualsXmlString(
+          '&lt;foo&gt;&lt;bar/&gt;&lt;/foo&gt;', '&lt;foo&gt;&lt;baz/&gt;&lt;/foo&gt;');
     }
 }
 ?&gt;</seg>
@@ -71183,6 +71985,14 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHPUnit\Framework\TestCase</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092332Z" creationid="Wynn" creationdate="20160815T092332Z">
+        <seg>PHPUnit\Framework\TestCase</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHPUnit_Extensions_RepeatedTest</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150319T070646Z" creationid="Wynn" creationdate="20150319T070646Z">
@@ -73411,6 +74221,14 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T024759Z" creationid="Wynn" creationdate="20150327T024759Z">
         <seg>Stubs （桩件）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Subclass PHPUnit\Framework\TestCase</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092331Z" creationid="Wynn" creationdate="20160815T092331Z">
+        <seg>PHPUnit\Framework\TestCase 的子类</seg>
       </tuv>
     </tu>
     <tu>
@@ -76545,6 +77363,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Usually when using PHPUnit your testcases would extend the &lt;l0&gt;PHPUnit\Framework\TestCase&lt;/l0&gt; class in the following way:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092315Z" creationid="Wynn" creationdate="20160815T092315Z">
+        <seg>一般而言，使用 PHPUnit 时，测试用例都是按如下方式扩展自 &lt;l0&gt;PHPUnit\Framework\TestCase&lt;/l0&gt; 类：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Usually when using PHPUnit your testcases would extend the &lt;l0&gt;PHPUnit_Framework_TestCase&lt;/l0&gt; class in the following way:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150316T094512Z" creationid="Wynn" creationdate="20150316T094512Z">
@@ -77157,6 +77983,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150319T042657Z" creationid="Wynn" creationdate="20150319T042657Z">
         <seg>编写自定义断言</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Write custom assertions and utility methods in an abstract subclass of &lt;l0&gt;PHPUnit\Framework\TestCase&lt;/l0&gt; and derive your test case classes from that class. This is one of the easiest ways to extend PHPUnit.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092343Z" creationid="Wynn" creationdate="20160815T092343Z">
+        <seg>将自定义的断言和工具方法写在 &lt;l0&gt;PHPUnit\Framework\TestCase&lt;/l0&gt; 的一个抽象子类中，然后从这个抽象子类派生你的测试用例类。这是扩展 PHPUnit 的最容易的方法。</seg>
       </tuv>
     </tu>
     <tu>
