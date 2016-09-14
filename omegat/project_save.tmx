@@ -91171,6 +91171,14 @@ ok</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>shows an example of how to use the Mock Builder's fluent interface to configure the creation of the test double. The configuration of this test double uses the same best practice defaults used by &lt;l0&gt;createMock()&lt;/l0&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160914T025410Z" creationid="Wynn" creationdate="20160914T025410Z">
+        <seg>这个例子展示了如何用仿件生成器的流畅式接口来配置测试替身的生成。这个测试替身的默认配置用的是和 &lt;l0&gt;createMock()&lt;/l0&gt; 相同的最佳实践。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>shows an excerpt from a Code Coverage report. Lines of code that were executed while running the tests are highlighted green, lines of code that are executable but were not executed are highlighted red, and "dead code" is highlighted grey. The number left to the actual line of code indicates how many tests cover that line.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150330T032412Z" creationid="Wynn" creationdate="20150330T032412Z">
