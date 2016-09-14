@@ -17723,6 +17723,61 @@ use PHPUnit\Framework\TestCase;
 
 class StubTest extends TestCase
 {
+    public function testStub()
+    {
+        // Create a stub for the SomeClass class.
+        $stub = $this-&gt;getMockBuilder($originalClassName)
+                     -&gt;disableOriginalConstructor()
+                     -&gt;disableOriginalClone()
+                     -&gt;disableArgumentCloning()
+                     -&gt;disallowMockingUnknownTypes()
+                     -&gt;getMock();
+
+        // Configure the stub.
+        $stub-&gt;method('doSomething')
+             -&gt;willReturn('foo');
+
+        // Calling $stub-&gt;doSomething() will now return
+        // 'foo'.
+        $this-&gt;assertEquals('foo', $stub-&gt;doSomething());
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="Wynn" changedate="20160914T025457Z" creationid="Wynn" creationdate="20160914T025457Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StubTest extends TestCase
+{
+    public function testStub()
+    {
+        // 为 SomeClass 类建立桩件。
+        $stub = $this-&gt;getMockBuilder($originalClassName)
+                     -&gt;disableOriginalConstructor()
+                     -&gt;disableOriginalClone()
+                     -&gt;disableArgumentCloning()
+                     -&gt;disallowMockingUnknownTypes()
+                     -&gt;getMock();
+
+        // 配置桩件。
+        $stub-&gt;method('doSomething')
+             -&gt;willReturn('foo');
+
+        // 现在调用 $stub-&gt;doSomething() 将返回 'foo'。
+        $this-&gt;assertEquals('foo', $stub-&gt;doSomething());
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class StubTest extends TestCase
+{
     public function testThrowExceptionStub()
     {
         // Create a stub for the SomeClass class.
