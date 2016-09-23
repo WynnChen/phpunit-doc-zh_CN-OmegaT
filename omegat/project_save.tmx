@@ -15206,6 +15206,34 @@ class DirectoryIsReadableTest extends TestCase
         <seg>&lt;?php
 use PHPUnit\Framework\TestCase;
 
+class DirectoryIsWritableTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertDirectoryIsWritable('/path/to/directory');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091200Z" creationid="wynnc" creationdate="20160923T091200Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class DirectoryIsWritableTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertDirectoryIsWritable('/path/to/directory');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
 class EmptyTest extends TestCase
 {
     public function testFailure()
@@ -15924,6 +15952,62 @@ class FileExistsTest extends TestCase
     public function testFailure()
     {
         $this-&gt;assertFileExists('/path/to/file');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class FileIsReadableTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertFileIsReadable('/path/to/file');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091337Z" creationid="wynnc" creationdate="20160923T091337Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class FileIsReadableTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertFileIsReadable('/path/to/file');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class FileIsWritableTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertFileIsWritable('/path/to/file');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091420Z" creationid="wynnc" creationdate="20160923T091420Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class FileIsWritableTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertFileIsWritable('/path/to/file');
     }
 }
 ?&gt;</seg>
@@ -19670,6 +19754,14 @@ Exception:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;l0&gt;assertDirectoryNotIsWritable()&lt;/l0&gt; is the inverse of this assertion and takes the same arguments.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091149Z" creationid="wynnc" creationdate="20160923T091149Z">
+        <seg>&lt;l0&gt;assertDirectoryNotIsWritable()&lt;/l0&gt; 是与之相反的断言，并接受相同的参数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;l0&gt;assertFileNotEquals()&lt;/l0&gt; is the inverse of this assertion and takes the same arguments.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150305T030841Z" creationid="Wynn" creationdate="20150305T030841Z">
@@ -19682,6 +19774,22 @@ Exception:
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150305T030946Z" creationid="Wynn" creationdate="20150305T030946Z">
         <seg>&lt;l0&gt;assertFileNotExists()&lt;/l0&gt; 是与之相反的断言，接受相同的参数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;l0&gt;assertFileNotIsReadable()&lt;/l0&gt; is the inverse of this assertion and takes the same arguments.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091323Z" creationid="wynnc" creationdate="20160923T091323Z">
+        <seg>&lt;l0&gt;assertFileNotIsReadable()&lt;/l0&gt; 是与之相反的断言，并接受相同的参数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;l0&gt;assertFileNotIsWritable()&lt;/l0&gt; is the inverse of this assertion and takes the same arguments.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091404Z" creationid="wynnc" creationdate="20160923T091404Z">
+        <seg>&lt;l0&gt;assertFileNotIsWritable()&lt;/l0&gt; 是与之相反的断言，并接受相同的参数。</seg>
       </tuv>
     </tu>
     <tu>
@@ -41122,6 +41230,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit DirectoryIsWritableTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) DirectoryIsWritableTest::testFailure
+Failed asserting that "/path/to/directory" is writable.
+
+/home/sb/DirectoryIsWritableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091202Z" creationid="wynnc" creationdate="20160923T091202Z">
+        <seg>&lt;u0&gt;phpunit DirectoryIsWritableTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) DirectoryIsWritableTest::testFailure
+Failed asserting that "/path/to/directory" is writable.
+
+/home/sb/DirectoryIsWritableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit EmptyTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -53293,6 +53439,44 @@ There was 1 failure:
 Failed asserting that file "/path/to/file" exists.
 
 /home/sb/FileExistsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit FileIsReadableTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) FileIsReadableTest::testFailure
+Failed asserting that "/path/to/file" is readable.
+
+/home/sb/FileIsReadableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091339Z" creationid="wynnc" creationdate="20160923T091339Z">
+        <seg>&lt;u0&gt;phpunit FileIsReadableTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) FileIsReadableTest::testFailure
+Failed asserting that "/path/to/file" is readable.
+
+/home/sb/FileIsReadableTest.php:6
 
 FAILURES!
 Tests: 1, Assertions: 1, Failures: 1.</seg>
@@ -82176,6 +82360,14 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if the directory specified by &lt;l1&gt;$directory&lt;/l1&gt; is not a directory or is not writable.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091132Z" creationid="wynnc" creationdate="20160923T091132Z">
+        <seg>当 &lt;l1&gt;$directory&lt;/l1&gt; 所指定的目录不是个目录或不可写时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if the file specified by &lt;l1&gt;$expected&lt;/l1&gt; does not have the same contents as the file specified by &lt;l2&gt;$actual&lt;/l2&gt;.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150305T030825Z" creationid="Wynn" creationdate="20150305T030825Z">
@@ -82196,6 +82388,22 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150305T030933Z" creationid="Wynn" creationdate="20150305T030933Z">
         <seg>当 &lt;l1&gt;$filename&lt;/l1&gt; 所指定的文件不存在时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if the file specified by &lt;l1&gt;$filename&lt;/l1&gt; is not a file or is not readable.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091243Z" creationid="wynnc" creationdate="20160923T091243Z">
+        <seg>当 &lt;l1&gt;$filename&lt;/l1&gt; 所指定的文件不是个文件或不可读时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if the file specified by &lt;l1&gt;$filename&lt;/l1&gt; is not a file or is not writable.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091355Z" creationid="wynnc" creationdate="20160923T091355Z">
+        <seg>当 &lt;l1&gt;$filename&lt;/l1&gt; 所指定的文件不是个文件或不可写时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
       </tuv>
     </tu>
     <tu>
@@ -86090,6 +86298,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Usage of assertDirectoryIsWritable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091157Z" creationid="wynnc" creationdate="20160923T091157Z">
+        <seg>assertDirectoryIsWritable() 的用法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Usage of assertEmpty()</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150303T084942Z" creationid="Wynn" creationdate="20150303T084942Z">
@@ -86166,6 +86382,22 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150305T030954Z" creationid="Wynn" creationdate="20150305T030954Z">
         <seg>assertFileExists() 的用法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Usage of assertFileIsReadable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091334Z" creationid="wynnc" creationdate="20160923T091334Z">
+        <seg>assertFileIsReadable() 的用法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Usage of assertFileIsWritable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091412Z" creationid="wynnc" creationdate="20160923T091412Z">
+        <seg>assertFileIsWritable() 的用法</seg>
       </tuv>
     </tu>
     <tu>
@@ -88378,6 +88610,38 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>assertFileIsReadable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091204Z" creationid="wynnc" creationdate="20160923T091204Z">
+        <seg>assertFileIsReadable()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertFileIsReadable(string $filename[, string $message = ''])</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091208Z" creationid="wynnc" creationdate="20160923T091208Z">
+        <seg>assertFileIsReadable(string $filename[, string $message = ''])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertFileIsWritable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091341Z" creationid="wynnc" creationdate="20160923T091341Z">
+        <seg>assertFileIsWritable()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertFileIsWritable(string $filename[, string $message = ''])</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091342Z" creationid="wynnc" creationdate="20160923T091342Z">
+        <seg>assertFileIsWritable(string $filename[, string $message = ''])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>assertFileNotEquals($expected, $actual, $message = '', $canonicalize = FALSE, $ignoreCase = FALSE)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150330T025524Z" creationid="Wynn" creationdate="20150330T025524Z">
@@ -88406,6 +88670,22 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T093114Z" creationid="Wynn" creationdate="20150309T093114Z">
         <seg>assertFileNotExists()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertFileNotIsReadable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091205Z" creationid="wynnc" creationdate="20160923T091205Z">
+        <seg>assertFileNotIsReadable()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertFileNotIsWritable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091341Z" creationid="wynnc" creationdate="20160923T091341Z">
+        <seg>assertFileNotIsWritable()</seg>
       </tuv>
     </tu>
     <tu>
