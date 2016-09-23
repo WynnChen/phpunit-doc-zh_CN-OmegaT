@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.5.4" segtype="paragraph" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.6.0" segtype="paragraph" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -84014,6 +84014,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150302T073617Z" creationid="Wynn" creationdate="20150302T073617Z">
         <seg>&lt;l0&gt;@requires&lt;/l0&gt; 标注用于在常见前提条件（例如 PHP 版本或所安装的扩展）不满足时跳过测试。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;l0&gt;@requires&lt;/l0&gt; annotation can be used to skip tests when common preconditions, like the PHP Version or installed extensions, are not met.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090716Z" creationid="wynnc" creationdate="20160923T090716Z">
+        <seg>&lt;l0&gt;@requires&lt;/l0&gt; 标注用于在常规前提条件（例如 PHP 版本或所安装的扩展）不满足时跳过测试。</seg>
       </tuv>
     </tu>
     <tu>
