@@ -16489,6 +16489,62 @@ class InternalTypeTest extends TestCase
         <seg>&lt;?php
 use PHPUnit\Framework\TestCase;
 
+class IsReadableTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertIsReadable('/path/to/unreadable');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091547Z" creationid="wynnc" creationdate="20160923T091547Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class IsReadableTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertIsReadable('/path/to/unreadable');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class IsWritableTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertIsWritable('/path/to/unwritable');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091636Z" creationid="wynnc" creationdate="20160923T091636Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class IsWritableTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertIsWritable('/path/to/unwritable');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
 class JsonFileEqualsJsonFileTest extends TestCase
 {
     public function testFailure()
@@ -19862,6 +19918,22 @@ Exception:
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150305T061701Z" creationid="Wynn" creationdate="20150305T061701Z">
         <seg>&lt;l0&gt;assertNotInternalType()&lt;/l0&gt; 是与之相反的断言，接受相同的参数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;l0&gt;assertNotIsReadable()&lt;/l0&gt; is the inverse of this assertion and takes the same arguments.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091533Z" creationid="wynnc" creationdate="20160923T091533Z">
+        <seg>&lt;l0&gt;assertNotIsReadable()&lt;/l0&gt; 是与之相反的断言，并接受相同的参数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;l0&gt;assertNotIsWritable()&lt;/l0&gt; is the inverse of this assertion and takes the same arguments.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091621Z" creationid="wynnc" creationdate="20160923T091621Z">
+        <seg>&lt;l0&gt;assertNotIsWritable()&lt;/l0&gt; 是与之相反的断言，并接受相同的参数。</seg>
       </tuv>
     </tu>
     <tu>
@@ -53484,6 +53556,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit FileIsWritableTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) FileIsWritableTest::testFailure
+Failed asserting that "/path/to/file" is writable.
+
+/home/sb/FileIsWritableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091459Z" creationid="wynnc" creationdate="20160923T091459Z">
+        <seg>&lt;u0&gt;phpunit FileIsWritableTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) FileIsWritableTest::testFailure
+Failed asserting that "/path/to/file" is writable.
+
+/home/sb/FileIsWritableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit GreaterThanOrEqualTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -56334,6 +56444,82 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit IsReadableTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) IsReadableTest::testFailure
+Failed asserting that "/path/to/unreadable" is readable.
+
+/home/sb/IsReadableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091549Z" creationid="wynnc" creationdate="20160923T091549Z">
+        <seg>&lt;u0&gt;phpunit IsReadableTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) IsReadableTest::testFailure
+Failed asserting that "/path/to/unreadable" is readable.
+
+/home/sb/IsReadableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit IsWritableTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) IsWritableTest::testFailure
+Failed asserting that "/path/to/unwritable" is writable.
+
+/home/sb/IsWritableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091645Z" creationid="wynnc" creationdate="20160923T091645Z">
+        <seg>&lt;u0&gt;phpunit IsWritableTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) IsWritableTest::testFailure
+Failed asserting that "/path/to/unwritable" is writable.
+
+/home/sb/IsWritableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -56933,6 +57119,44 @@ There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091647Z" creationid="wynnc" creationdate="20160923T091647Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
 
@@ -57617,6 +57841,44 @@ There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091648Z" creationid="wynnc" creationdate="20160923T091648Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
 
@@ -58538,6 +58800,58 @@ Failed asserting that two objects are equal.
  stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091649Z" creationid="wynnc" creationdate="20160923T091649Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
 )
 
 /home/sb/JsonStringEqualsJsonStringTest.php:5
@@ -77302,6 +77616,14 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Constraint that checks if the directory that it is evaluated for exists.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091732Z" creationid="wynnc" creationdate="20160923T091732Z">
+        <seg>此约束检验所评定的目录是否存在。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Constraint that checks if the file(name) that it is evaluated for exists.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150306T083454Z" creationid="Wynn" creationdate="20150306T083454Z">
@@ -81432,6 +81754,14 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHPUnit_Framework_Constraint_DirectoryExists directoryExists()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091655Z" creationid="wynnc" creationdate="20160923T091655Z">
+        <seg>PHPUnit_Framework_Constraint_DirectoryExists directoryExists()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHPUnit_Framework_Constraint_FileExists fileExists()</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T093249Z" creationid="Wynn" creationdate="20150309T093249Z">
@@ -81492,6 +81822,14 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T093300Z" creationid="Wynn" creationdate="20150309T093300Z">
         <seg>PHPUnit_Framework_Constraint_IsNull isNull()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHPUnit_Framework_Constraint_IsReadable isReadable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091738Z" creationid="wynnc" creationdate="20160923T091738Z">
+        <seg>PHPUnit_Framework_Constraint_IsReadable isReadable()</seg>
       </tuv>
     </tu>
     <tu>
@@ -82364,6 +82702,22 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091132Z" creationid="wynnc" creationdate="20160923T091132Z">
         <seg>当 &lt;l1&gt;$directory&lt;/l1&gt; 所指定的目录不是个目录或不可写时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if the file or directory specified by &lt;l1&gt;$filename&lt;/l1&gt; is not readable.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091524Z" creationid="wynnc" creationdate="20160923T091524Z">
+        <seg>当 &lt;l1&gt;$filename&lt;/l1&gt; 所指定的文件或目录不可读时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if the file or directory specified by &lt;l1&gt;$filename&lt;/l1&gt; is not writable.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091600Z" creationid="wynnc" creationdate="20160923T091600Z">
+        <seg>当 &lt;l1&gt;$filename&lt;/l1&gt; 所指定的文件或目录不可写时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
       </tuv>
     </tu>
     <tu>
@@ -86442,6 +86796,22 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Usage of assertIsReadable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091543Z" creationid="wynnc" creationdate="20160923T091543Z">
+        <seg>assertIsReadable() 的用法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Usage of assertIsWritable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091633Z" creationid="wynnc" creationdate="20160923T091633Z">
+        <seg>assertIsWritable() 的用法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Usage of assertJsonFileEqualsJsonFile()</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150305T065107Z" creationid="Wynn" creationdate="20150305T065107Z">
@@ -88826,6 +89196,38 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>assertIsReadable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091500Z" creationid="wynnc" creationdate="20160923T091500Z">
+        <seg>assertIsReadable()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertIsReadable(string $filename[, string $message = ''])</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091502Z" creationid="wynnc" creationdate="20160923T091502Z">
+        <seg>assertIsReadable(string $filename[, string $message = ''])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertIsWritable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091550Z" creationid="wynnc" creationdate="20160923T091550Z">
+        <seg>assertIsWritable()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertIsWritable(string $filename[, string $message = ''])</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091552Z" creationid="wynnc" creationdate="20160923T091552Z">
+        <seg>assertIsWritable(string $filename[, string $message = ''])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>assertJsonFileEqualsJsonFile($expectedFile, $actualFile, $message = '')</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150330T025530Z" creationid="Wynn" creationdate="20150330T025530Z">
@@ -89142,6 +89544,22 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T093131Z" creationid="Wynn" creationdate="20150309T093131Z">
         <seg>assertNotInternalType()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertNotIsReadable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091501Z" creationid="wynnc" creationdate="20160923T091501Z">
+        <seg>assertNotIsReadable()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertNotIsWritable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091551Z" creationid="wynnc" creationdate="20160923T091551Z">
+        <seg>assertNotIsWritable()</seg>
       </tuv>
     </tu>
     <tu>
@@ -90702,6 +91120,14 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>directoryExists()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091651Z" creationid="wynnc" creationdate="20160923T091651Z">
+        <seg>directoryExists()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>en</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T093344Z" creationid="Wynn" creationdate="20150309T093344Z">
@@ -91556,6 +91982,14 @@ $_REQUEST['foo'] = 'bar';</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T093300Z" creationid="Wynn" creationdate="20150309T093300Z">
         <seg>isNull()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>isReadable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091737Z" creationid="wynnc" creationdate="20160923T091737Z">
+        <seg>isReadable()</seg>
       </tuv>
     </tu>
     <tu>
