@@ -7350,6 +7350,34 @@ class JsonStringEqualsJsonFileTest extends PHPUnit_Framework_TestCase
     public function testFailure()
     {
         $this-&gt;assertJsonStringEqualsJsonFile(
+          'path/to/fixture/file', json_encode(array("Mascot" =&gt; "ux"))
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091836Z" creationid="wynnc" creationdate="20160923T091836Z">
+        <seg>&lt;?php
+class JsonStringEqualsJsonFileTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonFile(
+          'path/to/fixture/file', json_encode(array("Mascot" =&gt; "ux"))
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class JsonStringEqualsJsonFileTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonFile(
           'path/to/fixture/file', json_encode(array("Mascott" =&gt; "ux"))
         );
     }
@@ -7394,6 +7422,34 @@ class JsonStringEqualsJsonStringTest extends PHPUnit_Framework_TestCase
         $this-&gt;assertJsonStringEqualsJsonString(
             json_encode(['Mascott' =&gt; 'Tux']),
             json_encode(['Mascott' =&gt; 'ux'])
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+class JsonStringEqualsJsonStringTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonString(
+          json_encode(array("Mascot" =&gt; "Tux")), json_encode(array("Mascott" =&gt; "ux"))
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091839Z" creationid="wynnc" creationdate="20160923T091839Z">
+        <seg>&lt;?php
+class JsonStringEqualsJsonStringTest extends PHPUnit_Framework_TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonString(
+          json_encode(array("Mascot" =&gt; "Tux")), json_encode(array("Mascott" =&gt; "ux"))
         );
     }
 }
@@ -56530,6 +56586,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091818Z" creationid="wynnc" creationdate="20160923T091818Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 3.7.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 3.7.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
@@ -56549,6 +56643,44 @@ There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.0.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091855Z" creationid="wynnc" creationdate="20160923T091855Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.0.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
 
@@ -56606,6 +56738,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091858Z" creationid="wynnc" creationdate="20160923T091858Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.1.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.1.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
@@ -56625,6 +56795,44 @@ There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.2.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091904Z" creationid="wynnc" creationdate="20160923T091904Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.2.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
 
@@ -56682,6 +56890,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091908Z" creationid="wynnc" creationdate="20160923T091908Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.3.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.3.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
@@ -56701,6 +56947,44 @@ There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.4.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091911Z" creationid="wynnc" creationdate="20160923T091911Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.4.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
 
@@ -56758,6 +57042,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091915Z" creationid="wynnc" creationdate="20160923T091915Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.5.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.5.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
@@ -56777,6 +57099,44 @@ There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091918Z" creationid="wynnc" creationdate="20160923T091918Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
 
@@ -56834,6 +57194,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091920Z" creationid="wynnc" creationdate="20160923T091920Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.7.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.7.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
@@ -56853,6 +57251,44 @@ There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.8.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091923Z" creationid="wynnc" creationdate="20160923T091923Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.8.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
 
@@ -56910,6 +57346,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091925Z" creationid="wynnc" creationdate="20160923T091925Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.0.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.0.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
@@ -56929,6 +57403,44 @@ There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.1.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091927Z" creationid="wynnc" creationdate="20160923T091927Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.1.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
 
@@ -56986,6 +57498,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091930Z" creationid="wynnc" creationdate="20160923T091930Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.2.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.2.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
@@ -57005,6 +57555,44 @@ There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091932Z" creationid="wynnc" creationdate="20160923T091932Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
 
@@ -57062,6 +57650,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091940Z" creationid="wynnc" creationdate="20160923T091940Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
@@ -57081,6 +57707,44 @@ There was 1 failure:
 
 1) JsonFileEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.5.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
+
+/home/sb/JsonFileEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091943Z" creationid="wynnc" creationdate="20160923T091943Z">
+        <seg>&lt;u0&gt;phpunit JsonFileEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.5.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonFileEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"Tux"}' matches JSON string "["Mascott", "Tux", "OS", "Linux"]".
 
 /home/sb/JsonFileEqualsJsonFileTest.php:5
 
@@ -57214,6 +57878,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091837Z" creationid="wynnc" creationdate="20160923T091837Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 3.7.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 3.7.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
@@ -57233,6 +57935,44 @@ There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.0.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091856Z" creationid="wynnc" creationdate="20160923T091856Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.0.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
 
@@ -57290,6 +58030,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091859Z" creationid="wynnc" creationdate="20160923T091859Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.1.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.1.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
@@ -57309,6 +58087,44 @@ There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.2.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091905Z" creationid="wynnc" creationdate="20160923T091905Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.2.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
 
@@ -57366,6 +58182,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091909Z" creationid="wynnc" creationdate="20160923T091909Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.3.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.3.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
@@ -57385,6 +58239,44 @@ There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.4.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091913Z" creationid="wynnc" creationdate="20160923T091913Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.4.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
 
@@ -57442,6 +58334,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091916Z" creationid="wynnc" creationdate="20160923T091916Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.5.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.5.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
@@ -57461,6 +58391,44 @@ There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091918Z" creationid="wynnc" creationdate="20160923T091918Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
 
@@ -57518,6 +58486,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091921Z" creationid="wynnc" creationdate="20160923T091921Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.7.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.7.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
@@ -57537,6 +58543,44 @@ There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.8.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091923Z" creationid="wynnc" creationdate="20160923T091923Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 4.8.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
 
@@ -57594,6 +58638,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091926Z" creationid="wynnc" creationdate="20160923T091926Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.0.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.0.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
@@ -57613,6 +58695,44 @@ There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.1.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091928Z" creationid="wynnc" creationdate="20160923T091928Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.1.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
 
@@ -57670,6 +58790,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091931Z" creationid="wynnc" creationdate="20160923T091931Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.2.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.2.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
@@ -57708,6 +58866,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091935Z" creationid="wynnc" creationdate="20160923T091935Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
@@ -57727,6 +58923,44 @@ There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091941Z" creationid="wynnc" creationdate="20160923T091941Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
 
@@ -57941,6 +59175,58 @@ Failed asserting that two objects are equal.
 +++ Actual
 @@ @@
  stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091841Z" creationid="wynnc" creationdate="20160923T091841Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 3.7.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 3.7.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
 )
@@ -57968,6 +59254,58 @@ Failed asserting that two objects are equal.
  stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.0.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091857Z" creationid="wynnc" creationdate="20160923T091857Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.0.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
 )
 
 /home/sb/JsonStringEqualsJsonStringTest.php:5
@@ -58045,6 +59383,58 @@ Failed asserting that two objects are equal.
 +++ Actual
 @@ @@
  stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091901Z" creationid="wynnc" creationdate="20160923T091901Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.1.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.1.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
 )
@@ -58072,6 +59462,58 @@ Failed asserting that two objects are equal.
  stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.2.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091906Z" creationid="wynnc" creationdate="20160923T091906Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.2.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
 )
 
 /home/sb/JsonStringEqualsJsonStringTest.php:5
@@ -58149,6 +59591,58 @@ Failed asserting that two objects are equal.
 +++ Actual
 @@ @@
  stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091910Z" creationid="wynnc" creationdate="20160923T091910Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.3.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.3.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
 )
@@ -58176,6 +59670,58 @@ Failed asserting that two objects are equal.
  stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.4.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091914Z" creationid="wynnc" creationdate="20160923T091914Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.4.0 by Sebastian Bergmann.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
 )
 
 /home/sb/JsonStringEqualsJsonStringTest.php:5
@@ -58253,6 +59799,58 @@ Failed asserting that two objects are equal.
 +++ Actual
 @@ @@
  stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091917Z" creationid="wynnc" creationdate="20160923T091917Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.5.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.5.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
 )
@@ -58280,6 +59878,58 @@ Failed asserting that two objects are equal.
  stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091919Z" creationid="wynnc" creationdate="20160923T091919Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
 )
 
 /home/sb/JsonStringEqualsJsonStringTest.php:5
@@ -58357,6 +60007,58 @@ Failed asserting that two objects are equal.
 +++ Actual
 @@ @@
  stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091922Z" creationid="wynnc" creationdate="20160923T091922Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.7.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.7.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
 )
@@ -58384,6 +60086,58 @@ Failed asserting that two objects are equal.
  stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.8.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091924Z" creationid="wynnc" creationdate="20160923T091924Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 4.8.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
 )
 
 /home/sb/JsonStringEqualsJsonStringTest.php:5
@@ -58461,6 +60215,58 @@ Failed asserting that two objects are equal.
 +++ Actual
 @@ @@
  stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091926Z" creationid="wynnc" creationdate="20160923T091926Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.0.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.0.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
 )
@@ -58488,6 +60294,58 @@ Failed asserting that two objects are equal.
  stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.1.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091929Z" creationid="wynnc" creationdate="20160923T091929Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.1.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
 )
 
 /home/sb/JsonStringEqualsJsonStringTest.php:5
@@ -58565,6 +60423,58 @@ Failed asserting that two objects are equal.
 +++ Actual
 @@ @@
  stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091931Z" creationid="wynnc" creationdate="20160923T091931Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.2.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.2.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
 )
@@ -58617,6 +60527,58 @@ Failed asserting that two objects are equal.
 +++ Actual
 @@ @@
  stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091939Z" creationid="wynnc" creationdate="20160923T091939Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
 )
@@ -58644,6 +60606,58 @@ Failed asserting that two objects are equal.
  stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091942Z" creationid="wynnc" creationdate="20160923T091942Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
 )
 
 /home/sb/JsonStringEqualsJsonStringTest.php:5
@@ -77632,6 +79646,22 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Constraint that checks if the file(name) that it is evaluated for is readable.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091749Z" creationid="wynnc" creationdate="20160923T091749Z">
+        <seg>此约束检验所评定的文件名对应的文件是否可读。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Constraint that checks if the file(name) that it is evaluated for is writable.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091803Z" creationid="wynnc" creationdate="20160923T091803Z">
+        <seg>此约束检验所评定的文件名对应的文件是否可写。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Constraints</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150306T083110Z" creationid="Wynn" creationdate="20150306T083110Z">
@@ -81846,6 +83876,14 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T093302Z" creationid="Wynn" creationdate="20150309T093302Z">
         <seg>PHPUnit_Framework_Constraint_IsType isType(string $type)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHPUnit_Framework_Constraint_IsWritable isWritable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091751Z" creationid="wynnc" creationdate="20160923T091751Z">
+        <seg>PHPUnit_Framework_Constraint_IsWritable isWritable()</seg>
       </tuv>
     </tu>
     <tu>
@@ -92006,6 +94044,14 @@ $_REQUEST['foo'] = 'bar';</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T093302Z" creationid="Wynn" creationdate="20150309T093302Z">
         <seg>isType()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>isWritable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091751Z" creationid="wynnc" creationdate="20160923T091751Z">
+        <seg>isWritable()</seg>
       </tuv>
     </tu>
     <tu>
