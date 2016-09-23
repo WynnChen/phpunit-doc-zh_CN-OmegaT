@@ -15150,6 +15150,62 @@ class DependencyFailureTest extends TestCase
         <seg>&lt;?php
 use PHPUnit\Framework\TestCase;
 
+class DirectoryExistsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertDirectoryExists('/path/to/directory');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090943Z" creationid="wynnc" creationdate="20160923T090943Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class DirectoryExistsTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertDirectoryExists('/path/to/directory');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class DirectoryIsReadableTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertDirectoryIsReadable('/path/to/directory');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091109Z" creationid="wynnc" creationdate="20160923T091109Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class DirectoryIsReadableTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertDirectoryIsReadable('/path/to/directory');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
 class EmptyTest extends TestCase
 {
     public function testFailure()
@@ -16384,6 +16440,38 @@ class JsonStringEqualsJsonFileTest extends TestCase
     public function testFailure()
     {
         $this-&gt;assertJsonStringEqualsJsonFile(
+            'path/to/fixture/file', json_encode(['Mascot' =&gt; 'ux'])
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090829Z" creationid="wynnc" creationdate="20160923T090829Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class JsonStringEqualsJsonFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonFile(
+            'path/to/fixture/file', json_encode(['Mascot' =&gt; 'ux'])
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class JsonStringEqualsJsonFileTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonFile(
             'path/to/fixture/file', json_encode(['Mascott' =&gt; 'ux'])
         );
     }
@@ -16400,6 +16488,40 @@ class JsonStringEqualsJsonFileTest extends TestCase
     {
         $this-&gt;assertJsonStringEqualsJsonFile(
             'path/to/fixture/file', json_encode(['Mascott' =&gt; 'ux'])
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class JsonStringEqualsJsonStringTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonString(
+            json_encode(['Mascot' =&gt; 'Tux']),
+            json_encode(['Mascot' =&gt; 'ux'])
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090831Z" creationid="wynnc" creationdate="20160923T090831Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class JsonStringEqualsJsonStringTest extends TestCase
+{
+    public function testFailure()
+    {
+        $this-&gt;assertJsonStringEqualsJsonString(
+            json_encode(['Mascot' =&gt; 'Tux']),
+            json_encode(['Mascot' =&gt; 'ux'])
         );
     }
 }
@@ -19528,6 +19650,22 @@ Exception:
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150303T063654Z" creationid="Wynn" creationdate="20150303T063654Z">
         <seg>&lt;l0&gt;assertClassNotHasStaticAttribute()&lt;/l0&gt; 是与之相反的断言，接受相同的参数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;l0&gt;assertDirectoryNotExists()&lt;/l0&gt; is the inverse of this assertion and takes the same arguments.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090924Z" creationid="wynnc" creationdate="20160923T090924Z">
+        <seg>&lt;l0&gt;assertDirectoryNotExists()&lt;/l0&gt; 是与之相反的断言，并接受相同的参数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;l0&gt;assertDirectoryNotIsReadable()&lt;/l0&gt; is the inverse of this assertion and takes the same arguments.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091054Z" creationid="wynnc" creationdate="20160923T091054Z">
+        <seg>&lt;l0&gt;assertDirectoryNotIsReadable()&lt;/l0&gt; 是与之相反的断言，并接受相同的参数。</seg>
       </tuv>
     </tu>
     <tu>
@@ -40908,6 +41046,82 @@ Tests: 4, Assertions: 4, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit DirectoryExistsTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) DirectoryExistsTest::testFailure
+Failed asserting that directory "/path/to/directory" exists.
+
+/home/sb/DirectoryExistsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090948Z" creationid="wynnc" creationdate="20160923T090948Z">
+        <seg>&lt;u0&gt;phpunit DirectoryExistsTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) DirectoryExistsTest::testFailure
+Failed asserting that directory "/path/to/directory" exists.
+
+/home/sb/DirectoryExistsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit DirectoryIsReadableTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) DirectoryIsReadableTest::testFailure
+Failed asserting that "/path/to/directory" is readable.
+
+/home/sb/DirectoryIsReadableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091111Z" creationid="wynnc" creationdate="20160923T091111Z">
+        <seg>&lt;u0&gt;phpunit DirectoryIsReadableTest&lt;/u0&gt;
+PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) DirectoryIsReadableTest::testFailure
+Failed asserting that "/path/to/directory" is readable.
+
+/home/sb/DirectoryIsReadableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit EmptyTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -57162,6 +57376,44 @@ Time: 0 seconds, Memory: 5.00Mb
 There was 1 failure:
 
 1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090830Z" creationid="wynnc" creationdate="20160923T090830Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.5.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
+Failed asserting that '{"Mascot":"ux"}' matches JSON string "{"Mascott":"Tux"}".
+
+/home/sb/JsonStringEqualsJsonFileTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonFileTest&lt;/u0&gt;
+PHPUnit 5.5.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonFile::testFailure
 Failed asserting that '{"Mascott":"ux"}' matches JSON string "{"Mascott":"Tux"}".
 
 /home/sb/JsonStringEqualsJsonFileTest.php:5
@@ -57998,6 +58250,58 @@ Failed asserting that two objects are equal.
  stdClass Object (
  -    'Mascott' =&gt; 'Tux'
  +    'Mascott' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.5.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
+)
+
+/home/sb/JsonStringEqualsJsonStringTest.php:5
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090836Z" creationid="wynnc" creationdate="20160923T090836Z">
+        <seg>&lt;u0&gt;phpunit JsonStringEqualsJsonStringTest&lt;/u0&gt;
+PHPUnit 5.5.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) JsonStringEqualsJsonStringTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+ -    'Mascot' =&gt; 'Tux'
+ +    'Mascot' =&gt; 'ux'
 )
 
 /home/sb/JsonStringEqualsJsonStringTest.php:5
@@ -81856,6 +82160,22 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if the directory specified by &lt;l1&gt;$directory&lt;/l1&gt; does not exist.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090913Z" creationid="wynnc" creationdate="20160923T090913Z">
+        <seg>当 &lt;l1&gt;$directory&lt;/l1&gt; 所指定的目录不存在时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if the directory specified by &lt;l1&gt;$directory&lt;/l1&gt; is not a directory or is not readable.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091042Z" creationid="wynnc" creationdate="20160923T091042Z">
+        <seg>当 &lt;l1&gt;$directory&lt;/l1&gt; 所指定的目录不是个目录或不可读时报告错误，错误讯息由 &lt;l0&gt;$message&lt;/l0&gt; 指定。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Reports an error identified by &lt;l0&gt;$message&lt;/l0&gt; if the file specified by &lt;l1&gt;$expected&lt;/l1&gt; does not have the same contents as the file specified by &lt;l2&gt;$actual&lt;/l2&gt;.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150305T030825Z" creationid="Wynn" creationdate="20150305T030825Z">
@@ -85754,6 +86074,22 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Usage of assertDirectoryExists()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090939Z" creationid="wynnc" creationdate="20160923T090939Z">
+        <seg>assertDirectoryExists() 的用法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Usage of assertDirectoryIsReadable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091106Z" creationid="wynnc" creationdate="20160923T091106Z">
+        <seg>assertDirectoryIsReadable() 的用法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Usage of assertEmpty()</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150303T084942Z" creationid="Wynn" creationdate="20150303T084942Z">
@@ -87774,6 +88110,78 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T092930Z" creationid="Wynn" creationdate="20150309T092930Z">
         <seg>assertCount()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertDirectoryExists()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090838Z" creationid="wynnc" creationdate="20160923T090838Z">
+        <seg>assertDirectoryExists()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertDirectoryExists(string $directory[, string $message = ''])</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090844Z" creationid="wynnc" creationdate="20160923T090844Z">
+        <seg>assertDirectoryExists(string $directory[, string $message = ''])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertDirectoryIsReadable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090950Z" creationid="wynnc" creationdate="20160923T090950Z">
+        <seg>assertDirectoryIsReadable()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertDirectoryIsReadable(string $directory[, string $message = ''])</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090952Z" creationid="wynnc" creationdate="20160923T090952Z">
+        <seg>assertDirectoryIsReadable(string $directory[, string $message = ''])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertDirectoryIsWritable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091113Z" creationid="wynnc" creationdate="20160923T091113Z">
+        <seg>assertDirectoryIsWritable()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertDirectoryIsWritable(string $directory[, string $message = ''])</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091114Z" creationid="wynnc" creationdate="20160923T091114Z">
+        <seg>assertDirectoryIsWritable(string $directory[, string $message = ''])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertDirectoryNotExists()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090839Z" creationid="wynnc" creationdate="20160923T090839Z">
+        <seg>assertDirectoryNotExists()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertDirectoryNotIsReadable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T090950Z" creationid="wynnc" creationdate="20160923T090950Z">
+        <seg>assertDirectoryNotIsReadable()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>assertDirectoryNotIsWritable()</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20160923T091113Z" creationid="wynnc" creationdate="20160923T091113Z">
+        <seg>assertDirectoryNotIsWritable()</seg>
       </tuv>
     </tu>
     <tu>
