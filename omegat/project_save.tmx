@@ -87728,6 +87728,14 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A common question, especially from developers new to PHPUnit, is whether using &lt;c0&gt;$this-&gt;assertTrue()&lt;/c0&gt; or &lt;c1&gt;self::assertTrue()&lt;/c1&gt;, for instance, is "the right way" to invoke an assertion. The short answer is: there is no right way. And there is no wrong way, either. It is a matter personal preference.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T022227Z" creationid="admin" creationdate="20170502T022227Z">
+        <seg>有个常见的疑问——对于那些 PHPUnit 的新手尤甚——是究竟应该用诸如 &lt;c0&gt;$this-&gt;assertTrue()&lt;/c0&gt; 还是诸如 &lt;c1&gt;self::assertTrue()&lt;/c1&gt; 这样的形式来调用断言才是“正确的方式”？简而言之：没有正确方式。同时，也没有错误方式。这基本上是个人喜好问题。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A complete list of possibilities and examples can be found at</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150302T073652Z" creationid="Wynn" creationdate="20150302T073652Z">
