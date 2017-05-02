@@ -19144,6 +19144,116 @@ abstract class MyApp_Tests_DatabaseTestCase extends TestCase
 use PHPUnit\Framework\TestCase;
 use PHPUnit\DbUnit\TestCaseTrait;
 
+class DataSetAssertionsTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testManualDataSetAssertion()
+    {
+        $dataSet = new PHPUnit_Extensions_Database_DataSet_QueryDataSet();
+        $dataSet-&gt;addTable('guestbook', 'SELECT id, content, user FROM guestbook'); // additional tables
+        $expectedDataSet = $this-&gt;createFlatXmlDataSet('guestbook.xml');
+
+        $this-&gt;assertDataSetsEqual($expectedDataSet, $dataSet);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T023229Z" creationid="admin" creationdate="20170502T023229Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class DataSetAssertionsTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testManualDataSetAssertion()
+    {
+        $dataSet = new PHPUnit_Extensions_Database_DataSet_QueryDataSet();
+        $dataSet-&gt;addTable('guestbook', 'SELECT id, content, user FROM guestbook'); // 额外的表
+        $expectedDataSet = $this-&gt;createFlatXmlDataSet('guestbook.xml');
+
+        $this-&gt;assertDataSetsEqual($expectedDataSet, $dataSet);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class DataSetFilterTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testIncludeFilteredGuestbook()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+
+        $filterDataSet = new PHPUnit_Extensions_Database_DataSet_DataSetFilter($dataSet);
+        $filterDataSet-&gt;addIncludeTables(['guestbook']);
+        $filterDataSet-&gt;setIncludeColumnsForTable('guestbook', ['id', 'content']);
+        // ..
+    }
+
+    public function testExcludeFilteredGuestbook()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+
+        $filterDataSet = new PHPUnit_Extensions_Database_DataSet_DataSetFilter($dataSet);
+        $filterDataSet-&gt;addExcludeTables(['foo', 'bar', 'baz']); // only keep the guestbook table!
+        $filterDataSet-&gt;setExcludeColumnsForTable('guestbook', ['user', 'created']);
+        // ..
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T023133Z" creationid="admin" creationdate="20170502T023133Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class DataSetFilterTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testIncludeFilteredGuestbook()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+
+        $filterDataSet = new PHPUnit_Extensions_Database_DataSet_DataSetFilter($dataSet);
+        $filterDataSet-&gt;addIncludeTables(['guestbook']);
+        $filterDataSet-&gt;setIncludeColumnsForTable('guestbook', ['id', 'content']);
+        // ..
+    }
+
+    public function testExcludeFilteredGuestbook()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+
+        $filterDataSet = new PHPUnit_Extensions_Database_DataSet_DataSetFilter($dataSet);
+        $filterDataSet-&gt;addExcludeTables(['foo', 'bar', 'baz']); // 只保留 guestbook 表！
+        $filterDataSet-&gt;setExcludeColumnsForTable('guestbook', ['user', 'created']);
+        // ..
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
 class MyGuestbookTest extends TestCase
 {
     use TestCaseTrait;
