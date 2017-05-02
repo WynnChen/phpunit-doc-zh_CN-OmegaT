@@ -91088,6 +91088,14 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In fact, you can even use global function wrappers such as &lt;c0&gt;assertTrue()&lt;/c0&gt; in any context (including classes that extend &lt;c1&gt;PHPUnit\Framework\TestCase&lt;/c1&gt;) when you (manually) include the &lt;f2&gt;src/Framework/Assert/Functions.php&lt;/f2&gt; sourcecode file that comes with PHPUnit.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T015450Z" creationid="admin" creationdate="20170502T015450Z">
+        <seg>In fact, you can even use global function wrappers such as &lt;c0&gt;assertTrue()&lt;/c0&gt; in any context (including classes that extend &lt;c1&gt;PHPUnit\Framework\TestCase&lt;/c1&gt;) when you (manually) include the &lt;f2&gt;src/Framework/Assert/Functions.php&lt;/f2&gt; sourcecode file that comes with PHPUnit.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In his book on xUnit Test Patterns Gerard Meszaros lists the four stages of a unit-test:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150313T065332Z" creationid="Wynn" creationdate="20150313T065332Z">
@@ -97318,6 +97326,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150319T042915Z" creationid="Wynn" creationdate="20150319T042915Z">
         <seg>PHPUnit_Framework_Assert 类的 assertTrue() 与 isTrue() 方法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The assertion methods are declared &lt;c0&gt;static&lt;/c0&gt; and can be invoked from any context using &lt;c1&gt;PHPUnit\Framework\Assert::assertTrue()&lt;/c1&gt;, for instance, or using &lt;c2&gt;$this-&gt;assertTrue()&lt;/c2&gt; or &lt;c3&gt;self::assertTrue()&lt;/c3&gt;, for instance, in a class that extends &lt;c4&gt;PHPUnit\Framework\TestCase&lt;/c4&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T015458Z" creationid="admin" creationdate="20170502T015442Z">
+        <seg>各个断言方法均声明为 &lt;c0&gt;static&lt;/c0&gt;，可以从任何上下文以类似于 &lt;c1&gt;PHPUnit\Framework\Assert::assertTrue()&lt;/c1&gt; 的方式调用，或者也可以用类似于 &lt;c2&gt;$this-&gt;assertTrue()&lt;/c2&gt; 或 &lt;c3&gt;self::assertTrue()&lt;/c3&gt; 的方式在扩展自 &lt;c4&gt;PHPUnit\Framework\TestCase&lt;/c4&gt; 的类内调用。</seg>
       </tuv>
     </tu>
     <tu>
