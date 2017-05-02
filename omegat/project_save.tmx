@@ -20477,6 +20477,22 @@ Exception:
     <tu>
       <tuv lang="EN-US">
         <seg>&lt;p0&gt;$&lt;/p0&gt; &lt;u1&gt;wget https://phar.phpunit.de/phpunit-4.8.phar&lt;/u1&gt;
+&lt;p2&gt;$&lt;/p2&gt; &lt;u3&gt;chmod +x phpunit-4.8.phar&lt;/u3&gt;
+&lt;p4&gt;$&lt;/p4&gt; &lt;u5&gt;sudo mv phpunit-4.8.phar /usr/local/bin/phpunit&lt;/u5&gt;
+&lt;p6&gt;$&lt;/p6&gt; &lt;u7&gt;phpunit --version&lt;/u7&gt;
+&lt;c8&gt;PHPUnit x.y.z by Sebastian Bergmann and contributors.&lt;/c8&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T013804Z" creationid="admin" creationdate="20170502T013804Z">
+        <seg>&lt;p0&gt;$&lt;/p0&gt; &lt;u1&gt;wget https://phar.phpunit.de/phpunit-4.8.phar&lt;/u1&gt;
+&lt;p2&gt;$&lt;/p2&gt; &lt;u3&gt;chmod +x phpunit-4.8.phar&lt;/u3&gt;
+&lt;p4&gt;$&lt;/p4&gt; &lt;u5&gt;sudo mv phpunit-4.8.phar /usr/local/bin/phpunit&lt;/u5&gt;
+&lt;p6&gt;$&lt;/p6&gt; &lt;u7&gt;phpunit --version&lt;/u7&gt;
+&lt;c8&gt;PHPUnit x.y.z by Sebastian Bergmann and contributors.&lt;/c8&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;p0&gt;$&lt;/p0&gt; &lt;u1&gt;wget https://phar.phpunit.de/phpunit-4.8.phar&lt;/u1&gt;
 &lt;p2&gt;$&lt;/p2&gt; &lt;u3&gt;chmod +x phpunit.phar&lt;/u3&gt;
 &lt;p4&gt;$&lt;/p4&gt; &lt;u5&gt;sudo mv phpunit.phar /usr/local/bin/phpunit&lt;/u5&gt;
 &lt;p6&gt;$&lt;/p6&gt; &lt;u7&gt;phpunit --version&lt;/u7&gt;
@@ -20488,6 +20504,18 @@ Exception:
 &lt;p4&gt;$&lt;/p4&gt; &lt;u5&gt;sudo mv phpunit.phar /usr/local/bin/phpunit&lt;/u5&gt;
 &lt;p6&gt;$&lt;/p6&gt; &lt;u7&gt;phpunit --version&lt;/u7&gt;
 &lt;c8&gt;PHPUnit x.y.z by Sebastian Bergmann and contributors.&lt;/c8&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;p0&gt;$&lt;/p0&gt; &lt;u1&gt;wget https://phar.phpunit.de/phpunit-4.8.phar&lt;/u1&gt;
+&lt;p2&gt;$&lt;/p2&gt; &lt;u3&gt;php phpunit-4.8.phar --version&lt;/u3&gt;
+&lt;c4&gt;PHPUnit x.y.z by Sebastian Bergmann and contributors.&lt;/c4&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T013808Z" creationid="admin" creationdate="20170502T013808Z">
+        <seg>&lt;p0&gt;$&lt;/p0&gt; &lt;u1&gt;wget https://phar.phpunit.de/phpunit-4.8.phar&lt;/u1&gt;
+&lt;p2&gt;$&lt;/p2&gt; &lt;u3&gt;php phpunit-4.8.phar --version&lt;/u3&gt;
+&lt;c4&gt;PHPUnit x.y.z by Sebastian Bergmann and contributors.&lt;/c4&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -91596,6 +91624,14 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Many beginner and intermediate unit testing examples in any programming language suggest that it is perfectly easy to test your application's logic with simple tests. For database-centric applications this is far away from the reality. Start using WordPress, TYPO3 or Symfony with Doctrine or Propel, for example, and you will easily experience considerable problems with PHPUnit: just because the database is so tightly coupled to these libraries.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T013731Z" creationid="admin" creationdate="20170502T013731Z">
+        <seg>在各种编程语言中，许多入门与中级的单元测试范例都暗示着这样一种信息：很容易用简单的测试来对应用程序的逻辑进行测试。但是对于以数据库为中心的应用程序而言，这与现实相去甚远。一旦开始使用诸如 Wordpress、TYPO3、或 Symfony（配合 Doctrine 或 Propel）之类的东西，就很容易在用 PHPUnit 时碰到超多问题：正是由于这些库和数据库之间实在耦合的太紧密了。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Many beginner and intermediate unit testing examples in any programming language suggest that it is perfectly easy to test your application's logic with simple tests. For database-centric applications this is far away from the reality. Start using Wordpress, TYPO3 or Symfony with Doctrine or Propel, for example, and you will easily experience considerable problems with PHPUnit: just because the database is so tightly coupled to these libraries.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150310T080602Z" creationid="Wynn" creationdate="20150310T080602Z">
@@ -95196,6 +95232,14 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Simply add a (development-time) dependency on &lt;l0&gt;phpunit/phpunit&lt;/l0&gt; to your project's &lt;l1&gt;composer.json&lt;/l1&gt; file if you use &lt;u2&gt;Composer&lt;/u2&gt; to manage the dependencies of your project:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T013909Z" creationid="admin" creationdate="20170502T013909Z">
+        <seg>如果用 &lt;u2&gt;Composer&lt;/u2&gt; 来管理项目的依赖关系，只要在项目的 &lt;l1&gt;composer.json&lt;/l1&gt; 文件中简单地加上对 &lt;l0&gt;phpunit/phpunit&lt;/l0&gt; 的依赖关系即可：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Simply add a dependency on &lt;l0&gt;mikey179/vfsStream&lt;/l0&gt; to your project's &lt;l1&gt;composer.json&lt;/l1&gt; file if you use &lt;u2&gt;Composer&lt;/u2&gt; to manage the dependencies of your project. Here is a minimal example of a &lt;l3&gt;composer.json&lt;/l3&gt; file that just defines a development-time dependency on PHPUnit 3.7 and vfsStream:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150330T045647Z" creationid="Wynn" creationdate="20150330T045647Z">
@@ -98166,10 +98210,26 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This package is included in the PHAR distribution of PHPUnit. It can be installed via Composer using the following command:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T014001Z" creationid="admin" creationdate="20170502T014001Z">
+        <seg>PHPUnit 的 PHAR 分发中已经包含了此组件包。可以用以下命令来经由 Composer 安装此组件包：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This package is not included in the PHAR distribution of PHPUnit. It can be installed via Composer by adding the following &lt;l0&gt;"require-dev"&lt;/l0&gt; dependency:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20170209T063155Z" creationid="Wynn" creationdate="20170209T063155Z">
         <seg>PHPUnit 的 PHAR 分发中未包含此组件包。可以通过 Composer 安装此组件包，只需添加如下 &lt;l0&gt;"require-dev"&lt;/l0&gt; 依赖项：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This package is not included in the PHAR distribution of PHPUnit. It can be installed via Composer using the following command:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T014027Z" creationid="admin" creationdate="20170502T014027Z">
+        <seg>PHPUnit 的 PHAR 分发中已经包含了此组件包。可以用以下命令来经由 Composer 安装此组件包：</seg>
       </tuv>
     </tu>
     <tu>
@@ -102946,6 +103006,30 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>composer require --dev phpunit/dbunit</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T014029Z" creationid="admin" creationdate="20170502T014029Z">
+        <seg>composer require --dev phpunit/dbunit</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>composer require --dev phpunit/php-invoker</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T014003Z" creationid="admin" creationdate="20170502T014003Z">
+        <seg>composer require --dev phpunit/php-invoker</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>composer require --dev phpunit/phpunit ^4.8</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T013912Z" creationid="admin" creationdate="20170502T013912Z">
+        <seg>composer require --dev phpunit/phpunit ^4.8</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>contains()</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T093242Z" creationid="Wynn" creationdate="20150309T093242Z">
@@ -103746,6 +103830,14 @@ class MyClass
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150319T100009Z" creationid="Wynn" creationdate="20150319T100009Z">
         <seg>https://phar.phpunit.de/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://phar.phpunit.de/phpunit-4.8.phar</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T013831Z" creationid="admin" creationdate="20170502T013831Z">
+        <seg>https://phar.phpunit.de/phpunit-4.8.phar</seg>
       </tuv>
     </tu>
     <tu>
