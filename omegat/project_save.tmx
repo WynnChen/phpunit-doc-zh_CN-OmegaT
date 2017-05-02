@@ -90516,6 +90516,14 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Edition for PHPUnit 6.2. Updated on &lt;cp0/&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024153Z" creationid="admin" creationdate="20170502T024153Z">
+        <seg>此版本对应于 PHPUnit 6.2。最后更新于 &lt;cp0/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Enforce time limit based on test size. See &lt;x0/&gt; for details.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T095608Z" creationid="Wynn" creationdate="20150327T095608Z">
@@ -93800,6 +93808,14 @@ got string      &lt;baz&gt;
 
 FAILURES!
 Tests: 2, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHPUnit 6.2 requires PHP 7; using the latest version of PHP is highly recommended.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024247Z" creationid="admin" creationdate="20170502T024247Z">
+        <seg>PHPUnit 6.2 需要 PHP 7，强烈推荐使用最新版本的 PHP。</seg>
       </tuv>
     </tu>
     <tu>
