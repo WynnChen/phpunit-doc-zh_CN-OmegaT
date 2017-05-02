@@ -19144,6 +19144,310 @@ abstract class MyApp_Tests_DatabaseTestCase extends TestCase
 use PHPUnit\Framework\TestCase;
 use PHPUnit\DbUnit\TestCaseTrait;
 
+class ArrayGuestbookTest extends TestCase
+{
+    use TestCaseTrait;
+
+    protected function getDataSet()
+    {
+        return new MyApp_DbUnit_ArrayDataSet(
+            [
+                'guestbook' =&gt; [
+                    [
+                        'id' =&gt; 1,
+                        'content' =&gt; 'Hello buddy!',
+                        'user' =&gt; 'joe',
+                        'created' =&gt; '2010-04-24 17:15:23'
+                    ],
+                    [
+                        'id' =&gt; 2,
+                        'content' =&gt; 'I like it!',
+                        'user' =&gt; null,
+                        'created' =&gt; '2010-04-26 12:14:20'
+                    ],
+                ],
+            ]
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024554Z" creationid="admin" creationdate="20170502T024554Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class ArrayGuestbookTest extends TestCase
+{
+    use TestCaseTrait;
+
+    protected function getDataSet()
+    {
+        return new MyApp_DbUnit_ArrayDataSet(
+            [
+                'guestbook' =&gt; [
+                    [
+                        'id' =&gt; 1,
+                        'content' =&gt; 'Hello buddy!',
+                        'user' =&gt; 'joe',
+                        'created' =&gt; '2010-04-24 17:15:23'
+                    ],
+                    [
+                        'id' =&gt; 2,
+                        'content' =&gt; 'I like it!',
+                        'user' =&gt; null,
+                        'created' =&gt; '2010-04-26 12:14:20'
+                    ],
+                ],
+            ]
+        );
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class ComplexQueryTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testComplexQuery()
+    {
+        $queryTable = $this-&gt;getConnection()-&gt;createQueryTable(
+            'myComplexQuery', 'SELECT complexQuery...'
+        );
+        $expectedTable = $this-&gt;createFlatXmlDataSet("complexQueryAssertion.xml")
+                              -&gt;getTable("myComplexQuery");
+        $this-&gt;assertTablesEqual($expectedTable, $queryTable);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024607Z" creationid="admin" creationdate="20170502T024607Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class ComplexQueryTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testComplexQuery()
+    {
+        $queryTable = $this-&gt;getConnection()-&gt;createQueryTable(
+            'myComplexQuery', 'SELECT complexQuery...'
+        );
+        $expectedTable = $this-&gt;createFlatXmlDataSet("complexQueryAssertion.xml")
+                              -&gt;getTable("myComplexQuery");
+        $this-&gt;assertTablesEqual($expectedTable, $queryTable);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class CompositeTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function getDataSet()
+    {
+        $ds1 = $this-&gt;createFlatXmlDataSet('fixture1.xml');
+        $ds2 = $this-&gt;createFlatXmlDataSet('fixture2.xml');
+
+        $compositeDs = new PHPUnit_Extensions_Database_DataSet_CompositeDataSet();
+        $compositeDs-&gt;addDataSet($ds1);
+        $compositeDs-&gt;addDataSet($ds2);
+
+        return $compositeDs;
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024600Z" creationid="admin" creationdate="20170502T024600Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class CompositeTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function getDataSet()
+    {
+        $ds1 = $this-&gt;createFlatXmlDataSet('fixture1.xml');
+        $ds2 = $this-&gt;createFlatXmlDataSet('fixture2.xml');
+
+        $compositeDs = new PHPUnit_Extensions_Database_DataSet_CompositeDataSet();
+        $compositeDs-&gt;addDataSet($ds1);
+        $compositeDs-&gt;addDataSet($ds2);
+
+        return $compositeDs;
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class ConnectionTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testCreateDataSet()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024602Z" creationid="admin" creationdate="20170502T024602Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class ConnectionTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testCreateDataSet()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class ConnectionTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testCreateQueryTable()
+    {
+        $tableNames = ['guestbook'];
+        $queryTable = $this-&gt;getConnection()-&gt;createQueryTable('guestbook', 'SELECT * FROM guestbook');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024603Z" creationid="admin" creationdate="20170502T024603Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class ConnectionTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testCreateQueryTable()
+    {
+        $tableNames = ['guestbook'];
+        $queryTable = $this-&gt;getConnection()-&gt;createQueryTable('guestbook', 'SELECT * FROM guestbook');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class ConnectionTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testGetRowCount()
+    {
+        $this-&gt;assertEquals(2, $this-&gt;getConnection()-&gt;getRowCount('guestbook'));
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024604Z" creationid="admin" creationdate="20170502T024604Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class ConnectionTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testGetRowCount()
+    {
+        $this-&gt;assertEquals(2, $this-&gt;getConnection()-&gt;getRowCount('guestbook'));
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class DataSetAssertionsTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testCreateDataSetAssertion()
+    {
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet(['guestbook']);
+        $expectedDataSet = $this-&gt;createFlatXmlDataSet('guestbook.xml');
+        $this-&gt;assertDataSetsEqual($expectedDataSet, $dataSet);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024610Z" creationid="admin" creationdate="20170502T024610Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class DataSetAssertionsTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testCreateDataSetAssertion()
+    {
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet(['guestbook']);
+        $expectedDataSet = $this-&gt;createFlatXmlDataSet('guestbook.xml');
+        $this-&gt;assertDataSetsEqual($expectedDataSet, $dataSet);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
 class DataSetAssertionsTest extends TestCase
 {
     use TestCaseTrait;
@@ -19254,6 +19558,100 @@ class DataSetFilterTest extends TestCase
 use PHPUnit\Framework\TestCase;
 use PHPUnit\DbUnit\TestCaseTrait;
 
+class GuestbookTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testAddEntry()
+    {
+        $guestbook = new Guestbook();
+        $guestbook-&gt;addEntry("suzy", "Hello world!");
+
+        $queryTable = $this-&gt;getConnection()-&gt;createQueryTable(
+            'guestbook', 'SELECT * FROM guestbook'
+        );
+        $expectedTable = $this-&gt;createFlatXmlDataSet("expectedBook.xml")
+                              -&gt;getTable("guestbook");
+        $this-&gt;assertTablesEqual($expectedTable, $queryTable);
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024606Z" creationid="admin" creationdate="20170502T024606Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class GuestbookTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testAddEntry()
+    {
+        $guestbook = new Guestbook();
+        $guestbook-&gt;addEntry("suzy", "Hello world!");
+
+        $queryTable = $this-&gt;getConnection()-&gt;createQueryTable(
+            'guestbook', 'SELECT * FROM guestbook'
+        );
+        $expectedTable = $this-&gt;createFlatXmlDataSet("expectedBook.xml")
+                              -&gt;getTable("guestbook");
+        $this-&gt;assertTablesEqual($expectedTable, $queryTable);
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class GuestbookTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testAddEntry()
+    {
+        $this-&gt;assertEquals(2, $this-&gt;getConnection()-&gt;getRowCount('guestbook'), "Pre-Condition");
+
+        $guestbook = new Guestbook();
+        $guestbook-&gt;addEntry("suzy", "Hello world!");
+
+        $this-&gt;assertEquals(3, $this-&gt;getConnection()-&gt;getRowCount('guestbook'), "Inserting failed");
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024605Z" creationid="admin" creationdate="20170502T024605Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class GuestbookTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function testAddEntry()
+    {
+        $this-&gt;assertEquals(2, $this-&gt;getConnection()-&gt;getRowCount('guestbook'), "Pre-Condition");
+
+        $guestbook = new Guestbook();
+        $guestbook-&gt;addEntry("suzy", "Hello world!");
+
+        $this-&gt;assertEquals(3, $this-&gt;getConnection()-&gt;getRowCount('guestbook'), "Inserting failed");
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
 class MyGuestbookTest extends TestCase
 {
     use TestCaseTrait;
@@ -19312,6 +19710,80 @@ class MyGuestbookTest extends TestCase
 use PHPUnit\Framework\TestCase;
 use PHPUnit\DbUnit\TestCaseTrait;
 
+class MySqlGuestbookTest extends TestCase
+{
+    use TestCaseTrait;
+
+    /**
+     * @return PHPUnit_Extensions_Database_DB_IDatabaseConnection
+     */
+    public function getConnection()
+    {
+        $database = 'my_database';
+        $user = 'my_user';
+        $password = 'my_password';
+        $pdo = new PDO('mysql:...', $user, $password);
+        return $this-&gt;createDefaultDBConnection($pdo, $database);
+    }
+
+    public function testGuestbook()
+    {
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+        // ...
+    }
+
+    public function testFilteredGuestbook()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet($tableNames);
+        // ...
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024556Z" creationid="admin" creationdate="20170502T024556Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class MySqlGuestbookTest extends TestCase
+{
+    use TestCaseTrait;
+
+    /**
+     * @return PHPUnit_Extensions_Database_DB_IDatabaseConnection
+     */
+    public function getConnection()
+    {
+        $database = 'my_database';
+        $user = 'my_user';
+        $password = 'my_password';
+        $pdo = new PDO('mysql:...', $user, $password);
+        return $this-&gt;createDefaultDBConnection($pdo, $database);
+    }
+
+    public function testGuestbook()
+    {
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet();
+        // ...
+    }
+
+    public function testFilteredGuestbook()
+    {
+        $tableNames = ['guestbook'];
+        $dataSet = $this-&gt;getConnection()-&gt;createDataSet($tableNames);
+        // ...
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
 class MyTestCase extends TestCase
 {
     use TestCaseTrait;
@@ -19335,6 +19807,190 @@ class MyTestCase extends TestCase
     public function getDataSet()
     {
         return $this-&gt;createFlatXmlDataSet('myFlatXmlFixture.xml');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class MyTestCase extends TestCase
+{
+    use TestCaseTrait;
+
+    public function getDataSet()
+    {
+        return $this-&gt;createMySQLXMLDataSet('/path/to/file.xml');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024547Z" creationid="admin" creationdate="20170502T024547Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class MyTestCase extends TestCase
+{
+    use TestCaseTrait;
+
+    public function getDataSet()
+    {
+        return $this-&gt;createMySQLXMLDataSet('/path/to/file.xml');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class MyTestCase extends TestCase
+{
+    use TestCaseTrait;
+
+    public function getDataSet()
+    {
+        return $this-&gt;createXMLDataSet('myXmlFixture.xml');
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024546Z" creationid="admin" creationdate="20170502T024546Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class MyTestCase extends TestCase
+{
+    use TestCaseTrait;
+
+    public function getDataSet()
+    {
+        return $this-&gt;createXMLDataSet('myXmlFixture.xml');
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class ReplacementTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function getDataSet()
+    {
+        $ds = $this-&gt;createFlatXmlDataSet('myFlatXmlFixture.xml');
+        $rds = new PHPUnit_Extensions_Database_DataSet_ReplacementDataSet($ds);
+        $rds-&gt;addFullReplacement('##NULL##', null);
+        return $rds;
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024558Z" creationid="admin" creationdate="20170502T024558Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class ReplacementTest extends TestCase
+{
+    use TestCaseTrait;
+
+    public function getDataSet()
+    {
+        $ds = $this-&gt;createFlatXmlDataSet('myFlatXmlFixture.xml');
+        $rds = new PHPUnit_Extensions_Database_DataSet_ReplacementDataSet($ds);
+        $rds-&gt;addFullReplacement('##NULL##', null);
+        return $rds;
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+use PHPUnit\DbUnit\DataSet\CsvDataSet;
+
+class CsvGuestbookTest extends TestCase
+{
+    use TestCaseTrait;
+
+    protected function getDataSet()
+    {
+        $dataSet = new CsvDataSet();
+        $dataSet-&gt;addTable('guestbook', dirname(__FILE__)."/_files/guestbook.csv");
+        return $dataSet;
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024551Z" creationid="admin" creationdate="20170502T024551Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+use PHPUnit\DbUnit\DataSet\CsvDataSet;
+
+class CsvGuestbookTest extends TestCase
+{
+    use TestCaseTrait;
+
+    protected function getDataSet()
+    {
+        $dataSet = new CsvDataSet();
+        $dataSet-&gt;addTable('guestbook', dirname(__FILE__)."/_files/guestbook.csv");
+        return $dataSet;
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+use PHPUnit\DbUnit\DataSet\YamlDataSet;
+
+class YamlGuestbookTest extends TestCase
+{
+    use TestCaseTrait;
+
+    protected function getDataSet()
+    {
+        return new YamlDataSet(dirname(__FILE__)."/_files/guestbook.yml");
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024550Z" creationid="admin" creationdate="20170502T024550Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+use PHPUnit\DbUnit\DataSet\YamlDataSet;
+
+class YamlGuestbookTest extends TestCase
+{
+    use TestCaseTrait;
+
+    protected function getDataSet()
+    {
+        return new YamlDataSet(dirname(__FILE__)."/_files/guestbook.yml");
     }
 }
 ?&gt;</seg>
