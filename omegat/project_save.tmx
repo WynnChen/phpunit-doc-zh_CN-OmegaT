@@ -91090,8 +91090,8 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
       <tuv lang="EN-US">
         <seg>In fact, you can even use global function wrappers such as &lt;c0&gt;assertTrue()&lt;/c0&gt; in any context (including classes that extend &lt;c1&gt;PHPUnit\Framework\TestCase&lt;/c1&gt;) when you (manually) include the &lt;f2&gt;src/Framework/Assert/Functions.php&lt;/f2&gt; sourcecode file that comes with PHPUnit.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T015450Z" creationid="admin" creationdate="20170502T015450Z">
-        <seg>In fact, you can even use global function wrappers such as &lt;c0&gt;assertTrue()&lt;/c0&gt; in any context (including classes that extend &lt;c1&gt;PHPUnit\Framework\TestCase&lt;/c1&gt;) when you (manually) include the &lt;f2&gt;src/Framework/Assert/Functions.php&lt;/f2&gt; sourcecode file that comes with PHPUnit.</seg>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T021607Z" creationid="admin" creationdate="20170502T015450Z">
+        <seg>实际上，只要（手工）包含了 PHPUnit 中的 &lt;f2&gt;src/Framework/Assert/Functions.php&lt;/f2&gt; 源码文件，甚至可以在任何上下文中（甚至包括扩展自 &lt;c1&gt;PHPUnit\Framework\TestCase&lt;/c1&gt; 的类中）以诸如 &lt;c0&gt;assertTrue()&lt;/c0&gt; 这样的方式来调用全局函数封装。</seg>
       </tuv>
     </tu>
     <tu>
