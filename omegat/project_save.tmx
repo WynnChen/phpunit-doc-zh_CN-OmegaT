@@ -93504,6 +93504,14 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHPUnit's assertions are implemented in &lt;c0&gt;PHPUnit\Framework\Assert&lt;/c0&gt;. &lt;c1&gt;PHPUnit\Framework\TestCase&lt;/c1&gt; inherits from &lt;c2&gt;PHPUnit\Framework\Assert&lt;/c2&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T014328Z" creationid="admin" creationdate="20170502T014328Z">
+        <seg>PHPUnit 的各个断言是在 &lt;c0&gt;PHPUnit\Framework\Assert&lt;/c0&gt; 中实现的。&lt;c1&gt;PHPUnit\Framework\TestCase&lt;/c1&gt; 则继承于 &lt;c2&gt;PHPUnit\Framework\Assert&lt;/c2&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHPUnit's code coverage functionality makes use of the &lt;u0&gt;PHP_CodeCoverage&lt;/u0&gt; component, which in turn leverages the statement coverage functionality provided by the &lt;u1&gt;Xdebug&lt;/u1&gt; extension for PHP.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150330T032315Z" creationid="Wynn" creationdate="20150330T032315Z">
@@ -95744,6 +95752,14 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Static vs. Non-Static Usage of Assertion Methods</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T014232Z" creationid="admin" creationdate="20170502T014232Z">
+        <seg>断言方法的用法：静态 vs. 非静态</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Stop execution upon first error or failure.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T095945Z" creationid="Wynn" creationdate="20150327T095945Z">
@@ -96922,6 +96938,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;l0&gt;createMock($type)&lt;/l0&gt; method immediately returns a test double object for the specified type (interface or class). The creation of this test double is performed using best practice defaults (the &lt;l1&gt;__construct()&lt;/l1&gt; and &lt;l2&gt;__clone()&lt;/l2&gt; methods of the original class are not executed) and the arguments passed to a method of the test double will not be cloned. If these defaults are not what you need then you can use the &lt;l3&gt;getMockBuilder($type)&lt;/l3&gt; method to customize the test double generation using a fluent interface.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T014133Z" creationid="admin" creationdate="20170502T014133Z">
+        <seg>&lt;l0&gt;createMock($type)&lt;/l0&gt; 方法直接返回指定类型（接口或类）的测试替身对象实例。此测试替身的创建使用了最佳实践的默认值（不执行原始类的 &lt;l1&gt;__construct()&lt;/l1&gt; 和 &lt;l2&gt;__clone()&lt;/l2&gt; 方法，且不对传递给测试替身的方法的参数进行克隆）。如果这些默认值非你所需，可以用 &lt;l3&gt;getMockBuilder($type)&lt;/l3&gt; 方法并使用流畅式接口来定制测试替身的生成过程。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;l0&gt;createQueryTable()&lt;/l0&gt; method can be used to create instances of a QueryTable, give them a result name and SQL query. This is a handy method when it comes to result/table assertions as will be shown in the next section on the Database Assertions API.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150318T090348Z" creationid="Wynn" creationdate="20150318T090348Z">
@@ -97845,6 +97869,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
         <seg>The return value yielded by a producer is passed "as-is" to its consumers by default. This means that when a producer returns an object a reference to that object is passed to the consumers. When a copy should be used instead of a reference then &lt;c0&gt;@depends clone&lt;/c0&gt; should be used instead of &lt;c1&gt;@depends&lt;/c1&gt;.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150706T083531Z" creationid="Wynn" creationdate="20150706T083531Z">
+        <seg>默认情况下，生产者所产生的返回值将“原样”传递给相应的消费者。这意味着，如果生产者返回的是一个对象，那么传递给消费者的将是一个指向此对象的引用。如果需要传递对象的副本而非引用，则应当用 &lt;c0&gt;@depends clone&lt;/c0&gt; 替代 &lt;c1&gt;@depends&lt;/c1&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The return value yielded by a producer is passed "as-is" to its consumers by default. This means that when a producer returns an object, a reference to that object is passed to the consumers. When a copy should be used instead of a reference, then &lt;c0&gt;@depends clone&lt;/c0&gt; should be used instead of &lt;c1&gt;@depends&lt;/c1&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="admin" changedate="20170502T014107Z" creationid="admin" creationdate="20170502T014107Z">
         <seg>默认情况下，生产者所产生的返回值将“原样”传递给相应的消费者。这意味着，如果生产者返回的是一个对象，那么传递给消费者的将是一个指向此对象的引用。如果需要传递对象的副本而非引用，则应当用 &lt;c0&gt;@depends clone&lt;/c0&gt; 替代 &lt;c1&gt;@depends&lt;/c1&gt;。</seg>
       </tuv>
     </tu>
