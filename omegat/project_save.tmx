@@ -20032,6 +20032,116 @@ class YamlGuestbookTest extends TestCase
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\TestListener;
+
+class SimpleTestListener implements TestListener
+{
+    public function addError(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Error while running test '%s'.\n", $test-&gt;getName());
+    }
+
+    public function addFailure(PHPUnit_Framework_Test $test, PHPUnit_Framework_AssertionFailedError $e, $time)
+    {
+        printf("Test '%s' failed.\n", $test-&gt;getName());
+    }
+
+    public function addIncompleteTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Test '%s' is incomplete.\n", $test-&gt;getName());
+    }
+
+    public function addRiskyTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Test '%s' is deemed risky.\n", $test-&gt;getName());
+    }
+
+    public function addSkippedTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Test '%s' has been skipped.\n", $test-&gt;getName());
+    }
+
+    public function startTest(PHPUnit_Framework_Test $test)
+    {
+        printf("Test '%s' started.\n", $test-&gt;getName());
+    }
+
+    public function endTest(PHPUnit_Framework_Test $test, $time)
+    {
+        printf("Test '%s' ended.\n", $test-&gt;getName());
+    }
+
+    public function startTestSuite(PHPUnit_Framework_TestSuite $suite)
+    {
+        printf("TestSuite '%s' started.\n", $suite-&gt;getName());
+    }
+
+    public function endTestSuite(PHPUnit_Framework_TestSuite $suite)
+    {
+        printf("TestSuite '%s' ended.\n", $suite-&gt;getName());
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095439Z" creationid="wynnc" creationdate="20180106T095439Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\TestListener;
+
+class SimpleTestListener implements TestListener
+{
+    public function addError(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Error while running test '%s'.\n", $test-&gt;getName());
+    }
+
+    public function addFailure(PHPUnit_Framework_Test $test, PHPUnit_Framework_AssertionFailedError $e, $time)
+    {
+        printf("Test '%s' failed.\n", $test-&gt;getName());
+    }
+
+    public function addIncompleteTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Test '%s' is incomplete.\n", $test-&gt;getName());
+    }
+
+    public function addRiskyTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Test '%s' is deemed risky.\n", $test-&gt;getName());
+    }
+
+    public function addSkippedTest(PHPUnit_Framework_Test $test, Exception $e, $time)
+    {
+        printf("Test '%s' has been skipped.\n", $test-&gt;getName());
+    }
+
+    public function startTest(PHPUnit_Framework_Test $test)
+    {
+        printf("Test '%s' started.\n", $test-&gt;getName());
+    }
+
+    public function endTest(PHPUnit_Framework_Test $test, $time)
+    {
+        printf("Test '%s' ended.\n", $test-&gt;getName());
+    }
+
+    public function startTestSuite(PHPUnit_Framework_TestSuite $suite)
+    {
+        printf("TestSuite '%s' started.\n", $suite-&gt;getName());
+    }
+
+    public function endTestSuite(PHPUnit_Framework_TestSuite $suite)
+    {
+        printf("TestSuite '%s' ended.\n", $suite-&gt;getName());
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;?xml version="1.0" ?&gt;
 &lt;dataset&gt;
     &lt;guestbook /&gt;
@@ -93400,6 +93510,14 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As of version 6, PHPUnit does not perform this backup and restore operation for global and super-global variables by default anymore. It can be activated by using the &lt;l0&gt;--globals-backup&lt;/l0&gt; option or setting &lt;l1&gt;backupGlobals="true"&lt;/l1&gt; in the XML configuration file.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095727Z" creationid="wynnc" creationdate="20180106T095727Z">
+        <seg>在版本 6 中，默认情况下 PHPUnit 不再对全局变量和超全局变量进行这种备份与恢复的操作。可以用 &lt;l0&gt;--globals-backup&lt;/l0&gt; 选项或在 XML 配置文件中用 &lt;l1&gt;backupGlobals="true"&lt;/l1&gt; 将其激活。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As with any external resource, there might be intermittent problems with the filesystem. This makes tests interacting with it flaky.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T092052Z" creationid="Wynn" creationdate="20150327T092024Z">
@@ -99294,6 +99412,14 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T092737Z" creationid="Wynn" creationdate="20150327T092737Z">
         <seg>当测试成功时输出。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Prior to version 6, by default, PHPUnit ran your tests in a way where changes to global and super-global variables (&lt;l0&gt;$GLOBALS&lt;/l0&gt;, &lt;l1&gt;$_ENV&lt;/l1&gt;, &lt;l2&gt;$_POST&lt;/l2&gt;, &lt;l3&gt;$_GET&lt;/l3&gt;, &lt;l4&gt;$_COOKIE&lt;/l4&gt;, &lt;l5&gt;$_SERVER&lt;/l5&gt;, &lt;l6&gt;$_FILES&lt;/l6&gt;, &lt;l7&gt;$_REQUEST&lt;/l7&gt;) do not affect other tests.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095541Z" creationid="wynnc" creationdate="20180106T095541Z">
+        <seg>在版本 6 之前，默认情况下，PHPUnit 用一种更改全局变量与超全局变量(&lt;l0&gt;$GLOBALS&lt;/l0&gt;、&lt;l1&gt;$_ENV&lt;/l1&gt;、&lt;l2&gt;$_POST&lt;/l2&gt;、&lt;l3&gt;$_GET&lt;/l3&gt;、&lt;l4&gt;$_COOKIE&lt;/l4&gt;、&lt;l5&gt;$_SERVER&lt;/l5&gt;、&lt;l6&gt;$_FILES&lt;/l6&gt;、&lt;l7&gt;$_REQUEST&lt;/l7&gt;)不会影响到其他测试的方式来运行所有测试。</seg>
       </tuv>
     </tu>
     <tu>
@@ -109520,6 +109646,14 @@ ok</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150319T075631Z" creationid="Wynn" creationdate="20150319T075631Z">
         <seg>展示了一个数据驱动的测试用例类，对来自 CSV 文件内的值进行比较。这个文件内的每个行看起来类似于 &lt;l0&gt;foo;bar&lt;/l0&gt;，第一个值是期望值，第二个值则是实际值。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>shows a simple implementation of the &lt;l0&gt;PHPUnit\Framework\TestListener&lt;/l0&gt; interface.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095434Z" creationid="wynnc" creationdate="20180106T095434Z">
+        <seg>展示了 &lt;l0&gt;PHPUnit\Framework\TestListener&lt;/l0&gt; 接口的一个简单实现。</seg>
       </tuv>
     </tu>
     <tu>
