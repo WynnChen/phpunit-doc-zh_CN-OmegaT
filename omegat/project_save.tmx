@@ -22850,6 +22850,70 @@ Exception:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.1/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095312Z" creationid="wynnc" creationdate="20180106T095312Z">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.1/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;phpunit bootstrap="src/autoload.php"&gt;
   &lt;testsuites&gt;
     &lt;testsuite name="money"&gt;
@@ -92624,6 +92688,14 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A common question, especially from developers new to PHPUnit, is whether using &lt;c0&gt;$this-&gt;assertTrue()&lt;/c0&gt; or &lt;c1&gt;self::assertTrue()&lt;/c1&gt;, for instance, is "the right way" to invoke an assertion. The short answer is: there is no right way. And there is no wrong way, either. It is a matter of personal preference.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095308Z" creationid="wynnc" creationdate="20180106T095308Z">
+        <seg>有个常见的疑问——对于那些 PHPUnit 的新手尤甚——是究竟应该用诸如 &lt;c0&gt;$this-&gt;assertTrue()&lt;/c0&gt; 还是诸如 &lt;c1&gt;self::assertTrue()&lt;/c1&gt; 这样的形式来调用断言才是“正确的方式”？简而言之：没有正确方式。同时，也没有错误方式。这基本上是个人喜好问题。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A common question, especially from developers new to PHPUnit, is whether using &lt;c0&gt;$this-&gt;assertTrue()&lt;/c0&gt; or &lt;c1&gt;self::assertTrue()&lt;/c1&gt;, for instance, is "the right way" to invoke an assertion. The short answer is: there is no right way. And there is no wrong way, either. It is a matter personal preference.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="admin" changedate="20170502T022227Z" creationid="admin" creationdate="20170502T022227Z">
@@ -93148,6 +93220,14 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150319T042429Z" creationid="Wynn" creationdate="20150319T042429Z">
         <seg>为了让数据库扩展模块正常工作，需要在应用程序中使用 PDO 吗？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An annotation is a special form of syntactic metadata that can be added to the source code of some programming languages. While PHP has no dedicated language feature for annotating source code, the usage of tags such as &lt;l0&gt;@annotation arguments&lt;/l0&gt; in a documentation block has been established in the PHP community to annotate source code. In PHP documentation blocks are reflective: they can be accessed through the Reflection API's &lt;l1&gt;getDocComment()&lt;/l1&gt; method on the function, class, method, and attribute level. Applications such as PHPUnit use this information at runtime to configure their behaviour.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095230Z" creationid="wynnc" creationdate="20180106T095230Z">
+        <seg>所谓标注，是指某些编程语言中允许加在源代码中的一种特殊格式的语法元数据。PHP 并没有专门的语言特性来支持对源代码进行标注，然而 PHP 社区早已经形成惯例，通过在文档注释块中使用诸如 &lt;l0&gt;@annotation arguments&lt;/l0&gt; 这样的标签来为源代码加上标注。在 PHP 中，文档注释块是可反射的：可以对函数、方法、类以及属性调用相应级别的反射 API &lt;l1&gt;getDocComment()&lt;/l1&gt; 方法来获取相应的文档注释块。诸如 PHPUnit 这样的应用程序在运行时用这些信息来配置其行为。</seg>
       </tuv>
     </tu>
     <tu>
@@ -95876,6 +95956,14 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T070438Z" creationid="Wynn" creationdate="20150309T070438Z">
         <seg>略过代码块</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Implement PHPUnit\Framework\TestListener</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095422Z" creationid="wynnc" creationdate="20180106T095422Z">
+        <seg>实现 PHPUnit\Framework\TestListener</seg>
       </tuv>
     </tu>
     <tu>
