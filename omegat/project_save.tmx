@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.6.0" segtype="paragraph" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-4.1.2" segtype="paragraph" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -15919,6 +15919,40 @@ use PHPUnit\Framework\TestCase;
 class ExpectedErrorTest extends TestCase
 {
     /**
+     * @expectedException PHPUnit\Framework\Error
+     */
+    public function testFailingInclude()
+    {
+        include 'not_existing_file.php';
+    }
+}
+?&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095011Z" creationid="wynnc" creationdate="20180106T095011Z">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ExpectedErrorTest extends TestCase
+{
+    /**
+     * @expectedException PHPUnit\Framework\Error
+     */
+    public function testFailingInclude()
+    {
+        include 'not_existing_file.php';
+    }
+}
+?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;?php
+use PHPUnit\Framework\TestCase;
+
+class ExpectedErrorTest extends TestCase
+{
+    /**
      * @expectedException PHPUnit_Framework_Error
      */
     public function testFailingInclude()
@@ -20656,6 +20690,14 @@ Exception:
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T101453Z" creationid="Wynn" creationdate="20150327T101453Z">
         <seg>&lt;l0&gt;ClassTest&lt;/l0&gt;（通常）继承自 &lt;l1&gt;PHPUnit_Framework_TestCase&lt;/l1&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;l0&gt;PHPUnit\Framework\Error\Notice&lt;/l0&gt; and &lt;l1&gt;PHPUnit\Framework\Error\Warning&lt;/l1&gt; represent PHP notices and warnings, respectively.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095038Z" creationid="wynnc" creationdate="20180106T095038Z">
+        <seg>&lt;l0&gt;PHPUnit\Framework\Error\Notice&lt;/l0&gt; 和 &lt;l1&gt;PHPUnit\Framework\Error\Warning&lt;/l1&gt; 分别代表 PHP 通知与 PHP 警告。</seg>
       </tuv>
     </tu>
     <tu>
@@ -98456,10 +98498,42 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHPUnit\Framework\Error</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095008Z" creationid="wynnc" creationdate="20180106T095008Z">
+        <seg>PHPUnit\Framework\Error</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHPUnit\Framework\Error\Notice</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095013Z" creationid="wynnc" creationdate="20180106T095013Z">
+        <seg>PHPUnit\Framework\Error\Notice</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHPUnit\Framework\Error\Warning</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095015Z" creationid="wynnc" creationdate="20180106T095015Z">
+        <seg>PHPUnit\Framework\Error\Warning</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHPUnit\Framework\TestCase</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T092332Z" creationid="Wynn" creationdate="20160815T092332Z">
         <seg>PHPUnit\Framework\TestCase</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHPUnit\Framework\TestListener</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T094846Z" creationid="wynnc" creationdate="20180106T094846Z">
+        <seg>PHPUnit\Framework\TestListener</seg>
       </tuv>
     </tu>
     <tu>
@@ -100644,6 +100718,14 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T100148Z" creationid="Wynn" creationdate="20150327T100148Z">
         <seg>指定要使用的 &lt;l0&gt;PHPUnit_Runner_TestSuiteLoader&lt;/l0&gt; 实现。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Specifies the result printer to use. The printer class must extend &lt;l0&gt;PHPUnit_Util_Printer&lt;/l0&gt; and implement the &lt;l1&gt;PHPUnit\Framework\TestListener&lt;/l1&gt; interface.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T094943Z" creationid="wynnc" creationdate="20180106T094943Z">
+        <seg>指定要使用的结果输出器(printer)。输出器类必须扩展 &lt;l0&gt;PHPUnit_Util_Printer&lt;/l0&gt; 并且实现 &lt;l1&gt;PHPUnit\Framework\TestListener&lt;/l1&gt; 接口。</seg>
       </tuv>
     </tu>
     <tu>
@@ -103410,6 +103492,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Unit Tests are primarily written as a good practice to help developers identify and fix bugs, to refactor code and to serve as documentation for a unit of software under test. To achieve these benefits, unit tests ideally should cover all the possible paths in a program. One unit test usually covers one specific path in one function or method. However a test method is not necessarily an encapsulated, independent entity. Often there are implicit dependencies between test methods, hidden in the implementation scenario of a test.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095006Z" creationid="wynnc" creationdate="20180106T095006Z">
+        <seg>单元测试主要是作为一种良好实践来编写的，它能帮助开发人员识别并修复 bug、重构代码，还可以看作被测软件单元的文档。要实现这些好处，理想的单元测试应当覆盖程序中所有可能的路径。一个单元测试通常覆盖一个函数或方法中的一个特定路径。但是，测试方法并不一定非要是一个封装良好的独立实体。测试方法之间经常有隐含的依赖关系暗藏在测试的实现方案中。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unit Tests are primarily written as a good practice to help developers identify and fix bugs, to refactor code and to serve as documentation for a unit of software under test. To achieve these benefits, unit tests ideally should cover all the possible paths in a program. One unit test usually covers one specific path in one function or method. However a test method is not necessary an encapsulated, independent entity. Often there are implicit dependencies between test methods, hidden in the implementation scenario of a test.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T101636Z" creationid="Wynn" creationdate="20150327T101636Z">
@@ -104430,6 +104520,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150327T083654Z" creationid="Wynn" creationdate="20150327T083654Z">
         <seg>在用流畅式接口进行测试时，让某个已上桩的方法返回对桩件对象的引用有时会很有用。&lt;x0/&gt;展示了如何用 &lt;l1&gt;returnSelf()&lt;/l1&gt; 来做到这点。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When testing that relies on php functions that trigger errors like &lt;l0&gt;fopen&lt;/l0&gt; it can sometimes be useful to use error suppression while testing. This allows you to check the return values by suppressing notices that would lead to a phpunit &lt;l1&gt;PHPUnit\Framework\Error\Notice&lt;/l1&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095055Z" creationid="wynnc" creationdate="20180106T095055Z">
+        <seg>如果测试依靠会触发错误的 PHP 函数，例如 &lt;l0&gt;fopen&lt;/l0&gt; ，有时候在测试中使用错误抑制符会很有用。通过抑制住错误通知，就能对返回值进行检查，否则错误通知将会导致抛出 &lt;l1&gt;PHPUnit\Framework\Error\Notice&lt;/l1&gt;。</seg>
       </tuv>
     </tu>
     <tu>
