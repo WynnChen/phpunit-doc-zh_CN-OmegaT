@@ -109260,8 +109260,8 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
       <tuv lang="EN-US">
         <seg>Edition for PHPUnit 6.3. Updated on &lt;cp0/&gt;.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095931Z" creationid="wynnc" creationdate="20180106T095931Z">
-        <seg>此版本对应于 PHPUnit 6.3。 最后更新于 &lt;cp0/&gt;。</seg>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T104749Z" creationid="wynnc" creationdate="20180106T095931Z">
+        <seg>此版本对应于 PHPUnit 6.3。最后更新于 &lt;cp0/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
