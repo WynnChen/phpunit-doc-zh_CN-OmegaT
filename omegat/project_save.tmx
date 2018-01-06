@@ -21884,6 +21884,34 @@ Exception:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;p0&gt;$&lt;/p0&gt; &lt;u1&gt;wget https://phar.phpunit.de/phpunit-6.3.phar&lt;/u1&gt;
+&lt;p2&gt;$&lt;/p2&gt; &lt;u3&gt;chmod +x phpunit-6.3.phar&lt;/u3&gt;
+&lt;p4&gt;$&lt;/p4&gt; &lt;u5&gt;sudo mv phpunit-6.3.phar /usr/local/bin/phpunit&lt;/u5&gt;
+&lt;p6&gt;$&lt;/p6&gt; &lt;u7&gt;phpunit --version&lt;/u7&gt;
+&lt;c8&gt;PHPUnit x.y.z by Sebastian Bergmann and contributors.&lt;/c8&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100120Z" creationid="wynnc" creationdate="20180106T100120Z">
+        <seg>&lt;p0&gt;$&lt;/p0&gt; &lt;u1&gt;wget https://phar.phpunit.de/phpunit-6.3.phar&lt;/u1&gt;
+&lt;p2&gt;$&lt;/p2&gt; &lt;u3&gt;chmod +x phpunit-6.3.phar&lt;/u3&gt;
+&lt;p4&gt;$&lt;/p4&gt; &lt;u5&gt;sudo mv phpunit-6.3.phar /usr/local/bin/phpunit&lt;/u5&gt;
+&lt;p6&gt;$&lt;/p6&gt; &lt;u7&gt;phpunit --version&lt;/u7&gt;
+&lt;c8&gt;PHPUnit x.y.z by Sebastian Bergmann and contributors.&lt;/c8&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;p0&gt;$&lt;/p0&gt; &lt;u1&gt;wget https://phar.phpunit.de/phpunit-6.3.phar&lt;/u1&gt;
+&lt;p2&gt;$&lt;/p2&gt; &lt;u3&gt;php phpunit-6.3.phar --version&lt;/u3&gt;
+&lt;c4&gt;PHPUnit x.y.z by Sebastian Bergmann and contributors.&lt;/c4&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100122Z" creationid="wynnc" creationdate="20180106T100122Z">
+        <seg>&lt;p0&gt;$&lt;/p0&gt; &lt;u1&gt;wget https://phar.phpunit.de/phpunit-6.3.phar&lt;/u1&gt;
+&lt;p2&gt;$&lt;/p2&gt; &lt;u3&gt;php phpunit-6.3.phar --version&lt;/u3&gt;
+&lt;c4&gt;PHPUnit x.y.z by Sebastian Bergmann and contributors.&lt;/c4&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;p0&gt;$&lt;/p0&gt; &lt;u1&gt;wget https://phar.phpunit.de/phpunit.phar&lt;/u1&gt;
 &lt;p2&gt;$&lt;/p2&gt; &lt;u3&gt;chmod +x phpunit.phar&lt;/u3&gt;
 &lt;p4&gt;$&lt;/p4&gt; &lt;u5&gt;sudo mv phpunit.phar /usr/local/bin/phpunit&lt;/u5&gt;
@@ -23598,6 +23626,518 @@ Exception:
       <tuv lang="EN-US">
         <seg>&lt;phpunit
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.1/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100012Z" creationid="wynnc" creationdate="20180106T100012Z">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.1/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.2/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100013Z" creationid="wynnc" creationdate="20180106T100013Z">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.2/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.3/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100041Z" creationid="wynnc" creationdate="20180106T100041Z">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.3/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.4/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100043Z" creationid="wynnc" creationdate="20180106T100043Z">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.4/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.5/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100044Z" creationid="wynnc" creationdate="20180106T100044Z">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.5/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.6/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100045Z" creationid="wynnc" creationdate="20180106T100045Z">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.6/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.7/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100054Z" creationid="wynnc" creationdate="20180106T100054Z">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.7/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.0/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100055Z" creationid="wynnc" creationdate="20180106T100055Z">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.0/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.1/phpunit.xsd"
          backupGlobals="true"
          backupStaticAttributes="false"
@@ -23694,6 +24234,70 @@ Exception:
         <seg>&lt;phpunit
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.2/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.3/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
+         cacheTokens="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         printerClass="PHPUnit_TextUI_ResultPrinter"
+         &lt;!--printerFile="/path/to/ResultPrinter.php"--&gt;
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         &lt;!--testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"--&gt;
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false"&gt;
+  &lt;!-- ... --&gt;
+&lt;/phpunit&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100056Z" creationid="wynnc" creationdate="20180106T100056Z">
+        <seg>&lt;phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.3/phpunit.xsd"
          backupGlobals="true"
          backupStaticAttributes="false"
          &lt;!--bootstrap="/path/to/bootstrap.php"--&gt;
@@ -24530,6 +25134,28 @@ OK (2 test, 2 assertions)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit --bootstrap src/autoload.php --filter testObjectCanBeConstructedForValidConstructorArgument tests&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann.
+
+..
+
+Time: 167 ms, Memory: 3.00Mb
+
+OK (2 test, 2 assertions)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100133Z" creationid="wynnc" creationdate="20180106T100133Z">
+        <seg>&lt;u0&gt;phpunit --bootstrap src/autoload.php --filter testObjectCanBeConstructedForValidConstructorArgument tests&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann.
+
+..
+
+Time: 167 ms, Memory: 3.00Mb
+
+OK (2 test, 2 assertions)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit --bootstrap src/autoload.php tests/CurrencyTest&lt;/u0&gt;
 PHPUnit 4.0.0 by Sebastian Bergmann.
 
@@ -24970,6 +25596,28 @@ OK (8 tests, 8 assertions)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit --bootstrap src/autoload.php tests/CurrencyTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann.
+
+........
+
+Time: 280 ms, Memory: 2.75Mb
+
+OK (8 tests, 8 assertions)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100130Z" creationid="wynnc" creationdate="20180106T100130Z">
+        <seg>&lt;u0&gt;phpunit --bootstrap src/autoload.php tests/CurrencyTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann.
+
+........
+
+Time: 280 ms, Memory: 2.75Mb
+
+OK (8 tests, 8 assertions)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit --bootstrap src/autoload.php tests&lt;/u0&gt;
 PHPUnit 4.0.0 by Sebastian Bergmann.
 
@@ -25400,6 +26048,28 @@ OK (33 tests, 52 assertions)</seg>
       <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024700Z" creationid="admin" creationdate="20170502T024700Z">
         <seg>&lt;u0&gt;phpunit --bootstrap src/autoload.php tests&lt;/u0&gt;
 PHPUnit 6.2.0 by Sebastian Bergmann.
+
+.................................
+
+Time: 636 ms, Memory: 3.50Mb
+
+OK (33 tests, 52 assertions)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit --bootstrap src/autoload.php tests&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann.
+
+.................................
+
+Time: 636 ms, Memory: 3.50Mb
+
+OK (33 tests, 52 assertions)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100128Z" creationid="wynnc" creationdate="20180106T100128Z">
+        <seg>&lt;u0&gt;phpunit --bootstrap src/autoload.php tests&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann.
 
 .................................
 
@@ -30506,6 +31176,194 @@ Miscellaneous Options:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit --help&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+Usage: phpunit [options] UnitTest [UnitTest.php]
+       phpunit [options] &lt;directory&gt;
+
+Code Coverage Options:
+
+  --coverage-clover &lt;file&gt;    Generate code coverage report in Clover XML format.
+  --coverage-crap4j &lt;file&gt;    Generate code coverage report in Crap4J XML format.
+  --coverage-html &lt;dir&gt;       Generate code coverage report in HTML format.
+  --coverage-php &lt;file&gt;       Export PHP_CodeCoverage object to file.
+  --coverage-text=&lt;file&gt;      Generate code coverage report in text format.
+                              Default: Standard output.
+  --coverage-xml &lt;dir&gt;        Generate code coverage report in PHPUnit XML format.
+  --whitelist &lt;dir&gt;           Whitelist &lt;dir&gt; for code coverage analysis.
+  --disable-coverage-ignore   Disable annotations for ignoring code coverage.
+
+Logging Options:
+
+  --log-junit &lt;file&gt;          Log test execution in JUnit XML format to file.
+  --log-teamcity &lt;file&gt;       Log test execution in TeamCity format to file.
+  --testdox-html &lt;file&gt;       Write agile documentation in HTML format to file.
+  --testdox-text &lt;file&gt;       Write agile documentation in Text format to file.
+  --testdox-xml &lt;file&gt;        Write agile documentation in XML format to file.
+  --reverse-list              Print defects in reverse order
+
+Test Selection Options:
+
+  --filter &lt;pattern&gt;          Filter which tests to run.
+  --testsuite &lt;name,...&gt;      Filter which testsuite to run.
+  --group ...                 Only runs tests from the specified group(s).
+  --exclude-group ...         Exclude tests from the specified group(s).
+  --list-groups               List available test groups.
+  --list-suites               List available test suites.
+  --test-suffix ...           Only search for test in files with specified
+                              suffix(es). Default: Test.php,.phpt
+
+Test Execution Options:
+
+  --dont-report-useless-tests Do not report tests that do not test anything.
+  --strict-coverage           Be strict about @covers annotation usage.
+  --strict-global-state       Be strict about changes to global state
+  --disallow-test-output      Be strict about output during tests.
+  --disallow-resource-usage   Be strict about resource usage during small tests.
+  --enforce-time-limit        Enforce time limit based on test size.
+  --disallow-todo-tests       Disallow @todo-annotated tests.
+
+  --process-isolation         Run each test in a separate PHP process.
+  --globals-backup            Backup and restore $GLOBALS for each test.
+  --static-backup             Backup and restore static attributes for each test.
+
+  --colors=&lt;flag&gt;             Use colors in output ("never", "auto" or "always").
+  --columns &lt;n&gt;               Number of columns to use for progress output.
+  --columns max               Use maximum number of columns for progress output.
+  --stderr                    Write to STDERR instead of STDOUT.
+  --stop-on-error             Stop execution upon first error.
+  --stop-on-failure           Stop execution upon first error or failure.
+  --stop-on-warning           Stop execution upon first warning.
+  --stop-on-risky             Stop execution upon first risky test.
+  --stop-on-skipped           Stop execution upon first skipped test.
+  --stop-on-incomplete        Stop execution upon first incomplete test.
+  --fail-on-warning           Treat tests with warnings as failures.
+  --fail-on-risky             Treat risky tests as failures.
+  -v|--verbose                Output more verbose information.
+  --debug                     Display debugging information.
+
+  --loader &lt;loader&gt;           TestSuiteLoader implementation to use.
+  --repeat &lt;times&gt;            Runs the test(s) repeatedly.
+  --teamcity                  Report test execution progress in TeamCity format.
+  --testdox                   Report test execution progress in TestDox format.
+  --testdox-group             Only include tests from the specified group(s).
+  --testdox-exclude-group     Exclude tests from the specified group(s).
+  --printer &lt;printer&gt;         TestListener implementation to use.
+
+Configuration Options:
+
+  --bootstrap &lt;file&gt;          A "bootstrap" PHP file that is run before the tests.
+  -c|--configuration &lt;file&gt;   Read configuration from XML file.
+  --no-configuration          Ignore default configuration file (phpunit.xml).
+  --no-coverage               Ignore code coverage configuration.
+  --no-extensions             Do not load PHPUnit extensions.
+  --include-path &lt;path(s)&gt;    Prepend PHP's include_path with given path(s).
+  -d key[=value]              Sets a php.ini value.
+  --generate-configuration    Generate configuration file with suggested settings.
+
+Miscellaneous Options:
+
+  -h|--help                   Prints this usage information.
+  --version                   Prints the version and exits.
+  --atleast-version &lt;min&gt;     Checks that version is greater than min and exits.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100141Z" creationid="wynnc" creationdate="20180106T100141Z">
+        <seg>&lt;u0&gt;phpunit --help&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+Usage: phpunit [options] UnitTest [UnitTest.php]
+       phpunit [options] &lt;directory&gt;
+
+Code Coverage Options:
+
+  --coverage-clover &lt;file&gt;    Generate code coverage report in Clover XML format.
+  --coverage-crap4j &lt;file&gt;    Generate code coverage report in Crap4J XML format.
+  --coverage-html &lt;dir&gt;       Generate code coverage report in HTML format.
+  --coverage-php &lt;file&gt;       Export PHP_CodeCoverage object to file.
+  --coverage-text=&lt;file&gt;      Generate code coverage report in text format.
+                              Default: Standard output.
+  --coverage-xml &lt;dir&gt;        Generate code coverage report in PHPUnit XML format.
+  --whitelist &lt;dir&gt;           Whitelist &lt;dir&gt; for code coverage analysis.
+  --disable-coverage-ignore   Disable annotations for ignoring code coverage.
+
+Logging Options:
+
+  --log-junit &lt;file&gt;          Log test execution in JUnit XML format to file.
+  --log-teamcity &lt;file&gt;       Log test execution in TeamCity format to file.
+  --testdox-html &lt;file&gt;       Write agile documentation in HTML format to file.
+  --testdox-text &lt;file&gt;       Write agile documentation in Text format to file.
+  --testdox-xml &lt;file&gt;        Write agile documentation in XML format to file.
+  --reverse-list              Print defects in reverse order
+
+Test Selection Options:
+
+  --filter &lt;pattern&gt;          Filter which tests to run.
+  --testsuite &lt;name,...&gt;      Filter which testsuite to run.
+  --group ...                 Only runs tests from the specified group(s).
+  --exclude-group ...         Exclude tests from the specified group(s).
+  --list-groups               List available test groups.
+  --list-suites               List available test suites.
+  --test-suffix ...           Only search for test in files with specified
+                              suffix(es). Default: Test.php,.phpt
+
+Test Execution Options:
+
+  --dont-report-useless-tests Do not report tests that do not test anything.
+  --strict-coverage           Be strict about @covers annotation usage.
+  --strict-global-state       Be strict about changes to global state
+  --disallow-test-output      Be strict about output during tests.
+  --disallow-resource-usage   Be strict about resource usage during small tests.
+  --enforce-time-limit        Enforce time limit based on test size.
+  --disallow-todo-tests       Disallow @todo-annotated tests.
+
+  --process-isolation         Run each test in a separate PHP process.
+  --globals-backup            Backup and restore $GLOBALS for each test.
+  --static-backup             Backup and restore static attributes for each test.
+
+  --colors=&lt;flag&gt;             Use colors in output ("never", "auto" or "always").
+  --columns &lt;n&gt;               Number of columns to use for progress output.
+  --columns max               Use maximum number of columns for progress output.
+  --stderr                    Write to STDERR instead of STDOUT.
+  --stop-on-error             Stop execution upon first error.
+  --stop-on-failure           Stop execution upon first error or failure.
+  --stop-on-warning           Stop execution upon first warning.
+  --stop-on-risky             Stop execution upon first risky test.
+  --stop-on-skipped           Stop execution upon first skipped test.
+  --stop-on-incomplete        Stop execution upon first incomplete test.
+  --fail-on-warning           Treat tests with warnings as failures.
+  --fail-on-risky             Treat risky tests as failures.
+  -v|--verbose                Output more verbose information.
+  --debug                     Display debugging information.
+
+  --loader &lt;loader&gt;           TestSuiteLoader implementation to use.
+  --repeat &lt;times&gt;            Runs the test(s) repeatedly.
+  --teamcity                  Report test execution progress in TeamCity format.
+  --testdox                   Report test execution progress in TestDox format.
+  --testdox-group             Only include tests from the specified group(s).
+  --testdox-exclude-group     Exclude tests from the specified group(s).
+  --printer &lt;printer&gt;         TestListener implementation to use.
+
+Configuration Options:
+
+  --bootstrap &lt;file&gt;          A "bootstrap" PHP file that is run before the tests.
+  -c|--configuration &lt;file&gt;   Read configuration from XML file.
+  --no-configuration          Ignore default configuration file (phpunit.xml).
+  --no-coverage               Ignore code coverage configuration.
+  --no-extensions             Do not load PHPUnit extensions.
+  --include-path &lt;path(s)&gt;    Prepend PHP's include_path with given path(s).
+  -d key[=value]              Sets a php.ini value.
+  --generate-configuration    Generate configuration file with suggested settings.
+
+Miscellaneous Options:
+
+  -h|--help                   Prints this usage information.
+  --version                   Prints the version and exits.
+  --atleast-version &lt;min&gt;     Checks that version is greater than min and exits.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit --printer PHPUnit_Extensions_Story_ResultPrinter_Text BowlingGameSpec&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -31018,6 +31876,24 @@ BankAccount
       <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024703Z" creationid="admin" creationdate="20170502T024703Z">
         <seg>&lt;u0&gt;phpunit --testdox BankAccountTest&lt;/u0&gt;
 PHPUnit 6.2.0 by Sebastian Bergmann and contributors.
+
+BankAccount
+ [x] Balance is initially zero
+ [x] Balance cannot become negative</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit --testdox BankAccountTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+BankAccount
+ [x] Balance is initially zero
+ [x] Balance cannot become negative</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100136Z" creationid="wynnc" creationdate="20180106T100136Z">
+        <seg>&lt;u0&gt;phpunit --testdox BankAccountTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
 
 BankAccount
  [x] Balance is initially zero
@@ -31765,6 +32641,42 @@ Tests: 1, Assertions: 0, Skipped: 1.</seg>
       <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024654Z" creationid="admin" creationdate="20170502T024654Z">
         <seg>&lt;u0&gt;phpunit --verbose DatabaseTest&lt;/u0&gt;
 PHPUnit 6.2.0 by Sebastian Bergmann and contributors.
+
+S
+
+Time: 0 seconds, Memory: 3.95Mb
+
+There was 1 skipped test:
+
+1) DatabaseTest::testConnection
+The MySQLi extension is not available.
+
+/home/sb/DatabaseTest.php:9
+OK, but incomplete or skipped tests!
+Tests: 1, Assertions: 0, Skipped: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit --verbose DatabaseTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+S
+
+Time: 0 seconds, Memory: 3.95Mb
+
+There was 1 skipped test:
+
+1) DatabaseTest::testConnection
+The MySQLi extension is not available.
+
+/home/sb/DatabaseTest.php:9
+OK, but incomplete or skipped tests!
+Tests: 1, Assertions: 0, Skipped: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100103Z" creationid="wynnc" creationdate="20180106T100103Z">
+        <seg>&lt;u0&gt;phpunit --verbose DatabaseTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
 
 S
 
@@ -32958,6 +33870,62 @@ Tests: 4, Assertions: 4, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit --verbose DependencyAndDataProviderComboTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+...F
+
+Time: 0 seconds, Memory: 3.50Mb
+
+There was 1 failure:
+
+1) DependencyAndDataProviderComboTest::testConsumer with data set #1 ('provider2')
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+Array (
+-    0 =&gt; 'provider1'
++    0 =&gt; 'provider2'
+1 =&gt; 'first'
+2 =&gt; 'second'
+)
+
+/home/sb/DependencyAndDataProviderComboTest.php:31
+
+FAILURES!
+Tests: 4, Assertions: 4, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100149Z" creationid="wynnc" creationdate="20180106T100149Z">
+        <seg>&lt;u0&gt;phpunit --verbose DependencyAndDataProviderComboTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+...F
+
+Time: 0 seconds, Memory: 3.50Mb
+
+There was 1 failure:
+
+1) DependencyAndDataProviderComboTest::testConsumer with data set #1 ('provider2')
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+Array (
+-    0 =&gt; 'provider1'
++    0 =&gt; 'provider2'
+1 =&gt; 'first'
+2 =&gt; 'second'
+)
+
+/home/sb/DependencyAndDataProviderComboTest.php:31
+
+FAILURES!
+Tests: 4, Assertions: 4, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit --verbose DependencyFailureTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -34008,6 +34976,56 @@ Tests: 1, Assertions: 1, Failures: 1, Skipped: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit --verbose DependencyFailureTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+FS
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) DependencyFailureTest::testOne
+Failed asserting that false is true.
+
+/home/sb/DependencyFailureTest.php:6
+
+There was 1 skipped test:
+
+1) DependencyFailureTest::testTwo
+This test depends on "DependencyFailureTest::testOne" to pass.
+
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1, Skipped: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100142Z" creationid="wynnc" creationdate="20180106T100142Z">
+        <seg>&lt;u0&gt;phpunit --verbose DependencyFailureTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+FS
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) DependencyFailureTest::testOne
+Failed asserting that false is true.
+
+/home/sb/DependencyFailureTest.php:6
+
+There was 1 skipped test:
+
+1) DependencyFailureTest::testTwo
+This test depends on "DependencyFailureTest::testOne" to pass.
+
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1, Skipped: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit --verbose MultipleDependenciesTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -34460,6 +35478,28 @@ OK (3 tests, 3 assertions)</seg>
       <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024708Z" creationid="admin" creationdate="20170502T024708Z">
         <seg>&lt;u0&gt;phpunit --verbose MultipleDependenciesTest&lt;/u0&gt;
 PHPUnit 6.2.0 by Sebastian Bergmann and contributors.
+
+...
+
+Time: 0 seconds, Memory: 3.25Mb
+
+OK (3 tests, 3 assertions)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit --verbose MultipleDependenciesTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+...
+
+Time: 0 seconds, Memory: 3.25Mb
+
+OK (3 tests, 3 assertions)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100144Z" creationid="wynnc" creationdate="20180106T100144Z">
+        <seg>&lt;u0&gt;phpunit --verbose MultipleDependenciesTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
 
 ...
 
@@ -35226,6 +36266,42 @@ Tests: 1, Assertions: 1, Incomplete: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit --verbose SampleTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+I
+
+Time: 0 seconds, Memory: 3.95Mb
+
+There was 1 incomplete test:
+
+1) SampleTest::testSomething
+This test has not been implemented yet.
+
+/home/sb/SampleTest.php:12
+OK, but incomplete or skipped tests!
+Tests: 1, Assertions: 1, Incomplete: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100103Z" creationid="wynnc" creationdate="20180106T100103Z">
+        <seg>&lt;u0&gt;phpunit --verbose SampleTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+I
+
+Time: 0 seconds, Memory: 3.95Mb
+
+There was 1 incomplete test:
+
+1) SampleTest::testSomething
+This test has not been implemented yet.
+
+/home/sb/SampleTest.php:12
+OK, but incomplete or skipped tests!
+Tests: 1, Assertions: 1, Incomplete: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit -d error_reporting=2 ExpectedErrorTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -35678,6 +36754,28 @@ OK (1 test, 1 assertion)</seg>
       <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024712Z" creationid="admin" creationdate="20170502T024712Z">
         <seg>&lt;u0&gt;phpunit -d error_reporting=2 ExpectedErrorTest&lt;/u0&gt;
 PHPUnit 6.2.0 by Sebastian Bergmann and contributors.
+
+.
+
+Time: 0 seconds, Memory: 5.25Mb
+
+OK (1 test, 1 assertion)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit -d error_reporting=2 ExpectedErrorTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+.
+
+Time: 0 seconds, Memory: 5.25Mb
+
+OK (1 test, 1 assertion)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100151Z" creationid="wynnc" creationdate="20180106T100151Z">
+        <seg>&lt;u0&gt;phpunit -d error_reporting=2 ExpectedErrorTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
 
 .
 
@@ -36990,6 +38088,68 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ArrayDiffTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) ArrayDiffTest::testEquality
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     0 =&gt; 1
+     1 =&gt; 2
+-    2 =&gt; 3
++    2 =&gt; 33
+     3 =&gt; 4
+     4 =&gt; 5
+     5 =&gt; 6
+ )
+
+/home/sb/ArrayDiffTest.php:7
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100153Z" creationid="wynnc" creationdate="20180106T100153Z">
+        <seg>&lt;u0&gt;phpunit ArrayDiffTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) ArrayDiffTest::testEquality
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     0 =&gt; 1
+     1 =&gt; 2
+-    2 =&gt; 3
++    2 =&gt; 33
+     3 =&gt; 4
+     4 =&gt; 5
+     5 =&gt; 6
+ )
+
+/home/sb/ArrayDiffTest.php:7
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit ArrayHasKeyTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -37874,6 +39034,92 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ArrayHasKeyTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) ArrayHasKeyTest::testFailure
+Failed asserting that an array has the key 'foo'.
+
+/home/sb/ArrayHasKeyTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100155Z" creationid="wynnc" creationdate="20180106T100155Z">
+        <seg>&lt;u0&gt;phpunit ArrayHasKeyTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) ArrayHasKeyTest::testFailure
+Failed asserting that an array has the key 'foo'.
+
+/home/sb/ArrayHasKeyTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ArrayHasKeyTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) Epilog\EpilogTest::testNoFollowOption
+Failed asserting that an array has the subset Array &amp;0 (
+    'config' =&gt; Array &amp;1 (
+        0 =&gt; 'key-a'
+        1 =&gt; 'key-b'
+    )
+).
+
+/home/sb/ArraySubsetTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100156Z" creationid="wynnc" creationdate="20180106T100156Z">
+        <seg>&lt;u0&gt;phpunit ArrayHasKeyTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) Epilog\EpilogTest::testNoFollowOption
+Failed asserting that an array has the subset Array &amp;0 (
+    'config' =&gt; Array &amp;1 (
+        0 =&gt; 'key-a'
+        1 =&gt; 'key-b'
+    )
+).
+
+/home/sb/ArraySubsetTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit ArrayTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -38367,6 +39613,30 @@ OK (2 tests, 2 assertions)</seg>
       <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024705Z" creationid="admin" creationdate="20170502T024705Z">
         <seg>&lt;u0&gt;phpunit ArrayTest&lt;/u0&gt;
 PHPUnit 6.2.0 by Sebastian Bergmann and contributors.
+
+..
+
+Time: 0 seconds
+
+
+OK (2 tests, 2 assertions)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ArrayTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+..
+
+Time: 0 seconds
+
+
+OK (2 tests, 2 assertions)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100139Z" creationid="wynnc" creationdate="20180106T100139Z">
+        <seg>&lt;u0&gt;phpunit ArrayTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
 
 ..
 
@@ -39764,6 +41034,72 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ArrayWeakComparisonTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) ArrayWeakComparisonTest::testEquality
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+-    0 =&gt; 1
++    0 =&gt; '1'
+     1 =&gt; 2
+-    2 =&gt; 3
++    2 =&gt; 33
+     3 =&gt; 4
+     4 =&gt; 5
+     5 =&gt; 6
+ )
+
+
+/home/sb/ArrayWeakComparisonTest.php:7
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100154Z" creationid="wynnc" creationdate="20180106T100154Z">
+        <seg>&lt;u0&gt;phpunit ArrayWeakComparisonTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) ArrayWeakComparisonTest::testEquality
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+-    0 =&gt; 1
++    0 =&gt; '1'
+     1 =&gt; 2
+-    2 =&gt; 3
++    2 =&gt; 33
+     3 =&gt; 4
+     4 =&gt; 5
+     5 =&gt; 6
+ )
+
+
+/home/sb/ArrayWeakComparisonTest.php:7
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit BankAccountTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -40640,6 +41976,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ClassHasAttributeTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) ClassHasAttributeTest::testFailure
+Failed asserting that class "stdClass" has attribute "foo".
+
+/home/sb/ClassHasAttributeTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100156Z" creationid="wynnc" creationdate="20180106T100156Z">
+        <seg>&lt;u0&gt;phpunit ClassHasAttributeTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) ClassHasAttributeTest::testFailure
+Failed asserting that class "stdClass" has attribute "foo".
+
+/home/sb/ClassHasAttributeTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit ClassHasStaticAttributeTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -41476,6 +42850,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ClassHasStaticAttributeTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) ClassHasStaticAttributeTest::testFailure
+Failed asserting that class "stdClass" has static attribute "foo".
+
+/home/sb/ClassHasStaticAttributeTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100157Z" creationid="wynnc" creationdate="20180106T100157Z">
+        <seg>&lt;u0&gt;phpunit ClassHasStaticAttributeTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) ClassHasStaticAttributeTest::testFailure
+Failed asserting that class "stdClass" has static attribute "foo".
+
+/home/sb/ClassHasStaticAttributeTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit ContainsOnlyInstancesOfTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -42294,6 +43706,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
       <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095835Z" creationid="wynnc" creationdate="20180106T095835Z">
         <seg>&lt;u0&gt;phpunit ContainsOnlyInstancesOfTest&lt;/u0&gt;
 PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) ContainsOnlyInstancesOfTest::testFailure
+Failed asserting that Array ([0]=&gt; Bar Object(...)) is an instance of class "Foo".
+
+/home/sb/ContainsOnlyInstancesOfTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ContainsOnlyInstancesOfTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) ContainsOnlyInstancesOfTest::testFailure
+Failed asserting that Array ([0]=&gt; Bar Object(...)) is an instance of class "Foo".
+
+/home/sb/ContainsOnlyInstancesOfTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100159Z" creationid="wynnc" creationdate="20180106T100159Z">
+        <seg>&lt;u0&gt;phpunit ContainsOnlyInstancesOfTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
 
 F
 
@@ -43302,6 +44752,52 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
       <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095834Z" creationid="wynnc" creationdate="20180106T095834Z">
         <seg>&lt;u0&gt;phpunit ContainsOnlyTest&lt;/u0&gt;
 PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) ContainsOnlyTest::testFailure
+Failed asserting that Array (
+    0 =&gt; '1'
+    1 =&gt; '2'
+    2 =&gt; 3
+) contains only values of type "string".
+
+/home/sb/ContainsOnlyTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ContainsOnlyTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) ContainsOnlyTest::testFailure
+Failed asserting that Array (
+    0 =&gt; '1'
+    1 =&gt; '2'
+    2 =&gt; 3
+) contains only values of type "string".
+
+/home/sb/ContainsOnlyTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100159Z" creationid="wynnc" creationdate="20180106T100159Z">
+        <seg>&lt;u0&gt;phpunit ContainsOnlyTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
 
 F
 
@@ -45832,6 +47328,120 @@ Tests: 2, Assertions: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ContainsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) ContainsTest::testFailure
+Failed asserting that 'foobar' contains "baz".
+
+/home/sb/ContainsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100158Z" creationid="wynnc" creationdate="20180106T100158Z">
+        <seg>&lt;u0&gt;phpunit ContainsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) ContainsTest::testFailure
+Failed asserting that 'foobar' contains "baz".
+
+/home/sb/ContainsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ContainsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) ContainsTest::testFailure
+Failed asserting that an array contains 4.
+
+/home/sb/ContainsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100157Z" creationid="wynnc" creationdate="20180106T100157Z">
+        <seg>&lt;u0&gt;phpunit ContainsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) ContainsTest::testFailure
+Failed asserting that an array contains 4.
+
+/home/sb/ContainsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ContainsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F.
+
+Time: 0 seconds, Memory: 2.75Mb
+
+There was 1 failure:
+
+1) ContainsTest::testFailure
+Failed asserting that 'FooBar' contains "foo".
+
+/home/sb/ContainsTest.php:6
+
+FAILURES!
+Tests: 2, Assertions: 2, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100158Z" creationid="wynnc" creationdate="20180106T100158Z">
+        <seg>&lt;u0&gt;phpunit ContainsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F.
+
+Time: 0 seconds, Memory: 2.75Mb
+
+There was 1 failure:
+
+1) ContainsTest::testFailure
+Failed asserting that 'FooBar' contains "foo".
+
+/home/sb/ContainsTest.php:6
+
+FAILURES!
+Tests: 2, Assertions: 2, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit CountTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -46650,6 +48260,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
       <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095836Z" creationid="wynnc" creationdate="20180106T095836Z">
         <seg>&lt;u0&gt;phpunit CountTest&lt;/u0&gt;
 PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) CountTest::testFailure
+Failed asserting that actual size 1 matches expected size 0.
+
+/home/sb/CountTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit CountTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) CountTest::testFailure
+Failed asserting that actual size 1 matches expected size 0.
+
+/home/sb/CountTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100200Z" creationid="wynnc" creationdate="20180106T100200Z">
+        <seg>&lt;u0&gt;phpunit CountTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
 
 F
 
@@ -48796,6 +50444,120 @@ Tests: 4, Assertions: 4, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit DataTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+...F
+
+Time: 0 seconds, Memory: 5.75Mb
+
+There was 1 failure:
+
+1) DataTest::testAdd with data set "one plus one" (1, 1, 3)
+Failed asserting that 2 matches expected 3.
+
+/home/sb/DataTest.php:9
+
+FAILURES!
+Tests: 4, Assertions: 4, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100147Z" creationid="wynnc" creationdate="20180106T100147Z">
+        <seg>&lt;u0&gt;phpunit DataTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+...F
+
+Time: 0 seconds, Memory: 5.75Mb
+
+There was 1 failure:
+
+1) DataTest::testAdd with data set "one plus one" (1, 1, 3)
+Failed asserting that 2 matches expected 3.
+
+/home/sb/DataTest.php:9
+
+FAILURES!
+Tests: 4, Assertions: 4, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit DataTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+...F
+
+Time: 0 seconds, Memory: 5.75Mb
+
+There was 1 failure:
+
+1) DataTest::testAdd with data set #3 ('1', '1', '3')
+Failed asserting that 2 matches expected '3'.
+
+/home/sb/DataTest.php:11
+
+FAILURES!
+Tests: 4, Assertions: 4, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100148Z" creationid="wynnc" creationdate="20180106T100148Z">
+        <seg>&lt;u0&gt;phpunit DataTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+...F
+
+Time: 0 seconds, Memory: 5.75Mb
+
+There was 1 failure:
+
+1) DataTest::testAdd with data set #3 ('1', '1', '3')
+Failed asserting that 2 matches expected '3'.
+
+/home/sb/DataTest.php:11
+
+FAILURES!
+Tests: 4, Assertions: 4, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit DataTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+...F
+
+Time: 0 seconds, Memory: 5.75Mb
+
+There was 1 failure:
+
+1) DataTest::testAdd with data set #3 (1, 1, 3)
+Failed asserting that 2 matches expected 3.
+
+/home/sb/DataTest.php:9
+
+FAILURES!
+Tests: 4, Assertions: 4, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100146Z" creationid="wynnc" creationdate="20180106T100146Z">
+        <seg>&lt;u0&gt;phpunit DataTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+...F
+
+Time: 0 seconds, Memory: 5.75Mb
+
+There was 1 failure:
+
+1) DataTest::testAdd with data set #3 (1, 1, 3)
+Failed asserting that 2 matches expected 3.
+
+/home/sb/DataTest.php:9
+
+FAILURES!
+Tests: 4, Assertions: 4, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit DirectoryExistsTest&lt;/u0&gt;
 PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
 
@@ -49006,6 +50768,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
       <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095837Z" creationid="wynnc" creationdate="20180106T095837Z">
         <seg>&lt;u0&gt;phpunit DirectoryExistsTest&lt;/u0&gt;
 PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) DirectoryExistsTest::testFailure
+Failed asserting that directory "/path/to/directory" exists.
+
+/home/sb/DirectoryExistsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit DirectoryExistsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) DirectoryExistsTest::testFailure
+Failed asserting that directory "/path/to/directory" exists.
+
+/home/sb/DirectoryExistsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100200Z" creationid="wynnc" creationdate="20180106T100200Z">
+        <seg>&lt;u0&gt;phpunit DirectoryExistsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
 
 F
 
@@ -49252,6 +51052,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit DirectoryIsReadableTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) DirectoryIsReadableTest::testFailure
+Failed asserting that "/path/to/directory" is readable.
+
+/home/sb/DirectoryIsReadableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100201Z" creationid="wynnc" creationdate="20180106T100201Z">
+        <seg>&lt;u0&gt;phpunit DirectoryIsReadableTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) DirectoryIsReadableTest::testFailure
+Failed asserting that "/path/to/directory" is readable.
+
+/home/sb/DirectoryIsReadableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit DirectoryIsWritableTest&lt;/u0&gt;
 PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
 
@@ -49462,6 +51300,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
       <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095839Z" creationid="wynnc" creationdate="20180106T095839Z">
         <seg>&lt;u0&gt;phpunit DirectoryIsWritableTest&lt;/u0&gt;
 PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) DirectoryIsWritableTest::testFailure
+Failed asserting that "/path/to/directory" is writable.
+
+/home/sb/DirectoryIsWritableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit DirectoryIsWritableTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) DirectoryIsWritableTest::testFailure
+Failed asserting that "/path/to/directory" is writable.
+
+/home/sb/DirectoryIsWritableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100201Z" creationid="wynnc" creationdate="20180106T100201Z">
+        <seg>&lt;u0&gt;phpunit DirectoryIsWritableTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
 
 F
 
@@ -50298,6 +52174,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
       <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095839Z" creationid="wynnc" creationdate="20180106T095839Z">
         <seg>&lt;u0&gt;phpunit EmptyTest&lt;/u0&gt;
 PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) EmptyTest::testFailure
+Failed asserting that an array is empty.
+
+/home/sb/EmptyTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit EmptyTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) EmptyTest::testFailure
+Failed asserting that an array is empty.
+
+/home/sb/EmptyTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100202Z" creationid="wynnc" creationdate="20180106T100202Z">
+        <seg>&lt;u0&gt;phpunit EmptyTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
 
 F
 
@@ -52295,6 +54209,98 @@ Tests: 4, Assertions: 8, Failures: 4.</seg>
       <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095842Z" creationid="wynnc" creationdate="20180106T095842Z">
         <seg>&lt;u0&gt;phpunit EqualXMLStructureTest&lt;/u0&gt;
 PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+FFFF
+
+Time: 0 seconds, Memory: 5.75Mb
+
+There were 4 failures:
+
+1) EqualXMLStructureTest::testFailureWithDifferentNodeNames
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'foo'
++'bar'
+
+/home/sb/EqualXMLStructureTest.php:9
+
+2) EqualXMLStructureTest::testFailureWithDifferentNodeAttributes
+Number of attributes on node "foo" does not match
+Failed asserting that 0 matches expected 1.
+
+/home/sb/EqualXMLStructureTest.php:22
+
+3) EqualXMLStructureTest::testFailureWithDifferentChildrenCount
+Number of child nodes of "foo" differs
+Failed asserting that 1 matches expected 3.
+
+/home/sb/EqualXMLStructureTest.php:35
+
+4) EqualXMLStructureTest::testFailureWithDifferentChildren
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'bar'
++'baz'
+
+/home/sb/EqualXMLStructureTest.php:48
+
+FAILURES!
+Tests: 4, Assertions: 8, Failures: 4.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit EqualXMLStructureTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+FFFF
+
+Time: 0 seconds, Memory: 5.75Mb
+
+There were 4 failures:
+
+1) EqualXMLStructureTest::testFailureWithDifferentNodeNames
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'foo'
++'bar'
+
+/home/sb/EqualXMLStructureTest.php:9
+
+2) EqualXMLStructureTest::testFailureWithDifferentNodeAttributes
+Number of attributes on node "foo" does not match
+Failed asserting that 0 matches expected 1.
+
+/home/sb/EqualXMLStructureTest.php:22
+
+3) EqualXMLStructureTest::testFailureWithDifferentChildrenCount
+Number of child nodes of "foo" differs
+Failed asserting that 1 matches expected 3.
+
+/home/sb/EqualXMLStructureTest.php:35
+
+4) EqualXMLStructureTest::testFailureWithDifferentChildren
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'bar'
++'baz'
+
+/home/sb/EqualXMLStructureTest.php:48
+
+FAILURES!
+Tests: 4, Assertions: 8, Failures: 4.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100203Z" creationid="wynnc" creationdate="20180106T100203Z">
+        <seg>&lt;u0&gt;phpunit EqualXMLStructureTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
 
 FFFF
 
@@ -59184,6 +61190,300 @@ Tests: 3, Assertions: 3, Failures: 3.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit EqualsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+.F
+
+Time: 0 seconds, Memory: 5.75Mb
+
+There was 1 failure:
+
+1) EqualsTest::testFailure
+Failed asserting that 1.1 matches expected 1.0.
+
+/home/sb/EqualsTest.php:11
+
+FAILURES!
+Tests: 2, Assertions: 2, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100204Z" creationid="wynnc" creationdate="20180106T100204Z">
+        <seg>&lt;u0&gt;phpunit EqualsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+.F
+
+Time: 0 seconds, Memory: 5.75Mb
+
+There was 1 failure:
+
+1) EqualsTest::testFailure
+Failed asserting that 1.1 matches expected 1.0.
+
+/home/sb/EqualsTest.php:11
+
+FAILURES!
+Tests: 2, Assertions: 2, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit EqualsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) EqualsTest::testFailure
+Failed asserting that two DOM documents are equal.
+--- Expected
++++ Actual
+@@ @@
+ &lt;?xml version="1.0"?&gt;
+-&lt;foo&gt;
+-  &lt;bar/&gt;
+-&lt;/foo&gt;
++&lt;bar&gt;
++  &lt;foo/&gt;
++&lt;/bar&gt;
+
+/home/sb/EqualsTest.php:12
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100204Z" creationid="wynnc" creationdate="20180106T100204Z">
+        <seg>&lt;u0&gt;phpunit EqualsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) EqualsTest::testFailure
+Failed asserting that two DOM documents are equal.
+--- Expected
++++ Actual
+@@ @@
+ &lt;?xml version="1.0"?&gt;
+-&lt;foo&gt;
+-  &lt;bar/&gt;
+-&lt;/foo&gt;
++&lt;bar&gt;
++  &lt;foo/&gt;
++&lt;/bar&gt;
+
+/home/sb/EqualsTest.php:12
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit EqualsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) EqualsTest::testFailure
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     0 =&gt; 'a'
+-    1 =&gt; 'b'
+-    2 =&gt; 'c'
++    1 =&gt; 'c'
++    2 =&gt; 'd'
+ )
+
+/home/sb/EqualsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100206Z" creationid="wynnc" creationdate="20180106T100206Z">
+        <seg>&lt;u0&gt;phpunit EqualsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) EqualsTest::testFailure
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     0 =&gt; 'a'
+-    1 =&gt; 'b'
+-    2 =&gt; 'c'
++    1 =&gt; 'c'
++    2 =&gt; 'd'
+ )
+
+/home/sb/EqualsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit EqualsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) EqualsTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+-    'foo' =&gt; 'foo'
+-    'bar' =&gt; 'bar'
++    'foo' =&gt; 'bar'
++    'baz' =&gt; 'bar'
+ )
+
+/home/sb/EqualsTest.php:14
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100205Z" creationid="wynnc" creationdate="20180106T100205Z">
+        <seg>&lt;u0&gt;phpunit EqualsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) EqualsTest::testFailure
+Failed asserting that two objects are equal.
+--- Expected
++++ Actual
+@@ @@
+ stdClass Object (
+-    'foo' =&gt; 'foo'
+-    'bar' =&gt; 'bar'
++    'foo' =&gt; 'bar'
++    'baz' =&gt; 'bar'
+ )
+
+/home/sb/EqualsTest.php:14
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit EqualsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+FFF
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There were 3 failures:
+
+1) EqualsTest::testFailure
+Failed asserting that 0 matches expected 1.
+
+/home/sb/EqualsTest.php:6
+
+2) EqualsTest::testFailure2
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'bar'
++'baz'
+
+/home/sb/EqualsTest.php:11
+
+3) EqualsTest::testFailure3
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ 'foo
+-bar
++bah
+ baz
+ '
+
+/home/sb/EqualsTest.php:16
+
+FAILURES!
+Tests: 3, Assertions: 3, Failures: 3.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100203Z" creationid="wynnc" creationdate="20180106T100203Z">
+        <seg>&lt;u0&gt;phpunit EqualsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+FFF
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There were 3 failures:
+
+1) EqualsTest::testFailure
+Failed asserting that 0 matches expected 1.
+
+/home/sb/EqualsTest.php:6
+
+2) EqualsTest::testFailure2
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'bar'
++'baz'
+
+/home/sb/EqualsTest.php:11
+
+3) EqualsTest::testFailure3
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ 'foo
+-bar
++bah
+ baz
+ '
+
+/home/sb/EqualsTest.php:16
+
+FAILURES!
+Tests: 3, Assertions: 3, Failures: 3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit ErrorSuppressionTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -59636,6 +61936,28 @@ OK (1 test, 1 assertion)</seg>
       <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024712Z" creationid="admin" creationdate="20170502T024712Z">
         <seg>&lt;u0&gt;phpunit ErrorSuppressionTest&lt;/u0&gt;
 PHPUnit 6.2.0 by Sebastian Bergmann and contributors.
+
+.
+
+Time: 1 seconds, Memory: 5.25Mb
+
+OK (1 test, 1 assertion)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ErrorSuppressionTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+.
+
+Time: 1 seconds, Memory: 5.25Mb
+
+OK (1 test, 1 assertion)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100151Z" creationid="wynnc" creationdate="20180106T100151Z">
+        <seg>&lt;u0&gt;phpunit ErrorSuppressionTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
 
 .
 
@@ -61860,6 +64182,40 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit ExceptionTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) ExceptionTest::testException
+Expected exception InvalidArgumentException
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100150Z" creationid="wynnc" creationdate="20180106T100150Z">
+        <seg>&lt;u0&gt;phpunit ExceptionTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) ExceptionTest::testException
+Expected exception InvalidArgumentException
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit FalseTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -62678,6 +65034,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
       <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095848Z" creationid="wynnc" creationdate="20180106T095848Z">
         <seg>&lt;u0&gt;phpunit FalseTest&lt;/u0&gt;
 PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) FalseTest::testFailure
+Failed asserting that true is false.
+
+/home/sb/FalseTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit FalseTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.00Mb
+
+There was 1 failure:
+
+1) FalseTest::testFailure
+Failed asserting that true is false.
+
+/home/sb/FalseTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100206Z" creationid="wynnc" creationdate="20180106T100206Z">
+        <seg>&lt;u0&gt;phpunit FalseTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
 
 F
 
@@ -63796,6 +66190,56 @@ Tests: 1, Assertions: 3, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit FileEqualsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) FileEqualsTest::testFailure
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'expected
++'actual
+ '
+
+/home/sb/FileEqualsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100207Z" creationid="wynnc" creationdate="20180106T100207Z">
+        <seg>&lt;u0&gt;phpunit FileEqualsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) FileEqualsTest::testFailure
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'expected
++'actual
+ '
+
+/home/sb/FileEqualsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 3, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit FileExistsTest&lt;/u0&gt;
 PHPUnit 3.7.0 by Sebastian Bergmann.
 
@@ -64632,6 +67076,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit FileExistsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) FileExistsTest::testFailure
+Failed asserting that file "/path/to/file" exists.
+
+/home/sb/FileExistsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100208Z" creationid="wynnc" creationdate="20180106T100208Z">
+        <seg>&lt;u0&gt;phpunit FileExistsTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) FileExistsTest::testFailure
+Failed asserting that file "/path/to/file" exists.
+
+/home/sb/FileExistsTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit FileIsReadableTest&lt;/u0&gt;
 PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
 
@@ -64860,6 +67342,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit FileIsReadableTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) FileIsReadableTest::testFailure
+Failed asserting that "/path/to/file" is readable.
+
+/home/sb/FileIsReadableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100208Z" creationid="wynnc" creationdate="20180106T100208Z">
+        <seg>&lt;u0&gt;phpunit FileIsReadableTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) FileIsReadableTest::testFailure
+Failed asserting that "/path/to/file" is readable.
+
+/home/sb/FileIsReadableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit FileIsWritableTest&lt;/u0&gt;
 PHPUnit 5.6.0 by Sebastian Bergmann and contributors.
 
@@ -65070,6 +67590,44 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
       <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T095851Z" creationid="wynnc" creationdate="20180106T095851Z">
         <seg>&lt;u0&gt;phpunit FileIsWritableTest&lt;/u0&gt;
 PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) FileIsWritableTest::testFailure
+Failed asserting that "/path/to/file" is writable.
+
+/home/sb/FileIsWritableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit FileIsWritableTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 4.75Mb
+
+There was 1 failure:
+
+1) FileIsWritableTest::testFailure
+Failed asserting that "/path/to/file" is writable.
+
+/home/sb/FileIsWritableTest.php:6
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100638Z" creationid="wynnc" creationdate="20180106T100638Z">
+        <seg>&lt;u0&gt;phpunit FileIsWritableTest&lt;/u0&gt;
+PHPUnit 6.4.0 by Sebastian Bergmann and contributors.
 
 F
 
@@ -77268,6 +79826,66 @@ Tests: 1, Assertions: 1, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit LongArrayDiffTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) LongArrayDiffTest::testEquality
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+     13 =&gt; 2
+-    14 =&gt; 3
++    14 =&gt; 33
+     15 =&gt; 4
+     16 =&gt; 5
+     17 =&gt; 6
+ )
+
+
+/home/sb/LongArrayDiffTest.php:7
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100153Z" creationid="wynnc" creationdate="20180106T100153Z">
+        <seg>&lt;u0&gt;phpunit LongArrayDiffTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+F
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) LongArrayDiffTest::testEquality
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+     13 =&gt; 2
+-    14 =&gt; 3
++    14 =&gt; 33
+     15 =&gt; 4
+     16 =&gt; 5
+     17 =&gt; 6
+ )
+
+
+/home/sb/LongArrayDiffTest.php:7
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u0&gt;phpunit NanTest&lt;/u0&gt;
 PHPUnit 5.0.0 by Sebastian Bergmann and contributors.
 
@@ -80340,6 +82958,52 @@ Tests: 2, Assertions: 2, Failures: 1.</seg>
       <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024713Z" creationid="admin" creationdate="20170502T024713Z">
         <seg>&lt;u0&gt;phpunit OutputTest&lt;/u0&gt;
 PHPUnit 6.2.0 by Sebastian Bergmann and contributors.
+
+.F
+
+Time: 0 seconds, Memory: 5.75Mb
+
+There was 1 failure:
+
+1) OutputTest::testExpectBarActualBaz
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'bar'
++'baz'
+
+
+FAILURES!
+Tests: 2, Assertions: 2, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit OutputTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+.F
+
+Time: 0 seconds, Memory: 5.75Mb
+
+There was 1 failure:
+
+1) OutputTest::testExpectBarActualBaz
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'bar'
++'baz'
+
+
+FAILURES!
+Tests: 2, Assertions: 2, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100152Z" creationid="wynnc" creationdate="20180106T100152Z">
+        <seg>&lt;u0&gt;phpunit OutputTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
 
 .F
 
@@ -89201,6 +91865,66 @@ Tests: 2, Assertions: 2, Failures: 1.</seg>
       <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024653Z" creationid="admin" creationdate="20170502T024653Z">
         <seg>&lt;u0&gt;phpunit TemplateMethodsTest&lt;/u0&gt;
 PHPUnit 6.2.0 by Sebastian Bergmann and contributors.
+
+TemplateMethodsTest::setUpBeforeClass
+TemplateMethodsTest::setUp
+TemplateMethodsTest::assertPreConditions
+TemplateMethodsTest::testOne
+TemplateMethodsTest::assertPostConditions
+TemplateMethodsTest::tearDown
+.TemplateMethodsTest::setUp
+TemplateMethodsTest::assertPreConditions
+TemplateMethodsTest::testTwo
+TemplateMethodsTest::tearDown
+TemplateMethodsTest::onNotSuccessfulTest
+FTemplateMethodsTest::tearDownAfterClass
+
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) TemplateMethodsTest::testTwo
+Failed asserting that &lt;boolean:false&gt; is true.
+/home/sb/TemplateMethodsTest.php:30
+
+FAILURES!
+Tests: 2, Assertions: 2, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u0&gt;phpunit TemplateMethodsTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+TemplateMethodsTest::setUpBeforeClass
+TemplateMethodsTest::setUp
+TemplateMethodsTest::assertPreConditions
+TemplateMethodsTest::testOne
+TemplateMethodsTest::assertPostConditions
+TemplateMethodsTest::tearDown
+.TemplateMethodsTest::setUp
+TemplateMethodsTest::assertPreConditions
+TemplateMethodsTest::testTwo
+TemplateMethodsTest::tearDown
+TemplateMethodsTest::onNotSuccessfulTest
+FTemplateMethodsTest::tearDownAfterClass
+
+
+Time: 0 seconds, Memory: 5.25Mb
+
+There was 1 failure:
+
+1) TemplateMethodsTest::testTwo
+Failed asserting that &lt;boolean:false&gt; is true.
+/home/sb/TemplateMethodsTest.php:30
+
+FAILURES!
+Tests: 2, Assertions: 2, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100101Z" creationid="wynnc" creationdate="20180106T100101Z">
+        <seg>&lt;u0&gt;phpunit TemplateMethodsTest&lt;/u0&gt;
+PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
 
 TemplateMethodsTest::setUpBeforeClass
 TemplateMethodsTest::setUp
@@ -101308,6 +104032,56 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PHPUnit 6.3 requires PHP 7; using the latest version of PHP is highly recommended.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100115Z" creationid="wynnc" creationdate="20180106T100115Z">
+        <seg>PHPUnit 6.3 需要 PHP 7，强烈推荐使用最新版本的 PHP。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+.F
+
+Time: 0 seconds
+
+There was 1 failure:
+
+1) DataDrivenTest
+Failed asserting that two strings are equal.
+expected string &lt;bar&gt;
+difference      &lt;  x&gt;
+got string      &lt;baz&gt;
+/home/sb/DataDrivenTest.php:32
+/home/sb/DataDrivenTest.php:53
+
+FAILURES!
+Tests: 2, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100059Z" creationid="wynnc" creationdate="20180106T100059Z">
+        <seg>PHPUnit 6.3.0 by Sebastian Bergmann and contributors.
+
+.F
+
+Time: 0 seconds
+
+There was 1 failure:
+
+1) DataDrivenTest
+Failed asserting that two strings are equal.
+expected string &lt;bar&gt;
+difference      &lt;  x&gt;
+got string      &lt;baz&gt;
+/home/sb/DataDrivenTest.php:32
+/home/sb/DataDrivenTest.php:53
+
+FAILURES!
+Tests: 2, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PHPUnit Manual</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T035710Z" creationid="Wynn" creationdate="20150309T035710Z">
@@ -103536,6 +106310,14 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20151222T041426Z" creationid="Wynn" creationdate="20151222T041426Z">
         <seg>如果用 &lt;u2&gt;Composer&lt;/u2&gt; 来管理项目的依赖关系，只要在项目的 &lt;l1&gt;composer.json&lt;/l1&gt; 文件中简单地加上对 &lt;l0&gt;phpunit/phpunit&lt;/l0&gt; 的依赖关系即可。下面是一个最小化的 &lt;l3&gt;composer.json&lt;/l3&gt; 文件的例子，只定义了一个对 PHPUnit 5.1 的开发时(development-time)依赖：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Simply add a dependency on &lt;l0&gt;phpunit/phpunit&lt;/l0&gt; to your project's &lt;l1&gt;composer.json&lt;/l1&gt; file if you use &lt;u2&gt;Composer&lt;/u2&gt; to manage the dependencies of your project. Here is a minimal example of a &lt;l3&gt;composer.json&lt;/l3&gt; file that just defines a development-time dependency on PHPUnit 5.2:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100034Z" creationid="wynnc" creationdate="20180106T100034Z">
+        <seg>如果用 &lt;u2&gt;Composer&lt;/u2&gt; 来管理项目的依赖关系，只要在项目的 &lt;l1&gt;composer.json&lt;/l1&gt; 文件中简单地加上对 &lt;l0&gt;phpunit/phpunit&lt;/l0&gt; 的依赖关系即可。下面是一个最小化的 &lt;l3&gt;composer.json&lt;/l3&gt; 文件的例子，只定义了一个对 PHPUnit 5.2 的开发时(development-time)依赖：</seg>
       </tuv>
     </tu>
     <tu>
@@ -111178,6 +113960,14 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>composer global require "phpunit/phpunit=5.2.*"</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100040Z" creationid="wynnc" creationdate="20180106T100040Z">
+        <seg>composer global require "phpunit/phpunit=5.2.*"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>composer global require "phpunit/phpunit=5.3.*"</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20160418T083029Z" creationid="Wynn" creationdate="20160418T083029Z">
@@ -111198,6 +113988,14 @@ class MyClass
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20160815T094327Z" creationid="Wynn" creationdate="20160815T094327Z">
         <seg>composer global require "phpunit/phpunit=5.5.*"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>composer global require "phpunit/phpunit=5.6.*"</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100052Z" creationid="wynnc" creationdate="20180106T100052Z">
+        <seg>composer global require "phpunit/phpunit=5.6.*"</seg>
       </tuv>
     </tu>
     <tu>
@@ -111254,6 +114052,14 @@ class MyClass
       </tuv>
       <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024659Z" creationid="admin" creationdate="20170502T024659Z">
         <seg>composer require --dev phpunit/phpunit ^6.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>composer require --dev phpunit/phpunit ^6.3</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100125Z" creationid="wynnc" creationdate="20180106T100125Z">
+        <seg>composer require --dev phpunit/phpunit ^6.3</seg>
       </tuv>
     </tu>
     <tu>
@@ -112098,6 +114904,14 @@ class MyClass
       </tuv>
       <tuv lang="ZH-CN" changeid="admin" changedate="20170502T024658Z" creationid="admin" creationdate="20170502T024658Z">
         <seg>https://phar.phpunit.de/phpunit-6.2.phar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://phar.phpunit.de/phpunit-6.3.phar</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100123Z" creationid="wynnc" creationdate="20180106T100123Z">
+        <seg>https://phar.phpunit.de/phpunit-6.3.phar</seg>
       </tuv>
     </tu>
     <tu>
@@ -114068,6 +116882,22 @@ class MyTest extends TestCase
       <tuv lang="EN-US">
         <seg>{
     "require-dev": {
+        "phpunit/phpunit": "5.2.*"
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100035Z" creationid="wynnc" creationdate="20180106T100035Z">
+        <seg>{
+    "require-dev": {
+        "phpunit/phpunit": "5.2.*"
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{
+    "require-dev": {
         "phpunit/phpunit": "5.3.*"
     }
 }</seg>
@@ -114108,6 +116938,22 @@ class MyTest extends TestCase
         <seg>{
     "require-dev": {
         "phpunit/phpunit": "5.5.*"
+    }
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{
+    "require-dev": {
+        "phpunit/phpunit": "5.6.*"
+    }
+}</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180106T100051Z" creationid="wynnc" creationdate="20180106T100051Z">
+        <seg>{
+    "require-dev": {
+        "phpunit/phpunit": "5.6.*"
     }
 }</seg>
       </tuv>
