@@ -804,6 +804,14 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>.. _appendixes.annotations:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180127T031813Z" creationid="wynnc" creationdate="20180127T031813Z">
+        <seg>.. _appendixes.annotations:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>...</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150330T031241Z" creationid="Wynn" creationdate="20150330T031241Z">
@@ -106370,6 +106378,18 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>===========
+Annotations
+===========</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180127T031939Z" creationid="wynnc" creationdate="20180127T031939Z">
+        <seg>==
+标注
+==</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&gt; /tmp/logfile.txt</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150309T095323Z" creationid="Wynn" creationdate="20150309T095323Z">
@@ -107526,6 +107546,23 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Wynn" changedate="20150319T042429Z" creationid="Wynn" creationdate="20150319T042429Z">
         <seg>为了让数据库扩展模块正常工作，需要在应用程序中使用 PDO 吗？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An annotation is a special form of syntactic metadata that can be added to
+the source code of some programming languages. While PHP has no dedicated
+language feature for annotating source code, the usage of tags such as
+``@annotation arguments`` in a documentation block has been
+established in the PHP community to annotate source code. In PHP
+documentation blocks are reflective: they can be accessed through the
+Reflection API's ``getDocComment()`` method on the function,
+class, method, and attribute level. Applications such as PHPUnit use this
+information at runtime to configure their behaviour.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="wynnc" changedate="20180127T031911Z" creationid="wynnc" creationdate="20180127T031911Z">
+        <seg>所谓标注，是指某些编程语言中允许加在源代码中的一种特殊格式的语法元数据。PHP 并没有专门的语言特性来支持对源代码进行标注，然而 PHP 社区早已经形成惯例，通过在文档注释块中使用诸如 ``@annotation arguments`` 这样的标签来为源代码加上标注。在 PHP 中，文档注释块是可反射的：可以对函数、方法、类以及属性调用相应级别的反射 API ``getDocComment()`` 方法来获取相应的文档注释块。诸如 PHPUnit 这样的应用程序在运行时用这些信息来配置其行为。
+</seg>
       </tuv>
     </tu>
     <tu>
