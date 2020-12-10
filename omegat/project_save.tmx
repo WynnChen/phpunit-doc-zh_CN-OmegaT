@@ -125441,8 +125441,8 @@ ok</seg>
         <seg>pipe = Popen('git branch | grep \*', stdout=PIPE, shell=True, universal_newlines=True)
     version = pipe.stdout.read()</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091135Z" creationid="wynnc" creationdate="20201210T090403Z">
-        <seg>pipe = Popen('git branch | findstr \*', stdout=PIPE, shell=True, universal_newlines=True)
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091534Z" creationid="wynnc" creationdate="20201210T091534Z">
+        <seg>pipe = Popen('git branch | grep \*', stdout=PIPE, shell=True, universal_newlines=True)
     version = pipe.stdout.read()</seg>
       </tuv>
     </tu>
