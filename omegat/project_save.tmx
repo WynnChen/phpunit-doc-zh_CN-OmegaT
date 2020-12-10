@@ -1674,6 +1674,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _appendixes.bibliography:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091613Z" creationid="wynnc" creationdate="20201210T091613Z">
+        <seg>.. _appendixes.bibliography:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. toctree::
    :caption: Appendix
    :maxdepth: 2
@@ -107350,6 +107358,18 @@ Annotations
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>============
+Bibliography
+============</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091616Z" creationid="wynnc" creationdate="20201210T091616Z">
+        <seg>============
+参考书目
+============</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>==============
 PHPUnit Manual
 ==============</seg>
@@ -120948,6 +120968,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150310T081331Z" creationid="Wynn" creationdate="20150310T081304Z">
         <seg>业务逻辑中混合执行了 SELECT、INSERT、UPDATE 和 DELETE 语句。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>[Meszaros2007] Gerard Meszaros. *xUnit Test Patterns: Refactoring Test Code*.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091634Z" creationid="wynnc" creationdate="20201210T091634Z">
+        <seg>[Meszaros2007] Gerard Meszaros. *xUnit Test Patterns: Refactoring Test Code*.</seg>
       </tuv>
     </tu>
     <tu>
