@@ -110,6 +110,70 @@ from subprocess import Popen, PIPE</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg># -- Options for HTML output ----------------------------------------------</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090653Z" creationid="wynnc" creationdate="20201210T090653Z">
+        <seg># -- Options for HTML output ----------------------------------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># -- Options for LaTeX output ---------------------------------------------</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090812Z" creationid="wynnc" creationdate="20201210T090812Z">
+        <seg># -- Options for LaTeX output ---------------------------------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># -- Options for Texinfo output -------------------------------------------</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090909Z" creationid="wynnc" creationdate="20201210T090909Z">
+        <seg># -- Options for Texinfo output -------------------------------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># -- Options for manual page output ---------------------------------------</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090859Z" creationid="wynnc" creationdate="20201210T090859Z">
+        <seg># -- Options for manual page output ---------------------------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># A dictionary with options for the search language support, empty by default.
+# Now only 'ja' uses this config value
+#html_search_options = {'type': 'default'}</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090802Z" creationid="wynnc" creationdate="20201210T090802Z">
+        <seg># A dictionary with options for the search language support, empty by default.
+# Now only 'ja' uses this config value
+#html_search_options = {'type': 'default'}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># A list of ignored prefixes for module index sorting.
+#modindex_common_prefix = []</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090651Z" creationid="wynnc" creationdate="20201210T090651Z">
+        <seg># A list of ignored prefixes for module index sorting.
+#modindex_common_prefix = []</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># A shorter title for the navigation bar.  Default is the same as html_title.
+#html_short_title = None</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090708Z" creationid="wynnc" creationdate="20201210T090708Z">
+        <seg># A shorter title for the navigation bar.  Default is the same as html_title.
+#html_short_title = None</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg># Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
@@ -128,12 +192,114 @@ extensions = [
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg># Add any extra paths that contain custom files (such as robots.txt or
+# .htaccess) here, relative to this directory. These files are copied
+# directly to the root of the documentation.
+#html_extra_path = []</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090712Z" creationid="wynnc" creationdate="20201210T090712Z">
+        <seg># Add any extra paths that contain custom files (such as robots.txt or
+# .htaccess) here, relative to this directory. These files are copied
+# directly to the root of the documentation.
+#html_extra_path = []</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ['_static']</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090711Z" creationid="wynnc" creationdate="20201210T090711Z">
+        <seg># Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ['_static']</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Add any paths that contain custom themes here, relative to this directory.
+#html_theme_path = ['_templates']</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090659Z" creationid="wynnc" creationdate="20201210T090659Z">
+        <seg># Add any paths that contain custom themes here, relative to this directory.
+#html_theme_path = ['_templates']</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg># Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090430Z" creationid="wynnc" creationdate="20201210T090430Z">
         <seg># Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Additional stuff for the LaTeX preamble.
+#'preamble': '',</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090824Z" creationid="wynnc" creationdate="20201210T090824Z">
+        <seg># Additional stuff for the LaTeX preamble.
+#'preamble': '',</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Additional templates that should be rendered to pages, maps page names to
+# template names.
+#html_additional_pages = {}</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090731Z" creationid="wynnc" creationdate="20201210T090731Z">
+        <seg># Additional templates that should be rendered to pages, maps page names to
+# template names.
+#html_additional_pages = {}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Custom sidebar templates, maps document names to template names.
+#html_sidebars = {}</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090729Z" creationid="wynnc" creationdate="20201210T090729Z">
+        <seg># Custom sidebar templates, maps document names to template names.
+#html_sidebars = {}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Documents to append as an appendix to all manuals.
+#latex_appendices = []</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090854Z" creationid="wynnc" creationdate="20201210T090854Z">
+        <seg># Documents to append as an appendix to all manuals.
+#latex_appendices = []</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Documents to append as an appendix to all manuals.
+#texinfo_appendices = []</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090923Z" creationid="wynnc" creationdate="20201210T090923Z">
+        <seg># Documents to append as an appendix to all manuals.
+#texinfo_appendices = []</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># For "manual" documents, if this is true, then toplevel headings are parts,
+# not chapters.
+#latex_use_parts = False</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090852Z" creationid="wynnc" creationdate="20201210T090852Z">
+        <seg># For "manual" documents, if this is true, then toplevel headings are parts,
+# not chapters.
+#latex_use_parts = False</seg>
       </tuv>
     </tu>
     <tu>
@@ -154,6 +320,48 @@ epub_author = u'Sebastian Bergmann'</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg># Grouping the document tree into LaTeX files. List of tuples
+# (source start file, target name, title,
+#  author, documentclass [howto, manual, or own class]).
+latex_documents = [
+  (master_doc, 'PHPUnit.tex', u'PHPUnit Manual',
+   u'Sebastian Bergmann', 'manual'),
+]</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090851Z" creationid="wynnc" creationdate="20201210T090851Z">
+        <seg># Grouping the document tree into LaTeX files. List of tuples
+# (source start file, target name, title,
+#  author, documentclass [howto, manual, or own class]).
+latex_documents = [
+  (master_doc, 'PHPUnit.tex', u'PHPUnit 手册',
+   u'Sebastian Bergmann', 'manual'),
+]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Grouping the document tree into Texinfo files. List of tuples
+# (source start file, target name, title, author,
+#  dir menu entry, description, category)
+texinfo_documents = [
+  (master_doc, 'PHPUnit', u'PHPUnit Manual',
+   author, 'PHPUnit', 'One line description of project.',
+   'Miscellaneous'),
+]</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090922Z" creationid="wynnc" creationdate="20201210T090922Z">
+        <seg># Grouping the document tree into Texinfo files. List of tuples
+# (source start file, target name, title, author,
+#  dir menu entry, description, category)
+texinfo_documents = [
+  (master_doc, 'PHPUnit', u'PHPUnit 手册',
+   author, 'PHPUnit', 'One line description of project.',
+   'Miscellaneous'),
+]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg># If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -168,6 +376,198 @@ epub_author = u'Sebastian Bergmann'</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg># If false, no index is generated.
+#html_use_index = True</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090738Z" creationid="wynnc" creationdate="20201210T090738Z">
+        <seg># If false, no index is generated.
+#html_use_index = True</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If false, no module index is generated.
+#html_domain_indices = True</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090736Z" creationid="wynnc" creationdate="20201210T090736Z">
+        <seg># If false, no module index is generated.
+#html_domain_indices = True</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If false, no module index is generated.
+#latex_domain_indices = True</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090855Z" creationid="wynnc" creationdate="20201210T090855Z">
+        <seg># If false, no module index is generated.
+#latex_domain_indices = True</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
+# using the given strftime format.
+#html_last_updated_fmt = '%b %d, %Y'</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090726Z" creationid="wynnc" creationdate="20201210T090726Z">
+        <seg># If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
+# using the given strftime format.
+#html_last_updated_fmt = '%b %d, %Y'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
+#html_show_copyright = True</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090753Z" creationid="wynnc" creationdate="20201210T090753Z">
+        <seg># If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
+#html_show_copyright = True</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
+html_show_sphinx = False</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090751Z" creationid="wynnc" creationdate="20201210T090751Z">
+        <seg># If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
+html_show_sphinx = False</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, '()' will be appended to :func: etc. cross-reference text.
+#add_function_parentheses = True</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090649Z" creationid="wynnc" creationdate="20201210T090649Z">
+        <seg># If true, '()' will be appended to :func: etc. cross-reference text.
+#add_function_parentheses = True</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, SmartyPants will be used to convert quotes and dashes to
+# typographically correct entities.
+#html_use_smartypants = True</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090729Z" creationid="wynnc" creationdate="20201210T090729Z">
+        <seg># If true, SmartyPants will be used to convert quotes and dashes to
+# typographically correct entities.
+#html_use_smartypants = True</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, `todo` and `todoList` produce output, else they produce nothing.
+todo_include_todos = False</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090652Z" creationid="wynnc" creationdate="20201210T090652Z">
+        <seg># If true, `todo` and `todoList` produce output, else they produce nothing.
+todo_include_todos = False</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, an OpenSearch description file will be output, and all pages will
+# contain a &lt;link&gt; tag referring to it.  The value of this option must be the
+# base URL from which the finished HTML is served.
+#html_use_opensearch = ''</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090800Z" creationid="wynnc" creationdate="20201210T090800Z">
+        <seg># If true, an OpenSearch description file will be output, and all pages will
+# contain a &lt;link&gt; tag referring to it.  The value of this option must be the
+# base URL from which the finished HTML is served.
+#html_use_opensearch = ''</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, keep warnings as "system message" paragraphs in the built documents.
+#keep_warnings = False</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090652Z" creationid="wynnc" creationdate="20201210T090652Z">
+        <seg># If true, keep warnings as "system message" paragraphs in the built documents.
+#keep_warnings = False</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, links to the reST sources are added to the pages.
+#html_show_sourcelink = True</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090744Z" creationid="wynnc" creationdate="20201210T090744Z">
+        <seg># If true, links to the reST sources are added to the pages.
+#html_show_sourcelink = True</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, sectionauthor and moduleauthor directives will be shown in the
+# output. They are ignored by default.
+#show_authors = False</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090650Z" creationid="wynnc" creationdate="20201210T090650Z">
+        <seg># If true, sectionauthor and moduleauthor directives will be shown in the
+# output. They are ignored by default.
+#show_authors = False</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, show URL addresses after external links.
+#latex_show_urls = False</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090853Z" creationid="wynnc" creationdate="20201210T090853Z">
+        <seg># If true, show URL addresses after external links.
+#latex_show_urls = False</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, show URL addresses after external links.
+#man_show_urls = False</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090909Z" creationid="wynnc" creationdate="20201210T090909Z">
+        <seg># If true, show URL addresses after external links.
+#man_show_urls = False</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, show page references after internal links.
+#latex_show_pagerefs = False</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090853Z" creationid="wynnc" creationdate="20201210T090853Z">
+        <seg># If true, show page references after internal links.
+#latex_show_pagerefs = False</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, the current module name will be prepended to all description
+# unit titles (such as .. function::).
+#add_module_names = True</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090650Z" creationid="wynnc" creationdate="20201210T090650Z">
+        <seg># If true, the current module name will be prepended to all description
+# unit titles (such as .. function::).
+#add_module_names = True</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, the index is split into individual pages for each letter.
+#html_split_index = False</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090743Z" creationid="wynnc" creationdate="20201210T090743Z">
+        <seg># If true, the index is split into individual pages for each letter.
+#html_split_index = False</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg># If your documentation needs a minimal Sphinx version, state it here.
 needs_sphinx = '1.3'</seg>
       </tuv>
@@ -178,12 +578,90 @@ needs_sphinx = '1.3'</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg># Language to be used for generating the HTML full-text search index.
+# Sphinx supports the following languages:
+#   'da', 'de', 'en', 'es', 'fi', 'fr', 'hu', 'it', 'ja'
+#   'nl', 'no', 'pt', 'ro', 'ru', 'sv', 'tr'
+#html_search_language = 'en'</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090801Z" creationid="wynnc" creationdate="20201210T090801Z">
+        <seg># Language to be used for generating the HTML full-text search index.
+# Sphinx supports the following languages:
+#   'da', 'de', 'en', 'es', 'fi', 'fr', 'hu', 'it', 'ja'
+#   'nl', 'no', 'pt', 'ro', 'ru', 'sv', 'tr'
+#html_search_language = 'en'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Latex figure (float) alignment
+#'figure_align': 'htbp',
+}</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090825Z" creationid="wynnc" creationdate="20201210T090825Z">
+        <seg># Latex figure (float) alignment
+#'figure_align': 'htbp',
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+exclude_patterns = []</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090648Z" creationid="wynnc" creationdate="20201210T090648Z">
+        <seg># List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+exclude_patterns = []</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># One entry per manual page. List of tuples
+# (source start file, name, description, authors, manual section).
+man_pages = [
+    (master_doc, 'phpunit', u'PHPUnit Documentation',
+     [author], 1)
+]</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090908Z" creationid="wynnc" creationdate="20201210T090908Z">
+        <seg># One entry per manual page. List of tuples
+# (source start file, name, description, authors, manual section).
+man_pages = [
+    (master_doc, 'phpunit', u'PHPUnit 文档',
+     [author], 1)
+]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Output file base name for HTML help builder.
+htmlhelp_basename = 'PHPUnitdoc'</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090805Z" creationid="wynnc" creationdate="20201210T090805Z">
+        <seg># Output file base name for HTML help builder.
+htmlhelp_basename = 'PHPUnitdoc'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg># The encoding of source files.
 #source_encoding = 'utf-8-sig'</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090434Z" creationid="wynnc" creationdate="20201210T090434Z">
         <seg># The encoding of source files.
 #source_encoding = 'utf-8-sig'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># The font size ('10pt', '11pt' or '12pt').
+#'pointsize': '10pt',</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090815Z" creationid="wynnc" creationdate="20201210T090815Z">
+        <seg># The font size ('10pt', '11pt' or '12pt').
+#'pointsize': '10pt',</seg>
       </tuv>
     </tu>
     <tu>
@@ -212,6 +690,90 @@ master_doc = 'index'</seg>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090436Z" creationid="wynnc" creationdate="20201210T090436Z">
         <seg># The master toctree document.
 master_doc = 'index'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># The name for this set of Sphinx documents.  If None, it defaults to
+# "&lt;project&gt; v&lt;release&gt; documentation".
+html_title = "PHPUnit %s Manual" % get_version()</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090706Z" creationid="wynnc" creationdate="20201210T090706Z">
+        <seg># The name for this set of Sphinx documents.  If None, it defaults to
+# "&lt;project&gt; v&lt;release&gt; documentation".
+html_title = "PHPUnit %s 手册" % get_version()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># The name of a javascript file (relative to the configuration directory) that
+# implements a search results scorer. If empty, the default will be used.
+#html_search_scorer = 'scorer.js'</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090803Z" creationid="wynnc" creationdate="20201210T090803Z">
+        <seg># The name of a javascript file (relative to the configuration directory) that
+# implements a search results scorer. If empty, the default will be used.
+#html_search_scorer = 'scorer.js'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># The name of an image file (relative to this directory) to place at the top
+# of the sidebar.
+#html_logo = None</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090709Z" creationid="wynnc" creationdate="20201210T090709Z">
+        <seg># The name of an image file (relative to this directory) to place at the top
+# of the sidebar.
+#html_logo = None</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># The name of an image file (relative to this directory) to place at the top of
+# the title page.
+#latex_logo = None</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090852Z" creationid="wynnc" creationdate="20201210T090852Z">
+        <seg># The name of an image file (relative to this directory) to place at the top of
+# the title page.
+#latex_logo = None</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># The name of an image file (within the static path) to use as favicon of the
+# docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
+# pixels large.
+#html_favicon = None</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090711Z" creationid="wynnc" creationdate="20201210T090711Z">
+        <seg># The name of an image file (within the static path) to use as favicon of the
+# docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
+# pixels large.
+#html_favicon = None</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># The name of the Pygments (syntax highlighting) style to use.
+pygments_style = 'sphinx'</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090651Z" creationid="wynnc" creationdate="20201210T090651Z">
+        <seg># The name of the Pygments (syntax highlighting) style to use.
+pygments_style = 'sphinx'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># The reST default role (used for this markup: `text`) to use for all
+# documents.
+#default_role = None</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090648Z" creationid="wynnc" creationdate="20201210T090648Z">
+        <seg># The reST default role (used for this markup: `text`) to use for all
+# documents.
+#default_role = None</seg>
       </tuv>
     </tu>
     <tu>
@@ -258,12 +820,22 @@ release = version</seg>
 # Else, today_fmt is used as the format for a strftime call.
 #today_fmt = '%B %d, %Y'</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090523Z" creationid="wynnc" creationdate="20201210T090523Z">
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090647Z" creationid="wynnc" creationdate="20201210T090523Z">
         <seg># There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
 #today = ''
 # Else, today_fmt is used as the format for a strftime call.
-#today_fmt = '%B %d, %Y'</seg>
+today_fmt = '%Y-%m-%d'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># This is the file name suffix for HTML files (e.g. ".xhtml").
+#html_file_suffix = None</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090800Z" creationid="wynnc" creationdate="20201210T090800Z">
+        <seg># This is the file name suffix for HTML files (e.g. ".xhtml").
+#html_file_suffix = None</seg>
       </tuv>
     </tu>
     <tu>
@@ -123704,6 +124276,50 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>html_add_permalinks = ""</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090659Z" creationid="wynnc" creationdate="20201210T090659Z">
+        <seg>html_add_permalinks = ""</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>html_context = {
+    "display_github": True,
+    "github_user": "sebastianbergmann",
+    "github_repo": "phpunit-documentation-english",
+    "github_version": version,
+    "conf_py_path": "/src/",
+}</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090812Z" creationid="wynnc" creationdate="20201210T090812Z">
+        <seg>html_context = {
+    "display_github": True,
+    "github_user": "sebastianbergmann",
+    "github_repo": "phpunit-documentation-chinese",
+    "github_version": version,
+    "conf_py_path": "/src/",
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>html_theme = 'sphinx_rtd_theme'
+html_theme_options = {
+    'collapse_navigation': False,
+    'display_version': False
+}</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090656Z" creationid="wynnc" creationdate="20201210T090656Z">
+        <seg>html_theme = 'sphinx_rtd_theme'
+html_theme_options = {
+    'collapse_navigation': False,
+    'display_version': False
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>http://ant.apache.org/manual/Tasks/junit.html</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T100953Z" creationid="Wynn" creationdate="20150319T100953Z">
@@ -124504,6 +125120,18 @@ $_REQUEST['foo'] = 'bar';</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20160923T091751Z" creationid="wynnc" creationdate="20160923T091751Z">
         <seg>isWritable()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>latex_elements = {
+# The paper size ('letterpaper' or 'a4paper').
+#'papersize': 'letterpaper',</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090818Z" creationid="wynnc" creationdate="20201210T090814Z">
+        <seg>latex_elements = {
+# The paper size ('letterpaper' or 'a4paper').
+#'papersize': 'a4paper',</seg>
       </tuv>
     </tu>
     <tu>
