@@ -119636,8 +119636,8 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       <tuv lang="en-US">
         <seg>Under the following conditions:</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091944Z" creationid="wynnc" creationdate="20201210T091944Z">
-        <seg>Under the following conditions:</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T102154Z" creationid="wynnc" creationdate="20201210T091944Z">
+        <seg>只要遵循以下条件：</seg>
       </tuv>
     </tu>
     <tu>
