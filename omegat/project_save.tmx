@@ -1090,6 +1090,56 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>* Any of the above conditions can be waived if you get
+          permission from the copyright holder.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091944Z" creationid="wynnc" creationdate="20201210T091944Z">
+        <seg>* Any of the above conditions can be waived if you get
+          permission from the copyright holder.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>* For any reuse or distribution, you must make clear to others
+          the license terms of this work. The best way to do this is with
+          a link to this web page.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091944Z" creationid="wynnc" creationdate="20201210T091944Z">
+        <seg>* For any reuse or distribution, you must make clear to others
+          the license terms of this work. The best way to do this is with
+          a link to this web page.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>* Nothing in this license impairs or restricts the author's moral
+          rights.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091944Z" creationid="wynnc" creationdate="20201210T091944Z">
+        <seg>* Nothing in this license impairs or restricts the author's moral
+          rights.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>* to Share - to copy, distribute and transmit the work
+        * to Remix - to adapt the work</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091944Z" creationid="wynnc" creationdate="20201210T091944Z">
+        <seg>* to Share - to copy, distribute and transmit the work
+        * to Remix - to adapt the work</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>--------------------------------------------------------------------</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091943Z" creationid="wynnc" creationdate="20201210T091943Z">
+        <seg>--------------------------------------------------------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>--bootstrap</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T100511Z" creationid="Wynn" creationdate="20150327T100511Z">
@@ -1682,6 +1732,22 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _appendixes.copyright:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091854Z" creationid="wynnc" creationdate="20201210T091854Z">
+        <seg>.. _appendixes.copyright:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: text</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091901Z" creationid="wynnc" creationdate="20201210T091901Z">
+        <seg>.. code-block:: text</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. toctree::
    :caption: Appendix
    :maxdepth: 2
@@ -1980,6 +2046,30 @@ public function initialBalanceShouldBe0()
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>1. Definitions</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091946Z" creationid="wynnc" creationdate="20201210T091946Z">
+        <seg>1. Definitions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>2. Fair Dealing Rights. Nothing in this License is intended to
+       reduce, limit, or restrict any uses free from copyright or rights
+       arising from limitations or exceptions that are provided for in
+       connection with the copyright protection under copyright law or
+       other applicable laws.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091947Z" creationid="wynnc" creationdate="20201210T091947Z">
+        <seg>2. Fair Dealing Rights. Nothing in this License is intended to
+       reduce, limit, or restrict any uses free from copyright or rights
+       arising from limitations or exceptions that are provided for in
+       connection with the copyright protection under copyright law or
+       other applicable laws.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>2. Set up fixture</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150313T071214Z" creationid="Wynn" creationdate="20150313T071108Z">
@@ -2092,10 +2182,78 @@ public function initialBalanceShouldBe0()
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>3. License Grant. Subject to the terms and conditions of this
+       License, Licensor hereby grants You a worldwide, royalty-free,
+       non-exclusive, perpetual (for the duration of the applicable
+       copyright) license to exercise the rights in the Work as stated
+       below:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091947Z" creationid="wynnc" creationdate="20201210T091947Z">
+        <seg>3. License Grant. Subject to the terms and conditions of this
+       License, Licensor hereby grants You a worldwide, royalty-free,
+       non-exclusive, perpetual (for the duration of the applicable
+       copyright) license to exercise the rights in the Work as stated
+       below:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>3–5. Run Test, Verify outcome and Teardown</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150313T071201Z" creationid="Wynn" creationdate="20150313T071201Z">
         <seg>3–5. 运行测试、验证结果、并拆除基境</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>4. Restrictions. The license granted in Section 3 above is expressly
+       made subject to and limited by the following restrictions:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091949Z" creationid="wynnc" creationdate="20201210T091949Z">
+        <seg>4. Restrictions. The license granted in Section 3 above is expressly
+       made subject to and limited by the following restrictions:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>5. Representations, Warranties and Disclaimer</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091950Z" creationid="wynnc" creationdate="20201210T091950Z">
+        <seg>5. Representations, Warranties and Disclaimer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>6. Limitation on Liability. EXCEPT TO THE EXTENT REQUIRED BY
+       APPLICABLE LAW, IN NO EVENT WILL LICENSOR BE LIABLE TO YOU ON ANY
+       LEGAL THEORY FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE
+       OR EXEMPLARY DAMAGES ARISING OUT OF THIS LICENSE OR THE USE OF
+       THE WORK, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY
+       OF SUCH DAMAGES.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091951Z" creationid="wynnc" creationdate="20201210T091951Z">
+        <seg>6. Limitation on Liability. EXCEPT TO THE EXTENT REQUIRED BY
+       APPLICABLE LAW, IN NO EVENT WILL LICENSOR BE LIABLE TO YOU ON ANY
+       LEGAL THEORY FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE
+       OR EXEMPLARY DAMAGES ARISING OUT OF THIS LICENSE OR THE USE OF
+       THE WORK, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY
+       OF SUCH DAMAGES.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>7. Termination</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091951Z" creationid="wynnc" creationdate="20201210T091951Z">
+        <seg>7. Termination</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>8. Miscellaneous</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091952Z" creationid="wynnc" creationdate="20201210T091952Z">
+        <seg>8. Miscellaneous</seg>
       </tuv>
     </tu>
     <tu>
@@ -107346,6 +107504,18 @@ Wrote skeleton for "CalculatorTest" to "/home/sb/CalculatorTest.php".</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>=========
+Copyright
+=========</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091900Z" creationid="wynnc" creationdate="20201210T091900Z">
+        <seg>=========
+版权
+=========</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>===========
 Annotations
 ===========</seg>
@@ -107378,6 +107548,14 @@ PHPUnit Manual
         <seg>==============
 PHPUnit 手册
 ==============</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>====================================================================</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091945Z" creationid="wynnc" creationdate="20201210T091945Z">
+        <seg>====================================================================</seg>
       </tuv>
     </tu>
     <tu>
@@ -108158,6 +108336,15 @@ PHPUnit 手册
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>A summary of the license is given below, followed by the full legal
+    text.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T092130Z" creationid="wynnc" creationdate="20201210T091942Z">
+        <seg>以下为许可摘要，完整的法律文本附在后面。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>A table is also represented by the following interface:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150317T075901Z" creationid="Wynn" creationdate="20150317T075850Z">
@@ -108863,6 +109050,18 @@ information at runtime to configure their behaviour.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Attribution. You must attribute the work in the manner specified by
+    the author or licensor (but not in any way that suggests that they
+    endorse you or your use of the work).</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091944Z" creationid="wynnc" creationdate="20201210T091944Z">
+        <seg>Attribution. You must attribute the work in the manner specified by
+    the author or licensor (but not in any way that suggests that they
+    endorse you or your use of the work).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Authoring testcases is a good impetus for developers to discover edge cases.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T092601Z" creationid="Wynn" creationdate="20150327T092601Z">
@@ -108899,6 +109098,22 @@ information at runtime to configure their behaviour.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150317T070643Z" creationid="Wynn" creationdate="20150317T070621Z">
         <seg>可用的各种实现</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND
+    AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS
+    LICENSE MAY BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU
+    THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF
+    SUCH TERMS AND CONDITIONS.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091946Z" creationid="wynnc" creationdate="20201210T091946Z">
+        <seg>BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND
+    AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS
+    LICENSE MAY BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU
+    THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF
+    SUCH TERMS AND CONDITIONS.</seg>
       </tuv>
     </tu>
     <tu>
@@ -109203,6 +109418,24 @@ information at runtime to configure their behaviour.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083723Z" creationid="wynnc" creationdate="20201210T083723Z">
         <seg>CC-BY-3.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+    LEGAL SERVICES. DISTRIBUTION OF THIS LICENSE DOES NOT CREATE AN
+    ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+    INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO
+    WARRANTIES REGARDING THE INFORMATION PROVIDED, AND DISCLAIMS
+    LIABILITY FOR DAMAGES RESULTING FROM ITS USE.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091945Z" creationid="wynnc" creationdate="20201210T091945Z">
+        <seg>CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+    LEGAL SERVICES. DISTRIBUTION OF THIS LICENSE DOES NOT CREATE AN
+    ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+    INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO
+    WARRANTIES REGARDING THE INFORMATION PROVIDED, AND DISCLAIMS
+    LIABILITY FOR DAMAGES RESULTING FROM ITS USE.</seg>
       </tuv>
     </tu>
     <tu>
@@ -109735,6 +109968,14 @@ information at runtime to configure their behaviour.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Copyright (c) 2005-2020 Sebastian Bergmann.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T092045Z" creationid="wynnc" creationdate="20201210T091940Z">
+        <seg>版权所有 © 2005-2020 Sebastian Bergmann。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Create a directory for PHP binaries; e.g., &lt;f0&gt;C:\bin&lt;/f0&gt;</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T095442Z" creationid="Wynn" creationdate="20150319T095442Z">
@@ -109755,6 +109996,16 @@ information at runtime to configure their behaviour.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T095639Z" creationid="Wynn" creationdate="20150319T095639Z">
         <seg>建立外包覆批处理脚本（最后得到 &lt;f0&gt;C:\bin\phpunit.cmd&lt;/f0&gt;）：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Creative Commons Legal Code
+    Attribution 3.0 Unported</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091945Z" creationid="wynnc" creationdate="20201210T091945Z">
+        <seg>Creative Commons Legal Code
+    Attribution 3.0 Unported</seg>
       </tuv>
     </tu>
     <tu>
@@ -112010,6 +112261,14 @@ translate. A repository will be created and added to the available translations.
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150320T035753Z" creationid="Wynn" creationdate="20150320T035753Z">
         <seg>现在来看看 &lt;u0&gt;sebastianbergmann/money&lt;/u0&gt; 这个库的测试套件。在这个项目的目录结构中，可以看到 &lt;f1&gt;tests&lt;/f1&gt; 目录下的测试用例类镜像了 &lt;f2&gt;src&lt;/f2&gt; 目录下被测系统(SUT, System Under Test)的包(package)与类(class)的结构：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>License</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091945Z" creationid="wynnc" creationdate="20201210T091945Z">
+        <seg>License</seg>
       </tuv>
     </tu>
     <tu>
@@ -116852,6 +117111,22 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS
+    CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS
+    PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE
+    WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW
+    IS PROHIBITED.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091945Z" creationid="wynnc" creationdate="20201210T091945Z">
+        <seg>THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS
+    CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS
+    PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE
+    WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW
+    IS PROHIBITED.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Teardown</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150313T070338Z" creationid="Wynn" creationdate="20150313T070201Z">
@@ -118132,6 +118407,22 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The above rights may be exercised in all media and formats whether
+    now known or hereafter devised. The above rights include the right
+    to make such modifications as are technically necessary to exercise
+    the rights in other media and formats. Subject to Section 8(f), all
+    rights not expressly granted by Licensor are hereby reserved.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091949Z" creationid="wynnc" creationdate="20201210T091949Z">
+        <seg>The above rights may be exercised in all media and formats whether
+    now known or hereafter devised. The above rights include the right
+    to make such modifications as are technically necessary to exercise
+    the rights in other media and formats. Subject to Section 8(f), all
+    rights not expressly granted by Licensor are hereby reserved.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The adjusted &lt;e0&gt;expectedBook.xml&lt;/e0&gt; Flat XML file would probably have to look like the following to make the assertion pass:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T042147Z" creationid="Wynn" creationdate="20150319T042147Z">
@@ -119052,6 +119343,16 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>This is a human-readable summary of the Legal Code (the full
+    license) below.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091945Z" creationid="wynnc" creationdate="20201210T091945Z">
+        <seg>This is a human-readable summary of the Legal Code (the full
+    license) below.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>This is obviously easy to write. Here &lt;l0&gt;&lt;guestbook&gt;&lt;/l0&gt; is the table name where two rows are inserted into each with four columns &lt;q1&gt;id&lt;/q1&gt;, &lt;q2&gt;content&lt;/q2&gt;, &lt;q3&gt;user&lt;/q3&gt; and &lt;q4&gt;created&lt;/q4&gt; with their respective values.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150317T071102Z" creationid="Wynn" creationdate="20150317T071102Z">
@@ -119136,6 +119437,15 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T071524Z" creationid="Wynn" creationdate="20150309T071507Z">
         <seg>本节中展示了一些值得注意的边缘情况，在这些边缘情况中可能出现令人迷惑的代码覆盖率信息。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This work is licensed under the Creative Commons Attribution 3.0
+    Unported License.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T092052Z" creationid="wynnc" creationdate="20201210T091942Z">
+        <seg>本作品依据 Creative Commons Attribution 3.0 Unported 许可协议进行授权。</seg>
       </tuv>
     </tu>
     <tu>
@@ -119296,6 +119606,38 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T023612Z" creationid="Wynn" creationdate="20150327T023612Z">
         <seg>通常，在使用了诸如极限编程之类的敏捷流程的项目中，文档往往无法跟上项目设计与代码的频繁变更。极限编程要求&lt;e0&gt;群体代码所有权(collective code ownership)&lt;/e0&gt;，因此所有开发者都需要知道整个系统是如何工作的。如果你足够训练有素，为测试使用了“能说明问题的名称(speaking names)”来描述各个类应当干什么，那么就可以用 PHPUnit 的 TestDox 功能来基于项目的测试生成项目的自动文档。这个文档能够就项目中的各个类应当起什么作用给开发者一份概述。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>UNLESS OTHERWISE MUTUALLY AGREED TO BY THE PARTIES IN WRITING,
+    LICENSOR OFFERS THE WORK AS-IS AND MAKES NO REPRESENTATIONS OR
+    WARRANTIES OF ANY KIND CONCERNING THE WORK, EXPRESS, IMPLIED,
+    STATUTORY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF
+    TITLE, MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE,
+    NONINFRINGEMENT, OR THE ABSENCE OF LATENT OR OTHER DEFECTS,
+    ACCURACY, OR THE PRESENCE OF ABSENCE OF ERRORS, WHETHER OR NOT
+    DISCOVERABLE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF
+    IMPLIED WARRANTIES, SO SUCH EXCLUSION MAY NOT APPLY TO YOU.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091950Z" creationid="wynnc" creationdate="20201210T091950Z">
+        <seg>UNLESS OTHERWISE MUTUALLY AGREED TO BY THE PARTIES IN WRITING,
+    LICENSOR OFFERS THE WORK AS-IS AND MAKES NO REPRESENTATIONS OR
+    WARRANTIES OF ANY KIND CONCERNING THE WORK, EXPRESS, IMPLIED,
+    STATUTORY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF
+    TITLE, MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE,
+    NONINFRINGEMENT, OR THE ABSENCE OF LATENT OR OTHER DEFECTS,
+    ACCURACY, OR THE PRESENCE OF ABSENCE OF ERRORS, WHETHER OR NOT
+    DISCOVERABLE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF
+    IMPLIED WARRANTIES, SO SUCH EXCLUSION MAY NOT APPLY TO YOU.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Under the following conditions:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091944Z" creationid="wynnc" creationdate="20201210T091944Z">
+        <seg>Under the following conditions:</seg>
       </tuv>
     </tu>
     <tu>
@@ -120748,6 +121090,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>You are free:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091943Z" creationid="wynnc" creationdate="20201210T091943Z">
+        <seg>You are free:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>You can also assert the result of complex queries with the Query Table approach, just specify a result name with a query and compare it to a dataset:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T042215Z" creationid="Wynn" creationdate="20150319T042215Z">
@@ -120972,10 +121322,20 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Your fair dealing and other rights are in no way affected by the
+    above.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091945Z" creationid="wynnc" creationdate="20201210T091945Z">
+        <seg>Your fair dealing and other rights are in no way affected by the
+    above.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>[Meszaros2007] Gerard Meszaros. *xUnit Test Patterns: Refactoring Test Code*.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091634Z" creationid="wynnc" creationdate="20201210T091634Z">
-        <seg>[Meszaros2007] Gerard Meszaros. *xUnit Test Patterns: Refactoring Test Code*.</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091852Z" creationid="wynnc" creationdate="20201210T091634Z">
+        <seg>[Meszaros2007] Gerard Meszaros《xUnit Test Patterns: Refactoring Test Code》。</seg>
       </tuv>
     </tu>
     <tu>
@@ -121040,6 +121400,142 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083724Z" creationid="wynnc" creationdate="20201210T083724Z">
         <seg>^2.0.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>a. "Adaptation" means a work based upon the Work, or upon the
+          Work and other pre-existing works, such as a translation,
+          adaptation, derivative work, arrangement of music or other
+          alterations of a literary or artistic work, or phonogram or
+          performance and includes cinematographic adaptations or any
+          other form in which the Work may be recast, transformed, or
+          adapted including in any form recognizably derived from the
+          original, except that a work that constitutes a Collection
+          will not be considered an Adaptation for the purpose of this
+          License. For the avoidance of doubt, where the Work is a
+          musical work, performance or phonogram, the synchronization of
+          the Work in timed-relation with a moving image ("synching")
+          will be considered an Adaptation for the purpose of this
+          License.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091946Z" creationid="wynnc" creationdate="20201210T091946Z">
+        <seg>a. "Adaptation" means a work based upon the Work, or upon the
+          Work and other pre-existing works, such as a translation,
+          adaptation, derivative work, arrangement of music or other
+          alterations of a literary or artistic work, or phonogram or
+          performance and includes cinematographic adaptations or any
+          other form in which the Work may be recast, transformed, or
+          adapted including in any form recognizably derived from the
+          original, except that a work that constitutes a Collection
+          will not be considered an Adaptation for the purpose of this
+          License. For the avoidance of doubt, where the Work is a
+          musical work, performance or phonogram, the synchronization of
+          the Work in timed-relation with a moving image ("synching")
+          will be considered an Adaptation for the purpose of this
+          License.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>a. Each time You Distribute or Publicly Perform the Work or a
+          Collection, the Licensor offers to the recipient a license to
+          the Work on the same terms and conditions as the license
+          granted to You under this License.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091952Z" creationid="wynnc" creationdate="20201210T091952Z">
+        <seg>a. Each time You Distribute or Publicly Perform the Work or a
+          Collection, the Licensor offers to the recipient a license to
+          the Work on the same terms and conditions as the license
+          granted to You under this License.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>a. This License and the rights granted hereunder will terminate
+          automatically upon any breach by You of the terms of this
+          License. Individuals or entities who have received Adaptations
+          or Collections from You under this License, however, will not
+          have their licenses terminated provided such individuals or
+          entities remain in full compliance with those licenses.
+          Sections 1, 2, 5, 6, 7, and 8 will survive any termination of
+          this License.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091951Z" creationid="wynnc" creationdate="20201210T091951Z">
+        <seg>a. This License and the rights granted hereunder will terminate
+          automatically upon any breach by You of the terms of this
+          License. Individuals or entities who have received Adaptations
+          or Collections from You under this License, however, will not
+          have their licenses terminated provided such individuals or
+          entities remain in full compliance with those licenses.
+          Sections 1, 2, 5, 6, 7, and 8 will survive any termination of
+          this License.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>a. You may Distribute or Publicly Perform the Work only under the
+          terms of this License. You must include a copy of, or the
+          Uniform Resource Identifier (URI) for, this License with every
+          copy of the Work You Distribute or Publicly Perform. You may
+          not offer or impose any terms on the Work that restrict the
+          terms of this License or the ability of the recipient of the
+          Work to exercise the rights granted to that recipient under
+          the terms of the License. You may not sublicense the Work. You
+          must keep intact all notices that refer to this License and to
+          the disclaimer of warranties with every copy of the Work You
+          Distribute or Publicly Perform. When You Distribute or
+          Publicly Perform the Work, You may not impose any effective
+          technological measures on the Work that restrict the ability
+          of a recipient of the Work from You to exercise the rights
+          granted to that recipient under the terms of the License. This
+          Section 4(a) applies to the Work as incorporated in a
+          Collection, but this does not require the Collection apart
+          from the Work itself to be made subject to the terms of this
+          License. If You create a Collection, upon notice from any
+          Licensor You must, to the extent practicable, remove from the
+          Collection any credit as required by Section 4(b), as
+          requested. If You create an Adaptation, upon notice from any
+          Licensor You must, to the extent practicable, remove from the
+          Adaptation any credit as required by Section 4(b), as requested.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091949Z" creationid="wynnc" creationdate="20201210T091949Z">
+        <seg>a. You may Distribute or Publicly Perform the Work only under the
+          terms of this License. You must include a copy of, or the
+          Uniform Resource Identifier (URI) for, this License with every
+          copy of the Work You Distribute or Publicly Perform. You may
+          not offer or impose any terms on the Work that restrict the
+          terms of this License or the ability of the recipient of the
+          Work to exercise the rights granted to that recipient under
+          the terms of the License. You may not sublicense the Work. You
+          must keep intact all notices that refer to this License and to
+          the disclaimer of warranties with every copy of the Work You
+          Distribute or Publicly Perform. When You Distribute or
+          Publicly Perform the Work, You may not impose any effective
+          technological measures on the Work that restrict the ability
+          of a recipient of the Work from You to exercise the rights
+          granted to that recipient under the terms of the License. This
+          Section 4(a) applies to the Work as incorporated in a
+          Collection, but this does not require the Collection apart
+          from the Work itself to be made subject to the terms of this
+          License. If You create a Collection, upon notice from any
+          Licensor You must, to the extent practicable, remove from the
+          Collection any credit as required by Section 4(b), as
+          requested. If You create an Adaptation, upon notice from any
+          Licensor You must, to the extent practicable, remove from the
+          Adaptation any credit as required by Section 4(b), as requested.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>a. to Reproduce the Work, to incorporate the Work into one or
+          more Collections, and to Reproduce the Work as incorporated
+          in the Collections;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091948Z" creationid="wynnc" creationdate="20201210T091948Z">
+        <seg>a. to Reproduce the Work, to incorporate the Work into one or
+          more Collections, and to Reproduce the Work as incorporated
+          in the Collections;</seg>
       </tuv>
     </tu>
     <tu>
@@ -123244,10 +123740,256 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>b. "Collection" means a collection of literary or artistic works,
+          such as encyclopedias and anthologies, or performances,
+          phonograms or broadcasts, or other works or subject matter
+          other than works listed in Section 1(f) below, which, by
+          reason of the selection and arrangement of their contents,
+          constitute intellectual creations, in which the Work is
+          included in its entirety in unmodified form along with one or
+          more other contributions, each constituting separate and
+          independent works in themselves, which together are assembled
+          into a collective whole. A work that constitutes a Collection
+          will not be considered an Adaptation (as defined above) for
+          the purposes of this License.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091946Z" creationid="wynnc" creationdate="20201210T091946Z">
+        <seg>b. "Collection" means a collection of literary or artistic works,
+          such as encyclopedias and anthologies, or performances,
+          phonograms or broadcasts, or other works or subject matter
+          other than works listed in Section 1(f) below, which, by
+          reason of the selection and arrangement of their contents,
+          constitute intellectual creations, in which the Work is
+          included in its entirety in unmodified form along with one or
+          more other contributions, each constituting separate and
+          independent works in themselves, which together are assembled
+          into a collective whole. A work that constitutes a Collection
+          will not be considered an Adaptation (as defined above) for
+          the purposes of this License.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>b. Each time You Distribute or Publicly Perform an Adaptation,
+          Licensor offers to the recipient a license to the original
+          Work on the same terms and conditions as the license granted
+          to You under this License.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091953Z" creationid="wynnc" creationdate="20201210T091953Z">
+        <seg>b. Each time You Distribute or Publicly Perform an Adaptation,
+          Licensor offers to the recipient a license to the original
+          Work on the same terms and conditions as the license granted
+          to You under this License.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>b. If You Distribute, or Publicly Perform the Work or any
+          Adaptations or Collections, You must, unless a request has
+          been made pursuant to Section 4(a), keep intact all copyright
+          notices for the Work and provide, reasonable to the medium or
+          means You are utilizing: (i) the name of the Original Author
+          (or pseudonym, if applicable) if supplied, and/or if the
+          Original Author and/or Licensor designate another party or
+          parties (e.g., a sponsor institute, publishing entity,
+          journal) for attribution ("Attribution Parties") in Licensor's
+          copyright notice, terms of service or by other reasonable
+          means, the name of such party or parties; (ii) the title of
+          the Work if supplied; (iii) to the extent reasonably
+          practicable, the URI, if any, that Licensor specifies to be
+          associated with the Work, unless such URI does not refer to
+          the copyright notice or licensing information for the Work;
+          and (iv), consistent with Section 3(b), in the case of an
+          Adaptation, a credit identifying the use of the Work in the
+          Adaptation (e.g., "French translation of the Work by Original
+          Author," or "Screenplay based on original Work by Original
+          Author"). The credit required by this Section 4 (b) may be
+          implemented in any reasonable manner; provided, however, that
+          in the case of a Adaptation or Collection, at a minimum such
+          credit will appear, if a credit for all contributing authors
+          of the Adaptation or Collection appears, then as part of these
+          credits and in a manner at least as prominent as the credits
+          for the other contributing authors. For the avoidance of
+          doubt, You may only use the credit required by this Section
+          for the purpose of attribution in the manner set out above
+          and, by exercising Your rights under this License, You may not
+          implicitly or explicitly assert or imply any connection with,
+          sponsorship or endorsement by the Original Author, Licensor
+          and/or Attribution Parties, as appropriate, of You or Your use
+          of the Work, without the separate, express prior written
+          permission of the Original Author, Licensor and/or
+          Attribution Parties.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091949Z" creationid="wynnc" creationdate="20201210T091949Z">
+        <seg>b. If You Distribute, or Publicly Perform the Work or any
+          Adaptations or Collections, You must, unless a request has
+          been made pursuant to Section 4(a), keep intact all copyright
+          notices for the Work and provide, reasonable to the medium or
+          means You are utilizing: (i) the name of the Original Author
+          (or pseudonym, if applicable) if supplied, and/or if the
+          Original Author and/or Licensor designate another party or
+          parties (e.g., a sponsor institute, publishing entity,
+          journal) for attribution ("Attribution Parties") in Licensor's
+          copyright notice, terms of service or by other reasonable
+          means, the name of such party or parties; (ii) the title of
+          the Work if supplied; (iii) to the extent reasonably
+          practicable, the URI, if any, that Licensor specifies to be
+          associated with the Work, unless such URI does not refer to
+          the copyright notice or licensing information for the Work;
+          and (iv), consistent with Section 3(b), in the case of an
+          Adaptation, a credit identifying the use of the Work in the
+          Adaptation (e.g., "French translation of the Work by Original
+          Author," or "Screenplay based on original Work by Original
+          Author"). The credit required by this Section 4 (b) may be
+          implemented in any reasonable manner; provided, however, that
+          in the case of a Adaptation or Collection, at a minimum such
+          credit will appear, if a credit for all contributing authors
+          of the Adaptation or Collection appears, then as part of these
+          credits and in a manner at least as prominent as the credits
+          for the other contributing authors. For the avoidance of
+          doubt, You may only use the credit required by this Section
+          for the purpose of attribution in the manner set out above
+          and, by exercising Your rights under this License, You may not
+          implicitly or explicitly assert or imply any connection with,
+          sponsorship or endorsement by the Original Author, Licensor
+          and/or Attribution Parties, as appropriate, of You or Your use
+          of the Work, without the separate, express prior written
+          permission of the Original Author, Licensor and/or
+          Attribution Parties.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>b. Subject to the above terms and conditions, the license granted
+          here is perpetual (for the duration of the applicable
+          copyright in the Work). Notwithstanding the above, Licensor
+          reserves the right to release the Work under different license
+          terms or to stop distributing the Work at any time; provided,
+          however that any such election will not serve to withdraw this
+          License (or any other license that has been, or is required to
+          be, granted under the terms of this License), and this License
+          will continue in full force and effect unless terminated as
+          stated above.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091952Z" creationid="wynnc" creationdate="20201210T091952Z">
+        <seg>b. Subject to the above terms and conditions, the license granted
+          here is perpetual (for the duration of the applicable
+          copyright in the Work). Notwithstanding the above, Licensor
+          reserves the right to release the Work under different license
+          terms or to stop distributing the Work at any time; provided,
+          however that any such election will not serve to withdraw this
+          License (or any other license that has been, or is required to
+          be, granted under the terms of this License), and this License
+          will continue in full force and effect unless terminated as
+          stated above.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>b. to create and Reproduce Adaptations provided that any such
+          Adaptation, including any translation in any medium, takes
+          reasonable steps to clearly label, demarcate or otherwise
+          identify that changes were made to the original Work. For
+          example, a translation could be marked "The original work was
+          translated from English to Spanish," or a modification could
+          indicate "The original work has been modified.";</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091948Z" creationid="wynnc" creationdate="20201210T091948Z">
+        <seg>b. to create and Reproduce Adaptations provided that any such
+          Adaptation, including any translation in any medium, takes
+          reasonable steps to clearly label, demarcate or otherwise
+          identify that changes were made to the original Work. For
+          example, a translation could be marked "The original work was
+          translated from English to Spanish," or a modification could
+          indicate "The original work has been modified.";</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>bool setOutputCallback(callable $callback)</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T024706Z" creationid="Wynn" creationdate="20150330T024706Z">
         <seg>bool setOutputCallback(callable $callback)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>c. "Distribute" means to make available to the public the
+          original and copies of the Work or Adaptation, as appropriate,
+          through sale or other transfer of ownership.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091946Z" creationid="wynnc" creationdate="20201210T091946Z">
+        <seg>c. "Distribute" means to make available to the public the
+          original and copies of the Work or Adaptation, as appropriate,
+          through sale or other transfer of ownership.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>c. Except as otherwise agreed in writing by the Licensor or as
+          may be otherwise permitted by applicable law, if You
+          Reproduce, Distribute or Publicly Perform the Work either by
+          itself or as part of any Adaptations or Collections, You must
+          not distort, mutilate, modify or take other derogatory action
+          in relation to the Work which would be prejudicial to the
+          Original Author's honor or reputation. Licensor agrees that in
+          those jurisdictions (e.g. Japan), in which any exercise of the
+          right granted in Section 3(b) of this License (the right to
+          make Adaptations) would be deemed to be a distortion,
+          mutilation, modification or other derogatory action
+          prejudicial to the Original Author's honor and reputation, the
+          Licensor will waive or not assert, as appropriate, this
+          Section, to the fullest extent permitted by the applicable
+          national law, to enable You to reasonably exercise Your right
+          under Section 3(b) of this License (right to make Adaptations)
+          but not otherwise.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091950Z" creationid="wynnc" creationdate="20201210T091950Z">
+        <seg>c. Except as otherwise agreed in writing by the Licensor or as
+          may be otherwise permitted by applicable law, if You
+          Reproduce, Distribute or Publicly Perform the Work either by
+          itself or as part of any Adaptations or Collections, You must
+          not distort, mutilate, modify or take other derogatory action
+          in relation to the Work which would be prejudicial to the
+          Original Author's honor or reputation. Licensor agrees that in
+          those jurisdictions (e.g. Japan), in which any exercise of the
+          right granted in Section 3(b) of this License (the right to
+          make Adaptations) would be deemed to be a distortion,
+          mutilation, modification or other derogatory action
+          prejudicial to the Original Author's honor and reputation, the
+          Licensor will waive or not assert, as appropriate, this
+          Section, to the fullest extent permitted by the applicable
+          national law, to enable You to reasonably exercise Your right
+          under Section 3(b) of this License (right to make Adaptations)
+          but not otherwise.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>c. If any provision of this License is invalid or unenforceable
+          under applicable law, it shall not affect the validity or
+          enforceability of the remainder of the terms of this License,
+          and without further action by the parties to this agreement,
+          such provision shall be reformed to the minimum extent
+          necessary to make such provision valid and enforceable.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091953Z" creationid="wynnc" creationdate="20201210T091953Z">
+        <seg>c. If any provision of this License is invalid or unenforceable
+          under applicable law, it shall not affect the validity or
+          enforceability of the remainder of the terms of this License,
+          and without further action by the parties to this agreement,
+          such provision shall be reformed to the minimum extent
+          necessary to make such provision valid and enforceable.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>c. to Distribute and Publicly Perform the Work including as
+          incorporated in Collections; and,</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091948Z" creationid="wynnc" creationdate="20201210T091948Z">
+        <seg>c. to Distribute and Publicly Perform the Work including as
+          incorporated in Collections; and,</seg>
       </tuv>
     </tu>
     <tu>
@@ -124168,6 +124910,38 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>d. "Licensor" means the individual, individuals, entity or
+          entities that offer(s) the Work under the terms of this License.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091946Z" creationid="wynnc" creationdate="20201210T091946Z">
+        <seg>d. "Licensor" means the individual, individuals, entity or
+          entities that offer(s) the Work under the terms of this License.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>d. No term or provision of this License shall be deemed waived
+          and no breach consented to unless such waiver or consent shall
+          be in writing and signed by the party to be charged with such
+          waiver or consent.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091954Z" creationid="wynnc" creationdate="20201210T091954Z">
+        <seg>d. No term or provision of this License shall be deemed waived
+          and no breach consented to unless such waiver or consent shall
+          be in writing and signed by the party to be charged with such
+          waiver or consent.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>d. to Distribute and Publicly Perform Adaptations.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091948Z" creationid="wynnc" creationdate="20201210T091948Z">
+        <seg>d. to Distribute and Publicly Perform Adaptations.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>def get_version():
     if os.environ.get('READTHEDOCS') == 'True':
         return os.environ.get('READTHEDOCS_VERSION')</seg>
@@ -124184,6 +124958,64 @@ class MyClass
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20160923T091651Z" creationid="wynnc" creationdate="20160923T091651Z">
         <seg>directoryExists()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>e. "Original Author" means, in the case of a literary or artistic
+          work, the individual, individuals, entity or entities who
+          created the Work or if no individual or entity can be
+          identified, the publisher; and in addition (i) in the case of
+          a performance the actors, singers, musicians, dancers, and
+          other persons who act, sing, deliver, declaim, play in,
+          interpret or otherwise perform literary or artistic works or
+          expressions of folklore; (ii) in the case of a phonogram the
+          producer being the person or legal entity who first fixes the
+          sounds of a performance or other sounds; and, (iii) in the
+          case of broadcasts, the organization that transmits the
+          broadcast.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091947Z" creationid="wynnc" creationdate="20201210T091947Z">
+        <seg>e. "Original Author" means, in the case of a literary or artistic
+          work, the individual, individuals, entity or entities who
+          created the Work or if no individual or entity can be
+          identified, the publisher; and in addition (i) in the case of
+          a performance the actors, singers, musicians, dancers, and
+          other persons who act, sing, deliver, declaim, play in,
+          interpret or otherwise perform literary or artistic works or
+          expressions of folklore; (ii) in the case of a phonogram the
+          producer being the person or legal entity who first fixes the
+          sounds of a performance or other sounds; and, (iii) in the
+          case of broadcasts, the organization that transmits the
+          broadcast.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>e. For the avoidance of doubt:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091948Z" creationid="wynnc" creationdate="20201210T091948Z">
+        <seg>e. For the avoidance of doubt:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>e. This License constitutes the entire agreement between the
+          parties with respect to the Work licensed here. There are no
+          understandings, agreements or representations with respect to
+          the Work not specified here. Licensor shall not be bound by
+          any additional provisions that may appear in any communication
+          from You. This License may not be modified without the mutual
+          written agreement of the Licensor and You.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T092007Z" creationid="wynnc" creationdate="20201210T092007Z">
+        <seg>e. This License constitutes the entire agreement between the
+          parties with respect to the Work licensed here. There are no
+          understandings, agreements or representations with respect to
+          the Work not specified here. Licensor shall not be bound by
+          any additional provisions that may appear in any communication
+          from You. This License may not be modified without the mutual
+          written agreement of the Licensor and You.</seg>
       </tuv>
     </tu>
     <tu>
@@ -124252,6 +125084,52 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>f. "Work" means the literary and/or artistic work offered under
+          the terms of this License including without limitation any
+          production in the literary, scientific and artistic domain,
+          whatever may be the mode or form of its expression including
+          digital form, such as a book, pamphlet and other writing; a
+          lecture, address, sermon or other work of the same nature; a
+          dramatic or dramatico-musical work; a choreographic work or
+          entertainment in dumb show; a musical composition with or
+          without words; a cinematographic work to which are assimilated
+          works expressed by a process analogous to cinematography; a
+          work of drawing, painting, architecture, sculpture, engraving
+          or lithography; a photographic work to which are assimilated
+          works expressed by a process analogous to photography; a work
+          of applied art; an illustration, map, plan, sketch or three-
+          dimensional work relative to geography, topography,
+          architecture or science; a performance; a broadcast; a
+          phonogram; a compilation of data to the extent it is protected
+          as a copyrightable work; or a work performed by a variety or
+          circus performer to the extent it is not otherwise considered
+          a literary or artistic work.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091947Z" creationid="wynnc" creationdate="20201210T091947Z">
+        <seg>f. "Work" means the literary and/or artistic work offered under
+          the terms of this License including without limitation any
+          production in the literary, scientific and artistic domain,
+          whatever may be the mode or form of its expression including
+          digital form, such as a book, pamphlet and other writing; a
+          lecture, address, sermon or other work of the same nature; a
+          dramatic or dramatico-musical work; a choreographic work or
+          entertainment in dumb show; a musical composition with or
+          without words; a cinematographic work to which are assimilated
+          works expressed by a process analogous to cinematography; a
+          work of drawing, painting, architecture, sculpture, engraving
+          or lithography; a photographic work to which are assimilated
+          works expressed by a process analogous to photography; a work
+          of applied art; an illustration, map, plan, sketch or three-
+          dimensional work relative to geography, topography,
+          architecture or science; a performance; a broadcast; a
+          phonogram; a compilation of data to the extent it is protected
+          as a copyrightable work; or a work performed by a variety or
+          circus performer to the extent it is not otherwise considered
+          a literary or artistic work.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>fileExists()</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T093248Z" creationid="Wynn" creationdate="20150309T093248Z">
@@ -124272,6 +125150,22 @@ class MyClass
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T092537Z" creationid="Wynn" creationdate="20150319T092537Z">
         <seg>function</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>g. "You" means an individual or entity exercising rights under
+          this License who has not previously violated the terms of
+          this License with respect to the Work, or who has received
+          express permission from the Licensor to exercise rights under
+          this License despite a previous violation.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091947Z" creationid="wynnc" creationdate="20201210T091947Z">
+        <seg>g. "You" means an individual or entity exercising rights under
+          this License who has not previously violated the terms of
+          this License with respect to the Work, or who has received
+          express permission from the Licensor to exercise rights under
+          this License despite a previous violation.</seg>
       </tuv>
     </tu>
     <tu>
@@ -124364,6 +125258,34 @@ class MyClass
     content: "I like it!"
     user:
     created: 2010-04-26 12:14:20</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>h. "Publicly Perform" means to perform public recitations of the
+          Work and to communicate to the public those public
+          recitations, by any means or process, including by wire or
+          wireless means or public digital performances; to make
+          available to the public Works in such a way that members of
+          the public may access these Works from a place and at a place
+          individually chosen by them; to perform the Work to the public
+          by any means or process and the communication to the public of
+          the performances of the Work, including by public digital
+          performance; to broadcast and rebroadcast the Work by any
+          means including signs, sounds or images.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091947Z" creationid="wynnc" creationdate="20201210T091947Z">
+        <seg>h. "Publicly Perform" means to perform public recitations of the
+          Work and to communicate to the public those public
+          recitations, by any means or process, including by wire or
+          wireless means or public digital performances; to make
+          available to the public Works in such a way that members of
+          the public may access these Works from a place and at a place
+          individually chosen by them; to perform the Work to the public
+          by any means or process and the communication to the public of
+          the performances of the Work, including by public digital
+          performance; to broadcast and rebroadcast the Work by any
+          means including signs, sounds or images.</seg>
       </tuv>
     </tu>
     <tu>
@@ -125108,6 +126030,40 @@ html_theme_options = {
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>i. "Reproduce" means to make copies of the Work by any means
+          including without limitation by sound or visual recordings and
+          the right of fixation and reproducing fixations of the Work,
+          including storage of a protected performance or phonogram in
+          digital form or other electronic medium.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091947Z" creationid="wynnc" creationdate="20201210T091947Z">
+        <seg>i. "Reproduce" means to make copies of the Work by any means
+          including without limitation by sound or visual recordings and
+          the right of fixation and reproducing fixations of the Work,
+          including storage of a protected performance or phonogram in
+          digital form or other electronic medium.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>i. Non-waivable Compulsory License Schemes. In those
+             jurisdictions in which the right to collect royalties
+             through any statutory or compulsory licensing scheme cannot
+             be waived, the Licensor reserves the exclusive right to
+             collect such royalties for any exercise by You of the
+             rights granted under this License;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091948Z" creationid="wynnc" creationdate="20201210T091948Z">
+        <seg>i. Non-waivable Compulsory License Schemes. In those
+             jurisdictions in which the right to collect royalties
+             through any statutory or compulsory licensing scheme cannot
+             be waived, the Licensor reserves the exclusive right to
+             collect such royalties for any exercise by You of the
+             rights granted under this License;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>id,content,user,created
 1,"Hello buddy!","joe","2010-04-24 17:15:23"
 2,"I like it!","nancy","2010-04-26 12:14:20"</seg>
@@ -125138,6 +126094,42 @@ html_theme_options = {
         return version[2:]
     else:
         return '未知版本'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>ii. Waivable Compulsory License Schemes. In those
+              jurisdictions in which the right to collect royalties
+              through any statutory or compulsory licensing scheme can
+              be waived, the Licensor waives the exclusive right to
+              collect such royalties for any exercise by You of the
+              rights granted under this License; and,</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091949Z" creationid="wynnc" creationdate="20201210T091949Z">
+        <seg>ii. Waivable Compulsory License Schemes. In those
+              jurisdictions in which the right to collect royalties
+              through any statutory or compulsory licensing scheme can
+              be waived, the Licensor waives the exclusive right to
+              collect such royalties for any exercise by You of the
+              rights granted under this License; and,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>iii. Voluntary License Schemes. The Licensor waives the right
+               to collect royalties, whether individually or, in the
+               event that the Licensor is a member of a collecting
+               society that administers voluntary licensing schemes, via
+               that society, from any exercise by You of the rights
+               granted under this License.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091949Z" creationid="wynnc" creationdate="20201210T091949Z">
+        <seg>iii. Voluntary License Schemes. The Licensor waives the right
+               to collect royalties, whether individually or, in the
+               event that the Licensor is a member of a collecting
+               society that administers voluntary licensing schemes, via
+               that society, from any exercise by You of the rights
+               granted under this License.</seg>
       </tuv>
     </tu>
     <tu>
