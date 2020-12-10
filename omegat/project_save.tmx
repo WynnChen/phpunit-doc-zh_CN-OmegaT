@@ -110160,6 +110160,17 @@ repository:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Ideally, you would already have prepared a first version based on a fork or
+a copy of the English documentation, which will then be imported into the
+official repository.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083418Z" creationid="wynnc" creationdate="20201210T083418Z">
+        <seg>理想情况下，您应当已经基于英语文档的分支或副本而准备好一个翻译的版本，
+这个版本稍后将导入到官方存储库中。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>If &lt;f0&gt;phpunit.xml&lt;/f0&gt; or &lt;f1&gt;phpunit.xml.dist&lt;/f1&gt; (in that order) exist in the current working directory and &lt;l2&gt;--configuration&lt;/l2&gt; is &lt;e3&gt;not&lt;/e3&gt; used, the configuration will be automatically read from that file.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150320T040646Z" creationid="Wynn" creationdate="20150320T040646Z">
