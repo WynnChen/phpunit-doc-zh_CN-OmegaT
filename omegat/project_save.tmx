@@ -168,10 +168,28 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ ./node_modules/.bin/textlint src</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083603Z" creationid="wynnc" creationdate="20201210T083603Z">
+        <seg>$ ./node_modules/.bin/textlint src</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$ make html</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083447Z" creationid="wynnc" creationdate="20201210T083447Z">
         <seg>$ make html</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>$ pip install docutils-ast-writer
+$ npm install</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083534Z" creationid="wynnc" creationdate="20201210T083534Z">
+        <seg>$ pip install docutils-ast-writer
+$ npm install</seg>
       </tuv>
     </tu>
     <tu>
@@ -108287,6 +108305,14 @@ information at runtime to configure their behaviour.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>CC-BY-3.0</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083723Z" creationid="wynnc" creationdate="20201210T083723Z">
+        <seg>CC-BY-3.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>CSV DataSet</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150317T074346Z" creationid="Wynn" creationdate="20150317T074346Z">
@@ -115088,6 +115114,14 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Setup</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083534Z" creationid="wynnc" creationdate="20201210T083534Z">
+        <seg>安装</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Sharing Fixture</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T081922Z" creationid="Wynn" creationdate="20150319T081922Z">
@@ -118444,6 +118478,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Usage</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083537Z" creationid="wynnc" creationdate="20201210T083537Z">
+        <seg>使用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Usage example for PHPUnit_Extensions_Selenium2TestCase</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T062943Z" creationid="Wynn" creationdate="20150327T062943Z">
@@ -120008,6 +120050,70 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150310T081331Z" creationid="Wynn" creationdate="20150310T081304Z">
         <seg>业务逻辑中混合执行了 SELECT、INSERT、UPDATE 和 DELETE 语句。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>^0.1.1</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083827Z" creationid="wynnc" creationdate="20201210T083827Z">
+        <seg>^0.1.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>^1.0.1</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083724Z" creationid="wynnc" creationdate="20201210T083724Z">
+        <seg>^1.0.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>^1.0.5</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083724Z" creationid="wynnc" creationdate="20201210T083724Z">
+        <seg>^1.0.5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>^1.1.29</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083724Z" creationid="wynnc" creationdate="20201210T083724Z">
+        <seg>^1.1.29</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>^1.3.1</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083724Z" creationid="wynnc" creationdate="20201210T083724Z">
+        <seg>^1.3.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>^1.6.2</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083725Z" creationid="wynnc" creationdate="20201210T083725Z">
+        <seg>^1.6.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>^11.0.1</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083724Z" creationid="wynnc" creationdate="20201210T083724Z">
+        <seg>^11.0.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>^2.0.1</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083724Z" creationid="wynnc" creationdate="20201210T083724Z">
+        <seg>^2.0.1</seg>
       </tuv>
     </tu>
     <tu>
@@ -123256,6 +123362,14 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>git</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083648Z" creationid="wynnc" creationdate="20201210T083648Z">
+        <seg>git</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>greaterThan()</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T093250Z" creationid="Wynn" creationdate="20150309T093250Z">
@@ -123812,6 +123926,14 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>https://github.com/sebastianbergmann/phpunit-documentation-english.git</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083721Z" creationid="wynnc" creationdate="20201210T083721Z">
+        <seg>https://github.com/sebastianbergmann/phpunit-documentation-chinese.git</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>https://github.com/sebastianbergmann/phpunit-selenium/blob/master/PHPUnit/Extensions/SeleniumTestCase/Driver.php#L410</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T073621Z" creationid="Wynn" creationdate="20150327T073621Z">
@@ -124248,6 +124370,14 @@ ok</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T093134Z" creationid="Wynn" creationdate="20150327T093134Z">
         <seg>phpunit UnitTest UnitTest.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>phpunit-documentation-english</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083647Z" creationid="wynnc" creationdate="20201210T083618Z">
+        <seg>phpunit-documentation-chinese</seg>
       </tuv>
     </tu>
     <tu>
