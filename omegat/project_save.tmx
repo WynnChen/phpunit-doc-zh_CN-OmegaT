@@ -168,6 +168,14 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ make html</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083447Z" creationid="wynnc" creationdate="20201210T083447Z">
+        <seg>$ make html</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$backupGlobalsBlacklist</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T085737Z" creationid="Wynn" creationdate="20150319T085737Z">
@@ -20670,6 +20678,14 @@ Exception:
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>&lt;g1&gt;Read the Docs Sphinx Theme&lt;/g1&gt;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083430Z" creationid="wynnc" creationdate="20201210T083430Z">
+        <seg>&lt;g1&gt;Read the Docs Sphinx Theme&lt;/g1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>&lt;g1&gt;Russian Documentation&lt;/g1&gt;</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071911Z" creationid="wynnc" creationdate="20201210T071911Z">
@@ -20690,6 +20706,14 @@ Exception:
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071841Z" creationid="wynnc" creationdate="20201210T071841Z">
         <seg>&lt;g1&gt;西班牙语文档&lt;/g1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;g1&gt;Sphinx&lt;/g1&gt;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083427Z" creationid="wynnc" creationdate="20201210T083427Z">
+        <seg>&lt;g1&gt;Sphinx&lt;/g1&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -107486,6 +107510,14 @@ Annotations
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Afterwards you will find the HTML files in &lt;g1&gt;build/html&lt;/g1&gt;.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083509Z" creationid="wynnc" creationdate="20201210T083509Z">
+        <seg>之后你就可以在 &lt;g1&gt;build/html&lt;/g1&gt; 中找到相应的 HTML 文件了。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Agile Documentation</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150320T040735Z" creationid="Wynn" creationdate="20150320T040735Z">
@@ -108123,6 +108155,22 @@ information at runtime to configure their behaviour.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T062751Z" creationid="Wynn" creationdate="20150309T062751Z">
         <seg>分支覆盖率(Branch Coverage)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Building the Documentation</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083425Z" creationid="wynnc" creationdate="20201210T083425Z">
+        <seg>构建文档</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Building the HTML Documentation</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083438Z" creationid="wynnc" creationdate="20201210T083438Z">
+        <seg>构建 HTML 文档</seg>
       </tuv>
     </tu>
     <tu>
@@ -114016,10 +114064,26 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Proofreading Automation</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083522Z" creationid="wynnc" creationdate="20201210T083510Z">
+        <seg>校对自动化</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Prophecy</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T090836Z" creationid="Wynn" creationdate="20150327T090836Z">
         <seg>Prophecy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Python</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083427Z" creationid="wynnc" creationdate="20201210T083427Z">
+        <seg>Python</seg>
       </tuv>
     </tu>
     <tu>
@@ -118144,6 +118208,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150316T095129Z" creationid="Wynn" creationdate="20150316T094722Z">
         <seg>为了让清理与载入基境的功能正常运作，PHPUnit 数据库扩展模块需要用 PDO 库来实现跨供应商抽象访问数据库连接。重要的是要注意到，使用 PHPUnit 的数据库扩展模块并不要求应用程序本身基于PDO，PDO连接仅仅用于清理和建立基境。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>To build the complete documentation run:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083447Z" creationid="wynnc" creationdate="20201210T083447Z">
+        <seg>要构建完整的文档，运行：</seg>
       </tuv>
     </tu>
     <tu>
