@@ -134,6 +134,14 @@ from subprocess import Popen, PIPE</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg># -- Options for epub output -------------------------------------------</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090935Z" creationid="wynnc" creationdate="20201210T090935Z">
+        <seg># -- Options for epub output -------------------------------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg># -- Options for manual page output ---------------------------------------</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090859Z" creationid="wynnc" creationdate="20201210T090859Z">
@@ -362,6 +370,16 @@ texinfo_documents = [
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg># How to display URL addresses: 'footnote', 'no', or 'inline'.
+#texinfo_show_urls = 'footnote'</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090926Z" creationid="wynnc" creationdate="20201210T090926Z">
+        <seg># How to display URL addresses: 'footnote', 'no', or 'inline'.
+#texinfo_show_urls = 'footnote'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg># If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -402,6 +420,16 @@ texinfo_documents = [
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090855Z" creationid="wynnc" creationdate="20201210T090855Z">
         <seg># If false, no module index is generated.
 #latex_domain_indices = True</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If false, no module index is generated.
+#texinfo_domain_indices = True</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090923Z" creationid="wynnc" creationdate="20201210T090923Z">
+        <seg># If false, no module index is generated.
+#texinfo_domain_indices = True</seg>
       </tuv>
     </tu>
     <tu>
@@ -480,6 +508,16 @@ todo_include_todos = False</seg>
 # contain a &lt;link&gt; tag referring to it.  The value of this option must be the
 # base URL from which the finished HTML is served.
 #html_use_opensearch = ''</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># If true, do not generate a @detailmenu in the "Top" node's menu.
+#texinfo_no_detailmenu = False</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090927Z" creationid="wynnc" creationdate="20201210T090927Z">
+        <seg># If true, do not generate a @detailmenu in the "Top" node's menu.
+#texinfo_no_detailmenu = False</seg>
       </tuv>
     </tu>
     <tu>
@@ -125220,6 +125258,32 @@ $_REQUEST['foo'] = 'bar';</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150317T074156Z" creationid="Wynn" creationdate="20150317T074156Z">
         <seg>mysqldump --xml -t -u [username] --password=[password] [database] &gt; /path/to/file.xml</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>numfig = True</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T090933Z" creationid="wynnc" creationdate="20201210T090933Z">
+        <seg>numfig = True</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>numfig_format = {
+    'code-block': 'Example %s',
+    'figure': 'Figure %s',
+    'table': 'Table %s',
+    'section': 'Section'
+}</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091018Z" creationid="wynnc" creationdate="20201210T090934Z">
+        <seg>numfig_format = {
+    'code-block': '示例 %s',
+    'figure': '图表 %s',
+    'table': '表格 %s',
+    'section': '章节'
+}</seg>
       </tuv>
     </tu>
     <tu>
