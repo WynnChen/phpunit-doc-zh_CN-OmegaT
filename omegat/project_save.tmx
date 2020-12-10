@@ -20638,6 +20638,62 @@ Exception:
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>&lt;g1&gt;Brazilian Portuguese Documentation&lt;/g1&gt;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071856Z" creationid="wynnc" creationdate="20201210T071856Z">
+        <seg>&lt;g1&gt;巴西葡萄牙语文档&lt;/g1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;g1&gt;English Documentation&lt;/g1&gt;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071834Z" creationid="wynnc" creationdate="20201210T071834Z">
+        <seg>&lt;g1&gt;英文文档&lt;/g1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;g1&gt;French Documentation&lt;/g1&gt;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071849Z" creationid="wynnc" creationdate="20201210T071849Z">
+        <seg>&lt;g1&gt;法语文档&lt;/g1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;g1&gt;Japanese Documentation&lt;/g1&gt;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071900Z" creationid="wynnc" creationdate="20201210T071900Z">
+        <seg>&lt;g1&gt;日语文档&lt;/g1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;g1&gt;Russian Documentation&lt;/g1&gt;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071911Z" creationid="wynnc" creationdate="20201210T071911Z">
+        <seg>&lt;g1&gt;俄语文档&lt;/g1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;g1&gt;Simplified Chinese Documentation&lt;/g1&gt;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071905Z" creationid="wynnc" creationdate="20201210T071905Z">
+        <seg>&lt;g1&gt;简体中文文档&lt;/g1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;g1&gt;Spanish Documentation&lt;/g1&gt;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071841Z" creationid="wynnc" creationdate="20201210T071841Z">
+        <seg>&lt;g1&gt;西班牙语文档&lt;/g1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>&lt;groups&gt;
   &lt;include&gt;
     &lt;group&gt;name&lt;/group&gt;
@@ -107358,6 +107414,14 @@ Annotations
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Adding a new translation</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071922Z" creationid="wynnc" creationdate="20201210T071922Z">
+        <seg>添加新的翻译</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Adding a table just by name is an implicit way to define the data-table with the following query:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150317T074830Z" creationid="Wynn" creationdate="20150317T074830Z">
@@ -109071,6 +109135,15 @@ information at runtime to configure their behaviour.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Each translation of the documentation is maintained in a separate
+repository:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071825Z" creationid="wynnc" creationdate="20201210T071825Z">
+        <seg>文档的每一种翻译都用单独的存储库来维护：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Easy to execute.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T041045Z" creationid="Wynn" creationdate="20150330T041045Z">
@@ -110323,6 +110396,17 @@ information at runtime to configure their behaviour.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T041144Z" creationid="Wynn" creationdate="20150330T041144Z">
         <seg>如果想要单个测试的结果不会影响其他测试，那么每个测试都需要在运行前创建完整的运行场景，并在运行结束后将所有状态复原。但是，建立场景可能需要很长时间：例如连接数据库并用实际数据将其初始化为已知状态。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If you want to create a new translation, please open an issue in the issue
+tracker of the English documentation, stating which language you would like to
+translate. A repository will be created and added to the available translations.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T072115Z" creationid="wynnc" creationdate="20201210T072115Z">
+        <seg>如果要创建新的翻译，请在英语文档的事务追踪（issue tracker）中开一个新的事务（issue），
+说明您要翻译的语言。会创建一个新的存储库并将其添加到可用翻译中。</seg>
       </tuv>
     </tu>
     <tu>
@@ -115465,6 +115549,16 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Sphinx==1.6.5
+sphinx_rtd_theme==0.3.0</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071726Z" creationid="wynnc" creationdate="20201210T071726Z">
+        <seg>Sphinx==1.6.5
+sphinx_rtd_theme==0.3.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Start the Selenium Server server by running &lt;u0&gt;java -jar /usr/local/bin/selenium-server-standalone-2.9.0.jar&lt;/u0&gt;.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T033144Z" creationid="Wynn" creationdate="20150327T033144Z">
@@ -118143,6 +118237,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T043527Z" creationid="Wynn" creationdate="20150330T043527Z">
         <seg>转换为</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Translations</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071751Z" creationid="wynnc" creationdate="20201210T071728Z">
+        <seg>翻译</seg>
       </tuv>
     </tu>
     <tu>
