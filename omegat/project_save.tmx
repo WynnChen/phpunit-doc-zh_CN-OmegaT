@@ -106488,6 +106488,18 @@ Annotations
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>==============
+PHPUnit Manual
+==============</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083852Z" creationid="wynnc" creationdate="20201210T083852Z">
+        <seg>==============
+PHPUnit 手册
+==============</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>&gt; /tmp/logfile.txt</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T095323Z" creationid="Wynn" creationdate="20150309T095323Z">
@@ -108801,6 +108813,14 @@ information at runtime to configure their behaviour.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Contributing to the PHPUnit Documentation</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083833Z" creationid="wynnc" creationdate="20201210T083833Z">
+        <seg>Contributing to the PHPUnit Documentation</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Contributor Code of Conduct</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T070801Z" creationid="wynnc" creationdate="20201210T070801Z">
@@ -109478,6 +109498,14 @@ repository:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20180106T105021Z" creationid="wynnc" creationdate="20180106T101046Z">
         <seg>此版本对应于 PHPUnit 7.0。最后更新于 &lt;cp0/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Edition for PHPUnit |version|. Updated on |today|.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083926Z" creationid="wynnc" creationdate="20201210T083926Z">
+        <seg>此版本对应于 PHPUnit |version|。最后更新于 |today|。</seg>
       </tuv>
     </tu>
     <tu>
