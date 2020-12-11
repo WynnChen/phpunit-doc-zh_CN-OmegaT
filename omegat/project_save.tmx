@@ -1044,6 +1044,34 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ gpg phpunit-|version|.phar.asc
+    gpg: Signature made Sat 19 Jul 2014 01:28:02 PM CEST using RSA key ID 6372C20A
+    gpg: Good signature from "Sebastian Bergmann &lt;sb@sebastian-bergmann.de&gt;"
+    gpg:                 aka "Sebastian Bergmann &lt;sebastian@php.net&gt;"
+    gpg:                 aka "Sebastian Bergmann &lt;sebastian@thephp.cc&gt;"
+    gpg:                 aka "Sebastian Bergmann &lt;sebastian@phpunit.de&gt;"
+    gpg:                 aka "Sebastian Bergmann &lt;sebastian.bergmann@thephp.cc&gt;"
+    gpg:                 aka "[jpeg image of size 40635]"
+    gpg: WARNING: This key is not certified with a trusted signature!
+    gpg:          There is no indication that the signature belongs to the owner.
+    Primary key fingerprint: D840 6D0D 8294 7747 2937  7831 4AA3 9408 6372 C20A</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032358Z" creationid="wynnc" creationdate="20201211T032358Z">
+        <seg>$ gpg phpunit-|version|.phar.asc
+    gpg: Signature made Sat 19 Jul 2014 01:28:02 PM CEST using RSA key ID 6372C20A
+    gpg: Good signature from "Sebastian Bergmann &lt;sb@sebastian-bergmann.de&gt;"
+    gpg:                 aka "Sebastian Bergmann &lt;sebastian@php.net&gt;"
+    gpg:                 aka "Sebastian Bergmann &lt;sebastian@thephp.cc&gt;"
+    gpg:                 aka "Sebastian Bergmann &lt;sebastian@phpunit.de&gt;"
+    gpg:                 aka "Sebastian Bergmann &lt;sebastian.bergmann@thephp.cc&gt;"
+    gpg:                 aka "[jpeg image of size 40635]"
+    gpg: WARNING: This key is not certified with a trusted signature!
+    gpg:          There is no indication that the signature belongs to the owner.
+    Primary key fingerprint: D840 6D0D 8294 7747 2937  7831 4AA3 9408 6372 C20A</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$ make html</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083447Z" creationid="wynnc" creationdate="20201210T083447Z">
@@ -109031,6 +109059,22 @@ information at runtime to configure their behaviour.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Any attacker can create a public key and upload it to the public key
+servers. They can then create a malicious release signed by this fake
+key. Then, if you tried to verify the signature of this corrupt release,
+it would succeed because the key was not the "real" key. Therefore, you
+need to validate the authenticity of this key. Validating the
+authenticity of a public key, however, is outside the scope of this
+documentation.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032436Z" creationid="wynnc" creationdate="20201211T032436Z">
+        <seg>任何攻击者都能创建公钥并将其上传到公钥服务器。他们可以建立一个带恶意的发行包，并用这个假密钥进行签名。
+这样，如果尝试对这个损坏了的发行包进行签名校验，由于密钥是“真”密钥，校验将成功完成。
+因此，需要对这个密钥的真实性进行校验。如何对公钥的真实性进行校验已经超出了本文档的范畴。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Any attacker can create a public key and upload it to the public key servers. They can then create a malicious release signed by this fake key. Then, if you tried to verify the signature of this corrupt release, it would succeed because the key was not the "real" key. Therefore, you need to validate the authenticity of this key. Validating the authenticity of a public key, however, is outside the scope of this documentation.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T100342Z" creationid="Wynn" creationdate="20150319T100342Z">
@@ -109211,6 +109255,19 @@ information at runtime to configure their behaviour.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T031952Z" creationid="Wynn" creationdate="20150330T031952Z">
         <seg>Astels2006</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>At this point, the signature is good, but we don't trust this key. A
+good signature means that the file has not been tampered. However, due
+to the nature of public key cryptography, you need to additionally
+verify that key ``6372C20A`` was created by the real
+Sebastian Bergmann.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032425Z" creationid="wynnc" creationdate="20201211T032425Z">
+        <seg>此时，签名已经没问题了，但是这个公钥还不能信任。签名没问题意味着文件未被篡改。
+可是由于公钥加密系统的性质，还需要再校验密钥 ``6372C20A`` 确实是由真正的 Sebastian Bergmann 创建的。</seg>
       </tuv>
     </tu>
     <tu>
@@ -112627,6 +112684,17 @@ translate. A repository will be created and added to the available translations.
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Manually verifying the authenticity and integrity of a PHPUnit PHAR using
+GPG is tedious. This is why PHIVE, the PHAR Installation and Verification
+Environment, was created. You can learn about PHIVE on its `website &lt;https://phar.io/&gt;`_</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032703Z" creationid="wynnc" creationdate="20201211T032703Z">
+        <seg>用 GPG 来手工验证 PHPUnit PHAR 的真实性和完整性是很繁琐的。
+这就是 PHAR 安装与校验环境 PHIVE 创建的原因。你可以在其\ `网站 &lt;https://phar.io/&gt;`_上了解 PHIVE。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Many beginner and intermediate unit testing examples in any programming language suggest that it is perfectly easy to test your application's logic with simple tests. For database-centric applications this is far away from the reality. Start using WordPress, TYPO3 or Symfony with Doctrine or Propel, for example, and you will easily experience considerable problems with PHPUnit: just because the database is so tightly coupled to these libraries.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="admin" changedate="20170502T013731Z" creationid="admin" creationdate="20170502T013731Z">
@@ -112903,6 +112971,19 @@ translate. A repository will be created and added to the available translations.
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T033213Z" creationid="Wynn" creationdate="20150327T033213Z">
         <seg>现在可以用 Selenium Server 的客户端/服务器端协议来向它发送命令了。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Now we have received a public key for an entity known as "Sebastian
+Bergmann &lt;sb@sebastian-bergmann.de&gt;". However, we have no way of
+verifying this key was created by the person known as Sebastian
+Bergmann. But, let's try to verify the release signature again.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032355Z" creationid="wynnc" creationdate="20201211T032355Z">
+        <seg>现在已经取得了条目名称为"Sebastian Bergmann &lt;sb@sebastian-bergmann.de&gt;"的公钥。
+不过，无法检验这个密钥确实是由名叫 Sebastian Bergmann 的人创建的。
+但是可以先试着校验发行包的签名：</seg>
       </tuv>
     </tu>
     <tu>
