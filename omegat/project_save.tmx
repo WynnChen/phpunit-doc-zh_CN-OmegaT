@@ -1118,6 +1118,16 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ phpunit ArrayDiffTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080800Z" creationid="wynnc" creationdate="20201211T080800Z">
+        <seg>$ phpunit ArrayDiffTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$ phpunit DataTest
     PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
       </tuv>
@@ -1310,6 +1320,32 @@ $ npm install</seg>
         <seg>$this-&gt;key++;
         }
     }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>* - Method
+      - Meaning
+    * - ``void expectOutputRegex(string $regularExpression)``
+      - Set up the expectation that the output matches a ``$regularExpression``.
+    * - ``void expectOutputString(string $expectedString)``
+      - Set up the expectation that the output is equal to an ``$expectedString``.
+    * - ``bool setOutputCallback(callable $callback)``
+      - Sets up a callback that is used to, for instance, normalize the actual output.
+    * - ``string getActualOutput()``
+      - Get the actual output.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080717Z" creationid="wynnc" creationdate="20201211T080717Z">
+        <seg>* - 方法
+      - 含义
+    * - ``void expectOutputRegex(string $regularExpression)``
+      - 设置输出预期为输出应当匹配正则表达式 ``$regularExpression``。
+    * - ``void expectOutputString(string $expectedString)``
+      - 设置输出预期为输出应当与 ``$expectedString`` 相等。
+    * - ``bool setOutputCallback(callable $callback)``
+      - 设置回调函数，用来做诸如将实际输出规范化之类的动作。
+    * - ``string getActualOutput()``
+      - 获取实际输出。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2068,6 +2104,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _writing-tests-for-phpunit.error-output:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080719Z" creationid="wynnc" creationdate="20201211T080719Z">
+        <seg>.. _writing-tests-for-phpunit.error-output:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. _writing-tests-for-phpunit.errors:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062325Z" creationid="wynnc" creationdate="20201211T062325Z">
@@ -2132,6 +2176,30 @@ $ npm install</seg>
         <seg>.. code-block:: php
     :caption: 在同一个测试中组合 @depends 和 @dataProvider
     :name: writing-tests-for-phpunit.data-providers.examples.DependencyAndDataProviderCombo.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
+    :caption: Error output generated when an array comparison fails
+    :name: writing-tests-for-phpunit.error-output.examples.ArrayDiffTest.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080757Z" creationid="wynnc" creationdate="20201211T080757Z">
+        <seg>.. code-block:: php
+    :caption: 数组比较失败时生成的错误输出
+    :name: writing-tests-for-phpunit.error-output.examples.ArrayDiffTest.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
+    :caption: Error output when an array comparison of an long array fails
+    :name: writing-tests-for-phpunit.error-output.examples.LongArrayDiffTest.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080850Z" creationid="wynnc" creationdate="20201211T080850Z">
+        <seg>.. code-block:: php
+    :caption: 长数组的数组比较失败时的错误输出
+    :name: writing-tests-for-phpunit.error-output.examples.LongArrayDiffTest.php</seg>
       </tuv>
     </tu>
     <tu>
@@ -2304,6 +2372,20 @@ $ npm install</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T025908Z" creationid="wynnc" creationdate="20201211T025908Z">
         <seg>.. parsed-literal::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. rst-class:: table
+.. list-table:: Methods for testing output
+    :name: writing-tests-for-phpunit.output.tables.api
+    :header-rows: 1</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080611Z" creationid="wynnc" creationdate="20201211T080611Z">
+        <seg>.. rst-class:: table
+.. list-table:: 测试输出的方法
+    :name: writing-tests-for-phpunit.output.tables.api
+    :header-rows: 1</seg>
       </tuv>
     </tu>
     <tu>
@@ -2820,6 +2902,14 @@ public function initialBalanceShouldBe0()
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>/home/sb/ArrayDiffTest.php:7</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080812Z" creationid="wynnc" creationdate="20201211T080812Z">
+        <seg>/home/sb/ArrayDiffTest.php:7</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>/home/sb/DataTest.php:11</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060618Z" creationid="wynnc" creationdate="20201211T060618Z">
@@ -2866,6 +2956,40 @@ public function initialBalanceShouldBe0()
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T040911Z" creationid="Wynn" creationdate="20150330T040911Z">
         <seg>0
 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>1) ArrayDiffTest::testEquality
+    Failed asserting that two arrays are identical.
+    --- Expected
+    +++ Actual
+    @@ @@
+     Array (
+         0 =&gt; 1
+         1 =&gt; 2
+    -    2 =&gt; 3
+    +    2 =&gt; 33
+         3 =&gt; 4
+         4 =&gt; 5
+         5 =&gt; 6
+     )</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080811Z" creationid="wynnc" creationdate="20201211T080811Z">
+        <seg>1) ArrayDiffTest::testEquality
+    Failed asserting that two arrays are identical.
+    --- Expected
+    +++ Actual
+    @@ @@
+     Array (
+         0 =&gt; 1
+         1 =&gt; 2
+    -    2 =&gt; 3
+    +    2 =&gt; 33
+         3 =&gt; 4
+         4 =&gt; 5
+         5 =&gt; 6
+     )</seg>
       </tuv>
     </tu>
     <tu>
@@ -111949,6 +112073,16 @@ you need in your project's ``composer.json`` if you use Composer.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Error output
+############</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080729Z" creationid="wynnc" creationdate="20201211T080729Z">
+        <seg>错误相关信息的输出
+###############</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Error output generated when an array comparison fails</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T024948Z" creationid="Wynn" creationdate="20150330T024948Z">
@@ -113306,6 +113440,15 @@ depends upon ``testPush()``.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T060411Z" creationid="Wynn" creationdate="20150309T060333Z">
         <seg>在本章中，你将学到 PHPUnit 中与代码覆盖率相关的一切功能。通过这部分功能，能够了解在测试运行过程中执行了生产代码的哪些部分。它使用了 &lt;u0&gt;PHP_CodeCoverage&lt;/u0&gt; 组件，而这个组件又使用了 PHP 的 &lt;u1&gt;Xdebug&lt;/u1&gt; 扩展所提供的代码覆盖率功能。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>In this example only one of the array values differs and the other values
+are shown to provide context on where the error occurred.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080817Z" creationid="wynnc" creationdate="20201211T080817Z">
+        <seg>在这个例子中，数组中只有一个值不同，但其他值也都同时显示出来，以提供关于错误发生的位置的上下文信息。</seg>
       </tuv>
     </tu>
     <tu>
@@ -121364,6 +121507,14 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Time: 0 seconds, Memory: 5.25Mb</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080800Z" creationid="wynnc" creationdate="20201211T080800Z">
+        <seg>Time: 0 seconds, Memory: 5.25Mb</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Time: 0 seconds, Memory: 5.75Mb</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060433Z" creationid="wynnc" creationdate="20201211T060433Z">
@@ -122788,6 +122939,15 @@ that would lead to an exception raised by PHPUnit's error handler.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>When the generated output would be long to read PHPUnit will split it up
+and provide a few lines of context around every difference.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080820Z" creationid="wynnc" creationdate="20201211T080820Z">
+        <seg>当生成的输出很长而难以阅读时，PHPUnit 将对其进行分割，并在每个差异附近提供少数几行上下文信息。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>When the generated output would be long to read PHPUnit will split it up and provide a few lines of context around every difference.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T025008Z" creationid="Wynn" creationdate="20150330T025008Z">
@@ -122970,6 +123130,15 @@ Output will be more verbose as it'll contain that name of a dataset that breaks 
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T091257Z" creationid="Wynn" creationdate="20150327T091257Z">
         <seg>当应用程序需要和 web 服务进行交互时，会想要在不与 web 服务进行实际交互的情况下对其进行测试。为了简单地对 web 服务进行上桩或模仿，可以像使用 &lt;l1&gt;getMock()&lt;/l1&gt; （见上文）那样使用 &lt;l0&gt;getMockFromWsdl()&lt;/l0&gt;。唯一的区别是 &lt;l2&gt;getMockFromWsdl()&lt;/l2&gt; 所返回的桩件或者仿件是基于以 WSDL 描述的 web 服务，而 &lt;l3&gt;getMock()&lt;/l3&gt; 返回的桩件或者仿件是基于 PHP 类或接口的。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Whenever a test fails PHPUnit tries its best to provide you with as much
+context as possible that can help to identify the problem.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080734Z" creationid="wynnc" creationdate="20201211T080734Z">
+        <seg>当有测试失败时，PHPUnit 全力提供尽可能多的有助于找出问题所在的上下文信息。</seg>
       </tuv>
     </tu>
     <tu>
@@ -127292,6 +127461,32 @@ class MyClass
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T093248Z" creationid="Wynn" creationdate="20150309T093248Z">
         <seg>fileExists()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>final class ArrayDiffTest extends TestCase
+    {
+        public function testEquality(): void
+        {
+            $this-&gt;assertSame(
+                [1, 2,  3, 4, 5, 6],
+                [1, 2, 33, 4, 5, 6]
+            );
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080759Z" creationid="wynnc" creationdate="20201211T080759Z">
+        <seg>final class ArrayDiffTest extends TestCase
+    {
+        public function testEquality(): void
+        {
+            $this-&gt;assertSame(
+                [1, 2,  3, 4, 5, 6],
+                [1, 2, 33, 4, 5, 6]
+            );
+        }
+    }</seg>
       </tuv>
     </tu>
     <tu>
