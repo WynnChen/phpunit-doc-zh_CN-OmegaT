@@ -110937,6 +110937,17 @@ repository:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Either put the PHAR of the specific PHPUnit version you need in your project's
+``tools`` directory (which should be managed by PHIVE) or depend on the specific PHPUnit version
+you need in your project's ``composer.json`` if you use Composer.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T033811Z" creationid="wynnc" creationdate="20201211T033811Z">
+        <seg>可以将你所需的特定 PHPUnit 版本的 PHAR 放入项目的 ``tools`` 目录（这目录应当是由 PHIVE 管理的）
+或者，如果使用 Composer，则取决于在项目的 ``composer.json`` 中指定的所需特定 PHPUnit 版本。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Enforce time limit based on test size. See &lt;x0/&gt; for details.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T095608Z" creationid="Wynn" creationdate="20150327T095608Z">
