@@ -1108,6 +1108,16 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ phpunit DataTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060431Z" creationid="wynnc" creationdate="20201211T060431Z">
+        <seg>$ phpunit DataTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$ pip install docutils-ast-writer
 $ npm install</seg>
       </tuv>
@@ -1222,6 +1232,30 @@ $ npm install</seg>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040104Z" creationid="wynnc" creationdate="20201211T040104Z">
         <seg>$this-&gt;assertSame('foo', array_pop($stack));
             $this-&gt;assertSame(0, count($stack));
+        }
+    }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>$this-&gt;current = fgetcsv($this-&gt;file);
+            $this-&gt;key     = 0;
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060630Z" creationid="wynnc" creationdate="20201211T060630Z">
+        <seg>$this-&gt;current = fgetcsv($this-&gt;file);
+            $this-&gt;key     = 0;
+        }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>$this-&gt;key++;
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060632Z" creationid="wynnc" creationdate="20201211T060632Z">
+        <seg>$this-&gt;key++;
         }
     }</seg>
       </tuv>
@@ -2007,6 +2041,18 @@ $ npm install</seg>
     <tu>
       <tuv lang="en-US">
         <seg>.. code-block:: php
+    :caption: Combination of @depends and @dataProvider in same test
+    :name: writing-tests-for-phpunit.data-providers.examples.DependencyAndDataProviderCombo.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060706Z" creationid="wynnc" creationdate="20201211T060706Z">
+        <seg>.. code-block:: php
+    :caption: Combination of @depends and @dataProvider in same test
+    :name: writing-tests-for-phpunit.data-providers.examples.DependencyAndDataProviderCombo.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
     :caption: Exploiting the dependencies between tests
     :name: writing-tests-for-phpunit.examples.DependencyFailureTest.php</seg>
       </tuv>
@@ -2043,6 +2089,30 @@ $ npm install</seg>
     <tu>
       <tuv lang="en-US">
         <seg>.. code-block:: php
+    :caption: The CsvFileIterator class
+    :name: writing-tests-for-phpunit.data-providers.examples.CsvFileIterator.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060627Z" creationid="wynnc" creationdate="20201211T060627Z">
+        <seg>.. code-block:: php
+    :caption: CsvFileIterator 类
+    :name: writing-tests-for-phpunit.data-providers.examples.CsvFileIterator.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
+    :caption: Using a data provider that returns an Iterator object
+    :name: writing-tests-for-phpunit.data-providers.examples.DataTest2.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060613Z" creationid="wynnc" creationdate="20201211T060613Z">
+        <seg>.. code-block:: php
+    :caption: 使用返回 Iterator 对象的数据供给器
+    :name: writing-tests-for-phpunit.data-providers.examples.DataTest2.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
     :caption: Using a data provider that returns an array of arrays
     :name: writing-tests-for-phpunit.data-providers.examples.DataTest.php</seg>
       </tuv>
@@ -2050,6 +2120,18 @@ $ npm install</seg>
         <seg>.. code-block:: php
     :caption: 使用返回数组的数组的数据供给器
     :name: writing-tests-for-phpunit.data-providers.examples.DataTest.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
+    :caption: Using a data provider with named datasets
+    :name: writing-tests-for-phpunit.data-providers.examples.DataTest1.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060546Z" creationid="wynnc" creationdate="20201211T060546Z">
+        <seg>.. code-block:: php
+    :caption: 将数据供给器与命名数据集一起使用
+    :name: writing-tests-for-phpunit.data-providers.examples.DataTest1.php</seg>
       </tuv>
     </tu>
     <tu>
@@ -2112,6 +2194,14 @@ $ npm install</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T031241Z" creationid="Wynn" creationdate="20150330T031241Z">
         <seg>...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>...F</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060431Z" creationid="wynnc" creationdate="20201211T060431Z">
+        <seg>...F</seg>
       </tuv>
     </tu>
     <tu>
@@ -2446,6 +2536,22 @@ public function initialBalanceShouldBe0()
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>/home/sb/DataTest.php:11</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060618Z" creationid="wynnc" creationdate="20201211T060618Z">
+        <seg>/home/sb/DataTest.php:11</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>/home/sb/DataTest.php:9</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060436Z" creationid="wynnc" creationdate="20201211T060436Z">
+        <seg>/home/sb/DataTest.php:9</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>/home/sb/DependencyFailureTest.php:6</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042803Z" creationid="wynnc" creationdate="20201211T042803Z">
@@ -2468,6 +2574,36 @@ public function initialBalanceShouldBe0()
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T040911Z" creationid="Wynn" creationdate="20150330T040911Z">
         <seg>0
 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>1) DataTest::testAdd with data set "one plus one" (1, 1, 3)
+    Failed asserting that 2 is identical to 3.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060549Z" creationid="wynnc" creationdate="20201211T060549Z">
+        <seg>1) DataTest::testAdd with data set "one plus one" (1, 1, 3)
+    Failed asserting that 2 is identical to 3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>1) DataTest::testAdd with data set #3 ('1', '1', '3')
+    Failed asserting that 2 is identical to 3.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060617Z" creationid="wynnc" creationdate="20201211T060617Z">
+        <seg>1) DataTest::testAdd with data set #3 ('1', '1', '3')
+    Failed asserting that 2 is identical to 3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>1) DataTest::testAdd with data set #3 (1, 1, 3)
+    Failed asserting that 2 is identical to 3.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060434Z" creationid="wynnc" creationdate="20201211T060434Z">
+        <seg>1) DataTest::testAdd with data set #3 (1, 1, 3)
+    Failed asserting that 2 is identical to 3.</seg>
       </tuv>
     </tu>
     <tu>
@@ -111538,6 +111674,16 @@ you need in your project's ``composer.json`` if you use Composer.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>FAILURES!
+    Tests: 4, Assertions: 4, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060437Z" creationid="wynnc" creationdate="20201211T060437Z">
+        <seg>FAILURES!
+    Tests: 4, Assertions: 4, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>FS</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042801Z" creationid="wynnc" creationdate="20201211T042801Z">
@@ -120669,6 +120815,14 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Time: 0 seconds, Memory: 5.75Mb</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060433Z" creationid="wynnc" creationdate="20201211T060433Z">
+        <seg>Time: 0 seconds, Memory: 5.75Mb</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Tip: Use your own Abstract Database TestCase</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150316T100330Z" creationid="Wynn" creationdate="20150316T100330Z">
@@ -121975,6 +122129,19 @@ against its detached signature (:file:`phpunit-x.y.phar.asc`):</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>When a test receives input from both a ``@dataProvider``
+method and from one or more tests it ``@depends`` on, the
+arguments from the data provider will come before the ones from
+depended-upon tests. The arguments from depended-upon tests will be the
+same for each data set.
+See :numref:`writing-tests-for-phpunit.data-providers.examples.DependencyAndDataProviderCombo.php`</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060715Z" creationid="wynnc" creationdate="20201211T060701Z">
+        <seg>如果测试同时从 ``@dataProvider`` 方法和一个或多个 ``@depends`` 测试接收数据，那么来自于数据供给器的参数将先于来自所依赖的测试的。来自于所依赖的测试的参数对于每个数据集都是一样的。参见:numref:`writing-tests-for-phpunit.data-providers.examples.DependencyAndDataProviderCombo.php`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>When generating code coverage and using &lt;l0&gt;&lt;whitelist addUncoveredFilesFromWhitelist="true"&gt;&lt;/l0&gt; all uncovered files got included by PHPUnit. This was an issue for people with executable code in those files. PHPUnit will now scan the file and guess what code is executable and what code is not without including it. This might lead to different code coverage reports.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T042322Z" creationid="Wynn" creationdate="20150330T042322Z">
@@ -122067,6 +122234,16 @@ against its detached signature (:file:`phpunit-x.y.phar.asc`):</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T092127Z" creationid="Wynn" creationdate="20150327T092127Z">
         <seg>如果测试在 &lt;l0&gt;tearDown()&lt;/l0&gt; 方法被调用之前就终止了，这个目录就会遗留在文件系统中。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>When using a large number of datasets it's useful to name each one with string key instead of default numeric.
+Output will be more verbose as it'll contain that name of a dataset that breaks a test.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060444Z" creationid="wynnc" creationdate="20201211T060444Z">
+        <seg>当使用到大量数据集时，最好逐个用字符串键名对其命名，避免用默认的数字键名。
+这样输出信息会更加详细些，其中将包含打断测试的数据集所对应的名称。</seg>
       </tuv>
     </tu>
     <tu>
@@ -126485,6 +126662,46 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>final class CsvFileIterator implements Iterator
+    {
+        private $file;
+        private $key = 0;
+        private $current;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060628Z" creationid="wynnc" creationdate="20201211T060628Z">
+        <seg>final class CsvFileIterator implements Iterator
+    {
+        private $file;
+        private $key = 0;
+        private $current;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>final class DataTest extends TestCase
+    {
+        /**
+         * @dataProvider additionProvider
+         */
+        public function testAdd(int $a, int $b, int $expected): void
+        {
+            $this-&gt;assertSame($expected, $a + $b);
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060426Z" creationid="wynnc" creationdate="20201211T060426Z">
+        <seg>final class DataTest extends TestCase
+    {
+        /**
+         * @dataProvider additionProvider
+         */
+        public function testAdd(int $a, int $b, int $expected): void
+        {
+            $this-&gt;assertSame($expected, $a + $b);
+        }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>final class DependencyFailureTest extends TestCase
     {
         public function testOne(): void
@@ -127893,6 +128110,154 @@ ok</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>public function __construct(string $file)
+        {
+            $this-&gt;file = fopen($file, 'r');
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060629Z" creationid="wynnc" creationdate="20201211T060629Z">
+        <seg>public function __construct(string $file)
+        {
+            $this-&gt;file = fopen($file, 'r');
+        }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>public function __destruct()
+        {
+            fclose($this-&gt;file);
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060629Z" creationid="wynnc" creationdate="20201211T060629Z">
+        <seg>public function __destruct()
+        {
+            fclose($this-&gt;file);
+        }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>public function additionProvider(): CsvFileIterator
+        {
+            return new CsvFileIterator('data.csv');
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060616Z" creationid="wynnc" creationdate="20201211T060616Z">
+        <seg>public function additionProvider(): CsvFileIterator
+        {
+            return new CsvFileIterator('data.csv');
+        }
+    }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>public function additionProvider(): array
+        {
+            return [
+                'adding zeros'  =&gt; [0, 0, 0],
+                'zero plus one' =&gt; [0, 1, 1],
+                'one plus zero' =&gt; [1, 0, 1],
+                'one plus one'  =&gt; [1, 1, 3]
+            ];
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060548Z" creationid="wynnc" creationdate="20201211T060548Z">
+        <seg>public function additionProvider(): array
+        {
+            return [
+                'adding zeros'  =&gt; [0, 0, 0],
+                'zero plus one' =&gt; [0, 1, 1],
+                'one plus zero' =&gt; [1, 0, 1],
+                'one plus one'  =&gt; [1, 1, 3]
+            ];
+        }
+    }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>public function additionProvider(): array
+        {
+            return [
+                [0, 0, 0],
+                [0, 1, 1],
+                [1, 0, 1],
+                [1, 1, 3]
+            ];
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060427Z" creationid="wynnc" creationdate="20201211T060427Z">
+        <seg>public function additionProvider(): array
+        {
+            return [
+                [0, 0, 0],
+                [0, 1, 1],
+                [1, 0, 1],
+                [1, 1, 3]
+            ];
+        }
+    }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>public function current(): array
+        {
+            return $this-&gt;current;
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060631Z" creationid="wynnc" creationdate="20201211T060631Z">
+        <seg>public function current(): array
+        {
+            return $this-&gt;current;
+        }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>public function key(): int
+        {
+            return $this-&gt;key;
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060631Z" creationid="wynnc" creationdate="20201211T060631Z">
+        <seg>public function key(): int
+        {
+            return $this-&gt;key;
+        }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>public function next(): void
+        {
+            $this-&gt;current = fgetcsv($this-&gt;file);</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060632Z" creationid="wynnc" creationdate="20201211T060632Z">
+        <seg>public function next(): void
+        {
+            $this-&gt;current = fgetcsv($this-&gt;file);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>public function rewind(): void
+        {
+            rewind($this-&gt;file);</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060629Z" creationid="wynnc" creationdate="20201211T060629Z">
+        <seg>public function rewind(): void
+        {
+            rewind($this-&gt;file);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>public function testMethod()
 {
 }</seg>
@@ -127925,6 +128290,20 @@ ok</seg>
         <seg>public function testSomething()
 {
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>public function valid(): bool
+        {
+            return !feof($this-&gt;file);
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060630Z" creationid="wynnc" creationdate="20201211T060630Z">
+        <seg>public function valid(): bool
+        {
+            return !feof($this-&gt;file);
+        }</seg>
       </tuv>
     </tu>
     <tu>
