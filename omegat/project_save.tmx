@@ -1128,6 +1128,16 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ phpunit ExceptionTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062040Z" creationid="wynnc" creationdate="20201211T062040Z">
+        <seg>$ phpunit ExceptionTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$ pip install docutils-ast-writer
 $ npm install</seg>
       </tuv>
@@ -2178,6 +2188,18 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. code-block:: php
+    :caption: Using the expectException() method
+    :name: writing-tests-for-phpunit.exceptions.examples.ExceptionTest.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062025Z" creationid="wynnc" creationdate="20201211T062025Z">
+        <seg>.. code-block:: php
+    :caption: 使用 expectException() 方法
+    :name: writing-tests-for-phpunit.exceptions.examples.ExceptionTest.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. code-block:: text</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091901Z" creationid="wynnc" creationdate="20201210T091901Z">
@@ -2732,6 +2754,16 @@ public function initialBalanceShouldBe0()
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042804Z" creationid="wynnc" creationdate="20201211T042804Z">
         <seg>1) DependencyFailureTest::testTwo
     This test depends on "DependencyFailureTest::testOne" to pass.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>1) ExceptionTest::testException
+    Failed asserting that exception of type "InvalidArgumentException" is thrown.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062043Z" creationid="wynnc" creationdate="20201211T062043Z">
+        <seg>1) ExceptionTest::testException
+    Failed asserting that exception of type "InvalidArgumentException" is thrown.</seg>
       </tuv>
     </tu>
     <tu>
@@ -111807,6 +111839,16 @@ you need in your project's ``composer.json`` if you use Composer.</seg>
     <tu>
       <tuv lang="en-US">
         <seg>FAILURES!
+    Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062044Z" creationid="wynnc" creationdate="20201211T062044Z">
+        <seg>FAILURES!
+    Tests: 1, Assertions: 1, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>FAILURES!
     Tests: 4, Assertions: 4, Failures: 1.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060437Z" creationid="wynnc" creationdate="20201211T060437Z">
@@ -112844,6 +112886,20 @@ translate. A repository will be created and added to the available translations.
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>In addition to the ``expectException()`` method the
+``expectExceptionCode()``,
+``expectExceptionMessage()``, and
+``expectExceptionMessageMatches()`` methods exist to set up
+expectations for exceptions raised by the code under test.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062132Z" creationid="wynnc" creationdate="20201211T062044Z">
+        <seg>除了 ``expectException()`` 方法外，还有
+``expectExceptionCode()``、``expectExceptionMessage()`` 和 
+``expectExceptionMessageMatches()`` 方法可以用于为被测代码所抛出的异常建立预期。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>In addition to the above methods it is also possible to use the &lt;l0&gt;@requires&lt;/l0&gt; annotation to express common preconditions for a test case.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T092417Z" creationid="Wynn" creationdate="20150319T092417Z">
@@ -113770,6 +113826,17 @@ Environment, was created. You can learn about PHIVE on its `website &lt;https://
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T092051Z" creationid="Wynn" creationdate="20150319T092051Z">
         <seg>并非所有测试都能在任何环境中运行。比如说，考虑这样一种情况：一个数据库抽象层，针对其所支持的各种数据库系统有多个不同的驱动程序。针对 MySQL 驱动程序的测试当然只在 MySQL 服务器可用才能运行。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Note that ``expectExceptionMessage()`` asserts that the ``$actual``
+   message contains the ``$expected`` message and does not perform
+   an exact string comparison.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062324Z" creationid="wynnc" creationdate="20201211T062051Z">
+        <seg>注意 ``expectExceptionMessage()`` 断言的是 ``$actual`` 讯息包含有 ``$expected`` 讯息，
+并不执行精确的字符串比较。</seg>
       </tuv>
     </tu>
     <tu>
@@ -120967,6 +121034,14 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Time: 0 seconds, Memory: 4.75Mb</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062041Z" creationid="wynnc" creationdate="20201211T062041Z">
+        <seg>Time: 0 seconds, Memory: 4.75Mb</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Time: 0 seconds, Memory: 5.00Mb</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042802Z" creationid="wynnc" creationdate="20201211T042802Z">
@@ -126933,6 +127008,26 @@ class MyClass
         {
             $this-&gt;assertTrue(false);
         }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>final class ExceptionTest extends TestCase
+    {
+        public function testException(): void
+        {
+            $this-&gt;expectException(InvalidArgumentException::class);
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062036Z" creationid="wynnc" creationdate="20201211T062036Z">
+        <seg>final class ExceptionTest extends TestCase
+    {
+        public function testException(): void
+        {
+            $this-&gt;expectException(InvalidArgumentException::class);
+        }
+    }</seg>
       </tuv>
     </tu>
     <tu>
