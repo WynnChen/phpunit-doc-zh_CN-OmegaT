@@ -1128,6 +1128,16 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ phpunit ErrorSuppressionTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080133Z" creationid="wynnc" creationdate="20201211T080133Z">
+        <seg>$ phpunit ErrorSuppressionTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$ phpunit ExceptionTest
     PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
       </tuv>
@@ -1240,6 +1250,18 @@ $ npm install</seg>
   NULL,
   new stdClass
 );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>$this-&gt;assertFalse(@$writer-&gt;write('/is-not-writeable/file', 'stuff'));
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080121Z" creationid="wynnc" creationdate="20201211T080121Z">
+        <seg>$this-&gt;assertFalse(@$writer-&gt;write('/is-not-writeable/file', 'stuff'));
+        }
+    }</seg>
       </tuv>
     </tu>
     <tu>
@@ -1932,6 +1954,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _appendixes.annotations.author:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080059Z" creationid="wynnc" creationdate="20201211T080059Z">
+        <seg>.. _appendixes.annotations.author:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. _appendixes.annotations:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20180127T031813Z" creationid="wynnc" creationdate="20180127T031813Z">
@@ -2044,6 +2074,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _writing-tests-for-phpunit.output:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080148Z" creationid="wynnc" creationdate="20201211T080148Z">
+        <seg>.. _writing-tests-for-phpunit.output:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. _writing-tests-for-phpunit.test-dependencies:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040305Z" creationid="wynnc" creationdate="20201211T040305Z">
@@ -2132,6 +2170,18 @@ $ npm install</seg>
         <seg>.. code-block:: php
     :caption: 用 PHPUnit 测试数组操作
     :name: writing-tests-for-phpunit.examples.StackTest.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
+    :caption: Testing return values of code that uses PHP Errors
+    :name: writing-tests-for-phpunit.exceptions.examples.TriggerErrorReturnValue.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080119Z" creationid="wynnc" creationdate="20201211T080119Z">
+        <seg>.. code-block:: php
+    :caption: 对会引发PHP 错误的代码的返回值进行测试
+    :name: writing-tests-for-phpunit.exceptions.examples.TriggerErrorReturnValue.php</seg>
       </tuv>
     </tu>
     <tu>
@@ -2644,6 +2694,18 @@ public function initialBalanceShouldBe0()
 {
     $this-&gt;assertEquals(0, $this-&gt;ba-&gt;getBalance());
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>// ...
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080125Z" creationid="wynnc" creationdate="20201211T080125Z">
+        <seg>// ...
+        }
+    }</seg>
       </tuv>
     </tu>
     <tu>
@@ -114009,6 +114071,14 @@ Bergmann. But, let's try to verify the release signature again.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>OK (1 test, 1 assertion)</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080135Z" creationid="wynnc" creationdate="20201211T080135Z">
+        <seg>OK (1 test, 1 assertion)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>OK (3 tests, 4 assertions)</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043322Z" creationid="wynnc" creationdate="20201211T043322Z">
@@ -118209,6 +118279,20 @@ addresses, without explicit permission</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Sometimes you want to assert that the execution of a method, for
+instance, generates an expected output (via ``echo`` or
+``print``, for example). The
+``PHPUnit\Framework\TestCase`` class uses PHP's
+`Output
+Buffering &lt;http://www.php.net/manual/en/ref.outcontrol.php&gt;`_ feature to provide the functionality that is
+necessary for this.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080246Z" creationid="wynnc" creationdate="20201211T080246Z">
+        <seg>有时候，想要断言（比如说）某方法的运行过程中生成了预期的输出（例如，通过 &lt;l0&gt;echo&lt;/l0&gt; 或 &lt;l1&gt;print&lt;/l1&gt;）。&lt;l2&gt;PHPUnit\Framework\TestCase&lt;/l2&gt; 类使用 PHP 的 &lt;u3&gt;输出缓冲&lt;/u3&gt; 特性来为此提供必要的功能支持。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Sometimes you want to assert that the execution of a method, for instance, generates an expected output (via &lt;l0&gt;echo&lt;/l0&gt; or &lt;l1&gt;print&lt;/l1&gt;, for example). The &lt;l2&gt;PHPUnit\Framework\TestCase&lt;/l2&gt; class uses PHP's &lt;u3&gt;Output Buffering&lt;/u3&gt; feature to provide the functionality that is necessary for this.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20160815T094153Z" creationid="Wynn" creationdate="20160815T094153Z">
@@ -118933,6 +119017,16 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T024358Z" creationid="Wynn" creationdate="20150330T024358Z">
         <seg>对输出进行测试</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Testing Output
+##############</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080232Z" creationid="wynnc" creationdate="20201211T080232Z">
+        <seg>对输出进行测试
+##############</seg>
       </tuv>
     </tu>
     <tu>
@@ -121195,6 +121289,14 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Time: 1 seconds, Memory: 5.25Mb</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080134Z" creationid="wynnc" creationdate="20201211T080134Z">
+        <seg>Time: 1 seconds, Memory: 5.25Mb</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Tip: Use your own Abstract Database TestCase</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150316T100330Z" creationid="Wynn" creationdate="20150316T100330Z">
@@ -122875,6 +122977,15 @@ Output will be more verbose as it'll contain that name of a dataset that breaks 
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T091748Z" creationid="Wynn" creationdate="20150327T091748Z">
         <seg>如果不使用诸如 vfsStream 这样的虚拟文件系统，就无法在隔离外部影响的情况下对 &lt;l0&gt;setDirectory()&lt;/l0&gt; 方法进行测试（参见 &lt;x1/&gt;）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Without the error suppression the test would fail reporting
+``fopen(/is-not-writeable/file): failed to open stream: No such file or directory``.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080147Z" creationid="wynnc" creationdate="20201211T080147Z">
+        <seg>如果不使用错误抑制符，此测试将会失败，并报告 ``fopen(/is-not-writeable/file): failed to open stream: No such file or directory``。</seg>
       </tuv>
     </tu>
     <tu>
@@ -127203,6 +127314,22 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>final class ErrorSuppressionTest extends TestCase
+    {
+        public function testFileWriting(): void
+        {
+            $writer = new FileWriter;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080121Z" creationid="wynnc" creationdate="20201211T080121Z">
+        <seg>final class ErrorSuppressionTest extends TestCase
+    {
+        public function testFileWriting(): void
+        {
+            $writer = new FileWriter;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>final class ErrorTest extends TestCase
     {
         public function testDeprecationCanBeExpected(): void
@@ -127235,6 +127362,22 @@ class MyClass
             $this-&gt;expectException(InvalidArgumentException::class);
         }
     }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>final class FileWriter
+    {
+        public function write($file, $content)
+        {
+            $file = fopen($file, 'w');</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080123Z" creationid="wynnc" creationdate="20201211T080123Z">
+        <seg>final class FileWriter
+    {
+        public function write($file, $content)
+        {
+            $file = fopen($file, 'w');</seg>
       </tuv>
     </tu>
     <tu>
@@ -128233,6 +128376,18 @@ html_theme_options = {
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T093254Z" creationid="Wynn" creationdate="20150309T093254Z">
         <seg>identicalTo()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>if ($file === false) {
+                return false;
+            }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080123Z" creationid="wynnc" creationdate="20201211T080123Z">
+        <seg>if ($file === false) {
+                return false;
+            }</seg>
       </tuv>
     </tu>
     <tu>
