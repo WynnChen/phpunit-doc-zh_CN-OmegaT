@@ -110739,6 +110739,14 @@ repository:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Examples of unacceptable behavior by participants include:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T013356Z" creationid="wynnc" creationdate="20201211T013332Z">
+        <seg>参与者不可接受的行为示例包括：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Except the &lt;l0&gt;getTableMetaData()&lt;/l0&gt; method it is pretty self-explainatory. The used methods are all required for the different assertions of the Database Extension that are explained in the next chapter. The &lt;l1&gt;getTableMetaData()&lt;/l1&gt; method has to return an implementation of the &lt;l2&gt;PHPUnit_Extensions_Database_DataSet_ITableMetaData&lt;/l2&gt; interface, which describes the structure of the table. It holds information on:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150317T080036Z" creationid="Wynn" creationdate="20150317T080036Z">
@@ -115043,6 +115051,14 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Personal attacks</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T013444Z" creationid="wynnc" creationdate="20201211T013444Z">
+        <seg>人身攻击</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Please note that &lt;l0&gt;final&lt;/l0&gt;, &lt;l1&gt;private&lt;/l1&gt; and &lt;l2&gt;static&lt;/l2&gt; methods cannot be stubbed or mocked. They are ignored by PHPUnit's test double functionality and retain their original behavior.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T074533Z" creationid="Wynn" creationdate="20150327T074533Z">
@@ -115287,6 +115303,14 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T090836Z" creationid="Wynn" creationdate="20150327T090836Z">
         <seg>Prophecy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Public or private harassment</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T013638Z" creationid="wynnc" creationdate="20201211T013638Z">
+        <seg>公开或私下的骚扰</seg>
       </tuv>
     </tu>
     <tu>
@@ -119191,6 +119215,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The use of sexualized language or imagery</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T013441Z" creationid="wynnc" creationdate="20201211T013339Z">
+        <seg>使用性相关的语言或图像</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>There are few good reasons to share fixtures between tests, but in most cases the need to share a fixture between tests stems from an unresolved design problem.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T082008Z" creationid="Wynn" creationdate="20150319T082008Z">
@@ -119598,6 +119630,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071751Z" creationid="wynnc" creationdate="20201210T071728Z">
         <seg>翻译</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Trolling or insulting/derogatory comments</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T013619Z" creationid="wynnc" creationdate="20201211T013619Z">
+        <seg>小白行为或侮辱性/贬损性评论</seg>
       </tuv>
     </tu>
     <tu>
