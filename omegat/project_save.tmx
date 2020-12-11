@@ -109318,6 +109318,14 @@ information at runtime to configure their behaviour.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>By adopting this Code of Conduct, project maintainers commit themselves to fairly and consistently applying these principles to every aspect of managing this project. Project maintainers who do not follow or enforce the Code of Conduct may be permanently removed from the project team.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T014220Z" creationid="wynnc" creationdate="20201211T014008Z">
+        <seg>通过采用本《行为准则》，项目维护者承诺将公平、一致地将这些原则应用于项目管理的各个方面。不遵守或不执行《行为准则》的项目维护者可能会被从项目团队中永久撤职。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>By default, PHPUnit converts PHP errors, warnings, and notices that are triggered during the execution of a test to an exception. Using these exceptions, you can, for instance, expect a test to trigger a PHP error as shown in &lt;x0/&gt;.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T024108Z" creationid="Wynn" creationdate="20150330T024108Z">
@@ -115301,8 +115309,8 @@ Tests: 2, Failures: 1.</seg>
       <tuv lang="en-US">
         <seg>Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T014001Z" creationid="wynnc" creationdate="20201211T013805Z">
-        <seg>项目维护者有权并有责任删除、编辑或拒绝与本行为准则不符的评论、提交、代码、Wiki 编辑、问题和其他贡献，或暂时或永久地禁止某个贡献者从事被项目维护者认定为不当、有威胁、冒犯或有害的其他行为。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T014042Z" creationid="wynnc" creationdate="20201211T013805Z">
+        <seg>项目维护者有权并有责任删除、编辑或拒绝与本行为准则不符的评论、提交、代码、Wiki 编辑、问题和其他贡献，或暂时或永久地禁止某个贡献者进行被项目维护者认定为不当、有威胁、冒犯或有害的其他行为。</seg>
       </tuv>
     </tu>
     <tu>
@@ -119316,6 +119324,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150317T074523Z" creationid="Wynn" creationdate="20150317T074510Z">
         <seg>在 PHPUnit 的数据库扩展中，（尚）没有基于数组的 DataSet，不过很容易自行实现之。留言本的例子大致是这样：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T014339Z" creationid="wynnc" creationdate="20201211T014339Z">
+        <seg>当个人代表项目或其社区时，对于项目范畴和公共范畴，皆适用本《行为准则》。</seg>
       </tuv>
     </tu>
     <tu>
