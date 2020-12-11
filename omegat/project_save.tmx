@@ -1128,6 +1128,16 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ phpunit ArrayWeakComparisonTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T081002Z" creationid="wynnc" creationdate="20201211T081002Z">
+        <seg>$ phpunit ArrayWeakComparisonTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$ phpunit DataTest
     PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
       </tuv>
@@ -1153,6 +1163,16 @@ fi</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062040Z" creationid="wynnc" creationdate="20201211T062040Z">
         <seg>$ phpunit ExceptionTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>$ phpunit LongArrayDiffTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080858Z" creationid="wynnc" creationdate="20201211T080858Z">
+        <seg>$ phpunit LongArrayDiffTest
     PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
       </tuv>
     </tu>
@@ -2104,6 +2124,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _writing-tests-for-phpunit.error-output.edge-cases:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080902Z" creationid="wynnc" creationdate="20201211T080902Z">
+        <seg>.. _writing-tests-for-phpunit.error-output.edge-cases:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. _writing-tests-for-phpunit.error-output:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080719Z" creationid="wynnc" creationdate="20201211T080719Z">
@@ -2176,6 +2204,18 @@ $ npm install</seg>
         <seg>.. code-block:: php
     :caption: 在同一个测试中组合 @depends 和 @dataProvider
     :name: writing-tests-for-phpunit.data-providers.examples.DependencyAndDataProviderCombo.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
+    :caption: Edge case in the diff generation when using weak comparison
+    :name: writing-tests-for-phpunit.error-output.edge-cases.examples.ArrayWeakComparisonTest.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080950Z" creationid="wynnc" creationdate="20201211T080950Z">
+        <seg>.. code-block:: php
+    :caption: 使用弱比较时在差异生成过程中的边缘情况
+    :name: writing-tests-for-phpunit.error-output.edge-cases.examples.ArrayWeakComparisonTest.php</seg>
       </tuv>
     </tu>
     <tu>
@@ -2910,6 +2950,14 @@ public function initialBalanceShouldBe0()
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>/home/sb/ArrayWeakComparisonTest.php:7</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T081005Z" creationid="wynnc" creationdate="20201211T081005Z">
+        <seg>/home/sb/ArrayWeakComparisonTest.php:7</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>/home/sb/DataTest.php:11</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060618Z" creationid="wynnc" creationdate="20201211T060618Z">
@@ -2938,6 +2986,14 @@ public function initialBalanceShouldBe0()
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042803Z" creationid="wynnc" creationdate="20201211T042803Z">
         <seg>/home/sb/DependencyFailureTest.php:6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>/home/sb/LongArrayDiffTest.php:7</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080901Z" creationid="wynnc" creationdate="20201211T080901Z">
+        <seg>/home/sb/LongArrayDiffTest.php:7</seg>
       </tuv>
     </tu>
     <tu>
@@ -2983,6 +3039,42 @@ public function initialBalanceShouldBe0()
     @@ @@
      Array (
          0 =&gt; 1
+         1 =&gt; 2
+    -    2 =&gt; 3
+    +    2 =&gt; 33
+         3 =&gt; 4
+         4 =&gt; 5
+         5 =&gt; 6
+     )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>1) ArrayWeakComparisonTest::testEquality
+    Failed asserting that two arrays are equal.
+    --- Expected
+    +++ Actual
+    @@ @@
+     Array (
+    -    0 =&gt; 1
+    +    0 =&gt; '1'
+         1 =&gt; 2
+    -    2 =&gt; 3
+    +    2 =&gt; 33
+         3 =&gt; 4
+         4 =&gt; 5
+         5 =&gt; 6
+     )</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T081004Z" creationid="wynnc" creationdate="20201211T081004Z">
+        <seg>1) ArrayWeakComparisonTest::testEquality
+    Failed asserting that two arrays are equal.
+    --- Expected
+    +++ Actual
+    @@ @@
+     Array (
+    -    0 =&gt; 1
+    +    0 =&gt; '1'
          1 =&gt; 2
     -    2 =&gt; 3
     +    2 =&gt; 33
@@ -3080,6 +3172,40 @@ public function initialBalanceShouldBe0()
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062043Z" creationid="wynnc" creationdate="20201211T062043Z">
         <seg>1) ExceptionTest::testException
     Failed asserting that exception of type "InvalidArgumentException" is thrown.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>1) LongArrayDiffTest::testEquality
+    Failed asserting that two arrays are identical.
+    --- Expected
+    +++ Actual
+    @@ @@
+         11 =&gt; 0
+         12 =&gt; 1
+         13 =&gt; 2
+    -    14 =&gt; 3
+    +    14 =&gt; 33
+         15 =&gt; 4
+         16 =&gt; 5
+         17 =&gt; 6
+     )</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080901Z" creationid="wynnc" creationdate="20201211T080901Z">
+        <seg>1) LongArrayDiffTest::testEquality
+    Failed asserting that two arrays are identical.
+    --- Expected
+    +++ Actual
+    @@ @@
+         11 =&gt; 0
+         12 =&gt; 1
+         13 =&gt; 2
+    -    14 =&gt; 3
+    +    14 =&gt; 33
+         15 =&gt; 4
+         16 =&gt; 5
+         17 =&gt; 6
+     )</seg>
       </tuv>
     </tu>
     <tu>
@@ -111798,6 +111924,16 @@ repository:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Edge Cases
+==========</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080907Z" creationid="wynnc" creationdate="20201211T080907Z">
+        <seg>边缘情况
+==========</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Edge case in the diff generation when using weak comparison</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T025049Z" creationid="Wynn" creationdate="20150330T025037Z">
@@ -112076,9 +112212,9 @@ you need in your project's ``composer.json`` if you use Composer.</seg>
         <seg>Error output
 ############</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080729Z" creationid="wynnc" creationdate="20201211T080729Z">
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T081105Z" creationid="wynnc" creationdate="20201211T080729Z">
         <seg>错误相关信息的输出
-###############</seg>
+###################</seg>
       </tuv>
     </tu>
     <tu>
@@ -113457,6 +113593,16 @@ are shown to provide context on where the error occurred.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T025004Z" creationid="Wynn" creationdate="20150330T025004Z">
         <seg>在这个例子中，数组中只有一个值不同，但其他值也都同时显示出来，以提供关于错误发生的位置的上下文信息。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>In this example the difference in the first index between
+``1`` and ``'1'`` is
+reported even though ``assertEquals()`` considers the values as a match.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T081035Z" creationid="wynnc" creationdate="20201211T081035Z">
+        <seg>在这个例子中，第一个索引项中的 ``1`` 和 ``'1'`` 在报告中被视为不同，虽然 ``assertEquals()`` 认为这两个值是匹配的。</seg>
       </tuv>
     </tu>
     <tu>
@@ -118512,9 +118658,10 @@ instance, generates an expected output (via ``echo`` or
 Buffering &lt;http://www.php.net/manual/en/ref.outcontrol.php&gt;`_ feature to provide the functionality that is
 necessary for this.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080501Z" creationid="wynnc" creationdate="20201211T080246Z">
-        <seg>有时候，想要断言（比如说）某方法的运行过程中生成了预期的输出（例如，通过 ``echo`` 或 ``print``）。``PHPUnit\Framework\TestCase`` 类使用 PHP 的
-`输出缓冲 &lt;http://www.php.net/manual/en/ref.outcontrol.php&gt;`_特性来为此提供必要的功能支持。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T081815Z" creationid="wynnc" creationdate="20201211T080246Z">
+        <seg>有时候，想要断言（比如说）某方法的运行过程中生成了预期的输出（例如，通过 ``echo`` 或 ``print``）。
+``PHPUnit\Framework\TestCase`` 类使用 PHP 的
+`输出缓冲 &lt;http://www.php.net/manual/en/ref.outcontrol.php&gt;`_\ 特性来为此提供必要的功能支持。</seg>
       </tuv>
     </tu>
     <tu>
@@ -121394,6 +121541,15 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>This only happens when using ``assertEquals()`` or other 'weak' comparison
+functions on arrays or objects.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080923Z" creationid="wynnc" creationdate="20201211T080923Z">
+        <seg>这种情况只出现在对数组或者对象使用 ``assertEquals()`` 或其他“弱”比较函数时。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>This only happens when using assertEquals or other 'weak' comparison functions on arrays or objects.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T025044Z" creationid="Wynn" creationdate="20150330T025044Z">
@@ -122785,6 +122941,17 @@ against its detached signature (:file:`phpunit-x.y.phar.asc`):</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150924T034003Z" creationid="Wynn" creationdate="20150924T034003Z">
         <seg>当使用了 &lt;l0&gt;--colors&lt;/l0&gt; 选项但未指定任何值时，将选择 &lt;l1&gt;auto&lt;/l1&gt; 做为其值。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>When a comparison fails PHPUnit creates textual representations of the
+input values and compares those. Due to that implementation a diff
+might show more problems than actually exist.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080911Z" creationid="wynnc" creationdate="20201211T080911Z">
+        <seg>当比较失败时，PHPUnit 为输入值建立文本表示，然后以此进行对比。
+这种实现导致在差异指示中显示出来的问题可能比实际上存在的多。</seg>
       </tuv>
     </tu>
     <tu>
@@ -127491,6 +127658,32 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>final class ArrayWeakComparisonTest extends TestCase
+    {
+        public function testEquality(): void
+        {
+            $this-&gt;assertEquals(
+                [1, 2, 3, 4, 5, 6],
+                ['1', 2, 33, 4, 5, 6]
+            );
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080959Z" creationid="wynnc" creationdate="20201211T080959Z">
+        <seg>final class ArrayWeakComparisonTest extends TestCase
+    {
+        public function testEquality(): void
+        {
+            $this-&gt;assertEquals(
+                [1, 2, 3, 4, 5, 6],
+                ['1', 2, 33, 4, 5, 6]
+            );
+        }
+    }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>final class CsvFileIterator implements Iterator
     {
         private $file;
@@ -127657,6 +127850,32 @@ class MyClass
         public function write($file, $content)
         {
             $file = fopen($file, 'w');</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>final class LongArrayDiffTest extends TestCase
+    {
+        public function testEquality(): void
+        {
+            $this-&gt;assertSame(
+                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2,  3, 4, 5, 6],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 33, 4, 5, 6]
+            );
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080857Z" creationid="wynnc" creationdate="20201211T080857Z">
+        <seg>final class LongArrayDiffTest extends TestCase
+    {
+        public function testEquality(): void
+        {
+            $this-&gt;assertSame(
+                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2,  3, 4, 5, 6],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 33, 4, 5, 6]
+            );
+        }
+    }</seg>
       </tuv>
     </tu>
     <tu>
