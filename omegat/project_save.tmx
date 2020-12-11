@@ -1740,6 +1740,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. admonition:: Note</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T020232Z" creationid="wynnc" creationdate="20201211T020232Z">
+        <seg>.. admonition:: Note</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. code-block:: text</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091901Z" creationid="wynnc" creationdate="20201210T091901Z">
@@ -111701,8 +111709,8 @@ official repository.</seg>
 tracker of the English documentation, stating which language you would like to
 translate. A repository will be created and added to the available translations.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T020046Z" creationid="wynnc" creationdate="20201210T072115Z">
-        <seg>如果要创建新的翻译，请在英语文档的问题追踪器（issue tracker）中开一个新的问题（issue），
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T020155Z" creationid="wynnc" creationdate="20201210T072115Z">
+        <seg>如果要创建新的翻译，请在英语文档的问题跟踪器（issue tracker）中开一个新的问题（issue），
 说明您要翻译的语言。会创建一个新的存储库并将其添加到可用翻译中。</seg>
       </tuv>
     </tu>
@@ -115266,10 +115274,9 @@ project you agree to abide by its terms.</seg>
 General issues should always be reported in the issue tracker of the English
 documentation.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T020031Z" creationid="wynnc" creationdate="20201211T020031Z">
-        <seg>请使用受影响的语言的问题跟踪器来创建新票证。
-一般问题应始终在英文的问题跟踪器中报告
-文档。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T020222Z" creationid="wynnc" creationdate="20201211T020031Z">
+        <seg>请使用受影响的语言的问题跟踪器来开启新事务。
+通用问题则总是应当在英文文档的问题跟踪器中进行报告。</seg>
       </tuv>
     </tu>
     <tu>
