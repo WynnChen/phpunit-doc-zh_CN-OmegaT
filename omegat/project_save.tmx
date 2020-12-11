@@ -3463,10 +3463,8 @@ how we can write tests using PHPUnit that exercise PHP's array operations.
 The example introduces the basic conventions and steps for writing tests
 with PHPUnit:</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T035425Z" creationid="wynnc" creationdate="20201211T035425Z">
-        <seg>:numref:`writing-tests-for-phpunit.examples.StackTest.php` 
-展示了如何用 PHPUnit 编写测试来对 PHP 数组操作进行测试。
-此示例介绍了用 PHPUnit 编写测试的基本惯例与步骤：</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082518Z" creationid="wynnc" creationdate="20201211T035425Z">
+        <seg>:numref:`writing-tests-for-phpunit.examples.StackTest.php` 展示了如何用 PHPUnit 编写测试来对 PHP 数组操作进行测试。此示例介绍了用 PHPUnit 编写测试的基本惯例与步骤：</seg>
       </tuv>
     </tu>
     <tu>
@@ -3475,9 +3473,8 @@ with PHPUnit:</seg>
 how to use the ``@depends`` annotation to express
 dependencies between test methods.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041027Z" creationid="wynnc" creationdate="20201211T040951Z">
-        <seg>:numref:`writing-tests-for-phpunit.examples.StackTest2.php` 
-展示了如何用 ``@depends`` 标注来表示测试方法之间的依赖关系。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082558Z" creationid="wynnc" creationdate="20201211T040951Z">
+        <seg>:numref:`writing-tests-for-phpunit.examples.StackTest2.php` 展示了如何用 ``@depends`` 标注来表示测试方法之间的依赖关系。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3486,9 +3483,8 @@ dependencies between test methods.</seg>
 shows how to use the ``expectException()`` method to test
 whether an exception is thrown by the code under test.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062014Z" creationid="wynnc" creationdate="20201211T062014Z">
-        <seg>:numref:`writing-tests-for-phpunit.exceptions.examples.ExceptionTest.php` 展示了如何用 
-``@expectException`` 标注来测试被测代码中是否抛出了异常。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082759Z" creationid="wynnc" creationdate="20201211T062014Z">
+        <seg>:numref:`writing-tests-for-phpunit.exceptions.examples.ExceptionTest.php` 展示了如何用 ``@expectException`` 标注来测试被测代码中是否抛出了异常。</seg>
       </tuv>
     </tu>
     <tu>
@@ -109545,10 +109541,8 @@ interface and yields an array for each iteration step. For each array that
 is part of the collection the test method will be called with the contents
 of the array as its arguments.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060408Z" creationid="wynnc" creationdate="20201211T060408Z">
-        <seg>数据供给器方法必须声明为 ``public``，其返回值要么是一个数组，其每个元素也是数组；
-要么是一个实现了 ``Iterator`` 接口的对象，在对它进行迭代时每步产生一个数组。
-每个数组都是测试数据集的一部分，将以它的内容作为参数来调用测试方法。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082708Z" creationid="wynnc" creationdate="20201211T060408Z">
+        <seg>数据供给器方法必须声明为 ``public``，其返回值要么是一个数组，其每个元素也是数组；要么是一个实现了 ``Iterator`` 接口的对象，在对它进行迭代时每步产生一个数组。每个数组都是测试数据集的一部分，将以它的内容作为参数来调用测试方法。</seg>
       </tuv>
     </tu>
     <tu>
@@ -109745,9 +109739,8 @@ PHPUnit does not change the order in which tests are executed, you have to
 ensure that the dependencies of a test can actually be met before the test
 is run.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042845Z" creationid="wynnc" creationdate="20201211T042815Z">
-        <seg>测试可以使用多个 ``@depends`` 标注。PHPUnit 不会更改测试的运行顺序，
-因此你需要自行保证某个测试所依赖的所有测试均出现于这个测试之前。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082637Z" creationid="wynnc" creationdate="20201211T042815Z">
+        <seg>测试可以使用多个 ``@depends`` 标注。PHPUnit 不会更改测试的运行顺序，因此你需要自行保证某个测试所依赖的所有测试均出现于这个测试之前。</seg>
       </tuv>
     </tu>
     <tu>
@@ -109758,10 +109751,8 @@ provided by one or more data provider methods (``additionProvider()`` in
 The data provider method to be used is specified using the
 ``@dataProvider`` annotation.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T061001Z" creationid="wynnc" creationdate="20201211T060328Z">
-        <seg>测试方法可以接受任意参数。这些参数由一个或多个数据供给器方法
-（在\ :numref:`writing-tests-for-phpunit.data-providers.examples.DataTest.php` 中，
-是 ``additionProvider()`` 方法）提供。用 ``@dataProvider`` 标注来指定要使用的数据供给器方法。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082702Z" creationid="wynnc" creationdate="20201211T060328Z">
+        <seg>测试方法可以接受任意参数。这些参数由一个或多个数据供给器方法（在\ :numref:`writing-tests-for-phpunit.data-providers.examples.DataTest.php` 中，是 ``additionProvider()`` 方法）提供。用 ``@dataProvider`` 标注来指定要使用的数据供给器方法。</seg>
       </tuv>
     </tu>
     <tu>
@@ -109835,10 +109826,8 @@ will get a fixture from the first producer as the first argument, a fixture
 from the second producer as the second argument, and so on.
 See :numref:`writing-tests-for-phpunit.examples.MultipleDependencies.php`</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043457Z" creationid="wynnc" creationdate="20201211T042838Z">
-        <seg>拥有多个 ``@depends`` 标注的测试，其第一个参数是第一个生产者提供的基境，
-第二个参数是第二个生产者提供的基境，以此类推。
-参见\ :numref:`writing-tests-for-phpunit.examples.MultipleDependencies.php`</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082642Z" creationid="wynnc" creationdate="20201211T042838Z">
+        <seg>拥有多个 ``@depends`` 标注的测试，其第一个参数是第一个生产者提供的基境，第二个参数是第二个生产者提供的基境，以此类推。参见\ :numref:`writing-tests-for-phpunit.examples.MultipleDependencies.php`</seg>
       </tuv>
     </tu>
     <tu>
@@ -110036,9 +110025,8 @@ dependencies of your project:</seg>
    within a data provider. This is required in order for PHPUnit to be able
    to compute the total number of tests.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062531Z" creationid="wynnc" creationdate="20201211T061901Z">
-        <seg>所有数据供给器方法的执行都是在对 ``setUpBeforeClass()`` 静态方法的调用和第一次对 ``setUp()`` 方法的调用之前完成的。
-   因此，无法在数据供给器中使用创建于这两个方法内的变量。这是必须的，这样 PHPUnit 才能计算测试的总数量。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082755Z" creationid="wynnc" creationdate="20201211T061901Z">
+        <seg>所有数据供给器方法的执行都是在对 ``setUpBeforeClass()`` 静态方法的调用和第一次对 ``setUp()`` 方法的调用之前完成的。因此，无法在数据供给器中使用创建于这两个方法内的变量。这是必须的，这样 PHPUnit 才能计算测试的总数量。</seg>
       </tuv>
     </tu>
     <tu>
@@ -110299,10 +110287,8 @@ need to validate the authenticity of this key. Validating the
 authenticity of a public key, however, is outside the scope of this
 documentation.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032436Z" creationid="wynnc" creationdate="20201211T032436Z">
-        <seg>任何攻击者都能创建公钥并将其上传到公钥服务器。他们可以建立一个带恶意的发行包，并用这个假密钥进行签名。
-这样，如果尝试对这个损坏了的发行包进行签名校验，由于密钥是“真”密钥，校验将成功完成。
-因此，需要对这个密钥的真实性进行校验。如何对公钥的真实性进行校验已经超出了本文档的范畴。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082426Z" creationid="wynnc" creationdate="20201211T032436Z">
+        <seg>任何攻击者都能创建公钥并将其上传到公钥服务器。他们可以建立一个带恶意的发行包，并用这个假密钥进行签名。这样，如果尝试对这个损坏了的发行包进行签名校验，由于密钥是“真”密钥，校验将成功完成。因此，需要对这个密钥的真实性进行校验。如何对公钥的真实性进行校验已经超出了本文档的范畴。</seg>
       </tuv>
     </tu>
     <tu>
@@ -110497,9 +110483,8 @@ to the nature of public key cryptography, you need to additionally
 verify that key ``6372C20A`` was created by the real
 Sebastian Bergmann.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032425Z" creationid="wynnc" creationdate="20201211T032425Z">
-        <seg>此时，签名已经没问题了，但是这个公钥还不能信任。签名没问题意味着文件未被篡改。
-可是由于公钥加密系统的性质，还需要再校验密钥 ``6372C20A`` 确实是由真正的 Sebastian Bergmann 创建的。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082423Z" creationid="wynnc" creationdate="20201211T032425Z">
+        <seg>此时，签名已经没问题了，但是这个公钥还不能信任。签名没问题意味着文件未被篡改。可是由于公钥加密系统的性质，还需要再校验密钥 ``6372C20A`` 确实是由真正的 Sebastian Bergmann 创建的。</seg>
       </tuv>
     </tu>
     <tu>
@@ -112181,9 +112166,8 @@ repository:</seg>
 ``tools`` directory (which should be managed by PHIVE) or depend on the specific PHPUnit version
 you need in your project's ``composer.json`` if you use Composer.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T033811Z" creationid="wynnc" creationdate="20201211T033811Z">
-        <seg>可以将你所需的特定 PHPUnit 版本的 PHAR 放入项目的 ``tools`` 目录（这目录应当是由 PHIVE 管理的）
-或者，如果使用 Composer，则取决于在项目的 ``composer.json`` 中指定的所需特定 PHPUnit 版本。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082502Z" creationid="wynnc" creationdate="20201211T033811Z">
+        <seg>可以将你所需的特定 PHPUnit 版本的 PHAR 放入项目的 ``tools`` 目录（这目录应当是由 PHIVE 管理的）或者，如果使用 Composer，则取决于在项目的 ``composer.json`` 中指定的所需特定 PHPUnit 版本。</seg>
       </tuv>
     </tu>
     <tu>
@@ -113440,10 +113424,8 @@ translate. A repository will be created and added to the available translations.
 ``expectExceptionMessageMatches()`` methods exist to set up
 expectations for exceptions raised by the code under test.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062132Z" creationid="wynnc" creationdate="20201211T062044Z">
-        <seg>除了 ``expectException()`` 方法外，还有
-``expectExceptionCode()``、``expectExceptionMessage()`` 和 
-``expectExceptionMessageMatches()`` 方法可以用于为被测代码所抛出的异常建立预期。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082811Z" creationid="wynnc" creationdate="20201211T062044Z">
+        <seg>除了 ``expectException()`` 方法外，还有 ``expectExceptionCode()``、``expectExceptionMessage()`` 和 ``expectExceptionMessageMatches()`` 方法可以用于为被测代码所抛出的异常建立预期。</seg>
       </tuv>
     </tu>
     <tu>
@@ -113527,10 +113509,8 @@ depends on ``testEmpty()`` and is passed the result of that
 depended-upon test as its argument. Finally, ``testPop()``
 depends upon ``testPush()``.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041342Z" creationid="wynnc" creationdate="20201211T041139Z">
-        <seg>在上例中，第一个测试\ ``testEmpty()`` 创建了一个新数组，并断言其为空。
-随后，此测试将此基境作为结果返回。第二个测试 ``testPush()`` 依赖于 ``testEmpty()``，
-并将所依赖的测试之结果作为参数传入。最后，``testPop()`` 依赖于 ``testPush()``。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082609Z" creationid="wynnc" creationdate="20201211T041139Z">
+        <seg>在上例中，第一个测试\ ``testEmpty()`` 创建了一个新数组，并断言其为空。随后，此测试将此基境作为结果返回。第二个测试 ``testPush()`` 依赖于 ``testEmpty()``，并将所依赖的测试之结果作为参数传入。最后，``testPop()`` 依赖于 ``testPush()``。</seg>
       </tuv>
     </tu>
     <tu>
@@ -114118,9 +114098,8 @@ reported even though ``assertEquals()`` considers the values as a match.</seg>
 GPG is tedious. This is why PHIVE, the PHAR Installation and Verification
 Environment, was created. You can learn about PHIVE on its `website &lt;https://phar.io/&gt;`_</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T033202Z" creationid="wynnc" creationdate="20201211T032703Z">
-        <seg>用 GPG 来手工验证 PHPUnit PHAR 的真实性和完整性是很繁琐的。
-这就是 PHAR 安装与校验环境 PHIVE 创建的原因。你可以在其\ `网站 &lt;https://phar.io/&gt;`_\ 上了解 PHIVE。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082450Z" creationid="wynnc" creationdate="20201211T032703Z">
+        <seg>用 GPG 来手工验证 PHPUnit PHAR 的真实性和完整性是很繁琐的。这就是 PHAR 安装与校验环境 PHIVE 创建的原因。你可以在其\ `网站 &lt;https://phar.io/&gt;`_\ 上了解 PHIVE。</seg>
       </tuv>
     </tu>
     <tu>
@@ -114421,10 +114400,8 @@ Bergmann &lt;sb@sebastian-bergmann.de&gt;". However, we have no way of
 verifying this key was created by the person known as Sebastian
 Bergmann. But, let's try to verify the release signature again.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032355Z" creationid="wynnc" creationdate="20201211T032355Z">
-        <seg>现在已经取得了条目名称为"Sebastian Bergmann &lt;sb@sebastian-bergmann.de&gt;"的公钥。
-不过，无法检验这个密钥确实是由名叫 Sebastian Bergmann 的人创建的。
-但是可以先试着校验发行包的签名：</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082418Z" creationid="wynnc" creationdate="20201211T032355Z">
+        <seg>现在已经取得了条目名称为"Sebastian Bergmann &lt;sb@sebastian-bergmann.de&gt;"的公钥。不过，无法检验这个密钥确实是由名叫 Sebastian Bergmann 的人创建的。但是可以先试着校验发行包的签名：</seg>
       </tuv>
     </tu>
     <tu>
@@ -116296,11 +116273,8 @@ methods. Such dependencies do not define the order in which the test
 methods are to be executed but they allow the returning of an instance of
 the test fixture by a producer and passing it to the dependent consumers.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040646Z" creationid="wynnc" creationdate="20201211T040646Z">
-        <seg>PHPUnit支持对测试方法之间的显式依赖关系进行声明。
-这种依赖关系并不是定义在测试方法的执行顺序中，
-而是允许生产者（producer）返回一个测试基境（fixture）的实例，
-并将此实例传递给依赖于它的消费者（consumer）们。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082550Z" creationid="wynnc" creationdate="20201211T040646Z">
+        <seg>PHPUnit支持对测试方法之间的显式依赖关系进行声明。这种依赖关系并不是定义在测试方法的执行顺序中，而是允许生产者（producer）返回一个测试基境（fixture）的实例，并将此实例传递给依赖于它的消费者（consumer）们。</seg>
       </tuv>
     </tu>
     <tu>
@@ -121122,12 +121096,8 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
    (normal shallow) clone (based on PHP keyword ``clone``) via
    ``@depends shallowClone`` are possible too.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T061349Z" creationid="wynnc" creationdate="20201211T041823Z">
-        <seg>默认情况下，生产者所产生的返回值将“原样”传递给相应的消费者。
-   这意味着，如果生产者返回的是一个对象，那么传递给消费者的将是指向此对象的引用。
-   但同样也可以（a）通过 ``@depends clone`` 来传递指向（深）拷贝对象的引用，或
-   （b）通过 ``@depends shallowClone`` 来传递指向（正常浅）克隆对象
-   （基于 PHP 关键字 ``clone``）的引用。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082621Z" creationid="wynnc" creationdate="20201211T041823Z">
+        <seg>默认情况下，生产者所产生的返回值将“原样”传递给相应的消费者。这意味着，如果生产者返回的是一个对象，那么传递给消费者的将是指向此对象的引用。但同样也可以（a）通过 ``@depends clone`` 来传递指向（深）拷贝对象的引用，或（b）通过 ``@depends shallowClone`` 来传递指向（正常浅）克隆对象（基于 PHP 关键字 ``clone``）的引用。</seg>
       </tuv>
     </tu>
     <tu>
@@ -121774,11 +121744,8 @@ when a depended-upon test has failed. This improves defect localization by
 exploiting the dependencies between tests as shown in
 :numref:`writing-tests-for-phpunit.examples.DependencyFailureTest.php`.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043623Z" creationid="wynnc" creationdate="20201211T042726Z">
-        <seg>为了定位缺陷，我们希望把注意力集中于相关的失败测试上。
-这就是为什么当某个测试所依赖的测试失败时，PHPUnit 会跳过这个测试。
-利用测试之间的依赖关系可以改进缺陷定位，
-如\ :numref:`writing-tests-for-phpunit.examples.DependencyFailureTest.php` 所示。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082626Z" creationid="wynnc" creationdate="20201211T042726Z">
+        <seg>为了定位缺陷，我们希望把注意力集中于相关的失败测试上。这就是为什么当某个测试所依赖的测试失败时，PHPUnit 会跳过这个测试。利用测试之间的依赖关系可以改进缺陷定位，如\ :numref:`writing-tests-for-phpunit.examples.DependencyFailureTest.php` 所示。</seg>
       </tuv>
     </tu>
     <tu>
@@ -121952,11 +121919,8 @@ exploiting the dependencies between tests as shown in
     there are implicit dependencies between test methods, hidden in the
     implementation scenario of a test.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040730Z" creationid="wynnc" creationdate="20201211T040450Z">
-        <seg>单元测试主要是作为一种良好实践来编写的，它能帮助开发人员识别并修复 bug、重构代码，
-    还可以看作被测软件单元的文档。要实现这些好处，理想的单元测试应当覆盖程序中所有可能的路径。
-    一个单元测试通常覆盖一个函数或方法中的一个特定路径。但是，测试方法不一定是封装良好的独立实体。
-    测试方法之间经常有隐含的依赖关系暗藏在测试的实现方案中。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082545Z" creationid="wynnc" creationdate="20201211T040450Z">
+        <seg>单元测试主要是作为一种良好实践来编写的，它能帮助开发人员识别并修复 bug、重构代码，还可以看作被测软件单元的文档。要实现这些好处，理想的单元测试应当覆盖程序中所有可能的路径。一个单元测试通常覆盖一个函数或方法中的一个特定路径。但是，测试方法不一定是封装良好的独立实体。测试方法之间经常有隐含的依赖关系暗藏在测试的实现方案中。</seg>
       </tuv>
     </tu>
     <tu>
@@ -122986,10 +122950,8 @@ might show more problems than actually exist.</seg>
    least one data set. The result of a test that uses data providers cannot
    be injected into a depending test.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T061719Z" creationid="wynnc" creationdate="20201211T061719Z">
-        <seg>如果一个测试依赖于另外一个使用了数据供给器的测试，
-   仅当被依赖的测试至少能在一组数据上成功时，依赖于它的测试才会运行。
-   使用了数据供给器的测试，其运行结果是无法注入到依赖于此测试的其他测试中的。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082751Z" creationid="wynnc" creationdate="20201211T061719Z">
+        <seg>如果一个测试依赖于另外一个使用了数据供给器的测试，仅当被依赖的测试至少能在一组数据上成功时，依赖于它的测试才会运行。使用了数据供给器的测试，其运行结果是无法注入到依赖于此测试的其他测试中的。</seg>
       </tuv>
     </tu>
     <tu>
@@ -123167,9 +123129,8 @@ and provide a few lines of context around every difference.</seg>
         <seg>When using a large number of datasets it's useful to name each one with string key instead of default numeric.
 Output will be more verbose as it'll contain that name of a dataset that breaks a test.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060444Z" creationid="wynnc" creationdate="20201211T060444Z">
-        <seg>当使用到大量数据集时，最好逐个用字符串键名对其命名，避免用默认的数字键名。
-这样输出信息会更加详细些，其中将包含打断测试的数据集所对应的名称。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082716Z" creationid="wynnc" creationdate="20201211T060444Z">
+        <seg>当使用到大量数据集时，最好逐个用字符串键名对其命名，避免用默认的数字键名。这样输出信息会更加详细些，其中将包含打断测试的数据集所对应的名称。</seg>
       </tuv>
     </tu>
     <tu>
