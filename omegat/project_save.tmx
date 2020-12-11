@@ -1098,6 +1098,16 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ phpunit --verbose MultipleDependenciesTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043320Z" creationid="wynnc" creationdate="20201211T043320Z">
+        <seg>$ phpunit --verbose MultipleDependenciesTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$ pip install docutils-ast-writer
 $ npm install</seg>
       </tuv>
@@ -1956,6 +1966,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _writing-tests-for-phpunit.data-providers:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043324Z" creationid="wynnc" creationdate="20201211T043324Z">
+        <seg>.. _writing-tests-for-phpunit.data-providers:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. _writing-tests-for-phpunit.test-dependencies:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040305Z" creationid="wynnc" creationdate="20201211T040305Z">
@@ -2122,6 +2140,32 @@ $ npm install</seg>
          */
         public function testTwo(): void
         {
+        }
+    }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>/**
+         * @depends testProducerFirst
+         * @depends testProducerSecond
+         */
+        public function testConsumer(string $a, string $b): void
+        {
+            $this-&gt;assertSame('first', $a);
+            $this-&gt;assertSame('second', $b);
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043319Z" creationid="wynnc" creationdate="20201211T043319Z">
+        <seg>/**
+         * @depends testProducerFirst
+         * @depends testProducerSecond
+         */
+        public function testConsumer(string $a, string $b): void
+        {
+            $this-&gt;assertSame('first', $a);
+            $this-&gt;assertSame('second', $b);
         }
     }</seg>
       </tuv>
@@ -108960,10 +109004,10 @@ will get a fixture from the first producer as the first argument, a fixture
 from the second producer as the second argument, and so on.
 See :numref:`writing-tests-for-phpunit.examples.MultipleDependencies.php`</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042838Z" creationid="wynnc" creationdate="20201211T042838Z">
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043457Z" creationid="wynnc" creationdate="20201211T042838Z">
         <seg>拥有多个 ``@depends`` 标注的测试，其第一个参数是第一个生产者提供的基境，
 第二个参数是第二个生产者提供的基境，以此类推。
-参见 :numref:`writing-tests-for-phpunit.examples.MultipleDependencies.php`</seg>
+参见\ :numref:`writing-tests-for-phpunit.examples.MultipleDependencies.php`</seg>
       </tuv>
     </tu>
     <tu>
@@ -110631,6 +110675,16 @@ Sebastian Bergmann.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T102017Z" creationid="Wynn" creationdate="20150327T102017Z">
         <seg>数据供给器</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Data Providers
+##############</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043336Z" creationid="wynnc" creationdate="20201211T043336Z">
+        <seg>数据供给器
+##############</seg>
       </tuv>
     </tu>
     <tu>
@@ -113441,6 +113495,14 @@ Bergmann. But, let's try to verify the release signature again.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T030140Z" creationid="Wynn" creationdate="20150330T030140Z">
         <seg>现在，我们要把需要人工对结果进行解读的测试修改成能自动运行。在&lt;x0/&gt;中，我们在测试代码中加入了对预期值与实际值的比较，并且在两个值相等时输出 &lt;l1&gt;ok&lt;/l1&gt;。一旦看到 &lt;l2&gt;not ok&lt;/l2&gt; 讯息，我们就知道出错了。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>OK (3 tests, 4 assertions)</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043322Z" creationid="wynnc" creationdate="20201211T043322Z">
+        <seg>OK (3 tests, 4 assertions)</seg>
       </tuv>
     </tu>
     <tu>
@@ -120551,6 +120613,14 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Time: 0 seconds, Memory: 3.25Mb</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043321Z" creationid="wynnc" creationdate="20201211T043321Z">
+        <seg>Time: 0 seconds, Memory: 3.25Mb</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Time: 0 seconds, Memory: 5.00Mb</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042802Z" creationid="wynnc" creationdate="20201211T042802Z">
@@ -120629,11 +120699,11 @@ when a depended-upon test has failed. This improves defect localization by
 exploiting the dependencies between tests as shown in
 :numref:`writing-tests-for-phpunit.examples.DependencyFailureTest.php`.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043259Z" creationid="wynnc" creationdate="20201211T042726Z">
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043623Z" creationid="wynnc" creationdate="20201211T042726Z">
         <seg>为了定位缺陷，我们希望把注意力集中于相关的失败测试上。
 这就是为什么当某个测试所依赖的测试失败时，PHPUnit 会跳过这个测试。
-利用测试之间的依赖关系可以改进缺陷定位，如 
-:numref:`writing-tests-for-phpunit.examples.DependencyFailureTest.php` 所示。</seg>
+利用测试之间的依赖关系可以改进缺陷定位，
+如\ :numref:`writing-tests-for-phpunit.examples.DependencyFailureTest.php` 所示。</seg>
       </tuv>
     </tu>
     <tu>
@@ -126393,6 +126463,22 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>final class MultipleDependenciesTest extends TestCase
+    {
+        public function testProducerFirst(): string
+        {
+            $this-&gt;assertTrue(true);</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043317Z" creationid="wynnc" creationdate="20201211T043317Z">
+        <seg>final class MultipleDependenciesTest extends TestCase
+    {
+        public function testProducerFirst(): string
+        {
+            $this-&gt;assertTrue(true);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>final class StackTest extends TestCase
     {
         public function testEmpty(): array
@@ -127779,6 +127865,18 @@ ok</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>public function testProducerSecond(): string
+        {
+            $this-&gt;assertTrue(true);</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043317Z" creationid="wynnc" creationdate="20201211T043317Z">
+        <seg>public function testProducerSecond(): string
+        {
+            $this-&gt;assertTrue(true);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>public function testSomething()
 {
 }</seg>
@@ -127796,6 +127894,26 @@ ok</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041029Z" creationid="wynnc" creationdate="20201211T041029Z">
         <seg>return $stack;
+        }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>return 'first';
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043317Z" creationid="wynnc" creationdate="20201211T043317Z">
+        <seg>return 'first';
+        }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>return 'second';
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043318Z" creationid="wynnc" creationdate="20201211T043318Z">
+        <seg>return 'second';
         }</seg>
       </tuv>
     </tu>
