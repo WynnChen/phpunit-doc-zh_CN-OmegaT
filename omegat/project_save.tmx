@@ -119909,11 +119909,11 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
    (normal shallow) clone (based on PHP keyword ``clone``) via
    ``@depends shallowClone`` are possible too.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041823Z" creationid="wynnc" creationdate="20201211T041823Z">
-        <seg>默认情况下，生产者所产生的返回值将“原样”传递给相应的消费者。这意味着，如果生产者返回的是一个对象，那么传递给消费者的将是一个指向此对象的引用。. Instead of
-   a reference either (a) a (deep) copy via ``@depends clone``, or (b) a
-   (normal shallow) clone (based on PHP keyword ``clone``) via
-   ``@depends shallowClone`` are possible too.</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042434Z" creationid="wynnc" creationdate="20201211T041823Z">
+        <seg>默认情况下，生产者所产生的返回值将“原样”传递给相应的消费者。
+    这意味着，如果生产者返回的是一个对象，那么传递给消费者的将是一个指向此对象的引用。
+    但同样也可以（a）通过 ``@depends clone`` 来传递一个（深拷贝）副本的引用，或
+    （b）通过 ``@depends shallowClone`` 来传递一个（正常浅拷贝）副本（基于 PHP 关键字 ``clone``）的引用。</seg>
       </tuv>
     </tu>
     <tu>
