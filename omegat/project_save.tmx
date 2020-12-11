@@ -1844,6 +1844,22 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _installation.composer:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032704Z" creationid="wynnc" creationdate="20201211T032704Z">
+        <seg>.. _installation.composer:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. _installation.global:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032806Z" creationid="wynnc" creationdate="20201211T032806Z">
+        <seg>.. _installation.global:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. _installation.phar.verification:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031516Z" creationid="wynnc" creationdate="20201211T031516Z">
@@ -108719,6 +108735,17 @@ Installing PHPUnit
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Add a (development-time) dependency on
+``phpunit/phpunit`` to your project's
+``composer.json`` file if you use `Composer &lt;https://getcomposer.org/&gt;`_ to manage the
+dependencies of your project:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T033502Z" creationid="wynnc" creationdate="20201211T032803Z">
+        <seg>如果用 `Composer &lt;https://getcomposer.org/&gt;`_ 来管理项目的依赖关系，只要在项目的 ``composer.json`` 文件中加上对 ``phpunit/phpunit`` 的（运行时）依赖关系即可：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Adding a new translation</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T071922Z" creationid="wynnc" creationdate="20201210T071922Z">
@@ -109834,6 +109861,16 @@ Sebastian Bergmann.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T100347Z" creationid="Wynn" creationdate="20150319T100347Z">
         <seg>Composer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Composer
+########</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T033031Z" creationid="wynnc" creationdate="20201211T033031Z">
+        <seg>Composer
+########</seg>
       </tuv>
     </tu>
     <tu>
@@ -111516,6 +111553,16 @@ repository:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Global Installation
+###################</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032816Z" creationid="wynnc" creationdate="20201211T032816Z">
+        <seg>全局安装
+###################</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Global State</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T082502Z" creationid="Wynn" creationdate="20150319T082502Z">
@@ -112404,6 +112451,14 @@ translate. A repository will be created and added to the available translations.
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Instead, PHPUnit should be managed as a project-local dependency.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T033521Z" creationid="wynnc" creationdate="20201211T033521Z">
+        <seg>相反，PHPUnit 应该作为项目本地依赖项进行管理。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Isolated versus quick to execute.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T041135Z" creationid="Wynn" creationdate="20150330T041135Z">
@@ -112688,9 +112743,9 @@ translate. A repository will be created and added to the available translations.
 GPG is tedious. This is why PHIVE, the PHAR Installation and Verification
 Environment, was created. You can learn about PHIVE on its `website &lt;https://phar.io/&gt;`_</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032703Z" creationid="wynnc" creationdate="20201211T032703Z">
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T033202Z" creationid="wynnc" creationdate="20201211T032703Z">
         <seg>用 GPG 来手工验证 PHPUnit PHAR 的真实性和完整性是很繁琐的。
-这就是 PHAR 安装与校验环境 PHIVE 创建的原因。你可以在其\ `网站 &lt;https://phar.io/&gt;`_上了解 PHIVE。</seg>
+这就是 PHAR 安装与校验环境 PHIVE 创建的原因。你可以在其\ `网站 &lt;https://phar.io/&gt;`_\ 上了解 PHIVE。</seg>
       </tuv>
     </tu>
     <tu>
@@ -115444,6 +115499,15 @@ stupid in the commit history of a project.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150817T085928Z" creationid="Wynn" creationdate="20150817T085928Z">
         <seg>请注意，从 4.8 开始，选项不能放在参数之后。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Please note that it is not recommended to install PHPUnit globally, as ``/usr/bin/phpunit`` or
+``/usr/local/bin/phpunit``, for instance.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032911Z" creationid="wynnc" creationdate="20201211T032911Z">
+        <seg>请注意，并不推荐全局安装 PHPUnit，比如说放在 ``/usr/bin/phpunit`` 或 ``/usr/local/bin/phpunit``。</seg>
       </tuv>
     </tu>
     <tu>
@@ -125475,6 +125539,14 @@ class MyClass
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20180106T100853Z" creationid="wynnc" creationdate="20180106T100853Z">
         <seg>composer require --dev phpunit/phpunit ^6.5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>composer require --dev phpunit/phpunit ^\ |version|</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032805Z" creationid="wynnc" creationdate="20201211T032805Z">
+        <seg>composer require --dev phpunit/phpunit ^\ |version|</seg>
       </tuv>
     </tu>
     <tu>
