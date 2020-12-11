@@ -1742,8 +1742,8 @@ $ npm install</seg>
       <tuv lang="en-US">
         <seg>.. admonition:: Note</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T020232Z" creationid="wynnc" creationdate="20201211T020232Z">
-        <seg>.. admonition:: Note</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T024919Z" creationid="wynnc" creationdate="20201211T020232Z">
+        <seg>.. admonition:: 注</seg>
       </tuv>
     </tu>
     <tu>
@@ -107528,10 +107528,10 @@ Copyright
 Annotations
 ===========</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20180127T031939Z" creationid="wynnc" creationdate="20180127T031939Z">
-        <seg>==
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T024805Z" creationid="wynnc" creationdate="20180127T031939Z">
+        <seg>===========
 标注
-==</seg>
+===========</seg>
       </tuv>
     </tu>
     <tu>
@@ -108244,6 +108244,16 @@ PHPUnit 手册
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150228T055832Z" creationid="Wynn" creationdate="20150228T055832Z">
         <seg>PHP中的文档注释块必须以 &lt;l0&gt;/**&lt;/l0&gt; 开头，以 &lt;l1&gt;*/&lt;/l1&gt; 结尾。任何其他形式的注释中出现的标注都将被忽略。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>A doc comment in PHP must start with ``/**`` and end with
+   ``*/``. Annotations in any other style of comment will be
+   ignored.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T025435Z" creationid="wynnc" creationdate="20201211T025012Z">
+        <seg>PHP中的文档注释块必须以 ``/**`` 开头，以 ``*/`` 结尾。任何其他形式的注释中出现的标注都将被忽略。</seg>
       </tuv>
     </tu>
     <tu>
