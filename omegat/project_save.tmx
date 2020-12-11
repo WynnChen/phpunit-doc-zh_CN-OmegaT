@@ -1148,6 +1148,16 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ phpunit OutputTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080538Z" creationid="wynnc" creationdate="20201211T080538Z">
+        <seg>$ phpunit OutputTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$ pip install docutils-ast-writer
 $ npm install</seg>
       </tuv>
@@ -2187,6 +2197,18 @@ $ npm install</seg>
     <tu>
       <tuv lang="en-US">
         <seg>.. code-block:: php
+    :caption: Testing the output of a function or method
+    :name: writing-tests-for-phpunit.output.examples.OutputTest.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080533Z" creationid="wynnc" creationdate="20201211T080533Z">
+        <seg>.. code-block:: php
+    :caption: 对函数或方法的输出进行测试
+    :name: writing-tests-for-phpunit.output.examples.OutputTest.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
     :caption: The CsvFileIterator class
     :name: writing-tests-for-phpunit.data-providers.examples.CsvFileIterator.php</seg>
       </tuv>
@@ -2332,6 +2354,14 @@ $ npm install</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060814Z" creationid="wynnc" creationdate="20201211T060814Z">
         <seg>..F...                                                              6 / 6 (100%)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.F</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080539Z" creationid="wynnc" creationdate="20201211T080539Z">
+        <seg>.F</seg>
       </tuv>
     </tu>
     <tu>
@@ -2930,6 +2960,26 @@ public function initialBalanceShouldBe0()
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>1) OutputTest::testExpectBarActualBaz
+    Failed asserting that two strings are equal.
+    --- Expected
+    +++ Actual
+    @@ @@
+    -'bar'
+    +'baz'</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080541Z" creationid="wynnc" creationdate="20201211T080541Z">
+        <seg>1) OutputTest::testExpectBarActualBaz
+    Failed asserting that two strings are equal.
+    --- Expected
+    +++ Actual
+    @@ @@
+    -'bar'
+    +'baz'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>1. Clean-Up Database</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150313T071003Z" creationid="Wynn" creationdate="20150313T071003Z">
@@ -3181,6 +3231,28 @@ whether an exception is thrown by the code under test.</seg>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062014Z" creationid="wynnc" creationdate="20201211T062014Z">
         <seg>:numref:`writing-tests-for-phpunit.exceptions.examples.ExceptionTest.php` 展示了如何用 
 ``@expectException`` 标注来测试被测代码中是否抛出了异常。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>:numref:`writing-tests-for-phpunit.output.examples.OutputTest.php`
+shows how to use the ``expectOutputString()`` method to
+set the expected output. If this expected output is not generated, the
+test will be counted as a failure.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080438Z" creationid="wynnc" creationdate="20201211T080438Z">
+        <seg>:numref:`writing-tests-for-phpunit.output.examples.OutputTest.php` 展示了如何用 ``expectOutputString()`` 
+方法来设定所预期的输出。如果没有产生预期的输出，测试将计为失败。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>:numref:`writing-tests-for-phpunit.output.tables.api`
+shows the methods provided for testing output</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080602Z" creationid="wynnc" creationdate="20201211T080602Z">
+        <seg>:numref:`writing-tests-for-phpunit.output.tables.api`
+中列举了用于对输出进行测试的各种方法</seg>
       </tuv>
     </tu>
     <tu>
@@ -112026,6 +112098,16 @@ you need in your project's ``composer.json`` if you use Composer.</seg>
     <tu>
       <tuv lang="en-US">
         <seg>FAILURES!
+    Tests: 2, Assertions: 2, Failures: 1.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080541Z" creationid="wynnc" creationdate="20201211T080541Z">
+        <seg>FAILURES!
+    Tests: 2, Assertions: 2, Failures: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>FAILURES!
     Tests: 4, Assertions: 4, Failures: 1.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060437Z" creationid="wynnc" creationdate="20201211T060437Z">
@@ -118287,8 +118369,9 @@ instance, generates an expected output (via ``echo`` or
 Buffering &lt;http://www.php.net/manual/en/ref.outcontrol.php&gt;`_ feature to provide the functionality that is
 necessary for this.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080246Z" creationid="wynnc" creationdate="20201211T080246Z">
-        <seg>有时候，想要断言（比如说）某方法的运行过程中生成了预期的输出（例如，通过 &lt;l0&gt;echo&lt;/l0&gt; 或 &lt;l1&gt;print&lt;/l1&gt;）。&lt;l2&gt;PHPUnit\Framework\TestCase&lt;/l2&gt; 类使用 PHP 的 &lt;u3&gt;输出缓冲&lt;/u3&gt; 特性来为此提供必要的功能支持。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080501Z" creationid="wynnc" creationdate="20201211T080246Z">
+        <seg>有时候，想要断言（比如说）某方法的运行过程中生成了预期的输出（例如，通过 ``echo`` 或 ``print``）。``PHPUnit\Framework\TestCase`` 类使用 PHP 的
+`输出缓冲 &lt;http://www.php.net/manual/en/ref.outcontrol.php&gt;`_特性来为此提供必要的功能支持。</seg>
       </tuv>
     </tu>
     <tu>
@@ -122984,8 +123067,9 @@ Output will be more verbose as it'll contain that name of a dataset that breaks 
         <seg>Without the error suppression the test would fail reporting
 ``fopen(/is-not-writeable/file): failed to open stream: No such file or directory``.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080147Z" creationid="wynnc" creationdate="20201211T080147Z">
-        <seg>如果不使用错误抑制符，此测试将会失败，并报告 ``fopen(/is-not-writeable/file): failed to open stream: No such file or directory``。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080259Z" creationid="wynnc" creationdate="20201211T080147Z">
+        <seg>如果不使用错误抑制符，此测试将会失败，并报告 
+``fopen(/is-not-writeable/file): failed to open stream: No such file or directory``。</seg>
       </tuv>
     </tu>
     <tu>
@@ -127398,6 +127482,22 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>final class OutputTest extends TestCase
+    {
+        public function testExpectFooActualFoo(): void
+        {
+            $this-&gt;expectOutputString('foo');</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080535Z" creationid="wynnc" creationdate="20201211T080535Z">
+        <seg>final class OutputTest extends TestCase
+    {
+        public function testExpectFooActualFoo(): void
+        {
+            $this-&gt;expectOutputString('foo');</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>final class StackTest extends TestCase
     {
         public function testEmpty(): array
@@ -128776,6 +128876,28 @@ ok</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>print 'baz';
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080537Z" creationid="wynnc" creationdate="20201211T080537Z">
+        <seg>print 'baz';
+        }
+    }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>print 'foo';
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080536Z" creationid="wynnc" creationdate="20201211T080536Z">
+        <seg>print 'foo';
+        }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>protected $coverageScriptUrl = 'http://host/phpunit_coverage.php';</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T064323Z" creationid="Wynn" creationdate="20150327T064323Z">
@@ -128986,6 +129108,18 @@ ok</seg>
         <seg>public function testErrorCanBeExpected(): void
         {
             $this-&gt;expectError();</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>public function testExpectBarActualBaz(): void
+        {
+            $this-&gt;expectOutputString('bar');</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080536Z" creationid="wynnc" creationdate="20201211T080536Z">
+        <seg>public function testExpectBarActualBaz(): void
+        {
+            $this-&gt;expectOutputString('bar');</seg>
       </tuv>
     </tu>
     <tu>
