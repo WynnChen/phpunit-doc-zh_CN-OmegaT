@@ -2018,6 +2018,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _writing-tests-for-phpunit.exceptions:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T061901Z" creationid="wynnc" creationdate="20201211T061901Z">
+        <seg>.. _writing-tests-for-phpunit.exceptions:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. _writing-tests-for-phpunit.test-dependencies:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040305Z" creationid="wynnc" creationdate="20201211T040305Z">
@@ -2968,6 +2976,17 @@ dependencies between test methods.</seg>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041027Z" creationid="wynnc" creationdate="20201211T040951Z">
         <seg>:numref:`writing-tests-for-phpunit.examples.StackTest2.php` 
 展示了如何用 ``@depends`` 标注来表示测试方法之间的依赖关系。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>:numref:`writing-tests-for-phpunit.exceptions.examples.ExceptionTest.php`
+shows how to use the ``expectException()`` method to test
+whether an exception is thrown by the code under test.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062014Z" creationid="wynnc" creationdate="20201211T062014Z">
+        <seg>:numref:`writing-tests-for-phpunit.exceptions.examples.ExceptionTest.php` 展示了如何用 
+``@expectException`` 标注来测试被测代码中是否抛出了异常。</seg>
       </tuv>
     </tu>
     <tu>
@@ -109475,6 +109494,19 @@ dependencies of your project:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>All data providers are executed before both the call to the ``setUpBeforeClass()``
+   static method and the first call to the ``setUp()`` method.
+   Because of that you can't access any variables you create there from
+   within a data provider. This is required in order for PHPUnit to be able
+   to compute the total number of tests.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T061901Z" creationid="wynnc" creationdate="20201211T061901Z">
+        <seg>所有的数据供给器方法的执行都是在对 ``setUpBeforeClass()`` 静态方法的调用和第一次对 ``setUp()`` 方法的调用之前完成的。
+   因此，无法在数据供给器中使用创建于这两个方法内的变量。这是必须的，这样 PHPUnit 才能计算测试的总数量。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>All official releases of code distributed by the PHPUnit Project are
 signed by the release manager for the release. PGP signatures and SHA256
 hashes are available for verification on `phar.phpunit.de &lt;https://phar.phpunit.de/&gt;`_.</seg>
@@ -118689,6 +118721,16 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T102808Z" creationid="Wynn" creationdate="20150327T102808Z">
         <seg>对异常进行测试</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Testing Exceptions
+##################</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T061908Z" creationid="wynnc" creationdate="20201211T061908Z">
+        <seg>对异常进行测试
+##################</seg>
       </tuv>
     </tu>
     <tu>
