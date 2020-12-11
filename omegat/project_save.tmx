@@ -112137,6 +112137,14 @@ translate. A repository will be created and added to the available translations.
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project maintainer at sebastian@phpunit.de. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. Maintainers are obligated to maintain confidentiality with regard to the reporter of an incident.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T014528Z" creationid="wynnc" creationdate="20201211T014528Z">
+        <seg>可以通过 sebastian@phpunit.de 联系项目维护人员来举报滥用、骚扰或其他不可接受的行为。所有的投诉都将得到审查和调查，并将根据情况做出认为是必要和适当的回应。维护者有义务对事件的举报人保密。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Instead of returning a value, a stubbed method can also raise an exception. &lt;x0/&gt; shows how to use &lt;l1&gt;throwException()&lt;/l1&gt; to do this.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T084237Z" creationid="Wynn" creationdate="20150327T084237Z">
