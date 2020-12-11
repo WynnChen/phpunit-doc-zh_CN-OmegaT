@@ -1228,6 +1228,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>**If you upload PHPUnit to a webserver then your deployment process is broken. On a more general note, if your** ``vendor`` **directory is publicly accessible on your webserver then your deployment process is also broken.**</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T034517Z" creationid="wynnc" creationdate="20201211T034517Z">
+        <seg>**如果将 PHPUnit 上传到 Web 服务器，则部署过程会中断。一般而言，如果 **``vendor`` **目录在 Web 服务器上可公开访问，则您的部署过程也会中断。**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>--------------------------------------------------------------------</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091943Z" creationid="wynnc" creationdate="20201210T091943Z">
@@ -108740,8 +108748,8 @@ Installing PHPUnit
 ``composer.json`` file if you use `Composer &lt;https://getcomposer.org/&gt;`_ to manage the
 dependencies of your project:</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T033502Z" creationid="wynnc" creationdate="20201211T032803Z">
-        <seg>如果用 `Composer &lt;https://getcomposer.org/&gt;`_ 来管理项目的依赖关系，只要在项目的 ``composer.json`` 文件中加上对 ``phpunit/phpunit`` 的（运行时）依赖关系即可：</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T034015Z" creationid="wynnc" creationdate="20201211T032803Z">
+        <seg>如果用 `Composer &lt;https://getcomposer.org/&gt;`_ 来管理项目的依赖关系，只要在项目的 ``composer.json`` 文件中加上对 ``phpunit/phpunit`` 的（开发时）依赖关系即可：</seg>
       </tuv>
     </tu>
     <tu>
@@ -114815,6 +114823,14 @@ disabled without patching PHP's build system and/or C sources.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20160418T090959Z" creationid="Wynn" creationdate="20160418T090959Z">
         <seg>PHPUnit 对用 Prophecy 建立测试替身提供了内建支持。&lt;x0/&gt;展示了&lt;x1/&gt;中展示的测试应该如何用 Prophecy 的的预言式理念方式来达到同样的效果：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>PHPUnit is a framework for writing as well as a commandline tool for running tests. Writing and running tests is a development-time activity. There is no reason why PHPUnit should be installed on a webserver.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T034046Z" creationid="wynnc" creationdate="20201211T034002Z">
+        <seg>PHPUnit 是用于编写测试的框架，也是用于运行测试的命令行工具。编写和运行测试是开发时的活动。没有理由要将 PHPUnit 安装在 Web 服务器上。</seg>
       </tuv>
     </tu>
     <tu>
@@ -121250,6 +121266,16 @@ against its detached signature (:file:`phpunit-x.y.phar.asc`):</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T050113Z" creationid="Wynn" creationdate="20150330T050113Z">
         <seg>在编写 &lt;l0&gt;BankAccount&lt;/l0&gt; 类的实际代码之前先来编写针对它的测试。以合约条件作为测试的基础，并据此的命名测试方法，如&lt;x1/&gt;中所示。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Webserver
+#########</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T033850Z" creationid="wynnc" creationdate="20201211T033850Z">
+        <seg>Web 服务器
+#########</seg>
       </tuv>
     </tu>
     <tu>
