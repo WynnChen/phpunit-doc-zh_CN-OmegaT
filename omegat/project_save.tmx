@@ -122572,8 +122572,9 @@ may trigger errors it can sometimes be useful to use error suppression while
 testing. This allows you to check the return values by suppressing notices
 that would lead to an exception raised by PHPUnit's error handler.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075434Z" creationid="wynnc" creationdate="20201211T075434Z">
-        <seg>如果测试代码使用了 PHP 内建函数，比如依靠会触发错误的 PHP 函数，例如 &lt;l0&gt;fopen&lt;/l0&gt; ，有时候在测试中使用错误抑制符会很有用。通过抑制住错误通知，就能对返回值进行检查，否则错误通知将会导致抛出 &lt;l1&gt;PHPUnit\Framework\Error\Notice&lt;/l1&gt;。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075914Z" creationid="wynnc" creationdate="20201211T075434Z">
+        <seg>如果测试代码使用了会触发错误的 PHP 内建函数，比如 ``fopen``，有时候在测试中使用错误抑制符会很有用。
+通过抑制住错误通知，就能对返回值进行检查，否则错误通知将会导致 PHPUnit 的错误处理程序抛出异常。</seg>
       </tuv>
     </tu>
     <tu>
