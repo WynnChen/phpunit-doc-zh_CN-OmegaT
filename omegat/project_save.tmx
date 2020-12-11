@@ -2116,6 +2116,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _textui:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082206Z" creationid="wynnc" creationdate="20201211T082206Z">
+        <seg>.. _textui:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. _writing-tests-for-phpunit.data-providers:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043324Z" creationid="wynnc" creationdate="20201211T043324Z">
@@ -108847,6 +108855,18 @@ Writing Tests for PHPUnit
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>============================
+The Command-Line Test Runner
+============================</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082215Z" creationid="wynnc" creationdate="20201211T082215Z">
+        <seg>============================
+命令行测试执行器
+============================</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>====================================================================</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091945Z" creationid="wynnc" creationdate="20201210T091945Z">
@@ -110027,9 +110047,8 @@ dependencies of your project:</seg>
 signed by the release manager for the release. PGP signatures and SHA256
 hashes are available for verification on `phar.phpunit.de &lt;https://phar.phpunit.de/&gt;`_.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031752Z" creationid="wynnc" creationdate="20201211T031614Z">
-        <seg>由 PHPUnit 项目分发的所有官方代码发行包都由发行包管理器进行签名。在 
-`phar.phpunit.de &lt;https://phar.phpunit.de/&gt;`_ 上有 PGP 签名和 SHA256 散列值可用于校验。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082403Z" creationid="wynnc" creationdate="20201211T031614Z">
+        <seg>由 PHPUnit 项目分发的所有官方代码发行包都由发行包管理器进行签名。在 `phar.phpunit.de &lt;https://phar.phpunit.de/&gt;`_ 上有 PGP 签名和 SHA256 散列值可用于校验。</seg>
       </tuv>
     </tu>
     <tu>
@@ -116033,12 +116052,8 @@ and `spl &lt;http://php.net/manual/en/spl.installation.php&gt;`_
 extensions. These standard extensions are enabled by default and cannot be
 disabled without patching PHP's build system and/or C sources.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T030721Z" creationid="wynnc" creationdate="20201211T030428Z">
-        <seg>PHPUnit 还需要
-`pcre &lt;http://php.net/manual/en/pcre.installation.php&gt;`_、
-`reflection &lt;http://php.net/manual/en/reflection.installation.php&gt;`_ 
-和 `spl &lt;http://php.net/manual/en/spl.installation.php&gt;`_ 
-扩展。这些标准扩展默认启用，并且除非修改 PHP 的构建系统和 C 源代码，否则无法禁用它们。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082313Z" creationid="wynnc" creationdate="20201211T030428Z">
+        <seg>PHPUnit 还需要\ `pcre &lt;http://php.net/manual/en/pcre.installation.php&gt;`_、`reflection &lt;http://php.net/manual/en/reflection.installation.php&gt;`_ 和 `spl &lt;http://php.net/manual/en/spl.installation.php&gt;`_ 扩展。这些标准扩展默认启用，并且除非修改 PHP 的构建系统和 C 源代码，否则无法禁用它们。</seg>
       </tuv>
     </tu>
     <tu>
@@ -118658,10 +118673,10 @@ instance, generates an expected output (via ``echo`` or
 Buffering &lt;http://www.php.net/manual/en/ref.outcontrol.php&gt;`_ feature to provide the functionality that is
 necessary for this.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T081815Z" creationid="wynnc" creationdate="20201211T080246Z">
-        <seg>有时候，想要断言（比如说）某方法的运行过程中生成了预期的输出（例如，通过 ``echo`` 或 ``print``）。
-``PHPUnit\Framework\TestCase`` 类使用 PHP 的
-`输出缓冲 &lt;http://www.php.net/manual/en/ref.outcontrol.php&gt;`_\ 特性来为此提供必要的功能支持。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082105Z" creationid="wynnc" creationdate="20201211T080246Z">
+        <seg>有时候，想要断言（比如说）某方法的运行过程中生成了预期的输出
+（例如，通过 ``echo`` 或 ``print``）。\ ``PHPUnit\Framework\TestCase`` 类使用 PHP 
+的\ `输出缓冲 &lt;http://www.php.net/manual/en/ref.outcontrol.php&gt;`_\ 特性来为此提供必要的功能支持。</seg>
       </tuv>
     </tu>
     <tu>
@@ -120326,6 +120341,17 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The PHPUnit command-line test runner can be invoked through the
+:file:`phpunit` command. The following code shows how to run
+tests with the PHPUnit command-line test runner:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082239Z" creationid="wynnc" creationdate="20201211T082239Z">
+        <seg>PHPUnit 命令行测试执行器可通过 :file:`phpunit` 命令调用。
+下面的代码展示了如何用 PHPUnit 命令行测试执行器来运行测试：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The PHPUnit command-line test runner can be invoked through the &lt;f0&gt;phpunit&lt;/f0&gt; command. The following code shows how to run tests with the PHPUnit command-line test runner:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T092659Z" creationid="Wynn" creationdate="20150327T092659Z">
@@ -120449,9 +120475,8 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
         <seg>The `phar &lt;http://php.net/manual/en/phar.installation.php&gt;`_
 extension is required for using PHP Archives (PHAR).</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031140Z" creationid="wynnc" creationdate="20201211T031140Z">
-        <seg>要使用 PHP档案包（PHAR）需要有 `phar &lt;http://php.net/manual/en/phar.installation.php&gt;`_
-扩展。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082351Z" creationid="wynnc" creationdate="20201211T031140Z">
+        <seg>要使用 PHP档案包（PHAR）需要有 `phar &lt;http://php.net/manual/en/phar.installation.php&gt;`_\ 扩展。</seg>
       </tuv>
     </tu>
     <tu>
@@ -120640,14 +120665,8 @@ Generating XML reports requires the
 `xmlwriter &lt;http://php.net/manual/en/xmlwriter.installation.php&gt;`_
 extension.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T030805Z" creationid="wynnc" creationdate="20201211T030511Z">
-        <seg>代码覆盖率分析报告功能需要
-`Xdebug &lt;http://xdebug.org/&gt;`_\ （2.7.0 或以上）和
-`tokenizer &lt;http://php.net/manual/en/tokenizer.installation.php&gt;`_
-扩展。
-生成 XML 格式的报告需要有
-`xmlwriter &lt;http://php.net/manual/en/xmlwriter.installation.php&gt;`_
-扩展。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082339Z" creationid="wynnc" creationdate="20201211T030511Z">
+        <seg>代码覆盖率分析报告功能需要\ `Xdebug &lt;http://xdebug.org/&gt;`_\ （2.7.0 或以上）和 `tokenizer &lt;http://php.net/manual/en/tokenizer.installation.php&gt;`_\ 扩展。生成 XML 格式的报告需要有 `xmlwriter &lt;http://php.net/manual/en/xmlwriter.installation.php&gt;`_\ 扩展。</seg>
       </tuv>
     </tu>
     <tu>
@@ -120752,9 +120771,8 @@ extension.</seg>
 (as well as some optional) dependencies of PHPUnit bundled in a single
 file.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031011Z" creationid="wynnc" creationdate="20201211T030953Z">
-        <seg>要获取 PHPUnit，最简单的方法是下载 PHPUnit 的 `PHP 档案包（PHAR） &lt;http://php.net/phar&gt;`_，
-它将 PHPUnit 所需要的所有必要组件（以及某些可选组件）捆绑在单个文件中：</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082348Z" creationid="wynnc" creationdate="20201211T030953Z">
+        <seg>要获取 PHPUnit，最简单的方法是下载 PHPUnit 的 `PHP 档案包（PHAR） &lt;http://php.net/phar&gt;`_，它将 PHPUnit 所需要的所有必要组件（以及某些可选组件）捆绑在单个文件中：</seg>
       </tuv>
     </tu>
     <tu>
@@ -120891,9 +120909,8 @@ file.</seg>
 by downloading :file:`phpunit.phar` as well as its
 detached PGP signature :file:`phpunit.phar.asc`:</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032009Z" creationid="wynnc" creationdate="20201211T031653Z">
-        <seg>下面的例子详细说明了如何对发行包进行校验。首先下载 :file:`phpunit.phar` 
-和与之对应的单独 PGP 签名 :file:`phpunit.phar.asc`：</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082406Z" creationid="wynnc" creationdate="20201211T031653Z">
+        <seg>下面的例子详细说明了如何对发行包进行校验。首先下载 :file:`phpunit.phar` 和与之对应的单独 PGP 签名 :file:`phpunit.phar.asc`：</seg>
       </tuv>
     </tu>
     <tu>
