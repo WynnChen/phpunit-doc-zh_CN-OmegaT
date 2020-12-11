@@ -2089,6 +2089,18 @@ $ npm install</seg>
     <tu>
       <tuv lang="en-US">
         <seg>.. code-block:: php
+    :caption: Expecting PHP errors, warnings, and notices
+    :name: writing-tests-for-phpunit.exceptions.examples.ErrorTest.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075154Z" creationid="wynnc" creationdate="20201211T075154Z">
+        <seg>.. code-block:: php
+    :caption: 预期会出现 PHP 错误、警告和通知
+    :name: writing-tests-for-phpunit.exceptions.examples.ErrorTest.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
     :caption: Exploiting the dependencies between tests
     :name: writing-tests-for-phpunit.examples.DependencyFailureTest.php</seg>
       </tuv>
@@ -2632,6 +2644,26 @@ public function initialBalanceShouldBe0()
 {
     $this-&gt;assertEquals(0, $this-&gt;ba-&gt;getBalance());
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>// Optionally test that the message is equal to a string
+            $this-&gt;expectDeprecationMessage('foo');</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075221Z" creationid="wynnc" creationdate="20201211T075221Z">
+        <seg>// （可选）测试讯息是否和某个字符串相等
+            $this-&gt;expectDeprecationMessage('foo');</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>// Or optionally test that the message matches a regular expression
+            $this-&gt;expectDeprecationMessageMatches('/foo/');</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075252Z" creationid="wynnc" creationdate="20201211T075252Z">
+        <seg>// 或者（可选）测试讯息和某个正则表达式匹配
+            $this-&gt;expectDeprecationMessageMatches('/foo/');</seg>
       </tuv>
     </tu>
     <tu>
@@ -114215,6 +114247,18 @@ Bergmann. But, let's try to verify the release signature again.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>PHP's ``error_reporting`` runtime configuration can
+   limit which errors PHPUnit will convert to exceptions. If you are
+   having issues with this feature, be sure PHP is not configured to
+   suppress the type of error you are interested in.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075134Z" creationid="wynnc" creationdate="20201211T075134Z">
+        <seg>PHP 的 ``error_reporting`` 运行时配置会对 PHPUnit 将哪些错误转换为异常有所限制。
+   如果在这个特性上碰到问题，请确认 PHP 的配置中没有抑制你所关注的错误类型。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>PHPUnit</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T093406Z" creationid="Wynn" creationdate="20150309T093406Z">
@@ -127041,6 +127085,22 @@ class MyClass
         {
             $this-&gt;assertTrue(false);
         }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>final class ErrorTest extends TestCase
+    {
+        public function testDeprecationCanBeExpected(): void
+        {
+            $this-&gt;expectDeprecation();</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075155Z" creationid="wynnc" creationdate="20201211T075155Z">
+        <seg>final class ErrorTest extends TestCase
+    {
+        public function testDeprecationCanBeExpected(): void
+        {
+            $this-&gt;expectDeprecation();</seg>
       </tuv>
     </tu>
     <tu>
