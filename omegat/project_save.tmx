@@ -112425,6 +112425,14 @@ translate. A repository will be created and added to the available translations.
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Make your changes</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T015213Z" creationid="wynnc" creationdate="20201211T015213Z">
+        <seg>Fork 此项目</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Many beginner and intermediate unit testing examples in any programming language suggest that it is perfectly easy to test your application's logic with simple tests. For database-centric applications this is far away from the reality. Start using WordPress, TYPO3 or Symfony with Doctrine or Propel, for example, and you will easily experience considerable problems with PHPUnit: just because the database is so tightly coupled to these libraries.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="admin" changedate="20170502T013731Z" creationid="admin" creationdate="20170502T013731Z">
@@ -115222,6 +115230,14 @@ project you agree to abide by its terms.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Please target the oldest branch affected in case your pull request fixes a bug or typo.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T015512Z" creationid="wynnc" creationdate="20201211T015512Z">
+        <seg>如果您的拉取请求修正了 bug 或错别字，请以受影响的最旧分支为目标。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Possible @requires usages</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T092425Z" creationid="Wynn" creationdate="20150319T092425Z">
@@ -116119,6 +116135,14 @@ addresses, without explicit permission</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Run &lt;g1&gt;make html&lt;/g1&gt; to make sure that the documentation can be built and looks as expected</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T015256Z" creationid="wynnc" creationdate="20201211T015256Z">
+        <seg>运行 &lt;g1&gt;make html&lt;/g1&gt;，确定文档可以完成构建并且显示情况符合预期</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Run each test in a separate PHP process.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T095708Z" creationid="Wynn" creationdate="20150327T095708Z">
@@ -116243,6 +116267,14 @@ addresses, without explicit permission</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T063609Z" creationid="Wynn" creationdate="20150327T063542Z">
         <seg>Selenium Server API: 设置</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Send a pull request against the oldest branch of the documentation to which your changes are relevant</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T015414Z" creationid="wynnc" creationdate="20201211T015414Z">
+        <seg>向文档中和你的更改有关的最旧分支发送拉取请求</seg>
       </tuv>
     </tu>
     <tu>
