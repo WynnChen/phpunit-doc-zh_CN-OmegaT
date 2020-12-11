@@ -115147,6 +115147,17 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Please note that this project is released with a
+&lt;g1&gt;Contributor Code of Conduct&lt;/g1&gt;. By participating in this
+project you agree to abide by its terms.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T014949Z" creationid="wynnc" creationdate="20201211T014949Z">
+        <seg>请注意，此项目发布时带有《&lt;g1&gt;贡献者行为准则&lt;/g1&gt;》。
+参与此项目即意味着您同意遵守其条款。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Please note that using the PEAR installer to update from PHPUnit 3.7 to PHPUnit 4.0 will leave stale source files from previous versions of PHPUnit's dependencies (PHP_CodeCoverage, PHPUnit_MockObject, ...) behind in your PHP environment's PEAR directory. It is advised to uninstall the respective PEAR packages.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T101343Z" creationid="Wynn" creationdate="20150327T101343Z">
@@ -119340,6 +119351,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T014339Z" creationid="wynnc" creationdate="20201211T014339Z">
         <seg>当个人代表项目或其社区时，对于项目范畴和公共范畴，皆适用本《行为准则》。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This Code of Conduct is adapted from the &lt;x1/&gt;Contributor Covenant&lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;, version 1.3.0, available at &lt;x6/&gt;https://contributor-covenant.org/version/1/3/0/&lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T014744Z" creationid="wynnc" creationdate="20201211T014744Z">
+        <seg>本行为准则改编自《&lt;x1/&gt;Contributor Covenant（贡献者契约）&lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;》，版本 1.3.0，可从&lt;x6/&gt;https://contributor-covenant.org/version/1/3/0/&lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;获取。</seg>
       </tuv>
     </tu>
     <tu>
