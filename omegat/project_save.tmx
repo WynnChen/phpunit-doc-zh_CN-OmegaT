@@ -1740,6 +1740,22 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _installation.requirements:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T025854Z" creationid="wynnc" creationdate="20201211T025854Z">
+        <seg>.. _installation.requirements:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. _installation:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T025822Z" creationid="wynnc" creationdate="20201211T025822Z">
+        <seg>.. _installation:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. admonition:: Note</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T024919Z" creationid="wynnc" creationdate="20201211T020232Z">
@@ -1748,10 +1764,26 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. code-block:: bash</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T025913Z" creationid="wynnc" creationdate="20201211T025913Z">
+        <seg>.. code-block:: bash</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. code-block:: text</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091901Z" creationid="wynnc" creationdate="20201210T091901Z">
         <seg>.. code-block:: text</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. parsed-literal::</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T025908Z" creationid="wynnc" creationdate="20201211T025908Z">
+        <seg>.. parsed-literal::</seg>
       </tuv>
     </tu>
     <tu>
@@ -107560,6 +107592,18 @@ PHPUnit 手册
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>==================
+Installing PHPUnit
+==================</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T025849Z" creationid="wynnc" creationdate="20201211T025849Z">
+        <seg>==================
+安装 PHPUnit
+==================</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>====================================================================</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091945Z" creationid="wynnc" creationdate="20201210T091945Z">
@@ -114560,6 +114604,15 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>PHPUnit |version| requires PHP 7.3; using the latest version of PHP is highly
+recommended.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T025955Z" creationid="wynnc" creationdate="20201211T025955Z">
+        <seg>PHPUnit |version| 需要 PHP 7.3，强烈推荐使用最新版本的 PHP。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>PHPUnit's Goals</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T040936Z" creationid="Wynn" creationdate="20150330T040708Z">
@@ -116120,6 +116173,16 @@ addresses, without explicit permission</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T093508Z" creationid="Wynn" creationdate="20150319T093508Z">
         <seg>需求</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Requirements
+############</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T025906Z" creationid="wynnc" creationdate="20201211T025906Z">
+        <seg>需求
+############</seg>
       </tuv>
     </tu>
     <tu>
