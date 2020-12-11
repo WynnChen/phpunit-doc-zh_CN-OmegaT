@@ -111107,6 +111107,14 @@ repository:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Fork the project</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T015144Z" creationid="wynnc" creationdate="20201211T015144Z">
+        <seg>Fork the project</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Frequently Asked Questions</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T042315Z" creationid="Wynn" creationdate="20150319T042315Z">
@@ -115451,6 +115459,14 @@ addresses, without explicit permission</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T093246Z" creationid="Wynn" creationdate="20150327T093246Z">
         <seg>Report （报告）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Reporting issues</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T015001Z" creationid="wynnc" creationdate="20201211T015001Z">
+        <seg>报告问题</seg>
       </tuv>
     </tu>
     <tu>
@@ -121122,6 +121138,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T024350Z" creationid="Wynn" creationdate="20150330T024350Z">
         <seg>如果不使用错误抑制符，此测试将会失败，并报告 &lt;l0&gt;fopen(/is-not-writeable/file): failed to open stream: No such file or directory&lt;/l0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Workflow</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T014958Z" creationid="wynnc" creationdate="20201211T014958Z">
+        <seg>工作流程</seg>
       </tuv>
     </tu>
     <tu>
