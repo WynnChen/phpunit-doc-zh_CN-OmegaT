@@ -3494,9 +3494,8 @@ shows how to use the ``expectOutputString()`` method to
 set the expected output. If this expected output is not generated, the
 test will be counted as a failure.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080438Z" creationid="wynnc" creationdate="20201211T080438Z">
-        <seg>:numref:`writing-tests-for-phpunit.output.examples.OutputTest.php` 展示了如何用 ``expectOutputString()`` 
-方法来设定所预期的输出。如果没有产生预期的输出，测试将计为失败。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083008Z" creationid="wynnc" creationdate="20201211T080438Z">
+        <seg>:numref:`writing-tests-for-phpunit.output.examples.OutputTest.php` 展示了如何用 ``expectOutputString()`` 方法来设定所预期的输出。如果没有产生预期的输出，测试将计为失败。</seg>
       </tuv>
     </tu>
     <tu>
@@ -110771,11 +110770,8 @@ this makes it possible to expect that a PHP error, warning, or notice is
 triggered in a test as shown in
 :numref:`writing-tests-for-phpunit.exceptions.examples.ErrorTest.php`.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062628Z" creationid="wynnc" creationdate="20201211T062628Z">
-        <seg>默认情况下，PHPUnit 将测试在执行中触发的 PHP 错误、警告、通知都转换为异常。 Among other benefits,
-this makes it possible to expect that a PHP error, warning, or notice is
-triggered in a test as shown in
-:numref:`writing-tests-for-phpunit.exceptions.examples.ErrorTest.php`.</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082931Z" creationid="wynnc" creationdate="20201211T062628Z">
+        <seg>默认情况下，PHPUnit 将测试在执行中触发的 PHP 错误、警告、通知都转换为异常。先不说其他好处，这样就可以预期在测试中会触发 PHP 错误、警告或通知，如\ :numref:`writing-tests-for-phpunit.exceptions.examples.ErrorTest.php` 所示。</seg>
       </tuv>
     </tu>
     <tu>
@@ -114380,9 +114376,8 @@ Environment, was created. You can learn about PHIVE on its `website &lt;https://
    message contains the ``$expected`` message and does not perform
    an exact string comparison.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062511Z" creationid="wynnc" creationdate="20201211T062051Z">
-        <seg>注意 ``expectExceptionMessage()`` 断言的是 ``$actual`` 讯息包含有 ``$expected`` 讯息，
-   并不执行精确的字符串比较。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082814Z" creationid="wynnc" creationdate="20201211T062051Z">
+        <seg>注意 ``expectExceptionMessage()`` 断言的是 ``$actual`` 讯息包含有 ``$expected`` 讯息，并不执行精确的字符串比较。</seg>
       </tuv>
     </tu>
     <tu>
@@ -114749,9 +114744,8 @@ Bergmann. But, let's try to verify the release signature again.</seg>
    having issues with this feature, be sure PHP is not configured to
    suppress the type of error you are interested in.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075134Z" creationid="wynnc" creationdate="20201211T075134Z">
-        <seg>PHP 的 ``error_reporting`` 运行时配置会对 PHPUnit 将哪些错误转换为异常有所限制。
-   如果在这个特性上碰到问题，请确认 PHP 的配置中没有抑制你所关注的错误类型。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082934Z" creationid="wynnc" creationdate="20201211T075134Z">
+        <seg>PHP 的 ``error_reporting`` 运行时配置会对 PHPUnit 将哪些错误转换为异常有所限制。如果在这个特性上碰到问题，请确认 PHP 的配置中没有抑制你所关注的错误类型。</seg>
       </tuv>
     </tu>
     <tu>
@@ -118647,10 +118641,8 @@ instance, generates an expected output (via ``echo`` or
 Buffering &lt;http://www.php.net/manual/en/ref.outcontrol.php&gt;`_ feature to provide the functionality that is
 necessary for this.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082105Z" creationid="wynnc" creationdate="20201211T080246Z">
-        <seg>有时候，想要断言（比如说）某方法的运行过程中生成了预期的输出
-（例如，通过 ``echo`` 或 ``print``）。\ ``PHPUnit\Framework\TestCase`` 类使用 PHP 
-的\ `输出缓冲 &lt;http://www.php.net/manual/en/ref.outcontrol.php&gt;`_\ 特性来为此提供必要的功能支持。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083005Z" creationid="wynnc" creationdate="20201211T080246Z">
+        <seg>有时候，想要断言（比如说）某方法的运行过程中生成了预期的输出（例如，通过 ``echo`` 或 ``print``）。\ ``PHPUnit\Framework\TestCase`` 类使用 PHP 的\ `输出缓冲 &lt;http://www.php.net/manual/en/ref.outcontrol.php&gt;`_\ 特性来为此提供必要的功能支持。</seg>
       </tuv>
     </tu>
     <tu>
@@ -122930,9 +122922,8 @@ against its detached signature (:file:`phpunit-x.y.phar.asc`):</seg>
 input values and compares those. Due to that implementation a diff
 might show more problems than actually exist.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080911Z" creationid="wynnc" creationdate="20201211T080911Z">
-        <seg>当比较失败时，PHPUnit 为输入值建立文本表示，然后以此进行对比。
-这种实现导致在差异指示中显示出来的问题可能比实际上存在的多。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083031Z" creationid="wynnc" creationdate="20201211T080911Z">
+        <seg>当比较失败时，PHPUnit 为输入值建立文本表示，然后以此进行对比。这种实现导致在差异指示中显示出来的问题可能比实际上存在的多。</seg>
       </tuv>
     </tu>
     <tu>
@@ -123054,9 +123045,8 @@ may trigger errors it can sometimes be useful to use error suppression while
 testing. This allows you to check the return values by suppressing notices
 that would lead to an exception raised by PHPUnit's error handler.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075914Z" creationid="wynnc" creationdate="20201211T075434Z">
-        <seg>如果测试代码使用了会触发错误的 PHP 内建函数，比如 ``fopen``，有时候在测试中使用错误抑制符会很有用。
-通过抑制住错误通知，就能对返回值进行检查，否则错误通知将会导致 PHPUnit 的错误处理程序抛出异常。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082943Z" creationid="wynnc" creationdate="20201211T075434Z">
+        <seg>如果测试代码使用了会触发错误的 PHP 内建函数，比如 ``fopen``，有时候在测试中使用错误抑制符会很有用。通过抑制住错误通知，就能对返回值进行检查，否则错误通知将会导致 PHPUnit 的错误处理程序抛出异常。</seg>
       </tuv>
     </tu>
     <tu>
@@ -123381,9 +123371,8 @@ context as possible that can help to identify the problem.</seg>
         <seg>Without the error suppression the test would fail reporting
 ``fopen(/is-not-writeable/file): failed to open stream: No such file or directory``.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080259Z" creationid="wynnc" creationdate="20201211T080147Z">
-        <seg>如果不使用错误抑制符，此测试将会失败，并报告 
-``fopen(/is-not-writeable/file): failed to open stream: No such file or directory``。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082952Z" creationid="wynnc" creationdate="20201211T080147Z">
+        <seg>如果不使用错误抑制符，此测试将会失败，并报告 ``fopen(/is-not-writeable/file): failed to open stream: No such file or directory``。</seg>
       </tuv>
     </tu>
     <tu>
