@@ -108930,6 +108930,14 @@ information at runtime to configure their behaviour.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>As contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T013141Z" creationid="wynnc" creationdate="20201211T013141Z">
+        <seg>作为该项目的贡献者和维护者，为了建立一个开放而热情的社区，我们承诺尊重所有通过报告问题、发表功能请求、更新文档、提交拉取请求或补丁以及其他活动做出贡献的人。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>As mentioned in the beginning, when the defaults used by the &lt;l0&gt;createMock()&lt;/l0&gt; method to generate the test double do not match your needs then you can use the &lt;l1&gt;getMockBuilder($type)&lt;/l1&gt; method to customize the test double generation using a fluent interface. Here is a list of methods provided by the Mock Builder:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20160418T090908Z" creationid="Wynn" creationdate="20160418T090908Z">
@@ -109946,8 +109954,8 @@ information at runtime to configure their behaviour.</seg>
       <tuv lang="en-US">
         <seg>Contributor Code of Conduct</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T070801Z" creationid="wynnc" creationdate="20201210T070801Z">
-        <seg>Contributor Code of Conduct</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T013041Z" creationid="wynnc" creationdate="20201210T070801Z">
+        <seg>贡献者行为准则</seg>
       </tuv>
     </tu>
     <tu>
@@ -120454,6 +120462,14 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T074541Z" creationid="Wynn" creationdate="20150327T074541Z">
         <seg>警告</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We are committed to making participation in this project a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, religion, or nationality.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T013324Z" creationid="wynnc" creationdate="20201211T013324Z">
+        <seg>我们致力于使每个人都能无困扰地参与该项目，而无关其经验水平、性别、性别认同和表达方式、性取向、残疾、个人面貌、身材、种族、种族、年龄、宗教信仰或国籍。</seg>
       </tuv>
     </tu>
     <tu>
