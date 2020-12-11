@@ -2043,6 +2043,18 @@ $ npm install</seg>
     <tu>
       <tuv lang="en-US">
         <seg>.. code-block:: php
+    :caption: Using a data provider that returns an array of arrays
+    :name: writing-tests-for-phpunit.data-providers.examples.DataTest.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060424Z" creationid="wynnc" creationdate="20201211T060424Z">
+        <seg>.. code-block:: php
+    :caption: 使用返回数组的数组的数据供给器
+    :name: writing-tests-for-phpunit.data-providers.examples.DataTest.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
     :caption: Using the ``@depends`` annotation to express dependencies
     :name: writing-tests-for-phpunit.examples.StackTest2.php</seg>
       </tuv>
@@ -108736,6 +108748,20 @@ Writing Tests for PHPUnit
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>A data provider method must be ``public`` and either return
+an array of arrays or an object that implements the ``Iterator``
+interface and yields an array for each iteration step. For each array that
+is part of the collection the test method will be called with the contents
+of the array as its arguments.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060408Z" creationid="wynnc" creationdate="20201211T060408Z">
+        <seg>数据供给器方法必须声明为 ``public``，其返回值要么是一个数组，其每个元素也是数组；
+要么是一个实现了 ``Iterator`` 接口的对象，在对它进行迭代时每步产生一个数组。
+每个数组都是测试数据集的一部分，将以它的内容作为参数来调用测试方法。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>A data-driven test</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T075640Z" creationid="Wynn" creationdate="20150319T075640Z">
@@ -108931,6 +108957,20 @@ is run.</seg>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042845Z" creationid="wynnc" creationdate="20201211T042815Z">
         <seg>测试可以使用多个 ``@depends`` 标注。PHPUnit 不会更改测试的运行顺序，
 因此你需要自行保证某个测试所依赖的所有测试均出现于这个测试之前。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>A test method can accept arbitrary arguments. These arguments are to be
+provided by one or more data provider methods (``additionProvider()`` in
+:numref:`writing-tests-for-phpunit.data-providers.examples.DataTest.php`).
+The data provider method to be used is specified using the
+``@dataProvider`` annotation.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T060328Z" creationid="wynnc" creationdate="20201211T060328Z">
+        <seg>测试方法可以接受任意参数。这些参数由一个或多个数据供给器方法
+（在:numref:`writing-tests-for-phpunit.data-providers.examples.DataTest.php`中，
+是 ``additionProvider()`` 方法）提供。用 ``@dataProvider`` 标注来指定要使用的数据供给器方法。</seg>
       </tuv>
     </tu>
     <tu>
