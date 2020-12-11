@@ -1128,6 +1128,16 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ phpunit ArrayTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083320Z" creationid="wynnc" creationdate="20201211T083320Z">
+        <seg>$ phpunit ArrayTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$ phpunit ArrayWeakComparisonTest
     PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
       </tuv>
@@ -2016,6 +2026,14 @@ $ npm install</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T092740Z" creationid="Wynn" creationdate="20150327T092740Z">
         <seg>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>..</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083321Z" creationid="wynnc" creationdate="20201211T083321Z">
+        <seg>..</seg>
       </tuv>
     </tu>
     <tu>
@@ -112580,6 +112598,15 @@ you need in your project's ``composer.json`` if you use Composer.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>For each test run, the PHPUnit command-line tool prints one character to
+indicate progress:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083347Z" creationid="wynnc" creationdate="20201211T083347Z">
+        <seg>对于每个测试的运行，PHPUnit 命令行工具输出一个字符来指示进展：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>For each test run, the PHPUnit command-line tool prints one character to indicate progress:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T092735Z" creationid="Wynn" creationdate="20150327T092735Z">
@@ -114437,6 +114464,14 @@ Bergmann. But, let's try to verify the release signature again.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T080135Z" creationid="wynnc" creationdate="20201211T080135Z">
         <seg>OK (1 test, 1 assertion)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>OK (2 tests, 2 assertions)</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083322Z" creationid="wynnc" creationdate="20201211T083322Z">
+        <seg>OK (2 tests, 2 assertions)</seg>
       </tuv>
     </tu>
     <tu>
@@ -117110,6 +117145,15 @@ documentation.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Printed when the test has been marked as risky (see
+    :ref:`risky-tests`).</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083409Z" creationid="wynnc" creationdate="20201211T083409Z">
+        <seg>当测试被标记为有风险时输出（参见\ :ref:`risky-tests`）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Printed when the test has been marked as risky (see &lt;x0/&gt;).</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T092807Z" creationid="Wynn" creationdate="20150327T092807Z">
@@ -117118,10 +117162,28 @@ documentation.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Printed when the test has been skipped (see
+    :ref:`incomplete-and-skipped-tests`).</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083424Z" creationid="wynnc" creationdate="20201211T083424Z">
+        <seg>当测试被跳过时输出（参见\ :ref:`incomplete-and-skipped-tests`）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Printed when the test has been skipped (see &lt;x0/&gt;).</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T092821Z" creationid="Wynn" creationdate="20150327T092821Z">
         <seg>当测试被跳过时输出（参见&lt;x0/&gt;）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Printed when the test is marked as being incomplete or not yet
+    implemented (see :ref:`incomplete-and-skipped-tests`).</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083437Z" creationid="wynnc" creationdate="20201211T083437Z">
+        <seg>当测试被标记为不完整或未实现时输出（参见\ :ref:`incomplete-and-skipped-tests`）。</seg>
       </tuv>
     </tu>
     <tu>
@@ -120311,9 +120373,8 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
 :file:`phpunit` command. The following code shows how to run
 tests with the PHPUnit command-line test runner:</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082239Z" creationid="wynnc" creationdate="20201211T082239Z">
-        <seg>PHPUnit 命令行测试执行器可通过 :file:`phpunit` 命令调用。
-下面的代码展示了如何用 PHPUnit 命令行测试执行器来运行测试：</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083316Z" creationid="wynnc" creationdate="20201211T082239Z">
+        <seg>PHPUnit 命令行测试执行器可通过 :file:`phpunit` 命令调用。下面的代码展示了如何用 PHPUnit 命令行测试执行器来运行测试：</seg>
       </tuv>
     </tu>
     <tu>
@@ -120441,8 +120502,8 @@ tests with the PHPUnit command-line test runner:</seg>
         <seg>The `phar &lt;http://php.net/manual/en/phar.installation.php&gt;`_
 extension is required for using PHP Archives (PHAR).</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T082351Z" creationid="wynnc" creationdate="20201211T031140Z">
-        <seg>要使用 PHP档案包（PHAR）需要有 `phar &lt;http://php.net/manual/en/phar.installation.php&gt;`_\ 扩展。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083127Z" creationid="wynnc" creationdate="20201211T031140Z">
+        <seg>要使用 PHP 档案包（PHAR）需要有 `phar &lt;http://php.net/manual/en/phar.installation.php&gt;`_\ 扩展。</seg>
       </tuv>
     </tu>
     <tu>
@@ -121606,6 +121667,14 @@ functions on arrays or objects.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T035755Z" creationid="Wynn" creationdate="20150309T035755Z">
         <seg>本作品依据 Creative Commons Attribution 3.0 Unported 许可协议进行授权。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Time: 0 seconds</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083322Z" creationid="wynnc" creationdate="20201211T083322Z">
+        <seg>Time: 0 seconds</seg>
       </tuv>
     </tu>
     <tu>
@@ -123008,6 +123077,17 @@ See :numref:`writing-tests-for-phpunit.data-providers.examples.DependencyAndData
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>When invoked as shown above, the PHPUnit command-line test runner will look
+for a :file:`ArrayTest.php` sourcefile in the current working
+directory, load it, and expect to find a ``ArrayTest`` test
+case class. It will then execute the tests of that class.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083344Z" creationid="wynnc" creationdate="20201211T083344Z">
+        <seg>上面这个调用例子中，PHPUnit 命令行测试执行器将在当前工作目录中寻找 :file:`ArrayTest.php` 源文件并加载之。而在此源文件中应当能找到 ``ArrayTest`` 测试用例类，此类中的测试将被执行。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>When invoked as shown above, the PHPUnit command-line test runner will look for a &lt;f0&gt;ArrayTest.php&lt;/f0&gt; sourcefile in the current working directory, load it, and expect to find a &lt;l1&gt;ArrayTest&lt;/l1&gt; test case class. It will then execute the tests of that class.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T092731Z" creationid="Wynn" creationdate="20150327T092731Z">
@@ -123837,10 +123917,58 @@ context as possible that can help to identify the problem.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>``.``</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083348Z" creationid="wynnc" creationdate="20201211T083348Z">
+        <seg>``.``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>``ClassTest`` inherits (most of the time) from ``PHPUnit\Framework\TestCase``.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T035514Z" creationid="wynnc" creationdate="20201211T035514Z">
         <seg>``ClassTest``\ （通常）继承自 ``PHPUnit\Framework\TestCase``。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>``E``</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083353Z" creationid="wynnc" creationdate="20201211T083353Z">
+        <seg>``E``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>``F``</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083351Z" creationid="wynnc" creationdate="20201211T083351Z">
+        <seg>``F``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>``I``</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083425Z" creationid="wynnc" creationdate="20201211T083425Z">
+        <seg>``I``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>``R``</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083354Z" creationid="wynnc" creationdate="20201211T083354Z">
+        <seg>``R``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>``S``</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T083410Z" creationid="wynnc" creationdate="20201211T083410Z">
+        <seg>``S``</seg>
       </tuv>
     </tu>
     <tu>
