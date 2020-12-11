@@ -2651,9 +2651,39 @@ public function initialBalanceShouldBe0()
         <seg>// Optionally test that the message is equal to a string
             $this-&gt;expectDeprecationMessage('foo');</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075221Z" creationid="wynnc" creationdate="20201211T075221Z">
-        <seg>// （可选）测试讯息是否和某个字符串相等
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075259Z" creationid="wynnc" creationdate="20201211T075221Z">
+        <seg>// （可选）测试讯息和某个字符串相等
             $this-&gt;expectDeprecationMessage('foo');</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>// Optionally test that the message is equal to a string
+            $this-&gt;expectErrorMessage('foo');</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075359Z" creationid="wynnc" creationdate="20201211T075359Z">
+        <seg>// （可选）测试讯息和某个字符串相等
+            $this-&gt;expectErrorMessage('foo');</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>// Optionally test that the message is equal to a string
+            $this-&gt;expectNoticeMessage('foo');</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075323Z" creationid="wynnc" creationdate="20201211T075323Z">
+        <seg>// （可选）测试讯息和某个字符串相等
+            $this-&gt;expectNoticeMessage('foo');</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>// Optionally test that the message is equal to a string
+            $this-&gt;expectWarningMessage('foo');</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075346Z" creationid="wynnc" creationdate="20201211T075346Z">
+        <seg>// （可选）测试讯息和某个字符串相等
+            $this-&gt;expectWarningMessage('foo');</seg>
       </tuv>
     </tu>
     <tu>
@@ -2664,6 +2694,36 @@ public function initialBalanceShouldBe0()
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075252Z" creationid="wynnc" creationdate="20201211T075252Z">
         <seg>// 或者（可选）测试讯息和某个正则表达式匹配
             $this-&gt;expectDeprecationMessageMatches('/foo/');</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>// Or optionally test that the message matches a regular expression
+            $this-&gt;expectErrorMessageMatches('/foo/');</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075408Z" creationid="wynnc" creationdate="20201211T075408Z">
+        <seg>// 或者（可选）测试讯息和某个正则表达式匹配
+            $this-&gt;expectErrorMessageMatches('/foo/');</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>// Or optionally test that the message matches a regular expression
+            $this-&gt;expectNoticeMessageMatches('/foo/');</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075337Z" creationid="wynnc" creationdate="20201211T075337Z">
+        <seg>// 或者（可选）测试讯息和某个正则表达式匹配
+            $this-&gt;expectNoticeMessageMatches('/foo/');</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>// Or optionally test that the message matches a regular expression
+            $this-&gt;expectWarningMessageMatches('/foo/');</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075351Z" creationid="wynnc" creationdate="20201211T075351Z">
+        <seg>// 或者（可选）测试讯息和某个正则表达式匹配
+            $this-&gt;expectWarningMessageMatches('/foo/');</seg>
       </tuv>
     </tu>
     <tu>
@@ -122507,6 +122567,17 @@ See :numref:`writing-tests-for-phpunit.data-providers.examples.DependencyAndData
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>When testing code that uses PHP built-in functions such as ``fopen()`` that
+may trigger errors it can sometimes be useful to use error suppression while
+testing. This allows you to check the return values by suppressing notices
+that would lead to an exception raised by PHPUnit's error handler.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075434Z" creationid="wynnc" creationdate="20201211T075434Z">
+        <seg>如果测试代码使用了 PHP 内建函数，比如依靠会触发错误的 PHP 函数，例如 &lt;l0&gt;fopen&lt;/l0&gt; ，有时候在测试中使用错误抑制符会很有用。通过抑制住错误通知，就能对返回值进行检查，否则错误通知将会导致抛出 &lt;l1&gt;PHPUnit\Framework\Error\Notice&lt;/l1&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>When testing that relies on php functions that trigger errors like &lt;l0&gt;fopen&lt;/l0&gt; it can sometimes be useful to use error suppression while testing. This allows you to check the return values by suppressing notices that would lead to a phpunit &lt;l1&gt;PHPUnit\Framework\Error\Notice&lt;/l1&gt;.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20180106T095055Z" creationid="wynnc" creationdate="20180106T095055Z">
@@ -123157,6 +123228,48 @@ Output will be more verbose as it'll contain that name of a dataset that breaks 
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091852Z" creationid="wynnc" creationdate="20201210T091634Z">
         <seg>[Meszaros2007] Gerard Meszaros《xUnit Test Patterns: Refactoring Test Code》。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>\trigger_error('foo', \E_USER_DEPRECATED);
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075300Z" creationid="wynnc" creationdate="20201211T075300Z">
+        <seg>\trigger_error('foo', \E_USER_DEPRECATED);
+        }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>\trigger_error('foo', \E_USER_ERROR);
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075408Z" creationid="wynnc" creationdate="20201211T075408Z">
+        <seg>\trigger_error('foo', \E_USER_ERROR);
+        }
+    }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>\trigger_error('foo', \E_USER_NOTICE);
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075337Z" creationid="wynnc" creationdate="20201211T075337Z">
+        <seg>\trigger_error('foo', \E_USER_NOTICE);
+        }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>\trigger_error('foo', \E_USER_WARNING);
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075352Z" creationid="wynnc" creationdate="20201211T075352Z">
+        <seg>\trigger_error('foo', \E_USER_WARNING);
+        }</seg>
       </tuv>
     </tu>
     <tu>
@@ -128709,6 +128822,18 @@ ok</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>public function testErrorCanBeExpected(): void
+        {
+            $this-&gt;expectError();</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075354Z" creationid="wynnc" creationdate="20201211T075354Z">
+        <seg>public function testErrorCanBeExpected(): void
+        {
+            $this-&gt;expectError();</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>public function testMethod()
 {
 }</seg>
@@ -128717,6 +128842,18 @@ ok</seg>
         <seg>public function testMethod()
 {
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>public function testNoticeCanBeExpected(): void
+        {
+            $this-&gt;expectNotice();</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075302Z" creationid="wynnc" creationdate="20201211T075302Z">
+        <seg>public function testNoticeCanBeExpected(): void
+        {
+            $this-&gt;expectNotice();</seg>
       </tuv>
     </tu>
     <tu>
@@ -128765,6 +128902,18 @@ ok</seg>
         <seg>public function testSomething()
 {
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>public function testWarningCanBeExpected(): void
+        {
+            $this-&gt;expectWarning();</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T075338Z" creationid="wynnc" creationdate="20201211T075338Z">
+        <seg>public function testWarningCanBeExpected(): void
+        {
+            $this-&gt;expectWarning();</seg>
       </tuv>
     </tu>
     <tu>
