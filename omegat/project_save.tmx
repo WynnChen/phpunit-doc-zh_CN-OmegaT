@@ -110274,6 +110274,17 @@ information at runtime to configure their behaviour.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Due to time constraints, we are not always able to respond as quickly as we
+would like. Please do not take delays personal and feel free to remind us if
+you feel that we forgot to respond.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T020003Z" creationid="wynnc" creationdate="20201211T020003Z">
+        <seg>由于时间限制，我们无法始终以最快的速度做出回应。请不要为此耽误个人时间，
+并且，如果您觉得我们忘了回应，随时可以提醒我们。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>During Debugging</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T092516Z" creationid="Wynn" creationdate="20150327T092516Z">
@@ -115095,6 +115106,19 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T013444Z" creationid="wynnc" creationdate="20201211T013444Z">
         <seg>人身攻击</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Please make sure that you have
+&lt;g1&gt;set up your user name and email address&lt;/g1&gt;
+for use with Git. Strings such as &lt;g2&gt;silly nick name &lt;root@localhost&gt;&lt;/g2&gt; look really
+stupid in the commit history of a project.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T015758Z" creationid="wynnc" creationdate="20201211T015758Z">
+        <seg>请确保你已经设置好了用于 Git 的&lt;g1&gt;用户名和 Email 地址&lt;/g1&gt;。
+在项目的提交历史中看到诸如 &lt;g2&gt;silly nick name &lt;root@localhost&gt;&lt;/g2&gt;
+这样的字符串出现真的挺傻的。</seg>
       </tuv>
     </tu>
     <tu>
