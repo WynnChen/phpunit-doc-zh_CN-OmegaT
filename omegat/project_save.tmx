@@ -2028,6 +2028,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _writing-tests-for-phpunit.errors:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062325Z" creationid="wynnc" creationdate="20201211T062325Z">
+        <seg>.. _writing-tests-for-phpunit.errors:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. _writing-tests-for-phpunit.exceptions:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T061901Z" creationid="wynnc" creationdate="20201211T061901Z">
@@ -109532,8 +109540,8 @@ dependencies of your project:</seg>
    within a data provider. This is required in order for PHPUnit to be able
    to compute the total number of tests.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T061901Z" creationid="wynnc" creationdate="20201211T061901Z">
-        <seg>所有的数据供给器方法的执行都是在对 ``setUpBeforeClass()`` 静态方法的调用和第一次对 ``setUp()`` 方法的调用之前完成的。
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062531Z" creationid="wynnc" creationdate="20201211T061901Z">
+        <seg>所有数据供给器方法的执行都是在对 ``setUpBeforeClass()`` 静态方法的调用和第一次对 ``setUp()`` 方法的调用之前完成的。
    因此，无法在数据供给器中使用创建于这两个方法内的变量。这是必须的，这样 PHPUnit 才能计算测试的总数量。</seg>
       </tuv>
     </tu>
@@ -110273,6 +110281,21 @@ Sebastian Bergmann.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T014220Z" creationid="wynnc" creationdate="20201211T014008Z">
         <seg>通过采用本《行为准则》，项目维护者承诺将公平、一致地将这些原则应用于项目管理的各个方面。不遵守或不执行《行为准则》的项目维护者可能会被从项目团队中永久撤职。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>By default, PHPUnit converts PHP errors, warnings, and notices that are
+triggered during the execution of a test to an exception. Among other benefits,
+this makes it possible to expect that a PHP error, warning, or notice is
+triggered in a test as shown in
+:numref:`writing-tests-for-phpunit.exceptions.examples.ErrorTest.php`.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062628Z" creationid="wynnc" creationdate="20201211T062628Z">
+        <seg>默认情况下，PHPUnit 将测试在执行中触发的 PHP 错误、警告、通知都转换为异常。 Among other benefits,
+this makes it possible to expect that a PHP error, warning, or notice is
+triggered in a test as shown in
+:numref:`writing-tests-for-phpunit.exceptions.examples.ErrorTest.php`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -113834,9 +113857,9 @@ Environment, was created. You can learn about PHIVE on its `website &lt;https://
    message contains the ``$expected`` message and does not perform
    an exact string comparison.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062324Z" creationid="wynnc" creationdate="20201211T062051Z">
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062511Z" creationid="wynnc" creationdate="20201211T062051Z">
         <seg>注意 ``expectExceptionMessage()`` 断言的是 ``$actual`` 讯息包含有 ``$expected`` 讯息，
-并不执行精确的字符串比较。</seg>
+   并不执行精确的字符串比较。</seg>
       </tuv>
     </tu>
     <tu>
@@ -118814,6 +118837,16 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T024025Z" creationid="Wynn" creationdate="20150330T024025Z">
         <seg>对 PHP 错误进行测试</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Testing PHP Errors, Warnings, and Notices
+#########################################</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T062350Z" creationid="wynnc" creationdate="20201211T062350Z">
+        <seg>对 PHP 错误、警告和通知进行测试
+#########################################</seg>
       </tuv>
     </tu>
     <tu>
