@@ -1194,6 +1194,20 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$this-&gt;assertSame('foo', array_pop($stack));
+            $this-&gt;assertSame(0, count($stack));
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040104Z" creationid="wynnc" creationdate="20201211T040104Z">
+        <seg>$this-&gt;assertSame('foo', array_pop($stack));
+            $this-&gt;assertSame(0, count($stack));
+        }
+    }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>* Any of the above conditions can be waived if you get
           permission from the copyright holder.</seg>
       </tuv>
@@ -1240,6 +1254,22 @@ $ npm install</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T034727Z" creationid="wynnc" creationdate="20201211T034517Z">
         <seg>**如果将 PHPUnit 上传到 Web 服务器，则部署过程会中断。一般而言，如果** ``vendor`` **目录在 Web 服务器上可公开访问，则您的部署过程也会中断。**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>*Adrian Kuhn et. al.*:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040320Z" creationid="wynnc" creationdate="20201211T040320Z">
+        <seg>*Adrian Kuhn et. al.*：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>-</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040909Z" creationid="wynnc" creationdate="20201211T040909Z">
+        <seg>-</seg>
       </tuv>
     </tu>
     <tu>
@@ -1836,6 +1866,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _appendixes.assertions:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040022Z" creationid="wynnc" creationdate="20201211T040022Z">
+        <seg>.. _appendixes.assertions:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. _appendixes.bibliography:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091613Z" creationid="wynnc" creationdate="20201210T091613Z">
@@ -1908,6 +1946,14 @@ $ npm install</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>.. _writing-tests-for-phpunit.test-dependencies:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040305Z" creationid="wynnc" creationdate="20201211T040305Z">
+        <seg>.. _writing-tests-for-phpunit.test-dependencies:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>.. _writing-tests-for-phpunit:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T035258Z" creationid="wynnc" creationdate="20201211T035258Z">
@@ -1928,6 +1974,30 @@ $ npm install</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T025913Z" creationid="wynnc" creationdate="20201211T025913Z">
         <seg>.. code-block:: bash</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
+    :caption: Testing array operations with PHPUnit
+    :name: writing-tests-for-phpunit.examples.StackTest.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040238Z" creationid="wynnc" creationdate="20201211T040101Z">
+        <seg>.. code-block:: php
+    :caption: 用 PHPUnit 测试数组操作
+    :name: writing-tests-for-phpunit.examples.StackTest.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
+    :caption: Using the ``@depends`` annotation to express dependencies
+    :name: writing-tests-for-phpunit.examples.StackTest2.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041018Z" creationid="wynnc" creationdate="20201211T041018Z">
+        <seg>.. code-block:: php
+    :caption: 用 ``@depends`` 标注来表示依赖关系
+    :name: writing-tests-for-phpunit.examples.StackTest2.php</seg>
       </tuv>
     </tu>
     <tu>
@@ -1978,6 +2048,52 @@ $ npm install</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T031241Z" creationid="Wynn" creationdate="20150330T031241Z">
         <seg>...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>/**
+         * @depends testEmpty
+         */
+        public function testPush(array $stack): array
+        {
+            array_push($stack, 'foo');
+            $this-&gt;assertSame('foo', $stack[count($stack)-1]);
+            $this-&gt;assertNotEmpty($stack);</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041031Z" creationid="wynnc" creationdate="20201211T041031Z">
+        <seg>/**
+         * @depends testEmpty
+         */
+        public function testPush(array $stack): array
+        {
+            array_push($stack, 'foo');
+            $this-&gt;assertSame('foo', $stack[count($stack)-1]);
+            $this-&gt;assertNotEmpty($stack);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>/**
+         * @depends testPush
+         */
+        public function testPop(array $stack): void
+        {
+            $this-&gt;assertSame('foo', array_pop($stack));
+            $this-&gt;assertEmpty($stack);
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041034Z" creationid="wynnc" creationdate="20201211T041034Z">
+        <seg>/**
+         * @depends testPush
+         */
+        public function testPop(array $stack): void
+        {
+            $this-&gt;assertSame('foo', array_pop($stack));
+            $this-&gt;assertEmpty($stack);
+        }
+    }</seg>
       </tuv>
     </tu>
     <tu>
@@ -2467,6 +2583,17 @@ with PHPUnit:</seg>
         <seg>:numref:`writing-tests-for-phpunit.examples.StackTest.php` 
 展示了如何用 PHPUnit 编写测试来对 PHP 数组操作进行测试。
 此示例介绍了用 PHPUnit 编写测试的基本惯例与步骤：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>:numref:`writing-tests-for-phpunit.examples.StackTest2.php` shows
+how to use the ``@depends`` annotation to express
+dependencies between test methods.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041027Z" creationid="wynnc" creationdate="20201211T040951Z">
+        <seg>:numref:`writing-tests-for-phpunit.examples.StackTest2.php` 
+展示了如何用 ``@depends`` 标注来表示测试方法之间的依赖关系。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21413,6 +21540,16 @@ class SimpleTestListener implements TestListener
     }
 }
 ?&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;?php declare(strict_types=1);
+    use PHPUnit\Framework\TestCase;</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040102Z" creationid="wynnc" creationdate="20201211T040102Z">
+        <seg>&lt;?php declare(strict_types=1);
+    use PHPUnit\Framework\TestCase;</seg>
       </tuv>
     </tu>
     <tu>
@@ -107729,6 +107866,18 @@ Copyright
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>==========
+Assertions
+==========</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040027Z" creationid="wynnc" creationdate="20201211T040027Z">
+        <seg>==========
+断言
+==========</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>===========
 Annotations
 ===========</seg>
@@ -108447,8 +108596,8 @@ Writing Tests for PHPUnit
       <tuv lang="en-US">
         <seg>A consumer is a test method that depends on one or more producers and their return values.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T101706Z" creationid="Wynn" creationdate="20150327T101706Z">
-        <seg>消费者(consumer)，是依赖于一个或多个生产者及其返回值的测试方法。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040925Z" creationid="Wynn" creationdate="20150327T101706Z">
+        <seg>消费者（consumer），是依赖于一个或多个生产者及其返回值的测试方法。</seg>
       </tuv>
     </tu>
     <tu>
@@ -108529,8 +108678,8 @@ Writing Tests for PHPUnit
       <tuv lang="en-US">
         <seg>A producer is a test method that yields its unit under test as return value.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T101702Z" creationid="Wynn" creationdate="20150327T101702Z">
-        <seg>生产者(producer)，是能生成被测单元并将其作为返回值的测试方法。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040915Z" creationid="Wynn" creationdate="20150327T101702Z">
+        <seg>生产者（producer），是能生成被测单元并将其作为返回值的测试方法。</seg>
       </tuv>
     </tu>
     <tu>
@@ -112487,6 +112636,14 @@ translate. A repository will be created and added to the available translations.
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Inside the test methods, assertion methods such as ``assertSame()`` (see :ref:`appendixes.assertions`) are used to assert that an actual value matches an expected value.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T035940Z" creationid="wynnc" creationdate="20201211T035940Z">
+        <seg>在测试方法内，类似于 ``assertSame()``\ （参见\ :ref:`appendixes.assertions`）这样的断言方法用来对实际值与预期值的匹配做出断言。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Installation</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T032444Z" creationid="Wynn" creationdate="20150327T032444Z">
@@ -114945,6 +115102,20 @@ extensions, which are normally enabled by default.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T075949Z" creationid="Wynn" creationdate="20150319T075949Z">
         <seg>PHPUnit 支持共享建立基境的代码。在运行某个测试方法前，会调用一个名叫 &lt;l0&gt;setUp()&lt;/l0&gt; 的模板方法。&lt;l1&gt;setUp()&lt;/l1&gt; 是创建测试所用对象的地方。当测试方法运行结束后，不管是成功还是失败，都会调用另外一个名叫 &lt;l2&gt;tearDown()&lt;/l2&gt; 的模板方法。&lt;l3&gt;tearDown()&lt;/l3&gt; 是清理测试所用对象的地方。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>PHPUnit supports the declaration of explicit dependencies between test
+methods. Such dependencies do not define the order in which the test
+methods are to be executed but they allow the returning of an instance of
+the test fixture by a producer and passing it to the dependent consumers.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040646Z" creationid="wynnc" creationdate="20201211T040646Z">
+        <seg>PHPUnit支持对测试方法之间的显式依赖关系进行声明。
+这种依赖关系并不是定义在测试方法的执行顺序中，
+而是允许生产者（producer）返回一个测试基境（fixture）的实例，
+并将此实例传递给依赖于它的消费者（consumer）们。</seg>
       </tuv>
     </tu>
     <tu>
@@ -117793,6 +117964,16 @@ ok 2 - testArrayContainsAnElement(ArrayTest)
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Test Dependencies
+#################</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040312Z" creationid="wynnc" creationdate="20201211T040312Z">
+        <seg>测试的依赖关系
+#################</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Test Double</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T074346Z" creationid="Wynn" creationdate="20150327T074346Z">
@@ -120416,6 +120597,24 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Unit Tests are primarily written as a good practice to help developers
+    identify and fix bugs, to refactor code and to serve as documentation
+    for a unit of software under test. To achieve these benefits, unit tests
+    ideally should cover all the possible paths in a program. One unit test
+    usually covers one specific path in one function or method. However a
+    test method is not necessarily an encapsulated, independent entity. Often
+    there are implicit dependencies between test methods, hidden in the
+    implementation scenario of a test.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040730Z" creationid="wynnc" creationdate="20201211T040450Z">
+        <seg>单元测试主要是作为一种良好实践来编写的，它能帮助开发人员识别并修复 bug、重构代码，
+    还可以看作被测软件单元的文档。要实现这些好处，理想的单元测试应当覆盖程序中所有可能的路径。
+    一个单元测试通常覆盖一个函数或方法中的一个特定路径。但是，测试方法不一定是封装良好的独立实体。
+    测试方法之间经常有隐含的依赖关系暗藏在测试的实现方案中。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Unit Tests are primarily written as a good practice to help developers identify and fix bugs, to refactor code and to serve as documentation for a unit of software under test. To achieve these benefits, unit tests ideally should cover all the possible paths in a program. One unit test usually covers one specific path in one function or method. However a test method is not necessarily an encapsulated, independent entity. Often there are implicit dependencies between test methods, hidden in the implementation scenario of a test.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20180106T095006Z" creationid="wynnc" creationdate="20180106T095006Z">
@@ -121713,6 +121912,16 @@ against its detached signature (:file:`phpunit-x.y.phar.asc`):</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Whenever you are tempted to type something into a
+    ``print`` statement or a debugger expression, write it
+    as a test instead.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040143Z" creationid="wynnc" creationdate="20201211T040127Z">
+        <seg>当你想把一些东西写到 ``print`` 语句或者调试表达式中时，别这么做，改为将其写成测试。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Whenever you are tempted to type something into a &lt;l0&gt;print&lt;/l0&gt; statement or a debugger expression, write it as a test instead.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T101625Z" creationid="Wynn" creationdate="20150327T101625Z">
@@ -122375,6 +122584,18 @@ against its detached signature (:file:`phpunit-x.y.phar.asc`):</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T093240Z" creationid="Wynn" creationdate="20150309T093240Z">
         <seg>arrayHasKey()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>array_push($stack, 'foo');
+            $this-&gt;assertSame('foo', $stack[count($stack)-1]);
+            $this-&gt;assertSame(1, count($stack));</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040103Z" creationid="wynnc" creationdate="20201211T040103Z">
+        <seg>array_push($stack, 'foo');
+            $this-&gt;assertSame('foo', $stack[count($stack)-1]);
+            $this-&gt;assertSame(1, count($stack));</seg>
       </tuv>
     </tu>
     <tu>
@@ -125953,6 +126174,42 @@ class MyClass
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>final class StackTest extends TestCase
+    {
+        public function testEmpty(): array
+        {
+            $stack = [];
+            $this-&gt;assertEmpty($stack);</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041028Z" creationid="wynnc" creationdate="20201211T041028Z">
+        <seg>final class StackTest extends TestCase
+    {
+        public function testEmpty(): array
+        {
+            $stack = [];
+            $this-&gt;assertEmpty($stack);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>final class StackTest extends TestCase
+    {
+        public function testPushAndPop(): void
+        {
+            $stack = [];
+            $this-&gt;assertSame(0, count($stack));</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040103Z" creationid="wynnc" creationdate="20201211T040103Z">
+        <seg>final class StackTest extends TestCase
+    {
+        public function testPushAndPop(): void
+        {
+            $stack = [];
+            $this-&gt;assertSame(0, count($stack));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>forceCoversAnnotation</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T093418Z" creationid="Wynn" creationdate="20150309T093418Z">
@@ -127311,6 +127568,16 @@ ok</seg>
         <seg>public function testSomething()
 {
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>return $stack;
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041029Z" creationid="wynnc" creationdate="20201211T041029Z">
+        <seg>return $stack;
+        }</seg>
       </tuv>
     </tu>
     <tu>
@@ -129125,6 +129392,16 @@ class MyTest extends TestCase
 {"event":"test","suite":"FailureErrorTest",
  "test":"testError(FailureErrorTest)","status":"error",
  "time":0.0083680152893066,"trace":[],"message":""}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>|
+    *Martin Fowler*:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T040324Z" creationid="wynnc" creationdate="20201211T040106Z">
+        <seg>|
+    *Martin Fowler*：</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
