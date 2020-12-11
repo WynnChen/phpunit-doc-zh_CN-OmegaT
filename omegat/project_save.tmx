@@ -1012,6 +1012,38 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ curl --silent https://sebastian-bergmann.de/gpg.asc | gpg --import
+    gpg: key 4AA394086372C20A: 452 signatures not checked due to missing keys
+    gpg: /root/.gnupg/trustdb.gpg: trustdb created
+    gpg: key 4AA394086372C20A: public key "Sebastian Bergmann &lt;sb@sebastian-bergmann.de&gt;" imported
+    gpg: Total number processed: 1
+    gpg:               imported: 1
+    gpg: no ultimately trusted keys found</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032331Z" creationid="wynnc" creationdate="20201211T032331Z">
+        <seg>$ curl --silent https://sebastian-bergmann.de/gpg.asc | gpg --import
+    gpg: key 4AA394086372C20A: 452 signatures not checked due to missing keys
+    gpg: /root/.gnupg/trustdb.gpg: trustdb created
+    gpg: key 4AA394086372C20A: public key "Sebastian Bergmann &lt;sb@sebastian-bergmann.de&gt;" imported
+    gpg: Total number processed: 1
+    gpg:               imported: 1
+    gpg: no ultimately trusted keys found</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>$ gpg phpunit-|version|.phar.asc
+    gpg: Signature made Sat 19 Jul 2014 01:28:02 PM CEST using RSA key ID 6372C20A
+    gpg: Can't check signature: public key not found</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031852Z" creationid="wynnc" creationdate="20201211T031852Z">
+        <seg>$ gpg phpunit-|version|.phar.asc
+    gpg: Signature made Sat 19 Jul 2014 01:28:02 PM CEST using RSA key ID 6372C20A
+    gpg: Can't check signature: public key not found</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$ make html</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083447Z" creationid="wynnc" creationdate="20201210T083447Z">
@@ -1031,6 +1063,20 @@ $ npm install</seg>
     <tu>
       <tuv lang="en-US">
         <seg>$ wget https://phar.phpunit.de/phpunit-|version|.phar
+    $ chmod +x phpunit-|version|.phar
+    $ ./phpunit-|version|.phar --version
+    PHPUnit x.y.z by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031515Z" creationid="wynnc" creationdate="20201211T031515Z">
+        <seg>$ wget https://phar.phpunit.de/phpunit-|version|.phar
+    $ chmod +x phpunit-|version|.phar
+    $ ./phpunit-|version|.phar --version
+    PHPUnit x.y.z by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>$ wget https://phar.phpunit.de/phpunit-|version|.phar
     $ php phpunit-|version|.phar --version
     PHPUnit x.y.z by Sebastian Bergmann and contributors.</seg>
       </tuv>
@@ -1038,6 +1084,16 @@ $ npm install</seg>
         <seg>$ wget https://phar.phpunit.de/phpunit-|version|.phar
     $ php phpunit-|version|.phar --version
     PHPUnit x.y.z by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>$ wget https://phar.phpunit.de/phpunit-|version|.phar
+    $ wget https://phar.phpunit.de/phpunit-|version|.phar.asc</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031801Z" creationid="wynnc" creationdate="20201211T031801Z">
+        <seg>$ wget https://phar.phpunit.de/phpunit-|version|.phar
+    $ wget https://phar.phpunit.de/phpunit-|version|.phar.asc</seg>
       </tuv>
     </tu>
     <tu>
@@ -1748,6 +1804,22 @@ $ npm install</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T091854Z" creationid="wynnc" creationdate="20201210T091854Z">
         <seg>.. _appendixes.copyright:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. _code-coverage-analysis:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031357Z" creationid="wynnc" creationdate="20201211T031357Z">
+        <seg>.. _code-coverage-analysis:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. _installation.phar.verification:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031516Z" creationid="wynnc" creationdate="20201211T031516Z">
+        <seg>.. _installation.phar.verification:</seg>
       </tuv>
     </tu>
     <tu>
@@ -108723,6 +108795,17 @@ Installing PHPUnit
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>All official releases of code distributed by the PHPUnit Project are
+signed by the release manager for the release. PGP signatures and SHA256
+hashes are available for verification on `phar.phpunit.de &lt;https://phar.phpunit.de/&gt;`_.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031752Z" creationid="wynnc" creationdate="20201211T031614Z">
+        <seg>由 PHPUnit 项目分发的所有官方代码发行包都由发行包管理器进行签名。在 
+`phar.phpunit.de &lt;https://phar.phpunit.de/&gt;`_ 上有 PGP 签名和 SHA256 散列值可用于校验。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>All official releases of code distributed by the PHPUnit Project are signed by the release manager for the release. PGP signatures and SHA1 hashes are available for verification on &lt;u0&gt;phar.phpunit.de&lt;/u0&gt;.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T100031Z" creationid="Wynn" creationdate="20150319T100031Z">
@@ -112284,6 +112367,14 @@ translate. A repository will be created and added to the available translations.
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T082439Z" creationid="Wynn" creationdate="20150319T082439Z">
         <seg>需要反复强调的是：在测试之间共享基境会降低测试的价值。潜在的设计问题是对象之间并非松散耦合。如果解决掉潜在的设计问题并使用桩件(stub)（参见&lt;x0/&gt;）来编写测试，就能达成更好的结果，而不是在测试之间产生运行时依赖并错过改进设计的机会。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It is a common practice to make the PHAR executable:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031357Z" creationid="wynnc" creationdate="20201211T031357Z">
+        <seg>让 PHAR 可执行是种常见做法：</seg>
       </tuv>
     </tu>
     <tu>
@@ -119170,6 +119261,17 @@ file.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The following example details how release verification works. We start
+by downloading :file:`phpunit.phar` as well as its
+detached PGP signature :file:`phpunit.phar.asc`:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T032009Z" creationid="wynnc" creationdate="20201211T031653Z">
+        <seg>下面的例子详细说明了如何对发行包进行校验。首先下载 :file:`phpunit.phar` 
+和与之对应的单独 PGP 签名 :file:`phpunit.phar.asc`：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The following example details how release verification works. We start by downloading &lt;f0&gt;phpunit.phar&lt;/f0&gt; as well as its detached PGP signature &lt;f1&gt;phpunit.phar.asc&lt;/f1&gt;:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T100052Z" creationid="Wynn" creationdate="20150319T100052Z">
@@ -120837,6 +120939,16 @@ file.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Verifying PHPUnit PHAR Releases
+===============================</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031524Z" creationid="wynnc" creationdate="20201211T031524Z">
+        <seg>校验 PHPUnit PHAR 发行包
+===============================</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Verifying the state of the database after your test has run</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150310T082030Z" creationid="Wynn" creationdate="20150310T082030Z">
@@ -120881,6 +120993,18 @@ file.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T100218Z" creationid="Wynn" creationdate="20150319T100218Z">
         <seg>在本地系统中没有发行包管理器的公钥(&lt;l0&gt;6372C20A&lt;/l0&gt;)。为了能进行校验，必须从某个密钥服务器上取得发行包管理器的公钥。其中一个服务器是 &lt;f1&gt;pgp.uni-mainz.de&lt;/f1&gt;。所有密钥服务器是链接在一起的，因此连接到任一密钥服务器都可以。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We don't have the release manager's public key (``6372C20A``)
+in our local system. In order to proceed with the verification we need
+to retrieve the release manager's public key from a key server. One such
+server is :file:`pgp.uni-mainz.de`. The public key servers
+are linked together, so you should be able to connect to any key server.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031921Z" creationid="wynnc" creationdate="20201211T031921Z">
+        <seg>在本地系统中没有发行包管理器的公钥（``6372C20A``）。为了能进行校验，必须从某个密钥服务器上取得发行包管理器的公钥。其中一个服务器是 :file:`pgp.uni-mainz.de`。所有密钥服务器是链接在一起的，因此连接到任一密钥服务器都可以。</seg>
       </tuv>
     </tu>
     <tu>
@@ -120945,6 +121069,15 @@ file.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150317T075137Z" creationid="Wynn" creationdate="20150317T075137Z">
         <seg>然后将 Flat XML DataSet 包装在 Replacement DataSet 中：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We want to verify PHPUnit's PHP Archive (:file:`phpunit-x.y.phar`)
+against its detached signature (:file:`phpunit-x.y.phar.asc`):</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031850Z" creationid="wynnc" creationdate="20201211T031850Z">
+        <seg>用单独的签名（:file:`phpunit-x.y.phar`）对 PHPUnit 的 PHP 档案包（:file:`phpunit-x.y.phar.asc`）进行校验：</seg>
       </tuv>
     </tu>
     <tu>
@@ -126500,11 +126633,11 @@ html_theme_options = {
     else:
         return 'unknown'</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T030330Z" creationid="wynnc" creationdate="20201210T090418Z">
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T031405Z" creationid="wynnc" creationdate="20201210T090418Z">
         <seg>if version:
         return version[2:]
     else:
-        return '(未知版本)'</seg>
+        return '(未知)'</seg>
       </tuv>
     </tu>
     <tu>
