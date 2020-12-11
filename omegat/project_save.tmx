@@ -112404,6 +112404,21 @@ translate. A repository will be created and added to the available translations.
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>In the example above, the first test, ``testEmpty()``,
+creates a new array and asserts that it is empty. The test then returns
+the fixture as its result. The second test, ``testPush()``,
+depends on ``testEmpty()`` and is passed the result of that
+depended-upon test as its argument. Finally, ``testPop()``
+depends upon ``testPush()``.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041342Z" creationid="wynnc" creationdate="20201211T041139Z">
+        <seg>在上例中，第一个测试\ ``testEmpty()`` 创建了一个新数组，并断言其为空。
+随后，此测试将此基境作为结果返回。第二个测试 ``testPush()`` 依赖于 ``testEmpty()``，
+并将所依赖的测试之结果作为参数传入。最后，``testPop()`` 依赖于 ``testPush()``。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>In the examples so far we have been returning simple values using &lt;l0&gt;willReturn($value)&lt;/l0&gt;. This short syntax is the same as &lt;l1&gt;will($this-&gt;returnValue($value))&lt;/l1&gt;. We can use variations on this longer syntax to achieve more complex stubbing behaviour.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T080704Z" creationid="Wynn" creationdate="20150327T080704Z">
@@ -119878,6 +119893,22 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T032440Z" creationid="Wynn" creationdate="20150327T032440Z">
         <seg>这个决定的原因是 Selenium 2 是向后兼容的，而 Selenium RC 已经不再维护了。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The return value yielded by a producer is passed "as-is" to its
+   consumers by default. This means that when a producer returns an object,
+   a reference to that object is passed to the consumers. Instead of
+   a reference either (a) a (deep) copy via ``@depends clone``, or (b) a
+   (normal shallow) clone (based on PHP keyword ``clone``) via
+   ``@depends shallowClone`` are possible too.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T041823Z" creationid="wynnc" creationdate="20201211T041823Z">
+        <seg>默认情况下，生产者所产生的返回值将“原样”传递给相应的消费者。这意味着，如果生产者返回的是一个对象，那么传递给消费者的将是一个指向此对象的引用。. Instead of
+   a reference either (a) a (deep) copy via ``@depends clone``, or (b) a
+   (normal shallow) clone (based on PHP keyword ``clone``) via
+   ``@depends shallowClone`` are possible too.</seg>
       </tuv>
     </tu>
     <tu>
