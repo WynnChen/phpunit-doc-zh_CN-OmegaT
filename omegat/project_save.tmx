@@ -112889,6 +112889,14 @@ translate. A repository will be created and added to the available translations.
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Other unethical or unprofessional conduct</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T013715Z" creationid="wynnc" creationdate="20201211T013715Z">
+        <seg>其他不道德或不专业的行为</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Output During Test Execution</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T031340Z" creationid="Wynn" creationdate="20150327T031340Z">
@@ -115291,6 +115299,14 @@ Tests: 2, Failures: 1.</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T014001Z" creationid="wynnc" creationdate="20201211T013805Z">
+        <seg>项目维护者有权并有责任删除、编辑或拒绝与本行为准则不符的评论、提交、代码、Wiki 编辑、问题和其他贡献，或暂时或永久地禁止某个贡献者从事被项目维护者认定为不当、有威胁、冒犯或有害的其他行为。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Proofreading Automation</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201210T083522Z" creationid="wynnc" creationdate="20201210T083510Z">
@@ -115311,6 +115327,15 @@ Tests: 2, Failures: 1.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T013638Z" creationid="wynnc" creationdate="20201211T013638Z">
         <seg>公开或私下的骚扰</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Publishing other's private information, such as physical or electronic
+addresses, without explicit permission</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T013708Z" creationid="wynnc" creationdate="20201211T013708Z">
+        <seg>未经明确许可发布他人的私人信息，例如现实或网络地址</seg>
       </tuv>
     </tu>
     <tu>
