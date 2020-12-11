@@ -1979,6 +1979,18 @@ $ npm install</seg>
     <tu>
       <tuv lang="en-US">
         <seg>.. code-block:: php
+    :caption: Exploiting the dependencies between tests
+    :name: writing-tests-for-phpunit.examples.DependencyFailureTest.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042740Z" creationid="wynnc" creationdate="20201211T042740Z">
+        <seg>.. code-block:: php
+    :caption: 利用测试之间的依赖关系
+    :name: writing-tests-for-phpunit.examples.DependencyFailureTest.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
     :caption: Testing array operations with PHPUnit
     :name: writing-tests-for-phpunit.examples.StackTest.php</seg>
       </tuv>
@@ -2070,6 +2082,26 @@ $ npm install</seg>
             array_push($stack, 'foo');
             $this-&gt;assertSame('foo', $stack[count($stack)-1]);
             $this-&gt;assertNotEmpty($stack);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>/**
+         * @depends testOne
+         */
+        public function testTwo(): void
+        {
+        }
+    }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042746Z" creationid="wynnc" creationdate="20201211T042746Z">
+        <seg>/**
+         * @depends testOne
+         */
+        public function testTwo(): void
+        {
+        }
+    }</seg>
       </tuv>
     </tu>
     <tu>
@@ -119909,11 +119941,12 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
    (normal shallow) clone (based on PHP keyword ``clone``) via
    ``@depends shallowClone`` are possible too.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042434Z" creationid="wynnc" creationdate="20201211T041823Z">
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042707Z" creationid="wynnc" creationdate="20201211T041823Z">
         <seg>默认情况下，生产者所产生的返回值将“原样”传递给相应的消费者。
-    这意味着，如果生产者返回的是一个对象，那么传递给消费者的将是一个指向此对象的引用。
-    但同样也可以（a）通过 ``@depends clone`` 来传递一个（深拷贝）副本的引用，或
-    （b）通过 ``@depends shallowClone`` 来传递一个（正常浅拷贝）副本（基于 PHP 关键字 ``clone``）的引用。</seg>
+    这意味着，如果生产者返回的是一个对象，那么传递给消费者的将是指向此对象的引用。
+    但同样也可以（a）通过 ``@depends clone`` 来传递指向（深）拷贝对象的引用，或
+    （b）通过 ``@depends shallowClone`` 来传递指向（正常浅）克隆对象
+    （基于 PHP 关键字 ``clone``）的引用。</seg>
       </tuv>
     </tu>
     <tu>
@@ -120469,6 +120502,18 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150319T095350Z" creationid="Wynn" creationdate="20150319T095350Z">
         <seg>如果要全局安装 PHAR：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>To localize defects, we want our attention to be focussed on
+relevant failing tests. This is why PHPUnit skips the execution of a test
+when a depended-upon test has failed. This improves defect localization by
+exploiting the dependencies between tests as shown in
+:numref:`writing-tests-for-phpunit.examples.DependencyFailureTest.php`.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042726Z" creationid="wynnc" creationdate="20201211T042726Z">
+        <seg>为了定位缺陷，我们希望把注意力集中于相关的失败测试上。这就是为什么当某个测试所依赖的测试失败时，PHPUnit 会跳过这个测试。通过利用测试之间的依赖关系，缺陷定位得到了改进，如 :numref:`writing-tests-for-phpunit.examples.DependencyFailureTest.php` 中所示。</seg>
       </tuv>
     </tu>
     <tu>
@@ -126206,6 +126251,24 @@ class MyClass
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150309T093248Z" creationid="Wynn" creationdate="20150309T093248Z">
         <seg>fileExists()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>final class DependencyFailureTest extends TestCase
+    {
+        public function testOne(): void
+        {
+            $this-&gt;assertTrue(false);
+        }</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042740Z" creationid="wynnc" creationdate="20201211T042740Z">
+        <seg>final class DependencyFailureTest extends TestCase
+    {
+        public function testOne(): void
+        {
+            $this-&gt;assertTrue(false);
+        }</seg>
       </tuv>
     </tu>
     <tu>
