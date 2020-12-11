@@ -1088,6 +1088,16 @@ fi</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>$ phpunit --verbose DependencyFailureTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042749Z" creationid="wynnc" creationdate="20201211T042749Z">
+        <seg>$ phpunit --verbose DependencyFailureTest
+    PHPUnit |version|.0 by Sebastian Bergmann and contributors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>$ pip install docutils-ast-writer
 $ npm install</seg>
       </tuv>
@@ -1991,6 +2001,18 @@ $ npm install</seg>
     <tu>
       <tuv lang="en-US">
         <seg>.. code-block:: php
+    :caption: Test with multiple dependencies
+    :name: writing-tests-for-phpunit.examples.MultipleDependencies.php</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043315Z" creationid="wynnc" creationdate="20201211T043315Z">
+        <seg>.. code-block:: php
+    :caption: 有多个依赖项的测试
+    :name: writing-tests-for-phpunit.examples.MultipleDependencies.php</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>.. code-block:: php
     :caption: Testing array operations with PHPUnit
     :name: writing-tests-for-phpunit.examples.StackTest.php</seg>
       </tuv>
@@ -2368,6 +2390,14 @@ public function initialBalanceShouldBe0()
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>/home/sb/DependencyFailureTest.php:6</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042803Z" creationid="wynnc" creationdate="20201211T042803Z">
+        <seg>/home/sb/DependencyFailureTest.php:6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>/path/to/my/test.phpt</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T093645Z" creationid="Wynn" creationdate="20150327T093645Z">
@@ -2382,6 +2412,26 @@ public function initialBalanceShouldBe0()
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150330T040911Z" creationid="Wynn" creationdate="20150330T040911Z">
         <seg>0
 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>1) DependencyFailureTest::testOne
+    Failed asserting that false is true.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042803Z" creationid="wynnc" creationdate="20201211T042803Z">
+        <seg>1) DependencyFailureTest::testOne
+    Failed asserting that false is true.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>1) DependencyFailureTest::testTwo
+    This test depends on "DependencyFailureTest::testOne" to pass.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042804Z" creationid="wynnc" creationdate="20201211T042804Z">
+        <seg>1) DependencyFailureTest::testTwo
+    This test depends on "DependencyFailureTest::testOne" to pass.</seg>
       </tuv>
     </tu>
     <tu>
@@ -108829,6 +108879,18 @@ Writing Tests for PHPUnit
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>A test may have more than one ``@depends`` annotation.
+PHPUnit does not change the order in which tests are executed, you have to
+ensure that the dependencies of a test can actually be met before the test
+is run.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042845Z" creationid="wynnc" creationdate="20201211T042815Z">
+        <seg>测试可以使用多个 ``@depends`` 标注。PHPUnit 不会更改测试的运行顺序，
+因此你需要自行保证某个测试所依赖的所有测试均出现于这个测试之前。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>A test method can accept arbitrary arguments. These arguments are to be provided by a data provider method (&lt;l0&gt;additionProvider()&lt;/l0&gt; in &lt;x1/&gt;). The data provider method to be used is specified using the &lt;l2&gt;@dataProvider&lt;/l2&gt; annotation.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T102113Z" creationid="Wynn" creationdate="20150327T102113Z">
@@ -108889,6 +108951,19 @@ Writing Tests for PHPUnit
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T101953Z" creationid="Wynn" creationdate="20150327T101953Z">
         <seg>拥有多个 &lt;l0&gt;@depends&lt;/l0&gt; 标注的测试，其第一个参数是第一个生产者提供的基境，第二个参数是第二个生产者提供的基境，以此类推。参见</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>A test that has more than one ``@depends`` annotation
+will get a fixture from the first producer as the first argument, a fixture
+from the second producer as the second argument, and so on.
+See :numref:`writing-tests-for-phpunit.examples.MultipleDependencies.php`</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042838Z" creationid="wynnc" creationdate="20201211T042838Z">
+        <seg>拥有多个 ``@depends`` 标注的测试，其第一个参数是第一个生产者提供的基境，
+第二个参数是第二个生产者提供的基境，以此类推。
+参见 :numref:`writing-tests-for-phpunit.examples.MultipleDependencies.php`</seg>
       </tuv>
     </tu>
     <tu>
@@ -111355,6 +111430,24 @@ you need in your project's ``composer.json`` if you use Composer.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150327T092743Z" creationid="Wynn" creationdate="20150327T092743Z">
         <seg>F</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>FAILURES!
+    Tests: 1, Assertions: 1, Failures: 1, Skipped: 1.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042805Z" creationid="wynnc" creationdate="20201211T042805Z">
+        <seg>FAILURES!
+    Tests: 1, Assertions: 1, Failures: 1, Skipped: 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>FS</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042801Z" creationid="wynnc" creationdate="20201211T042801Z">
+        <seg>FS</seg>
       </tuv>
     </tu>
     <tu>
@@ -120223,6 +120316,22 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>There was 1 failure:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042802Z" creationid="wynnc" creationdate="20201211T042802Z">
+        <seg>There was 1 failure:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>There was 1 skipped test:</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042803Z" creationid="wynnc" creationdate="20201211T042803Z">
+        <seg>There was 1 skipped test:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T014339Z" creationid="wynnc" creationdate="20201211T014339Z">
@@ -120442,6 +120551,14 @@ detached PGP signature :file:`phpunit.phar.asc`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Time: 0 seconds, Memory: 5.00Mb</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042802Z" creationid="wynnc" creationdate="20201211T042802Z">
+        <seg>Time: 0 seconds, Memory: 5.00Mb</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Tip: Use your own Abstract Database TestCase</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="Wynn" changedate="20150316T100330Z" creationid="Wynn" creationdate="20150316T100330Z">
@@ -120512,8 +120629,11 @@ when a depended-upon test has failed. This improves defect localization by
 exploiting the dependencies between tests as shown in
 :numref:`writing-tests-for-phpunit.examples.DependencyFailureTest.php`.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T042726Z" creationid="wynnc" creationdate="20201211T042726Z">
-        <seg>为了定位缺陷，我们希望把注意力集中于相关的失败测试上。这就是为什么当某个测试所依赖的测试失败时，PHPUnit 会跳过这个测试。通过利用测试之间的依赖关系，缺陷定位得到了改进，如 :numref:`writing-tests-for-phpunit.examples.DependencyFailureTest.php` 中所示。</seg>
+      <tuv lang="zh-CN" changeid="wynnc" changedate="20201211T043259Z" creationid="wynnc" creationdate="20201211T042726Z">
+        <seg>为了定位缺陷，我们希望把注意力集中于相关的失败测试上。
+这就是为什么当某个测试所依赖的测试失败时，PHPUnit 会跳过这个测试。
+利用测试之间的依赖关系可以改进缺陷定位，如 
+:numref:`writing-tests-for-phpunit.examples.DependencyFailureTest.php` 所示。</seg>
       </tuv>
     </tu>
     <tu>
