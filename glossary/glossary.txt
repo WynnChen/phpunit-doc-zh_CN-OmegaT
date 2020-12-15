@@ -4,3 +4,5 @@ annotation	标注
 const	常量
 command-line test runner	命令行测试执行器
 Trait	特质
+filter	过滤器
+test runner	测试执行器
